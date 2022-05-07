@@ -15,4 +15,4 @@ line_length = 120
 py_version = 39
 known_third_party = ["aiohttp", "mpplaylists", "ujson", "red_commons", "discord", "sqlalchemy", "cached_property","psutil", "dateutils", "appdirs", "yaml", "redbot", "tabulate", "aiopath", "humanize"]
 known_first_party = ["pylav"]
-known_local_folder = ["plcogs_shared"]
+known_local_folder = ["pylavcogs_shared"]

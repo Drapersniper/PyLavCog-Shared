@@ -2,7 +2,7 @@ name: Crowdin - Upload strings
 on:
     push:
         branches:
-        -   master
+        -   main
 
 jobs:
     deploy:
