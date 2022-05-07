@@ -1,0 +1,155 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pylavshared\n"
+"POT-Creation-Date: 2022-05-07 17:14+0100\n"
+"PO-Revision-Date: 2022-05-07 16:16\n"
+"Last-Translator: \n"
+"Language-Team: French, Switzerland\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: redgettext 3.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Crowdin-Project: pylavshared\n"
+"X-Crowdin-Project-ID: 514316\n"
+"X-Crowdin-Language: fr-CH\n"
+"X-Crowdin-File: /main/pylavcogs_shared/ui/menus/locales/messages.pot\n"
+"X-Crowdin-File-ID: 332\n"
+"Language: fr_CH\n"
+
+#: pylavcogs_shared/ui/menus/nodes.py:55
+msgid "Enter the domain or IP address of the host"
+msgstr "Entrez le domaine ou l'adresse IP de l'hôte"
+
+#: pylavcogs_shared/ui/menus/nodes.py:56
+msgid "Host"
+msgstr "Hôte"
+
+#: pylavcogs_shared/ui/menus/nodes.py:63
+msgid "Enter the host port to connect to"
+msgstr "Entrez le port de l'hôte auquel vous devez vous connecter"
+
+#: pylavcogs_shared/ui/menus/nodes.py:64
+msgid "Port"
+msgstr "Port"
+
+#: pylavcogs_shared/ui/menus/nodes.py:71
+msgid "Enter the node's password"
+msgstr "Entrez le mot de passe du nœud"
+
+#: pylavcogs_shared/ui/menus/nodes.py:72 pylavcogs_shared/ui/menus/nodes.py:88
+msgid "Password"
+msgstr "Mot de passe"
+
+#: pylavcogs_shared/ui/menus/nodes.py:79
+msgid "Enter an easy to know name for the node."
+msgstr "Entrez un nom facile à connaître pour le noeud."
+
+#: pylavcogs_shared/ui/menus/nodes.py:80
+msgid "Name"
+msgstr "Nom"
+
+#: pylavcogs_shared/ui/menus/nodes.py:87
+msgid "Enter a timeout in seconds."
+msgstr "Entrez un délai d'attente en secondes."
+
+#: pylavcogs_shared/ui/menus/nodes.py:103
+msgid "Source to disable."
+msgstr "Source à désactiver."
+
+#: pylavcogs_shared/ui/menus/nodes.py:215
+msgid "Name set to {name}"
+msgstr "Nom défini à {name}"
+
+#: pylavcogs_shared/ui/menus/nodes.py:228
+msgid "Password set to {password}"
+msgstr "Mot de passe défini à {password}"
+
+#: pylavcogs_shared/ui/menus/nodes.py:249
+msgid "Host set to {host}"
+msgstr "Hôte défini à {host}"
+
+#: pylavcogs_shared/ui/menus/nodes.py:266
+msgid "Invalid port."
+msgstr "Port invalide."
+
+#: pylavcogs_shared/ui/menus/nodes.py:274
+msgid "Port set to {port}"
+msgstr "Port défini à {port}"
+
+#: pylavcogs_shared/ui/menus/nodes.py:291
+msgid "Invalid timeout, it must be a number in seconds."
+msgstr "Délai d'expiration invalide, il doit être un nombre en secondes."
+
+#: pylavcogs_shared/ui/menus/nodes.py:299
+msgid "Timeout set to {timeout} seconds."
+msgstr "Délai défini à {timeout} secondes."
+
+#: pylavcogs_shared/ui/menus/player.py:93
+msgid "selected"
+msgstr "slectionns"
+
+#: pylavcogs_shared/ui/menus/player.py:100
+msgid "inactive"
+msgstr "inactif"
+
+#: pylavcogs_shared/ui/menus/player.py:110
+msgid "all"
+msgstr "Tous"
+
+#: pylavcogs_shared/ui/menus/player.py:201
+msgid "Not connected anywhere."
+msgstr "N'est connecté nulle part."
+
+#: pylavcogs_shared/ui/menus/playlist.py:186
+#: pylavcogs_shared/ui/menus/playlist.py:319
+msgid "Please enter the playlist URL"
+msgstr "Veuillez entrer l'URL de la playlist"
+
+#: pylavcogs_shared/ui/menus/playlist.py:187
+#: pylavcogs_shared/ui/menus/playlist.py:320
+msgid "Playlist URL"
+msgstr "URL de la playlist"
+
+#: pylavcogs_shared/ui/menus/playlist.py:192
+msgid "Please enter the playlist name"
+msgstr "Veuillez entrer le nom de la playlist"
+
+#: pylavcogs_shared/ui/menus/playlist.py:192
+#: pylavcogs_shared/ui/menus/playlist.py:325
+msgid "Playlist Name"
+msgstr "Nom de la playlist"
+
+#: pylavcogs_shared/ui/menus/playlist.py:325
+msgid "Please enter the new playlist name"
+msgstr "Veuillez entrer le nouveau nom de la playlist"
+
+#: pylavcogs_shared/ui/menus/playlist.py:330
+msgid "What query to add to the playlist"
+msgstr "Quelle requête à ajouter à la playlist"
+
+#: pylavcogs_shared/ui/menus/playlist.py:331
+#: pylavcogs_shared/ui/menus/playlist.py:339
+msgid "Query"
+msgstr "Requête"
+
+#: pylavcogs_shared/ui/menus/playlist.py:338
+msgid "What query to remove from the playlist"
+msgstr "Quelle requête à supprimer de la playlist"
+
+#: pylavcogs_shared/ui/menus/queue.py:438
+msgid "Select Track To Remove"
+msgstr "Sélectionnez la piste à supprimer"
+
+#: pylavcogs_shared/ui/menus/queue.py:440
+msgid "Select Track To Play Now"
+msgstr "Sélectionnez la piste à lire maintenant"
+
+#: pylavcogs_shared/ui/menus/queue.py:542
+msgid "Pick An Effect Preset To Apply"
+msgstr "Choisissez un préréglage d'effet à appliquer"
+
+#: pylavcogs_shared/ui/menus/queue.py:661
+msgid "Select Track To Enqueue"
+msgstr "Sélectionnez la piste à mettre en file d'attente"
+
