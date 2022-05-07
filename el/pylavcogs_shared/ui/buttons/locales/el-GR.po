@@ -1,0 +1,174 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pylavshared\n"
+"POT-Creation-Date: 2022-05-07 17:14+0100\n"
+"PO-Revision-Date: 2022-05-07 16:16\n"
+"Last-Translator: \n"
+"Language-Team: Greek\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: redgettext 3.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: pylavshared\n"
+"X-Crowdin-Project-ID: 514316\n"
+"X-Crowdin-Language: el\n"
+"X-Crowdin-File: /main/pylavcogs_shared/ui/buttons/locales/messages.pot\n"
+"X-Crowdin-File-ID: 328\n"
+"Language: el_GR\n"
+
+#: pylavcogs_shared/ui/buttons/generic.py:68
+#: pylavcogs_shared/ui/buttons/generic.py:90
+#: pylavcogs_shared/ui/buttons/generic.py:113
+#: pylavcogs_shared/ui/buttons/generic.py:135
+#: pylavcogs_shared/ui/buttons/nodes.py:45
+#: pylavcogs_shared/ui/buttons/nodes.py:87
+#: pylavcogs_shared/ui/buttons/nodes.py:123
+#: pylavcogs_shared/ui/buttons/nodes.py:170
+#: pylavcogs_shared/ui/buttons/playlist.py:41
+#: pylavcogs_shared/ui/buttons/playlist.py:73
+#: pylavcogs_shared/ui/buttons/playlist.py:111
+#: pylavcogs_shared/ui/buttons/playlist.py:149
+#: pylavcogs_shared/ui/buttons/playlist.py:189
+#: pylavcogs_shared/ui/buttons/playlist.py:234
+#: pylavcogs_shared/ui/buttons/playlist.py:276
+#: pylavcogs_shared/ui/buttons/playlist.py:322
+msgid "You are not authorized to interact with this option."
+msgstr "Δεν είστε εξουσιοδοτημένοι να αλληλεπιδράσετε με αυτήν την επιλογή."
+
+#: pylavcogs_shared/ui/buttons/generic.py:81
+msgid "Yes"
+msgstr "Ναι"
+
+#: pylavcogs_shared/ui/buttons/generic.py:104
+msgid "No"
+msgstr "Όχι"
+
+#: pylavcogs_shared/ui/buttons/generic.py:157
+msgid "Disconnect {} {}"
+msgstr "Αποσύνδεση {} {}"
+
+#: pylavcogs_shared/ui/buttons/generic.py:158
+msgid "players"
+msgstr "παίκτες"
+
+#: pylavcogs_shared/ui/buttons/generic.py:158
+msgid "player"
+msgstr "παίκτης"
+
+#: pylavcogs_shared/ui/buttons/nodes.py:53
+msgid "Connecting to the node with SSL enabled..."
+msgstr "Σύνδεση στον κόμβο με ενεργοποιημένο SSL..."
+
+#: pylavcogs_shared/ui/buttons/nodes.py:60
+msgid "Connecting to the node with SSL disabled..."
+msgstr "Σύνδεση στον κόμβο με SSL απενεργοποιημένη..."
+
+#: pylavcogs_shared/ui/buttons/nodes.py:95
+msgid "This node will only be used for searches..."
+msgstr "Αυτός ο κόμβος θα χρησιμοποιηθεί μόνο για αναζητήσεις..."
+
+#: pylavcogs_shared/ui/buttons/nodes.py:102
+msgid "This node will be used for search and playback..."
+msgstr "Αυτός ο κόμβος θα χρησιμοποιηθεί για αναζήτηση και αναπαραγωγή..."
+
+#: pylavcogs_shared/ui/buttons/nodes.py:131
+msgid "Please fill out all the fields before continuing."
+msgstr "Παρακαλώ συμπληρώστε όλα τα πεδία πριν συνεχίσετε."
+
+#: pylavcogs_shared/ui/buttons/player.py:35
+#: pylavcogs_shared/ui/buttons/player.py:99
+#: pylavcogs_shared/ui/buttons/player.py:162
+msgid "You are not authorized to perform this action."
+msgstr "Δεν είστε εξουσιοδοτημένοι να εκτελέσετε αυτήν την ενέργεια."
+
+#: pylavcogs_shared/ui/buttons/player.py:44
+#: pylavcogs_shared/ui/buttons/player.py:108
+msgid "No Player Available For Action - Try Refreshing."
+msgstr "Δεν Υπάρχει Διαθέσιμος Παίκτης Για Δράση - Δοκιμάστε Να Ανανεώσετε."
+
+#: pylavcogs_shared/ui/buttons/player.py:65
+#: pylavcogs_shared/ui/buttons/player.py:128
+#: pylavcogs_shared/ui/buttons/player.py:197
+msgid "Bot Owner Action"
+msgstr "Ενέργεια Ιδιοκτήτη Bot"
+
+#: pylavcogs_shared/ui/buttons/player.py:65
+#: pylavcogs_shared/ui/buttons/player.py:198
+msgid "Player disconnected."
+msgstr "Ο παίκτης αποσυνδέθηκε."
+
+#: pylavcogs_shared/ui/buttons/player.py:128
+msgid "Player stopped."
+msgstr "Ο παίκτης σταμάτησε."
+
+#: pylavcogs_shared/ui/buttons/player.py:176
+msgid "No Players Available For Action - Try Refreshing."
+msgstr "Δεν Υπάρχουν Διαθέσιμοι Παίκτες Για Δράση - Δοκιμάστε Να Ανανεώσετε."
+
+#: pylavcogs_shared/ui/buttons/playlist.py:48
+msgid "When you press done this playlist will be permanently delete..."
+msgstr "Όταν πατήσετε το τέλος αυτή η λίστα αναπαραγωγής θα διαγραφεί μόνιμα..."
+
+#: pylavcogs_shared/ui/buttons/playlist.py:50
+msgid "This playlist will no longer be deleted once you press done..."
+msgstr "Αυτή η λίστα αναπαραγωγής δεν θα διαγράφεται πλέον μόλις πατήσετε το πάτημα..."
+
+#: pylavcogs_shared/ui/buttons/playlist.py:80
+msgid "Clearing all tracks from the playlist playlist..."
+msgstr "Εκκαθάριση όλων των κομματιών από τη λίστα αναπαραγωγής..."
+
+#: pylavcogs_shared/ui/buttons/playlist.py:82
+msgid "No longer clearing tracks from the playlist..."
+msgstr "Δεν γίνεται πλέον εκκαθάριση κομματιών από τη λίστα αναπαραγωγής..."
+
+#: pylavcogs_shared/ui/buttons/playlist.py:121
+msgid "Here is your playlist: {name}{extras}"
+msgstr "Εδώ είναι η λίστα αναπαραγωγής: {name}{extras}"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:123
+msgid "\n"
+" (compressed using gzip to make it possible to send via Discord - you can use <https://gzip.swimburger.net/> to decompress it)"
+msgstr "\n"
+" (συμπιεσμένο χρησιμοποιώντας το gzip για να καταστήσει δυνατή την αποστολή μέσω του Discord - μπορείτε να χρησιμοποιήσετε <https://gzip.swimburger.net/> για να το αποσυμπιέσετε)"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:156
+msgid "Updating playlist with the latest tracks..."
+msgstr "Ενημέρωση λίστας αναπαραγωγής με τα τελευταία κομμάτια..."
+
+#: pylavcogs_shared/ui/buttons/playlist.py:159
+msgid "Not updating playlist..."
+msgstr "Δεν ενημερώνεται η λίστα αναπαραγωγής..."
+
+#: pylavcogs_shared/ui/buttons/playlist.py:242
+msgid "Adding the current queue to playlist..."
+msgstr "Προσθήκη της τρέχουσας ουράς στην λίστα αναπαραγωγής..."
+
+#: pylavcogs_shared/ui/buttons/playlist.py:249
+msgid "No longer adding the current queue to playlist..."
+msgstr "Δεν προσθέτει πλέον την τρέχουσα ουρά στην λίστα αναπαραγωγής..."
+
+#: pylavcogs_shared/ui/buttons/playlist.py:284
+msgid "Removing all duplicate tracks from the queue..."
+msgstr "Αφαίρεση όλων των διπλότυπων κομματιών από την ουρά..."
+
+#: pylavcogs_shared/ui/buttons/playlist.py:291
+msgid "No longer all duplicate tracks from the queue..."
+msgstr "Δεν είναι πλέον όλα τα διπλά κομμάτια από την ουρά..."
+
+#: pylavcogs_shared/ui/buttons/playlist.py:377
+msgid "Playlists you can currently play"
+msgstr "Λίστες αναπαραγωγής που μπορείτε να παίξετε"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:383
+msgid "Pick a playlist"
+msgstr "Επιλέξτε μια λίστα αναπαραγωγής"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:403
+msgid "What should the playlist name be?"
+msgstr "Τι πρέπει να είναι το όνομα της λίστας αναπαραγωγής?"
+
+#: pylavcogs_shared/ui/buttons/queue.py:231
+msgid "What do you want to enqueue?"
+msgstr "Τι θέλετε να κάνετε στην ουρά?"
+
