@@ -1,0 +1,218 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pylavshared\n"
+"POT-Creation-Date: 2022-05-07 17:14+0100\n"
+"PO-Revision-Date: 2022-05-07 16:32\n"
+"Last-Translator: \n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: redgettext 3.4.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: pylavshared\n"
+"X-Crowdin-Project-ID: 514316\n"
+"X-Crowdin-Language: ja\n"
+"X-Crowdin-File: /main/pylavcogs_shared/ui/sources/locales/messages.pot\n"
+"X-Crowdin-File-ID: 342\n"
+"Language: ja_JP\n"
+
+#: pylavcogs_shared/ui/sources/equalizer.py:34
+msgid "Preset Name"
+msgstr "プリセット名"
+
+#: pylavcogs_shared/ui/sources/equalizer.py:35
+msgid "Author"
+msgstr "作成者"
+
+#: pylavcogs_shared/ui/sources/nodes.py:49
+msgid "Page {page_num}/{total_pages} | {num} nodes."
+msgstr "Page {page_num}/{total_pages} | {num} nodes."
+
+#: pylavcogs_shared/ui/sources/nodes.py:90
+#: pylavcogs_shared/ui/sources/nodes.py:91
+#: pylavcogs_shared/ui/sources/nodes.py:92
+msgid "Yes"
+msgstr "はい"
+
+#: pylavcogs_shared/ui/sources/nodes.py:90
+#: pylavcogs_shared/ui/sources/nodes.py:91
+#: pylavcogs_shared/ui/sources/nodes.py:92
+msgid "No"
+msgstr "いいえ"
+
+#: pylavcogs_shared/ui/sources/nodes.py:129
+msgid "Property"
+msgstr "属性"
+
+#: pylavcogs_shared/ui/sources/nodes.py:130
+msgid "Value"
+msgstr "値"
+
+#: pylavcogs_shared/ui/sources/nodes.py:132
+msgid "Region"
+msgstr "地域"
+
+#: pylavcogs_shared/ui/sources/nodes.py:132
+msgid "N/A"
+msgstr "該当なし"
+
+#: pylavcogs_shared/ui/sources/nodes.py:133
+msgid "Host"
+msgstr "ホスト"
+
+#: pylavcogs_shared/ui/sources/nodes.py:134
+msgid "Port"
+msgstr "ポート"
+
+#: pylavcogs_shared/ui/sources/nodes.py:135
+msgid "Password"
+msgstr "パスワード"
+
+#: pylavcogs_shared/ui/sources/nodes.py:136
+msgid "SSL"
+msgstr "SSL"
+
+#: pylavcogs_shared/ui/sources/nodes.py:137
+msgid "Available"
+msgstr "利用可能です"
+
+#: pylavcogs_shared/ui/sources/nodes.py:138
+msgid "Search Only"
+msgstr "検索のみ"
+
+#: pylavcogs_shared/ui/sources/nodes.py:139
+msgid "Players\n"
+"Connected\n"
+"Active"
+msgstr "接続済みのプレイヤー\n\n"
+"が有効"
+
+#: pylavcogs_shared/ui/sources/nodes.py:141
+msgid "Frames Lost"
+msgstr "失われたフレーム"
+
+#: pylavcogs_shared/ui/sources/nodes.py:142
+msgid "Uptime"
+msgstr "稼働時間"
+
+#: pylavcogs_shared/ui/sources/nodes.py:143
+msgid "Load\n"
+"Lavalink\n"
+"System"
+msgstr "\n"
+"Lavalink\n"
+"システムを読み込む"
+
+#: pylavcogs_shared/ui/sources/nodes.py:144
+msgid "Penalty"
+msgstr "ペナルティ"
+
+#: pylavcogs_shared/ui/sources/nodes.py:145
+msgid "Memory\n"
+"Used\n"
+"Free\n"
+"Allocated\n"
+"Reservable"
+msgstr "メモリ\n\n"
+"空き\n"
+"割り当て可能\n"
+"予約"
+
+#: pylavcogs_shared/ui/sources/nodes.py:156
+msgid "Page {page_num}/{total_pages} | {num} {plural}."
+msgstr "ページ {page_num}/{total_pages} | {num} {plural}."
+
+#: pylavcogs_shared/ui/sources/nodes.py:160
+msgid "nodes"
+msgstr "nodes"
+
+#: pylavcogs_shared/ui/sources/nodes.py:160
+msgid "node"
+msgstr "ノード"
+
+#: pylavcogs_shared/ui/sources/player.py:63
+msgid "Nothing playing."
+msgstr "再生中のものはありません。"
+
+#: pylavcogs_shared/ui/sources/player.py:73
+msgid "Server Owner"
+msgstr "サーバー所有者"
+
+#: pylavcogs_shared/ui/sources/player.py:74
+msgid "Connected For"
+msgstr "接続先"
+
+#: pylavcogs_shared/ui/sources/player.py:75
+msgid "Users in VC"
+msgstr "VC のユーザー"
+
+#: pylavcogs_shared/ui/sources/player.py:76
+msgid "Queue Length"
+msgstr "キューの長さ"
+
+#: pylavcogs_shared/ui/sources/player.py:86
+msgid "Page {page_num}/{total_pages}  | Playing in {playing} servers."
+msgstr "ページ {page_num}/{total_pages}  | {playing} サーバーでプレイ中。"
+
+#: pylavcogs_shared/ui/sources/playlist.py:61
+#: pylavcogs_shared/ui/sources/playlist.py:185
+msgid "Page {page_num}/{total_pages} | {num} playlists."
+msgstr "ページ {page_num}/{total_pages} | {num} プレイリスト。"
+
+#: pylavcogs_shared/ui/sources/playlist.py:124
+msgid "Tracks in __{name}__"
+msgstr "__{name}__のトラック"
+
+#: pylavcogs_shared/ui/sources/playlist.py:166
+msgid "Unknown"
+msgstr "不明"
+
+#: pylavcogs_shared/ui/sources/playlist.py:171
+msgid "ID: {id}"
+msgstr "ID: {id}"
+
+#: pylavcogs_shared/ui/sources/playlist.py:172
+msgid "Tracks: {num}"
+msgstr "トラック: {num}"
+
+#: pylavcogs_shared/ui/sources/playlist.py:173
+msgid "Author: {name}"
+msgstr "作成者: {name}"
+
+#: pylavcogs_shared/ui/sources/playlist.py:174
+msgid "Scope: {scope}\n"
+msgstr "スコープ: {scope}\n"
+
+#: pylavcogs_shared/ui/sources/playlist.py:181
+msgid "Playlists you can access in this server:"
+msgstr "このサーバーでアクセスできるプレイリスト:"
+
+#: pylavcogs_shared/ui/sources/queue.py:96
+msgid "Reset the effects to default."
+msgstr "エフェクトをデフォルトにリセットします。"
+
+#: pylavcogs_shared/ui/sources/queue.py:105
+msgid "Apply the Nightcore effect."
+msgstr "ナイトコア効果を適用する"
+
+#: pylavcogs_shared/ui/sources/queue.py:114
+msgid "Apply the Vaporwave effect."
+msgstr "Vaporwave効果を適用します。"
+
+#: pylavcogs_shared/ui/sources/queue.py:123
+msgid "Apply the Synth effect."
+msgstr "同期効果を適用する"
+
+#: pylavcogs_shared/ui/sources/queue.py:132
+msgid "Apply the Bassboost equalizer preset."
+msgstr "Bassboostイコライザーのプリセットを適用します。"
+
+#: pylavcogs_shared/ui/sources/queue.py:141
+msgid "Apply the Metal equalizer preset."
+msgstr "メタルイコライザーのプリセットを適用します。"
+
+#: pylavcogs_shared/ui/sources/queue.py:150
+msgid "Apply the Piano equalizer preset."
+msgstr "ピアノイコライザーのプリセットを適用します。"
+
