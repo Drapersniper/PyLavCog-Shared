@@ -96,7 +96,7 @@ jobs:
                 title: v${{needs.bump_version.outputs.NEW_RELEASE}}
     publish:
         name: Publish to PyPi
-        needs: [bump_version, release_hash]
+        needs: [bump_version]
         runs-on: ubuntu-latest
         steps:
         -   uses: actions/checkout@v3
