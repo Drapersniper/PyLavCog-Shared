@@ -1,0 +1,219 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pylavshared\n"
+"POT-Creation-Date: 2022-05-07 17:14+0100\n"
+"PO-Revision-Date: 2022-05-07 16:32\n"
+"Last-Translator: \n"
+"Language-Team: Romanian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: redgettext 3.4.2\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100>0 && n%100<20)) ? 1 : 2);\n"
+"X-Crowdin-Project: pylavshared\n"
+"X-Crowdin-Project-ID: 514316\n"
+"X-Crowdin-Language: ro\n"
+"X-Crowdin-File: /main/pylavcogs_shared/ui/sources/locales/messages.pot\n"
+"X-Crowdin-File-ID: 342\n"
+"Language: ro_RO\n"
+
+#: pylavcogs_shared/ui/sources/equalizer.py:34
+msgid "Preset Name"
+msgstr "Nume presetare"
+
+#: pylavcogs_shared/ui/sources/equalizer.py:35
+msgid "Author"
+msgstr "Autor"
+
+#: pylavcogs_shared/ui/sources/nodes.py:49
+msgid "Page {page_num}/{total_pages} | {num} nodes."
+msgstr "Page {page_num}/{total_pages} | {num} nodes."
+
+#: pylavcogs_shared/ui/sources/nodes.py:90
+#: pylavcogs_shared/ui/sources/nodes.py:91
+#: pylavcogs_shared/ui/sources/nodes.py:92
+msgid "Yes"
+msgstr "Da"
+
+#: pylavcogs_shared/ui/sources/nodes.py:90
+#: pylavcogs_shared/ui/sources/nodes.py:91
+#: pylavcogs_shared/ui/sources/nodes.py:92
+msgid "No"
+msgstr "Nr"
+
+#: pylavcogs_shared/ui/sources/nodes.py:129
+msgid "Property"
+msgstr "Proprietate"
+
+#: pylavcogs_shared/ui/sources/nodes.py:130
+msgid "Value"
+msgstr "Valoare"
+
+#: pylavcogs_shared/ui/sources/nodes.py:132
+msgid "Region"
+msgstr "Regiune"
+
+#: pylavcogs_shared/ui/sources/nodes.py:132
+msgid "N/A"
+msgstr "N/A"
+
+#: pylavcogs_shared/ui/sources/nodes.py:133
+msgid "Host"
+msgstr "Gazdă"
+
+#: pylavcogs_shared/ui/sources/nodes.py:134
+msgid "Port"
+msgstr "Portul"
+
+#: pylavcogs_shared/ui/sources/nodes.py:135
+msgid "Password"
+msgstr "Parolă"
+
+#: pylavcogs_shared/ui/sources/nodes.py:136
+msgid "SSL"
+msgstr "SSL"
+
+#: pylavcogs_shared/ui/sources/nodes.py:137
+msgid "Available"
+msgstr "Disponibil"
+
+#: pylavcogs_shared/ui/sources/nodes.py:138
+msgid "Search Only"
+msgstr "Doar pentru căutare"
+
+#: pylavcogs_shared/ui/sources/nodes.py:139
+msgid "Players\n"
+"Connected\n"
+"Active"
+msgstr "Jucători\n"
+"conectați\n"
+"activi"
+
+#: pylavcogs_shared/ui/sources/nodes.py:141
+msgid "Frames Lost"
+msgstr "Cadre pierdute"
+
+#: pylavcogs_shared/ui/sources/nodes.py:142
+msgid "Uptime"
+msgstr "Uptime"
+
+#: pylavcogs_shared/ui/sources/nodes.py:143
+msgid "Load\n"
+"Lavalink\n"
+"System"
+msgstr "Încarcă\n"
+"Lavalink\n"
+"Sistem"
+
+#: pylavcogs_shared/ui/sources/nodes.py:144
+msgid "Penalty"
+msgstr "Penalități"
+
+#: pylavcogs_shared/ui/sources/nodes.py:145
+msgid "Memory\n"
+"Used\n"
+"Free\n"
+"Allocated\n"
+"Reservable"
+msgstr "Memorie\n"
+"utilizată\n\n"
+"Gratuit\n"
+"Rezervabil"
+
+#: pylavcogs_shared/ui/sources/nodes.py:156
+msgid "Page {page_num}/{total_pages} | {num} {plural}."
+msgstr "Pagina {page_num}/{total_pages} <unk> {num} {plural}."
+
+#: pylavcogs_shared/ui/sources/nodes.py:160
+msgid "nodes"
+msgstr "nodes"
+
+#: pylavcogs_shared/ui/sources/nodes.py:160
+msgid "node"
+msgstr "nod"
+
+#: pylavcogs_shared/ui/sources/player.py:63
+msgid "Nothing playing."
+msgstr "Nimic nu se joacă."
+
+#: pylavcogs_shared/ui/sources/player.py:73
+msgid "Server Owner"
+msgstr "Proprietarul serverului"
+
+#: pylavcogs_shared/ui/sources/player.py:74
+msgid "Connected For"
+msgstr "Conectat pentru"
+
+#: pylavcogs_shared/ui/sources/player.py:75
+msgid "Users in VC"
+msgstr "Utilizatori în VC"
+
+#: pylavcogs_shared/ui/sources/player.py:76
+msgid "Queue Length"
+msgstr "Lungime coadă"
+
+#: pylavcogs_shared/ui/sources/player.py:86
+msgid "Page {page_num}/{total_pages}  | Playing in {playing} servers."
+msgstr "Pagina {page_num}/{total_pages}  <unk> Jucând în {playing} servere."
+
+#: pylavcogs_shared/ui/sources/playlist.py:61
+#: pylavcogs_shared/ui/sources/playlist.py:185
+msgid "Page {page_num}/{total_pages} | {num} playlists."
+msgstr "Pagina {page_num}/{total_pages} <unk> {num} playlists."
+
+#: pylavcogs_shared/ui/sources/playlist.py:124
+msgid "Tracks in __{name}__"
+msgstr "Urmărește în __{name}__"
+
+#: pylavcogs_shared/ui/sources/playlist.py:166
+msgid "Unknown"
+msgstr "Necunoscut"
+
+#: pylavcogs_shared/ui/sources/playlist.py:171
+msgid "ID: {id}"
+msgstr "ID: {id}"
+
+#: pylavcogs_shared/ui/sources/playlist.py:172
+msgid "Tracks: {num}"
+msgstr "Urmări: {num}"
+
+#: pylavcogs_shared/ui/sources/playlist.py:173
+msgid "Author: {name}"
+msgstr "Autor: {name}"
+
+#: pylavcogs_shared/ui/sources/playlist.py:174
+msgid "Scope: {scope}\n"
+msgstr "Domeniu de aplicare: {scope}\n"
+
+#: pylavcogs_shared/ui/sources/playlist.py:181
+msgid "Playlists you can access in this server:"
+msgstr "Liste de redare pe care le puteți accesa în acest server:"
+
+#: pylavcogs_shared/ui/sources/queue.py:96
+msgid "Reset the effects to default."
+msgstr "Resetează efectele la implicit."
+
+#: pylavcogs_shared/ui/sources/queue.py:105
+msgid "Apply the Nightcore effect."
+msgstr "Aplică efectul Nightcore ."
+
+#: pylavcogs_shared/ui/sources/queue.py:114
+msgid "Apply the Vaporwave effect."
+msgstr "Aplicaţi efectul Vaporund."
+
+#: pylavcogs_shared/ui/sources/queue.py:123
+msgid "Apply the Synth effect."
+msgstr "Aplică efectul de sincronizare."
+
+#: pylavcogs_shared/ui/sources/queue.py:132
+msgid "Apply the Bassboost equalizer preset."
+msgstr "Aplică presetarea egalizatorului Bassboost"
+
+#: pylavcogs_shared/ui/sources/queue.py:141
+msgid "Apply the Metal equalizer preset."
+msgstr "Aplicați presetarea egalizatorului de metal."
+
+#: pylavcogs_shared/ui/sources/queue.py:150
+msgid "Apply the Piano equalizer preset."
+msgstr "Aplică presetarea egalizatorului de Piano."
+
