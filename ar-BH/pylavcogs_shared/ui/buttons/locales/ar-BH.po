@@ -1,0 +1,174 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pylavshared\n"
+"POT-Creation-Date: 2022-05-07 17:14+0100\n"
+"PO-Revision-Date: 2022-05-07 16:16\n"
+"Last-Translator: \n"
+"Language-Team: Arabic, Bahrain\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: redgettext 3.4.2\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Crowdin-Project: pylavshared\n"
+"X-Crowdin-Project-ID: 514316\n"
+"X-Crowdin-Language: ar-BH\n"
+"X-Crowdin-File: /main/pylavcogs_shared/ui/buttons/locales/messages.pot\n"
+"X-Crowdin-File-ID: 328\n"
+"Language: ar_BH\n"
+
+#: pylavcogs_shared/ui/buttons/generic.py:68
+#: pylavcogs_shared/ui/buttons/generic.py:90
+#: pylavcogs_shared/ui/buttons/generic.py:113
+#: pylavcogs_shared/ui/buttons/generic.py:135
+#: pylavcogs_shared/ui/buttons/nodes.py:45
+#: pylavcogs_shared/ui/buttons/nodes.py:87
+#: pylavcogs_shared/ui/buttons/nodes.py:123
+#: pylavcogs_shared/ui/buttons/nodes.py:170
+#: pylavcogs_shared/ui/buttons/playlist.py:41
+#: pylavcogs_shared/ui/buttons/playlist.py:73
+#: pylavcogs_shared/ui/buttons/playlist.py:111
+#: pylavcogs_shared/ui/buttons/playlist.py:149
+#: pylavcogs_shared/ui/buttons/playlist.py:189
+#: pylavcogs_shared/ui/buttons/playlist.py:234
+#: pylavcogs_shared/ui/buttons/playlist.py:276
+#: pylavcogs_shared/ui/buttons/playlist.py:322
+msgid "You are not authorized to interact with this option."
+msgstr "غير مسموح لك بالتفاعل مع هذا الخيار."
+
+#: pylavcogs_shared/ui/buttons/generic.py:81
+msgid "Yes"
+msgstr "نعم"
+
+#: pylavcogs_shared/ui/buttons/generic.py:104
+msgid "No"
+msgstr "لا"
+
+#: pylavcogs_shared/ui/buttons/generic.py:157
+msgid "Disconnect {} {}"
+msgstr "قطع الاتصال {} {}"
+
+#: pylavcogs_shared/ui/buttons/generic.py:158
+msgid "players"
+msgstr "اللاعبين"
+
+#: pylavcogs_shared/ui/buttons/generic.py:158
+msgid "player"
+msgstr "لاعب"
+
+#: pylavcogs_shared/ui/buttons/nodes.py:53
+msgid "Connecting to the node with SSL enabled..."
+msgstr "جارٍ الاتصال بالعقدة باستخدام SSL..."
+
+#: pylavcogs_shared/ui/buttons/nodes.py:60
+msgid "Connecting to the node with SSL disabled..."
+msgstr "جارٍ الاتصال بالعقدة مع تعطيل SSL..."
+
+#: pylavcogs_shared/ui/buttons/nodes.py:95
+msgid "This node will only be used for searches..."
+msgstr "سيتم استخدام هذه العقدة فقط للبحث..."
+
+#: pylavcogs_shared/ui/buttons/nodes.py:102
+msgid "This node will be used for search and playback..."
+msgstr "سيتم استخدام هذه العقدة للبحث والتشغيل..."
+
+#: pylavcogs_shared/ui/buttons/nodes.py:131
+msgid "Please fill out all the fields before continuing."
+msgstr "يرجى ملء جميع الحقول قبل المتابعة."
+
+#: pylavcogs_shared/ui/buttons/player.py:35
+#: pylavcogs_shared/ui/buttons/player.py:99
+#: pylavcogs_shared/ui/buttons/player.py:162
+msgid "You are not authorized to perform this action."
+msgstr "أنت غير مصرح لك بتنفيذ هذا الإجراء."
+
+#: pylavcogs_shared/ui/buttons/player.py:44
+#: pylavcogs_shared/ui/buttons/player.py:108
+msgid "No Player Available For Action - Try Refreshing."
+msgstr "لا يوجد لاعب متاح للعمل - جرب التحديث."
+
+#: pylavcogs_shared/ui/buttons/player.py:65
+#: pylavcogs_shared/ui/buttons/player.py:128
+#: pylavcogs_shared/ui/buttons/player.py:197
+msgid "Bot Owner Action"
+msgstr "إجراء مالك بوت"
+
+#: pylavcogs_shared/ui/buttons/player.py:65
+#: pylavcogs_shared/ui/buttons/player.py:198
+msgid "Player disconnected."
+msgstr "اللاعب غير متصل."
+
+#: pylavcogs_shared/ui/buttons/player.py:128
+msgid "Player stopped."
+msgstr "توقف اللاعب."
+
+#: pylavcogs_shared/ui/buttons/player.py:176
+msgid "No Players Available For Action - Try Refreshing."
+msgstr "لا يوجد لاعب متوفر لاتخاذ إجراء - جرب التحديث."
+
+#: pylavcogs_shared/ui/buttons/playlist.py:48
+msgid "When you press done this playlist will be permanently delete..."
+msgstr "عندما تضغط على قائمة التشغيل هذه سيتم حذفها نهائيًا..."
+
+#: pylavcogs_shared/ui/buttons/playlist.py:50
+msgid "This playlist will no longer be deleted once you press done..."
+msgstr "لن يتم حذف قائمة التشغيل هذه بعد أن تضغط على الانتهاء..."
+
+#: pylavcogs_shared/ui/buttons/playlist.py:80
+msgid "Clearing all tracks from the playlist playlist..."
+msgstr "مسح جميع المسارات من قائمة التشغيل..."
+
+#: pylavcogs_shared/ui/buttons/playlist.py:82
+msgid "No longer clearing tracks from the playlist..."
+msgstr "لم يعد مسح المسارات من قائمة التشغيل..."
+
+#: pylavcogs_shared/ui/buttons/playlist.py:121
+msgid "Here is your playlist: {name}{extras}"
+msgstr "ها هي قائمة التشغيل الخاصة بك: {name}{extras}"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:123
+msgid "\n"
+" (compressed using gzip to make it possible to send via Discord - you can use <https://gzip.swimburger.net/> to decompress it)"
+msgstr "\n"
+" (مضغوط باستخدام gzip لجعل من الممكن الإرسال عبر Discord - يمكنك استخدام <https://gzip.swimburger.net/> لفك الضغط عليه)"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:156
+msgid "Updating playlist with the latest tracks..."
+msgstr "تحديث قائمة التشغيل بأحدث المسارات..."
+
+#: pylavcogs_shared/ui/buttons/playlist.py:159
+msgid "Not updating playlist..."
+msgstr "عدم تحديث قائمة التشغيل..."
+
+#: pylavcogs_shared/ui/buttons/playlist.py:242
+msgid "Adding the current queue to playlist..."
+msgstr "إضافة قائمة الانتظار الحالية إلى قائمة التشغيل..."
+
+#: pylavcogs_shared/ui/buttons/playlist.py:249
+msgid "No longer adding the current queue to playlist..."
+msgstr "لم تعد تضيف قائمة الانتظار الحالية إلى قائمة التشغيل..."
+
+#: pylavcogs_shared/ui/buttons/playlist.py:284
+msgid "Removing all duplicate tracks from the queue..."
+msgstr "إزالة جميع المسارات المكررة من قائمة الانتظار..."
+
+#: pylavcogs_shared/ui/buttons/playlist.py:291
+msgid "No longer all duplicate tracks from the queue..."
+msgstr "لم تعد جميع المسارات المكررة من قائمة الانتظار..."
+
+#: pylavcogs_shared/ui/buttons/playlist.py:377
+msgid "Playlists you can currently play"
+msgstr "قوائم التشغيل التي يمكنك تشغيلها حاليا"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:383
+msgid "Pick a playlist"
+msgstr "اختر قائمة تشغيل"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:403
+msgid "What should the playlist name be?"
+msgstr "ماذا ينبغي أن يكون اسم قائمة التشغيل؟"
+
+#: pylavcogs_shared/ui/buttons/queue.py:231
+msgid "What do you want to enqueue?"
+msgstr "ماذا تريد الإنتظار؟"
+
