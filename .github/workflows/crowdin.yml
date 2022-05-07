@@ -1,8 +1,13 @@
 name: Crowdin - Upload strings
 on:
-    push:
-        branches:
-        -   main
+    pull_request:
+        branches: [master]
+        paths-ignore:
+        -   '**/*.md'
+        -   '**/*.txt'
+        -   '**/*.po'
+    schedule:
+    -   cron: 15 0 * * 5
 
 jobs:
     deploy:
