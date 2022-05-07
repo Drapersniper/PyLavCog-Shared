@@ -1,0 +1,155 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pylavshared\n"
+"POT-Creation-Date: 2022-05-07 17:14+0100\n"
+"PO-Revision-Date: 2022-05-07 16:17\n"
+"Last-Translator: \n"
+"Language-Team: Norwegian Nynorsk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: redgettext 3.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: pylavshared\n"
+"X-Crowdin-Project-ID: 514316\n"
+"X-Crowdin-Language: nn-NO\n"
+"X-Crowdin-File: /main/pylavcogs_shared/ui/menus/locales/messages.pot\n"
+"X-Crowdin-File-ID: 332\n"
+"Language: nn_NO\n"
+
+#: pylavcogs_shared/ui/menus/nodes.py:55
+msgid "Enter the domain or IP address of the host"
+msgstr "Angi domenet eller IP-adressen til verten"
+
+#: pylavcogs_shared/ui/menus/nodes.py:56
+msgid "Host"
+msgstr "Vert"
+
+#: pylavcogs_shared/ui/menus/nodes.py:63
+msgid "Enter the host port to connect to"
+msgstr "Skriv inn vertsporten for å koble til"
+
+#: pylavcogs_shared/ui/menus/nodes.py:64
+msgid "Port"
+msgstr "Port"
+
+#: pylavcogs_shared/ui/menus/nodes.py:71
+msgid "Enter the node's password"
+msgstr "Skriv inn nodens passord"
+
+#: pylavcogs_shared/ui/menus/nodes.py:72 pylavcogs_shared/ui/menus/nodes.py:88
+msgid "Password"
+msgstr "Passord"
+
+#: pylavcogs_shared/ui/menus/nodes.py:79
+msgid "Enter an easy to know name for the node."
+msgstr "Angi et enkelt navn for noden. (Automatic Translation)"
+
+#: pylavcogs_shared/ui/menus/nodes.py:80
+msgid "Name"
+msgstr "Navn"
+
+#: pylavcogs_shared/ui/menus/nodes.py:87
+msgid "Enter a timeout in seconds."
+msgstr "Skriv inn et tidsavbrudd i sekunder."
+
+#: pylavcogs_shared/ui/menus/nodes.py:103
+msgid "Source to disable."
+msgstr "Kilde for å deaktivere."
+
+#: pylavcogs_shared/ui/menus/nodes.py:215
+msgid "Name set to {name}"
+msgstr "Navn satt til {name}"
+
+#: pylavcogs_shared/ui/menus/nodes.py:228
+msgid "Password set to {password}"
+msgstr "Passord satt til {password}"
+
+#: pylavcogs_shared/ui/menus/nodes.py:249
+msgid "Host set to {host}"
+msgstr "Vert satt til {host}"
+
+#: pylavcogs_shared/ui/menus/nodes.py:266
+msgid "Invalid port."
+msgstr "Ugyldig port."
+
+#: pylavcogs_shared/ui/menus/nodes.py:274
+msgid "Port set to {port}"
+msgstr "Port satt til {port}"
+
+#: pylavcogs_shared/ui/menus/nodes.py:291
+msgid "Invalid timeout, it must be a number in seconds."
+msgstr "Ugyldig tidsavbrudd, det må være et tall i løpet av sekunder."
+
+#: pylavcogs_shared/ui/menus/nodes.py:299
+msgid "Timeout set to {timeout} seconds."
+msgstr "Tidsavbrudd satt til {timeout} sekunder."
+
+#: pylavcogs_shared/ui/menus/player.py:93
+msgid "selected"
+msgstr "valgt"
+
+#: pylavcogs_shared/ui/menus/player.py:100
+msgid "inactive"
+msgstr "inaktiv"
+
+#: pylavcogs_shared/ui/menus/player.py:110
+msgid "all"
+msgstr "alle"
+
+#: pylavcogs_shared/ui/menus/player.py:201
+msgid "Not connected anywhere."
+msgstr "Ikke koblet noen steder."
+
+#: pylavcogs_shared/ui/menus/playlist.py:186
+#: pylavcogs_shared/ui/menus/playlist.py:319
+msgid "Please enter the playlist URL"
+msgstr "Vennligst skriv inn spillelistens URL"
+
+#: pylavcogs_shared/ui/menus/playlist.py:187
+#: pylavcogs_shared/ui/menus/playlist.py:320
+msgid "Playlist URL"
+msgstr "Spilleliste URL"
+
+#: pylavcogs_shared/ui/menus/playlist.py:192
+msgid "Please enter the playlist name"
+msgstr "Vennligst skriv inn navnet på spillelisten"
+
+#: pylavcogs_shared/ui/menus/playlist.py:192
+#: pylavcogs_shared/ui/menus/playlist.py:325
+msgid "Playlist Name"
+msgstr "Navn på spilleliste"
+
+#: pylavcogs_shared/ui/menus/playlist.py:325
+msgid "Please enter the new playlist name"
+msgstr "Vennligst angi nytt navn på spillelisten"
+
+#: pylavcogs_shared/ui/menus/playlist.py:330
+msgid "What query to add to the playlist"
+msgstr "Hvilken spørring du vil legge til i spillelisten"
+
+#: pylavcogs_shared/ui/menus/playlist.py:331
+#: pylavcogs_shared/ui/menus/playlist.py:339
+msgid "Query"
+msgstr "Spørring"
+
+#: pylavcogs_shared/ui/menus/playlist.py:338
+msgid "What query to remove from the playlist"
+msgstr "Hvilken spørring du skal fjerne fra spillelisten"
+
+#: pylavcogs_shared/ui/menus/queue.py:438
+msgid "Select Track To Remove"
+msgstr "Velg slepestrek som skal fjernes"
+
+#: pylavcogs_shared/ui/menus/queue.py:440
+msgid "Select Track To Play Now"
+msgstr "Velg spor for å spille nå"
+
+#: pylavcogs_shared/ui/menus/queue.py:542
+msgid "Pick An Effect Preset To Apply"
+msgstr "Velg en effektforhåndsinnstilling å bruke"
+
+#: pylavcogs_shared/ui/menus/queue.py:661
+msgid "Select Track To Enqueue"
+msgstr "Velg spor i køen"
+
