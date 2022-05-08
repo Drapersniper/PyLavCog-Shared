@@ -75,6 +75,6 @@ class PlaylistPlaySelector(discord.ui.Select):
             self.view.stop()
             await self.view.on_timeout()
             return
-        await self.cog.command_playlist_play.callback(self.cog, interaction, playlist=[playlist])  # type: ignore
+        await self.cog.command_playlist_play.callback(self.cog, interaction, playlist=[playlist])
         self.view.stop()
         await self.view.on_timeout()

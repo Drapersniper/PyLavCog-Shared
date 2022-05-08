@@ -184,7 +184,7 @@ class DisconnectAllButton(discord.ui.Button):
             channel_id = player.fetch("notify_channel")
             notify_channel = player.guild.get_channel_or_thread(channel_id)
             if player.equalizer.changed:
-                async with self.cog.config.custom("EQUALIZER", player.guild.id).all() as eq_data:  # type: ignore
+                async with self.cog.config.custom("EQUALIZER", player.guild.id).all() as eq_data:
                     eq_data["eq_bands"] = player.equalizer.get()
                     eq_data["name"] = player.equalizer.name
             await player.stop(requester=interaction.user)

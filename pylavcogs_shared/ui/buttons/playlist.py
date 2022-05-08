@@ -360,7 +360,7 @@ class EnqueuePlaylistButton(discord.ui.Button):
                 requester=interaction.user.id,
                 vc=rgetattr(interaction.user, "voice.channel", None),
                 guild=interaction.guild,
-                channel=interaction.channel,  # type: ignore
+                channel=interaction.channel,
             )
             playlists = list(itertools.chain.from_iterable(playlists))
             from pylavcogs_shared.ui.menus.playlist import PlaylistPickerMenu

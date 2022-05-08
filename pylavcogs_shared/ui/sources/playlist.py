@@ -91,7 +91,7 @@ class Base64Source(menus.ListPageSource):
         author: discord.abc.User,
         entries: list[str],
         per_page: int = 10,
-    ):  # noqa
+    ):
         super().__init__(entries=entries, per_page=per_page)
         self.cog = cog
         self.author = author

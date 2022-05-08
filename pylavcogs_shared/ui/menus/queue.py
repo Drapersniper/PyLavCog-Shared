@@ -535,7 +535,7 @@ class EffectPickerMenu(BaseMenu):
             self.backward_button.disabled = True
             self.first_button.disabled = True
             self.last_button.disabled = True
-        options = self.source.select_options  # type: ignore
+        options = self.source.select_options
         self.remove_item(self.select_view)
         self.select_view = EffectsSelector(
             options, self.cog, _("Pick An Effect Preset To Apply"), mapping=self.source.select_mapping
@@ -685,13 +685,13 @@ class SearchPickerMenu(BaseMenu):
             self.backward_button.disabled = True
             self.first_button.disabled = True
             self.last_button.disabled = True
-        if self.source.select_options:  # type: ignore
-            options = self.source.select_options  # type: ignore
+        if self.source.select_options:
+            options = self.source.select_options
             title = _("Select Track To Enqueue")
             self.remove_item(self.select_view)
             self.select_view = SearchSelectTrack(options, self.cog, title, self.source.select_mapping)
             self.add_item(self.select_view)
-        if self.select_view and not self.source.select_options:  # type: ignore
+        if self.select_view and not self.source.select_options:
             self.remove_item(self.select_view)
             self.select_view = None
 

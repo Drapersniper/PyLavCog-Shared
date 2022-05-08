@@ -132,12 +132,12 @@ class PlaylistPickerMenu(BaseMenu):
         self.add_item(self.backward_button)
         self.add_item(self.forward_button)
         self.add_item(self.last_button)
-        if self.source.select_options:  # type: ignore
-            options = self.source.select_options  # type: ignore
+        if self.source.select_options:
+            options = self.source.select_options
             self.remove_item(self.select_view)
             self.select_view = self.selector_cls(options, self.cog, self.selector_text, self.source.select_mapping)
             self.add_item(self.select_view)
-        if self.select_view and not self.source.select_options:  # type: ignore
+        if self.select_view and not self.source.select_options:
             self.remove_item(self.select_view)
             self.select_view = None
 

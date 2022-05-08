@@ -69,7 +69,7 @@ class BaseMenu(discord.ui.View):
         except IndexError:
             self.current_page = 0
             page = await self.source.get_page(self.current_page)
-        value = await self.source.format_page(self, page)  # type: ignore
+        value = await self.source.format_page(self, page)
         if isinstance(value, dict):
             return value
         elif isinstance(value, str):
