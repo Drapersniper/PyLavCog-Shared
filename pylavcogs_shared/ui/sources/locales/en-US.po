@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-05-07 17:58+0100\n"
-"PO-Revision-Date: 2022-05-07 17:03\n"
+"POT-Creation-Date: 2022-05-08 12:26+0000\n"
+"PO-Revision-Date: 2022-05-08 12:29\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "MIME-Version: 1.0\n"
@@ -32,80 +32,102 @@ msgstr "crwdns3528:0{page_num}crwdnd3528:0{total_pages}crwdnd3528:0{num}crwdne35
 #: pylavcogs_shared/ui/sources/nodes.py:90
 #: pylavcogs_shared/ui/sources/nodes.py:91
 #: pylavcogs_shared/ui/sources/nodes.py:92
+#: pylavcogs_shared/ui/sources/nodes.py:209
+#: pylavcogs_shared/ui/sources/nodes.py:210
+#: pylavcogs_shared/ui/sources/nodes.py:211
 msgid "Yes"
 msgstr "crwdns3530:0crwdne3530:0"
 
 #: pylavcogs_shared/ui/sources/nodes.py:90
 #: pylavcogs_shared/ui/sources/nodes.py:91
 #: pylavcogs_shared/ui/sources/nodes.py:92
+#: pylavcogs_shared/ui/sources/nodes.py:209
+#: pylavcogs_shared/ui/sources/nodes.py:210
+#: pylavcogs_shared/ui/sources/nodes.py:211
 msgid "No"
 msgstr "crwdns3532:0crwdne3532:0"
 
 #: pylavcogs_shared/ui/sources/nodes.py:129
+#: pylavcogs_shared/ui/sources/nodes.py:248
 msgid "Property"
 msgstr "crwdns3534:0crwdne3534:0"
 
 #: pylavcogs_shared/ui/sources/nodes.py:130
+#: pylavcogs_shared/ui/sources/nodes.py:249
 msgid "Value"
 msgstr "crwdns3536:0crwdne3536:0"
 
 #: pylavcogs_shared/ui/sources/nodes.py:132
+#: pylavcogs_shared/ui/sources/nodes.py:251
 msgid "Region"
 msgstr "crwdns3538:0crwdne3538:0"
 
 #: pylavcogs_shared/ui/sources/nodes.py:132
+#: pylavcogs_shared/ui/sources/nodes.py:251
 msgid "N/A"
 msgstr "crwdns3540:0crwdne3540:0"
 
 #: pylavcogs_shared/ui/sources/nodes.py:133
+#: pylavcogs_shared/ui/sources/nodes.py:252
 msgid "Host"
 msgstr "crwdns3542:0crwdne3542:0"
 
 #: pylavcogs_shared/ui/sources/nodes.py:134
+#: pylavcogs_shared/ui/sources/nodes.py:253
 msgid "Port"
 msgstr "crwdns3544:0crwdne3544:0"
 
 #: pylavcogs_shared/ui/sources/nodes.py:135
+#: pylavcogs_shared/ui/sources/nodes.py:254
 msgid "Password"
 msgstr "crwdns3546:0crwdne3546:0"
 
 #: pylavcogs_shared/ui/sources/nodes.py:136
+#: pylavcogs_shared/ui/sources/nodes.py:255
 msgid "SSL"
 msgstr "crwdns3548:0crwdne3548:0"
 
 #: pylavcogs_shared/ui/sources/nodes.py:137
+#: pylavcogs_shared/ui/sources/nodes.py:256
 msgid "Available"
 msgstr "crwdns3550:0crwdne3550:0"
 
 #: pylavcogs_shared/ui/sources/nodes.py:138
+#: pylavcogs_shared/ui/sources/nodes.py:257
 msgid "Search Only"
 msgstr "crwdns3552:0crwdne3552:0"
 
 #: pylavcogs_shared/ui/sources/nodes.py:139
+#: pylavcogs_shared/ui/sources/nodes.py:258
 msgid "Players\n"
 "Connected\n"
 "Active"
 msgstr "crwdns3554:0crwdne3554:0"
 
 #: pylavcogs_shared/ui/sources/nodes.py:141
+#: pylavcogs_shared/ui/sources/nodes.py:260
 msgid "Frames Lost"
 msgstr "crwdns3556:0crwdne3556:0"
 
 #: pylavcogs_shared/ui/sources/nodes.py:142
+#: pylavcogs_shared/ui/sources/nodes.py:261
 msgid "Uptime"
 msgstr "crwdns3558:0crwdne3558:0"
 
 #: pylavcogs_shared/ui/sources/nodes.py:143
+#: pylavcogs_shared/ui/sources/nodes.py:262
 msgid "Load\n"
 "Lavalink\n"
 "System"
 msgstr "crwdns3560:0crwdne3560:0"
 
 #: pylavcogs_shared/ui/sources/nodes.py:144
+#: pylavcogs_shared/ui/sources/nodes.py:263
 msgid "Penalty"
 msgstr "crwdns3562:0crwdne3562:0"
 
 #: pylavcogs_shared/ui/sources/nodes.py:145
+#: pylavcogs_shared/ui/sources/nodes.py:264
 msgid "Memory\n"
 "Used\n"
 "Free\n"
@@ -114,14 +136,17 @@ msgid "Memory\n"
 msgstr "crwdns3564:0crwdne3564:0"
 
 #: pylavcogs_shared/ui/sources/nodes.py:156
+#: pylavcogs_shared/ui/sources/nodes.py:275
 msgid "Page {page_num}/{total_pages} | {num} {plural}."
 msgstr "crwdns3566:0{page_num}crwdnd3566:0{total_pages}crwdnd3566:0{num}crwdnd3566:0{plural}crwdne3566:0"
 
 #: pylavcogs_shared/ui/sources/nodes.py:160
+#: pylavcogs_shared/ui/sources/nodes.py:279
 msgid "nodes"
 msgstr "crwdns3568:0crwdne3568:0"
 
 #: pylavcogs_shared/ui/sources/nodes.py:160
+#: pylavcogs_shared/ui/sources/nodes.py:279
 msgid "node"
 msgstr "crwdns3570:0crwdne3570:0"
 

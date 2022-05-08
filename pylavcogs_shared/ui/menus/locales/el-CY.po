@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-05-07 17:58+0100\n"
-"PO-Revision-Date: 2022-05-07 17:03\n"
+"POT-Creation-Date: 2022-05-08 12:26+0000\n"
+"PO-Revision-Date: 2022-05-08 12:58\n"
 "Last-Translator: \n"
 "Language-Team: Greek, Cyprus\n"
 "MIME-Version: 1.0\n"
@@ -17,87 +17,124 @@ msgstr ""
 "X-Crowdin-File-ID: 408\n"
 "Language: el_CY\n"
 
-#: pylavcogs_shared/ui/menus/nodes.py:55
+#: pylavcogs_shared/ui/menus/nodes.py:58
 msgid "Enter the domain or IP address of the host"
 msgstr "Εισάγετε τον τομέα ή τη διεύθυνση IP του κεντρικού υπολογιστή"
 
-#: pylavcogs_shared/ui/menus/nodes.py:56
+#: pylavcogs_shared/ui/menus/nodes.py:59
+#: pylavcogs_shared/ui/menus/nodes.py:497
 msgid "Host"
 msgstr "Διακομιστής"
 
-#: pylavcogs_shared/ui/menus/nodes.py:63
+#: pylavcogs_shared/ui/menus/nodes.py:66
 msgid "Enter the host port to connect to"
 msgstr "Εισάγετε τη θύρα κεντρικού υπολογιστή με την οποία θα συνδεθείτε"
 
-#: pylavcogs_shared/ui/menus/nodes.py:64
+#: pylavcogs_shared/ui/menus/nodes.py:67
+#: pylavcogs_shared/ui/menus/nodes.py:505
 msgid "Port"
 msgstr "Θύρα"
 
-#: pylavcogs_shared/ui/menus/nodes.py:71
+#: pylavcogs_shared/ui/menus/nodes.py:74
 msgid "Enter the node's password"
 msgstr "Εισάγετε τον κωδικό πρόσβασης του κόμβου"
 
-#: pylavcogs_shared/ui/menus/nodes.py:72 pylavcogs_shared/ui/menus/nodes.py:88
+#: pylavcogs_shared/ui/menus/nodes.py:75
+#: pylavcogs_shared/ui/menus/nodes.py:513
 msgid "Password"
 msgstr "Κωδικός"
 
-#: pylavcogs_shared/ui/menus/nodes.py:79
+#: pylavcogs_shared/ui/menus/nodes.py:82
 msgid "Enter an easy to know name for the node."
 msgstr "Εισάγετε ένα εύκολο να γνωρίζετε όνομα για τον κόμβο."
 
-#: pylavcogs_shared/ui/menus/nodes.py:80
+#: pylavcogs_shared/ui/menus/nodes.py:83
+#: pylavcogs_shared/ui/menus/nodes.py:521
 msgid "Name"
 msgstr "Όνομα"
 
-#: pylavcogs_shared/ui/menus/nodes.py:87
+#: pylavcogs_shared/ui/menus/nodes.py:90
 msgid "Enter a timeout in seconds."
 msgstr "Εισάγετε χρονικό όριο σε δευτερόλεπτα."
 
-#: pylavcogs_shared/ui/menus/nodes.py:103
+#: pylavcogs_shared/ui/menus/nodes.py:91
+#: pylavcogs_shared/ui/menus/nodes.py:529
+msgid "Timeout"
+msgstr "Χρονικό όριο"
+
+#: pylavcogs_shared/ui/menus/nodes.py:106
+#: pylavcogs_shared/ui/menus/nodes.py:557
 msgid "Source to disable."
 msgstr "Πηγή απενεργοποίησης."
 
-#: pylavcogs_shared/ui/menus/nodes.py:215
+#: pylavcogs_shared/ui/menus/nodes.py:218
+#: pylavcogs_shared/ui/menus/nodes.py:667
 msgid "Name set to {name}"
 msgstr "Το όνομα ορίστηκε σε {name}"
 
-#: pylavcogs_shared/ui/menus/nodes.py:228
+#: pylavcogs_shared/ui/menus/nodes.py:231
+#: pylavcogs_shared/ui/menus/nodes.py:680
 msgid "Password set to {password}"
 msgstr "Ο κωδικός πρόσβασης ορίστηκε σε {password}"
 
-#: pylavcogs_shared/ui/menus/nodes.py:249
+#: pylavcogs_shared/ui/menus/nodes.py:252
+#: pylavcogs_shared/ui/menus/nodes.py:701
 msgid "Host set to {host}"
 msgstr "Ο υπολογιστής ορίστηκε σε {host}"
 
-#: pylavcogs_shared/ui/menus/nodes.py:266
+#: pylavcogs_shared/ui/menus/nodes.py:269
+#: pylavcogs_shared/ui/menus/nodes.py:718
 msgid "Invalid port."
 msgstr "Μη έγκυρη θύρα."
 
-#: pylavcogs_shared/ui/menus/nodes.py:274
+#: pylavcogs_shared/ui/menus/nodes.py:277
+#: pylavcogs_shared/ui/menus/nodes.py:726
 msgid "Port set to {port}"
 msgstr "Η θύρα ορίστηκε σε {port}"
 
-#: pylavcogs_shared/ui/menus/nodes.py:291
+#: pylavcogs_shared/ui/menus/nodes.py:294
+#: pylavcogs_shared/ui/menus/nodes.py:743
 msgid "Invalid timeout, it must be a number in seconds."
 msgstr "Μη έγκυρο χρονικό όριο, πρέπει να είναι αριθμός σε δευτερόλεπτα."
 
-#: pylavcogs_shared/ui/menus/nodes.py:299
+#: pylavcogs_shared/ui/menus/nodes.py:302
+#: pylavcogs_shared/ui/menus/nodes.py:751
 msgid "Timeout set to {timeout} seconds."
 msgstr "Το χρονικό όριο ορίστηκε σε {timeout} δευτερόλεπτα."
 
-#: pylavcogs_shared/ui/menus/player.py:93
+#: pylavcogs_shared/ui/menus/nodes.py:496
+msgid "Change the domain or IP address of the host"
+msgstr "Αλλάξτε τον τομέα ή τη διεύθυνση IP του κεντρικού υπολογιστή"
+
+#: pylavcogs_shared/ui/menus/nodes.py:504
+msgid "Change the host port to connect to"
+msgstr "Αλλάξτε τη θύρα κεντρικού υπολογιστή για να συνδεθείτε"
+
+#: pylavcogs_shared/ui/menus/nodes.py:512
+msgid "Change the node's password"
+msgstr "Αλλαγή του κωδικού πρόσβασης του κόμβου"
+
+#: pylavcogs_shared/ui/menus/nodes.py:520
+msgid "Change the name of this node."
+msgstr "Αλλάξτε το όνομα αυτού του κόμβου."
+
+#: pylavcogs_shared/ui/menus/nodes.py:528
+msgid "Enter the new timeout for this node."
+msgstr "Εισάγετε το χρονικό όριο για αυτόν τον κόμβο."
+
+#: pylavcogs_shared/ui/menus/player.py:92
 msgid "selected"
 msgstr "επιλεγμένα"
 
-#: pylavcogs_shared/ui/menus/player.py:100
+#: pylavcogs_shared/ui/menus/player.py:99
 msgid "inactive"
 msgstr "ανενεργό"
 
-#: pylavcogs_shared/ui/menus/player.py:110
+#: pylavcogs_shared/ui/menus/player.py:109
 msgid "all"
 msgstr "όλα"
 
-#: pylavcogs_shared/ui/menus/player.py:201
+#: pylavcogs_shared/ui/menus/player.py:200
 msgid "Not connected anywhere."
 msgstr "Δεν υπάρχει σύνδεση οπουδήποτε."
 
@@ -137,19 +174,19 @@ msgstr "Ερώτημα"
 msgid "What query to remove from the playlist"
 msgstr "Τι ερώτημα για αφαίρεση από τη λίστα αναπαραγωγής"
 
-#: pylavcogs_shared/ui/menus/queue.py:438
+#: pylavcogs_shared/ui/menus/queue.py:437
 msgid "Select Track To Remove"
 msgstr "Επιλογή Κομματιού Για Κατάργηση"
 
-#: pylavcogs_shared/ui/menus/queue.py:440
+#: pylavcogs_shared/ui/menus/queue.py:439
 msgid "Select Track To Play Now"
 msgstr "Επιλέξτε Κομμάτι Για Να Παίξετε Τώρα"
 
-#: pylavcogs_shared/ui/menus/queue.py:542
+#: pylavcogs_shared/ui/menus/queue.py:541
 msgid "Pick An Effect Preset To Apply"
 msgstr "Επιλογή Προεπιλογής Εφέ Για Εφαρμογή"
 
-#: pylavcogs_shared/ui/menus/queue.py:661
+#: pylavcogs_shared/ui/menus/queue.py:690
 msgid "Select Track To Enqueue"
 msgstr "Επιλογή Κομματιού Στην Ουρά"
 
