@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-05-08 12:26+0000\n"
-"PO-Revision-Date: 2022-05-08 12:58\n"
+"POT-Creation-Date: 2022-05-08 19:46+0000\n"
+"PO-Revision-Date: 2022-05-08 19:49\n"
 "Last-Translator: \n"
 "Language-Team: Dutch\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgid "Enter the domain or IP address of the host"
 msgstr "Voer het domein of IP-adres van de host in"
 
 #: pylavcogs_shared/ui/menus/nodes.py:59
-#: pylavcogs_shared/ui/menus/nodes.py:497
+#: pylavcogs_shared/ui/menus/nodes.py:494
 msgid "Host"
 msgstr "Hostnaam"
 
@@ -31,7 +31,7 @@ msgid "Enter the host port to connect to"
 msgstr "Voer de host poort in om mee te verbinden"
 
 #: pylavcogs_shared/ui/menus/nodes.py:67
-#: pylavcogs_shared/ui/menus/nodes.py:505
+#: pylavcogs_shared/ui/menus/nodes.py:502
 msgid "Port"
 msgstr "Poort"
 
@@ -40,7 +40,7 @@ msgid "Enter the node's password"
 msgstr "Voer het wachtwoord van de node in"
 
 #: pylavcogs_shared/ui/menus/nodes.py:75
-#: pylavcogs_shared/ui/menus/nodes.py:513
+#: pylavcogs_shared/ui/menus/nodes.py:510
 msgid "Password"
 msgstr "Wachtwoord"
 
@@ -49,7 +49,7 @@ msgid "Enter an easy to know name for the node."
 msgstr "Voer een eenvoudige naam in om de node te kennen."
 
 #: pylavcogs_shared/ui/menus/nodes.py:83
-#: pylavcogs_shared/ui/menus/nodes.py:521
+#: pylavcogs_shared/ui/menus/nodes.py:518
 msgid "Name"
 msgstr "naam"
 
@@ -58,67 +58,67 @@ msgid "Enter a timeout in seconds."
 msgstr "Voer een time-out in seconden in."
 
 #: pylavcogs_shared/ui/menus/nodes.py:91
-#: pylavcogs_shared/ui/menus/nodes.py:529
+#: pylavcogs_shared/ui/menus/nodes.py:526
 msgid "Timeout"
 msgstr "Time-out"
 
 #: pylavcogs_shared/ui/menus/nodes.py:106
-#: pylavcogs_shared/ui/menus/nodes.py:557
+#: pylavcogs_shared/ui/menus/nodes.py:554
 msgid "Source to disable."
 msgstr "Bron om uit te schakelen."
 
 #: pylavcogs_shared/ui/menus/nodes.py:218
-#: pylavcogs_shared/ui/menus/nodes.py:667
+#: pylavcogs_shared/ui/menus/nodes.py:664
 msgid "Name set to {name}"
 msgstr "Naam ingesteld op {name}"
 
 #: pylavcogs_shared/ui/menus/nodes.py:231
-#: pylavcogs_shared/ui/menus/nodes.py:680
+#: pylavcogs_shared/ui/menus/nodes.py:677
 msgid "Password set to {password}"
 msgstr "Wachtwoord ingesteld op {password}"
 
-#: pylavcogs_shared/ui/menus/nodes.py:252
-#: pylavcogs_shared/ui/menus/nodes.py:701
+#: pylavcogs_shared/ui/menus/nodes.py:249
+#: pylavcogs_shared/ui/menus/nodes.py:695
 msgid "Host set to {host}"
 msgstr "Host ingesteld op {host}"
 
-#: pylavcogs_shared/ui/menus/nodes.py:269
-#: pylavcogs_shared/ui/menus/nodes.py:718
+#: pylavcogs_shared/ui/menus/nodes.py:266
+#: pylavcogs_shared/ui/menus/nodes.py:712
 msgid "Invalid port."
 msgstr "Ongeldige poort."
 
-#: pylavcogs_shared/ui/menus/nodes.py:277
-#: pylavcogs_shared/ui/menus/nodes.py:726
+#: pylavcogs_shared/ui/menus/nodes.py:274
+#: pylavcogs_shared/ui/menus/nodes.py:720
 msgid "Port set to {port}"
 msgstr "Poort ingesteld op {port}"
 
-#: pylavcogs_shared/ui/menus/nodes.py:294
-#: pylavcogs_shared/ui/menus/nodes.py:743
+#: pylavcogs_shared/ui/menus/nodes.py:291
+#: pylavcogs_shared/ui/menus/nodes.py:737
 msgid "Invalid timeout, it must be a number in seconds."
 msgstr "Ongeldige time-out, het moet een getal in seconden zijn."
 
-#: pylavcogs_shared/ui/menus/nodes.py:302
-#: pylavcogs_shared/ui/menus/nodes.py:751
+#: pylavcogs_shared/ui/menus/nodes.py:299
+#: pylavcogs_shared/ui/menus/nodes.py:745
 msgid "Timeout set to {timeout} seconds."
 msgstr "Time-out ingesteld op {timeout} seconden."
 
-#: pylavcogs_shared/ui/menus/nodes.py:496
+#: pylavcogs_shared/ui/menus/nodes.py:493
 msgid "Change the domain or IP address of the host"
 msgstr "Het domein of IP-adres van de host wijzigen"
 
-#: pylavcogs_shared/ui/menus/nodes.py:504
+#: pylavcogs_shared/ui/menus/nodes.py:501
 msgid "Change the host port to connect to"
 msgstr "Wijzig de host poort om mee te verbinden"
 
-#: pylavcogs_shared/ui/menus/nodes.py:512
+#: pylavcogs_shared/ui/menus/nodes.py:509
 msgid "Change the node's password"
 msgstr "Verander het wachtwoord van het knooppunt"
 
-#: pylavcogs_shared/ui/menus/nodes.py:520
+#: pylavcogs_shared/ui/menus/nodes.py:517
 msgid "Change the name of this node."
 msgstr "Verander de naam van deze node."
 
-#: pylavcogs_shared/ui/menus/nodes.py:528
+#: pylavcogs_shared/ui/menus/nodes.py:525
 msgid "Enter the new timeout for this node."
 msgstr "Geef de nieuwe time-out voor deze node"
 
@@ -174,19 +174,19 @@ msgstr "Zoekopdracht"
 msgid "What query to remove from the playlist"
 msgstr "Welke query uit de afspeellijst te verwijderen"
 
-#: pylavcogs_shared/ui/menus/queue.py:437
+#: pylavcogs_shared/ui/menus/queue.py:436
 msgid "Select Track To Remove"
 msgstr "Selecteer track om te verwijderen"
 
-#: pylavcogs_shared/ui/menus/queue.py:439
+#: pylavcogs_shared/ui/menus/queue.py:438
 msgid "Select Track To Play Now"
 msgstr "Selecteer track To Play Nu"
 
-#: pylavcogs_shared/ui/menus/queue.py:541
+#: pylavcogs_shared/ui/menus/queue.py:540
 msgid "Pick An Effect Preset To Apply"
 msgstr "Kies een Effect voorinstelling om toe te passen"
 
-#: pylavcogs_shared/ui/menus/queue.py:690
+#: pylavcogs_shared/ui/menus/queue.py:689
 msgid "Select Track To Enqueue"
 msgstr "Selecteer track To Enqueue"
 

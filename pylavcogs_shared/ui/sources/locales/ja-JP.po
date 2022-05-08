@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-05-08 12:26+0000\n"
-"PO-Revision-Date: 2022-05-08 12:30\n"
+"POT-Creation-Date: 2022-05-08 19:46+0000\n"
+"PO-Revision-Date: 2022-05-08 19:50\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -156,32 +156,32 @@ msgstr "nodes"
 msgid "node"
 msgstr "ノード"
 
-#: pylavcogs_shared/ui/sources/player.py:63
+#: pylavcogs_shared/ui/sources/player.py:65
 msgid "Nothing playing."
 msgstr "再生中のものはありません。"
 
-#: pylavcogs_shared/ui/sources/player.py:73
+#: pylavcogs_shared/ui/sources/player.py:75
 msgid "Server Owner"
 msgstr "サーバー所有者"
 
-#: pylavcogs_shared/ui/sources/player.py:74
+#: pylavcogs_shared/ui/sources/player.py:76
 msgid "Connected For"
 msgstr "接続先"
 
-#: pylavcogs_shared/ui/sources/player.py:75
+#: pylavcogs_shared/ui/sources/player.py:77
 msgid "Users in VC"
 msgstr "VC のユーザー"
 
-#: pylavcogs_shared/ui/sources/player.py:76
+#: pylavcogs_shared/ui/sources/player.py:78
 msgid "Queue Length"
 msgstr "キューの長さ"
 
-#: pylavcogs_shared/ui/sources/player.py:86
+#: pylavcogs_shared/ui/sources/player.py:88
 msgid "Page {page_num}/{total_pages}  | Playing in {playing} servers."
 msgstr "ページ {page_num}/{total_pages}  | {playing} サーバーでプレイ中。"
 
 #: pylavcogs_shared/ui/sources/playlist.py:61
-#: pylavcogs_shared/ui/sources/playlist.py:185
+#: pylavcogs_shared/ui/sources/playlist.py:186
 msgid "Page {page_num}/{total_pages} | {num} playlists."
 msgstr "ページ {page_num}/{total_pages} | {num} プレイリスト。"
 
@@ -209,7 +209,7 @@ msgstr "作成者: {name}"
 msgid "Scope: {scope}\n"
 msgstr "スコープ: {scope}\n"
 
-#: pylavcogs_shared/ui/sources/playlist.py:181
+#: pylavcogs_shared/ui/sources/playlist.py:182
 msgid "Playlists you can access in this server:"
 msgstr "このサーバーでアクセスできるプレイリスト:"
 
