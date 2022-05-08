@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-05-07 17:58+0100\n"
-"PO-Revision-Date: 2022-05-07 17:03\n"
+"POT-Creation-Date: 2022-05-08 12:26+0000\n"
+"PO-Revision-Date: 2022-05-08 12:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
@@ -17,14 +17,16 @@ msgstr ""
 "X-Crowdin-File-ID: 388\n"
 "Language: zh_CN\n"
 
-#: pylavcogs_shared/ui/buttons/generic.py:68
-#: pylavcogs_shared/ui/buttons/generic.py:90
-#: pylavcogs_shared/ui/buttons/generic.py:113
-#: pylavcogs_shared/ui/buttons/generic.py:135
-#: pylavcogs_shared/ui/buttons/nodes.py:45
-#: pylavcogs_shared/ui/buttons/nodes.py:87
-#: pylavcogs_shared/ui/buttons/nodes.py:123
-#: pylavcogs_shared/ui/buttons/nodes.py:170
+#: pylavcogs_shared/ui/buttons/generic.py:67
+#: pylavcogs_shared/ui/buttons/generic.py:89
+#: pylavcogs_shared/ui/buttons/generic.py:112
+#: pylavcogs_shared/ui/buttons/generic.py:134
+#: pylavcogs_shared/ui/buttons/nodes.py:44
+#: pylavcogs_shared/ui/buttons/nodes.py:86
+#: pylavcogs_shared/ui/buttons/nodes.py:122
+#: pylavcogs_shared/ui/buttons/nodes.py:169
+#: pylavcogs_shared/ui/buttons/nodes.py:201
+#: pylavcogs_shared/ui/buttons/nodes.py:233
 #: pylavcogs_shared/ui/buttons/playlist.py:41
 #: pylavcogs_shared/ui/buttons/playlist.py:73
 #: pylavcogs_shared/ui/buttons/playlist.py:111
@@ -36,73 +38,87 @@ msgstr ""
 msgid "You are not authorized to interact with this option."
 msgstr "您无权与此选项进行交互。"
 
-#: pylavcogs_shared/ui/buttons/generic.py:81
+#: pylavcogs_shared/ui/buttons/generic.py:80
 msgid "Yes"
 msgstr "否"
 
-#: pylavcogs_shared/ui/buttons/generic.py:104
+#: pylavcogs_shared/ui/buttons/generic.py:103
 msgid "No"
 msgstr "否"
 
-#: pylavcogs_shared/ui/buttons/generic.py:157
+#: pylavcogs_shared/ui/buttons/generic.py:156
 msgid "Disconnect {} {}"
 msgstr "断开连接 {} {}"
 
-#: pylavcogs_shared/ui/buttons/generic.py:158
+#: pylavcogs_shared/ui/buttons/generic.py:157
 msgid "players"
 msgstr "玩家"
 
-#: pylavcogs_shared/ui/buttons/generic.py:158
+#: pylavcogs_shared/ui/buttons/generic.py:157
 msgid "player"
 msgstr "播放器"
 
-#: pylavcogs_shared/ui/buttons/nodes.py:53
+#: pylavcogs_shared/ui/buttons/nodes.py:52
 msgid "Connecting to the node with SSL enabled..."
 msgstr "正在使用 SSL 连接到节点..."
 
-#: pylavcogs_shared/ui/buttons/nodes.py:60
+#: pylavcogs_shared/ui/buttons/nodes.py:59
 msgid "Connecting to the node with SSL disabled..."
 msgstr "正在与 SSL 连接到节点..."
 
-#: pylavcogs_shared/ui/buttons/nodes.py:95
+#: pylavcogs_shared/ui/buttons/nodes.py:94
 msgid "This node will only be used for searches..."
 msgstr "此节点将仅用于搜索..."
 
-#: pylavcogs_shared/ui/buttons/nodes.py:102
+#: pylavcogs_shared/ui/buttons/nodes.py:101
 msgid "This node will be used for search and playback..."
 msgstr "此节点将用于搜索和播放..."
 
-#: pylavcogs_shared/ui/buttons/nodes.py:131
+#: pylavcogs_shared/ui/buttons/nodes.py:130
 msgid "Please fill out all the fields before continuing."
 msgstr "请先填写所有字段，然后继续。"
 
-#: pylavcogs_shared/ui/buttons/player.py:35
-#: pylavcogs_shared/ui/buttons/player.py:99
-#: pylavcogs_shared/ui/buttons/player.py:162
+#: pylavcogs_shared/ui/buttons/nodes.py:208
+msgid "When you press done this node will be permanently delete..."
+msgstr "当您按下此节点完成后，该节点将被永久删除..."
+
+#: pylavcogs_shared/ui/buttons/nodes.py:210
+msgid "This node will no longer be deleted once you press done..."
+msgstr "一旦您按下此节点后，此节点将不再被删除..."
+
+#: pylavcogs_shared/ui/buttons/nodes.py:241
+msgid "__Enabled sources__:\n"
+"{sources}"
+msgstr "__启用源:\n"
+"{sources}"
+
+#: pylavcogs_shared/ui/buttons/player.py:34
+#: pylavcogs_shared/ui/buttons/player.py:98
+#: pylavcogs_shared/ui/buttons/player.py:161
 msgid "You are not authorized to perform this action."
 msgstr "您无权执行此操作。"
 
-#: pylavcogs_shared/ui/buttons/player.py:44
-#: pylavcogs_shared/ui/buttons/player.py:108
+#: pylavcogs_shared/ui/buttons/player.py:43
+#: pylavcogs_shared/ui/buttons/player.py:107
 msgid "No Player Available For Action - Try Refreshing."
 msgstr "没有可用于操作的玩家 - 尝试刷新。"
 
-#: pylavcogs_shared/ui/buttons/player.py:65
-#: pylavcogs_shared/ui/buttons/player.py:128
-#: pylavcogs_shared/ui/buttons/player.py:197
+#: pylavcogs_shared/ui/buttons/player.py:64
+#: pylavcogs_shared/ui/buttons/player.py:127
+#: pylavcogs_shared/ui/buttons/player.py:196
 msgid "Bot Owner Action"
 msgstr "机器人所有者动作"
 
-#: pylavcogs_shared/ui/buttons/player.py:65
-#: pylavcogs_shared/ui/buttons/player.py:198
+#: pylavcogs_shared/ui/buttons/player.py:64
+#: pylavcogs_shared/ui/buttons/player.py:197
 msgid "Player disconnected."
 msgstr "玩家已断开连接。"
 
-#: pylavcogs_shared/ui/buttons/player.py:128
+#: pylavcogs_shared/ui/buttons/player.py:127
 msgid "Player stopped."
 msgstr "播放器已停止。"
 
-#: pylavcogs_shared/ui/buttons/player.py:176
+#: pylavcogs_shared/ui/buttons/player.py:175
 msgid "No Players Available For Action - Try Refreshing."
 msgstr "没有可供操作的玩家-尝试刷新。"
 
@@ -168,7 +184,7 @@ msgstr "选择播放列表"
 msgid "What should the playlist name be?"
 msgstr "播放列表名称应该是什么？"
 
-#: pylavcogs_shared/ui/buttons/queue.py:231
+#: pylavcogs_shared/ui/buttons/queue.py:230
 msgid "What do you want to enqueue?"
 msgstr "您想要排队什么？"
 

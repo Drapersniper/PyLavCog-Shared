@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-05-07 17:58+0100\n"
-"PO-Revision-Date: 2022-05-07 17:03\n"
+"POT-Creation-Date: 2022-05-08 12:26+0000\n"
+"PO-Revision-Date: 2022-05-08 12:30\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -32,56 +32,73 @@ msgstr "Page {page_num}/{total_pages} | {num} nodes."
 #: pylavcogs_shared/ui/sources/nodes.py:90
 #: pylavcogs_shared/ui/sources/nodes.py:91
 #: pylavcogs_shared/ui/sources/nodes.py:92
+#: pylavcogs_shared/ui/sources/nodes.py:209
+#: pylavcogs_shared/ui/sources/nodes.py:210
+#: pylavcogs_shared/ui/sources/nodes.py:211
 msgid "Yes"
 msgstr "はい"
 
 #: pylavcogs_shared/ui/sources/nodes.py:90
 #: pylavcogs_shared/ui/sources/nodes.py:91
 #: pylavcogs_shared/ui/sources/nodes.py:92
+#: pylavcogs_shared/ui/sources/nodes.py:209
+#: pylavcogs_shared/ui/sources/nodes.py:210
+#: pylavcogs_shared/ui/sources/nodes.py:211
 msgid "No"
 msgstr "いいえ"
 
 #: pylavcogs_shared/ui/sources/nodes.py:129
+#: pylavcogs_shared/ui/sources/nodes.py:248
 msgid "Property"
 msgstr "属性"
 
 #: pylavcogs_shared/ui/sources/nodes.py:130
+#: pylavcogs_shared/ui/sources/nodes.py:249
 msgid "Value"
 msgstr "値"
 
 #: pylavcogs_shared/ui/sources/nodes.py:132
+#: pylavcogs_shared/ui/sources/nodes.py:251
 msgid "Region"
 msgstr "地域"
 
 #: pylavcogs_shared/ui/sources/nodes.py:132
+#: pylavcogs_shared/ui/sources/nodes.py:251
 msgid "N/A"
 msgstr "該当なし"
 
 #: pylavcogs_shared/ui/sources/nodes.py:133
+#: pylavcogs_shared/ui/sources/nodes.py:252
 msgid "Host"
 msgstr "ホスト"
 
 #: pylavcogs_shared/ui/sources/nodes.py:134
+#: pylavcogs_shared/ui/sources/nodes.py:253
 msgid "Port"
 msgstr "ポート"
 
 #: pylavcogs_shared/ui/sources/nodes.py:135
+#: pylavcogs_shared/ui/sources/nodes.py:254
 msgid "Password"
 msgstr "パスワード"
 
 #: pylavcogs_shared/ui/sources/nodes.py:136
+#: pylavcogs_shared/ui/sources/nodes.py:255
 msgid "SSL"
 msgstr "SSL"
 
 #: pylavcogs_shared/ui/sources/nodes.py:137
+#: pylavcogs_shared/ui/sources/nodes.py:256
 msgid "Available"
 msgstr "利用可能です"
 
 #: pylavcogs_shared/ui/sources/nodes.py:138
+#: pylavcogs_shared/ui/sources/nodes.py:257
 msgid "Search Only"
 msgstr "検索のみ"
 
 #: pylavcogs_shared/ui/sources/nodes.py:139
+#: pylavcogs_shared/ui/sources/nodes.py:258
 msgid "Players\n"
 "Connected\n"
 "Active"
@@ -89,14 +106,17 @@ msgstr "接続済みのプレイヤー\n\n"
 "が有効"
 
 #: pylavcogs_shared/ui/sources/nodes.py:141
+#: pylavcogs_shared/ui/sources/nodes.py:260
 msgid "Frames Lost"
 msgstr "失われたフレーム"
 
 #: pylavcogs_shared/ui/sources/nodes.py:142
+#: pylavcogs_shared/ui/sources/nodes.py:261
 msgid "Uptime"
 msgstr "稼働時間"
 
 #: pylavcogs_shared/ui/sources/nodes.py:143
+#: pylavcogs_shared/ui/sources/nodes.py:262
 msgid "Load\n"
 "Lavalink\n"
 "System"
@@ -105,10 +125,12 @@ msgstr "\n"
 "システムを読み込む"
 
 #: pylavcogs_shared/ui/sources/nodes.py:144
+#: pylavcogs_shared/ui/sources/nodes.py:263
 msgid "Penalty"
 msgstr "ペナルティ"
 
 #: pylavcogs_shared/ui/sources/nodes.py:145
+#: pylavcogs_shared/ui/sources/nodes.py:264
 msgid "Memory\n"
 "Used\n"
 "Free\n"
@@ -120,14 +142,17 @@ msgstr "メモリ\n\n"
 "予約"
 
 #: pylavcogs_shared/ui/sources/nodes.py:156
+#: pylavcogs_shared/ui/sources/nodes.py:275
 msgid "Page {page_num}/{total_pages} | {num} {plural}."
 msgstr "ページ {page_num}/{total_pages} | {num} {plural}."
 
 #: pylavcogs_shared/ui/sources/nodes.py:160
+#: pylavcogs_shared/ui/sources/nodes.py:279
 msgid "nodes"
 msgstr "nodes"
 
 #: pylavcogs_shared/ui/sources/nodes.py:160
+#: pylavcogs_shared/ui/sources/nodes.py:279
 msgid "node"
 msgstr "ノード"
 
