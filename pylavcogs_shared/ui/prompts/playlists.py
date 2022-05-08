@@ -25,20 +25,15 @@ async def maybe_prompt_for_playlist(cog: CogT, context: PyLavContext, playlists:
                 guild_id=context.guild.id,
                 cog=cog,
                 pages=playlists,
-                message_str=_(
-                    "Multiple playlist matched, pick the one which you meant."
-                ),
+                message_str=_("Multiple playlist matched, pick the one which you meant."),
             ),
             selector_cls=PlaylistSelectSelector,
             delete_after_timeout=True,
             clear_buttons_after=True,
             starting_page=0,
             selector_text=_("Pick a playlist"),
-            original_author=context.interaction.user
-            if context.interaction
-            else context.author,
+            original_author=context.interaction.user if context.interaction else context.author,
         )
-
 
         await playlist_picker.start(context)
         try:

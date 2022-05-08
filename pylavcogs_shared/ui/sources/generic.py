@@ -45,9 +45,7 @@ class ListSource(menus.ListPageSource):
 
     async def format_page(self, menu: BaseMenu, page: list[str]) -> discord.Embed:
         idx_start, page_num = self.get_starting_index_and_page_number(menu)
-        text = "".join(
-            f"{i}. [{entry}]" for i, entry in enumerate(page, idx_start + 1)
-        )
+        text = "".join(f"{i}. [{entry}]" for i, entry in enumerate(page, idx_start + 1))
 
         output = box(text, lang="ini")
         embed = await self.cog.lavalink.construct_embed(messageable=menu.ctx, title=self.title, description=output)

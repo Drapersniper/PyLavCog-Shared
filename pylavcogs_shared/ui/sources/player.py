@@ -60,9 +60,7 @@ class PlayersSource(menus.ListPageSource):
         queue_len = len(player.queue)
         server_owner = f"{player.guild.owner} ({player.guild.owner.id})"
         current_track = (
-            await player.current.get_track_display_name(
-                max_length=50, with_url=True
-            )
+            await player.current.get_track_display_name(max_length=50, with_url=True)
             if player.current
             else _("Nothing playing.")
         )
