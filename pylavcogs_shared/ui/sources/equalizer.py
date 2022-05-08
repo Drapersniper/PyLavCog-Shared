@@ -10,7 +10,7 @@ from redbot.core.utils.chat_formatting import box
 from redbot.vendored.discord.ext import menus
 from tabulate import tabulate
 
-from pylavcogs_shared.types import CogT
+from pylav.types import CogT
 
 if TYPE_CHECKING:
     from pylavcogs_shared.ui.menus.generic import BaseMenu

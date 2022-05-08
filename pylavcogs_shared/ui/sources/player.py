@@ -11,9 +11,9 @@ from redbot.core.utils.chat_formatting import humanize_number
 from redbot.vendored.discord.ext import menus
 
 from pylav import Player
+from pylav.types import CogT
 from pylav.utils import get_time_string
 
-from pylavcogs_shared.types import CogT
 from pylavcogs_shared.utils import rgetattr
 
 if TYPE_CHECKING:

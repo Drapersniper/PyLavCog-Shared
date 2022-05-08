@@ -12,9 +12,9 @@ from redbot.vendored.discord.ext import menus
 
 from pylav import Query, Track
 from pylav.sql.models import PlaylistModel
+from pylav.types import CogT
 from pylav.utils import AsyncIter
 
-from pylavcogs_shared.types import CogT
 from pylavcogs_shared.ui.selectors.options.playlist import PlaylistOption
 
 if TYPE_CHECKING:

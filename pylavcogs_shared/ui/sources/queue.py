@@ -11,8 +11,8 @@ from redbot.vendored.discord.ext import menus
 
 from pylav import Track
 from pylav.sql.models import PlaylistModel
+from pylav.types import CogT
 
-from pylavcogs_shared.types import CogT
 from pylavcogs_shared.ui.selectors.options.queue import EffectsOption, QueueTrackOption, SearchTrackOption
 
 if TYPE_CHECKING:

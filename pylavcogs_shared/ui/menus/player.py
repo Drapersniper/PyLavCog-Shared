@@ -6,10 +6,9 @@ from typing import Any
 import discord
 from redbot.core.i18n import Translator
 
-from pylav.types import BotT
+from pylav.types import BotT, CogT
 from pylav.utils import PyLavContext
 
-from pylavcogs_shared.types import CogT
 from pylavcogs_shared.ui.buttons.generic import CloseButton, LabelButton, NavigateButton, RefreshButton
 from pylavcogs_shared.ui.buttons.player import DisconnectAllButton, DisconnectButton, StopTrackButton
 from pylavcogs_shared.ui.menus.generic import BaseMenu

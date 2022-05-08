@@ -6,8 +6,7 @@ import discord
 from redbot.core.i18n import Translator
 
 from pylav import emojis
-
-from pylavcogs_shared.types import CogT
+from pylav.types import CogT
 
 _ = Translator("PyLavShared", Path(__file__))
 

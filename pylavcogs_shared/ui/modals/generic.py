@@ -5,7 +5,7 @@ import asyncio
 import discord
 from red_commons.logging import getLogger
 
-from pylavcogs_shared.types import CogT
+from pylav.types import CogT
 
 LOGGER = getLogger("red.3pt.PyLav-Shared.ui.modals.generic")
 

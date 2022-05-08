@@ -6,7 +6,7 @@ import discord
 from red_commons.logging import getLogger
 from redbot.core.i18n import Translator
 
-from pylavcogs_shared.types import CogT
+from pylav.types import CogT
 
 LOGGER = getLogger("red.3pt.PyLav-Shared.ui.modals.queue")
 _ = Translator("PyLavShared", Path(__file__))

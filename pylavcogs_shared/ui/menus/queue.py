@@ -6,10 +6,9 @@ from typing import Any, Literal
 import discord
 from redbot.core.i18n import Translator
 
-from pylav.types import BotT
+from pylav.types import BotT, CogT
 from pylav.utils import PyLavContext
 
-from pylavcogs_shared.types import CogT
 from pylavcogs_shared.ui.buttons.equalizer import EqualizerButton
 from pylavcogs_shared.ui.buttons.generic import CloseButton, NavigateButton, RefreshButton
 from pylavcogs_shared.ui.buttons.queue import (
@@ -566,7 +565,6 @@ class SearchPickerMenu(BaseMenu):
     def __init__(
         self,
         cog: CogT,
-        bot: BotT,
         source: SearchPickerSource,
         original_author: discord.abc.User,
         *,
@@ -579,7 +577,7 @@ class SearchPickerMenu(BaseMenu):
     ) -> None:
         super().__init__(
             cog=cog,
-            bot=bot,
+            bot=cog.bot,
             source=source,
             clear_buttons_after=clear_buttons_after,
             delete_after_timeout=delete_after_timeout,
@@ -588,6 +586,8 @@ class SearchPickerMenu(BaseMenu):
             starting_page=starting_page,
             **kwargs,
         )
+        self.cog = cog
+        self.bot = cog.bot
         self.author = original_author
         self.forward_button = NavigateButton(
             style=discord.ButtonStyle.grey,
@@ -623,6 +623,35 @@ class SearchPickerMenu(BaseMenu):
             cog=cog,
         )
         self.select_view: SearchSelectTrack | None = None
+        self.name = None
+        self.url = None
+        self.scope = None
+        self.add_tracks = set()
+        self.remove_tracks = set()
+
+        self.clear = None
+        self.delete = None
+        self.cancelled = True
+        self.done = False
+        self.update = False
+        self.queue = None
+        self.dedupe = None
+
+        self.add_item(self.done_button)
+        self.add_item(self.close_button)
+        self.add_item(self.delete_button)
+        self.add_item(self.clear_button)
+        self.add_item(self.update_button)
+        self.add_item(self.name_button)
+        self.add_item(self.url_button)
+        self.add_item(self.add_button)
+        self.add_item(self.remove_button)
+        self.add_item(self.download_button)
+
+        self.add_item(self.playlist_enqueue_button)
+        self.add_item(self.playlist_info_button)
+        self.add_item(self.queue_button)
+        self.add_item(self.dedupe_button)
 
     async def start(self, ctx: PyLavContext | discord.Interaction):
         if isinstance(ctx, discord.Interaction):

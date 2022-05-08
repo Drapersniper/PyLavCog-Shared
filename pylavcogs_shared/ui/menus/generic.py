@@ -10,10 +10,10 @@ from red_commons.logging import getLogger
 from redbot.core.i18n import Translator
 from redbot.vendored.discord.ext import menus
 
-from pylav.types import BotT, ContextT
+from pylav.types import BotT, CogT, ContextT
 from pylav.utils import PyLavContext
 
-from pylavcogs_shared.types import CogT, SourcesT
+from pylavcogs_shared.types import SourcesT
 from pylavcogs_shared.ui.buttons.generic import CloseButton, NavigateButton, NoButton, RefreshButton, YesButton
 
 LOGGER = getLogger("red.3pt.PyLav-Shared.ui.menu.generic")

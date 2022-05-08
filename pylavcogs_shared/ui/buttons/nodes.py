@@ -9,11 +9,10 @@ from red_commons.logging import getLogger
 from redbot.core.i18n import Translator
 
 from pylav import emojis
-
-from pylavcogs_shared.types import CogT
+from pylav.types import CogT
 
 if TYPE_CHECKING:
-    from pylavcogs_shared.ui.menus.nodes import AddNodeFlow
+    from pylavcogs_shared.ui.menus.nodes import AddNodeFlow, NodeManagerMenu
 
 LOGGER = getLogger("red.3pt.PyLav-Shared.ui.button.nodes")
 
@@ -182,3 +181,66 @@ class NodeButton(discord.ui.Button):
             await self.view.prompt_password(interaction)
         elif self.op == "timeout":
             await self.view.prompt_resume_timeout(interaction)
+
+
+class NodeDeleteButton(discord.ui.Button):
+    view: NodeManagerMenu
+
+    def __init__(self, cog: CogT, style: discord.ButtonStyle, row: int = None):
+        super().__init__(
+            style=style,
+            emoji=emojis.TRASH,
+            row=row,
+        )
+        self.cog = cog
+
+    async def callback(self, interaction: discord.Interaction):
+        if self.view.author.id != interaction.user.id:
+            await interaction.response.send_message(
+                embed=await self.cog.lavalink.construct_embed(
+                    messageable=interaction, description=_("You are not authorized to interact with this option.")
+                ),
+                ephemeral=True,
+            )
+        self.view.cancelled = False
+        self.view.delete = not self.view.delete
+        if self.view.delete:
+            response = _("When you press done this node will be permanently delete...")
+        else:
+            response = _("This node will no longer be deleted once you press done...")
+
+        await interaction.response.send_message(
+            embed=await self.cog.lavalink.construct_embed(messageable=interaction, description=response),
+            ephemeral=True,
+        )
+
+
+class NodeShowEnabledSourcesButton(discord.ui.Button):
+    view: NodeManagerMenu
+
+    def __init__(self, cog: CogT, style: discord.ButtonStyle, row: int = None):
+        super().__init__(
+            style=style,
+            emoji=emojis.CLOUDSERVER,
+            row=row,
+        )
+        self.cog = cog
+
+    async def callback(self, interaction: discord.Interaction):
+        if self.view.author.id != interaction.user.id:
+            await interaction.response.send_message(
+                embed=await self.cog.lavalink.construct_embed(
+                    messageable=interaction, description=_("You are not authorized to interact with this option.")
+                ),
+                ephemeral=True,
+            )
+
+        await interaction.response.send_message(
+            embed=await self.cog.lavalink.construct_embed(
+                messageable=interaction,
+                description=_("__Enabled sources__:\n{sources}").format(
+                    sources="\n".join(map(str.title, self.view.source.target.capabilities))
+                ),
+            ),
+            ephemeral=True,
+        )

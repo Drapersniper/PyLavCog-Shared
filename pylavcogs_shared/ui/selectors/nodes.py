@@ -10,8 +10,8 @@ from redbot.core.utils.chat_formatting import humanize_list
 
 from pylav.constants import SUPPORTED_SOURCES
 from pylav.sql.models import NodeModel
+from pylav.types import CogT
 
-from pylavcogs_shared.types import CogT
 from pylavcogs_shared.ui.selectors.options.nodes import SOURCE_OPTIONS, NodeOption
 
 if TYPE_CHECKING:
