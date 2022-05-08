@@ -172,11 +172,15 @@ class StatsMenu(BaseMenu):
         elif not player.current:
             self.stop_button.disabled = True
 
-        if not len(self.source.entries) > 1:
+        if len(self.source.entries) <= 1:
             self.queue_disconnect_inactive.disabled = True
             self.queue_disconnect_all.disabled = True
 
-        if not len([p for p in self.cog.lavalink.player_manager.connected_players if not p.is_playing]) > 0:
+        if not [
+            p
+            for p in self.cog.lavalink.player_manager.connected_players
+            if not p.is_playing
+        ]:
             self.queue_disconnect_inactive.disabled = True
 
     @property

@@ -59,10 +59,14 @@ class PlayersSource(menus.ListPageSource):
         guild_name = player.guild.name
         queue_len = len(player.queue)
         server_owner = f"{player.guild.owner} ({player.guild.owner.id})"
-        if not player.current:
-            current_track = _("Nothing playing.")
-        else:
-            current_track = await player.current.get_track_display_name(max_length=50, with_url=True)
+        current_track = (
+            await player.current.get_track_display_name(
+                max_length=50, with_url=True
+            )
+            if player.current
+            else _("Nothing playing.")
+        )
+
         listener_count = sum(True for m in rgetattr(player, "channel.members", []) if not m.bot)
         listeners = humanize_number(listener_count)
         current_track += "\n"

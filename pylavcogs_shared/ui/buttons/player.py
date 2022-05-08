@@ -121,8 +121,7 @@ class StopTrackButton(discord.ui.Button):
         player.store("autoplay_notified", False)
         await player.stop()
         channel_id = player.fetch("notify_channel")
-        notify_channel = player.guild.get_channel_or_thread(channel_id)
-        if notify_channel:
+        if notify_channel := player.guild.get_channel_or_thread(channel_id):
             # TODO Use Text input to get a message from owner to send?
             await self.cog.send_embed_msg(notify_channel, title=_("Bot Owner Action"), description=_("Player stopped."))
         await self.cog.api_interface.persistent_queue_api.drop(player.guild.id)

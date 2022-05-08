@@ -240,10 +240,7 @@ class AddNodeFlow(discord.ui.View):
         await self.host_prompt.responded.wait()
         if match := URL_REGEX.match(self.host_prompt.response):
             protocol = match.group(0)
-            if protocol == "https":
-                self.ssl = True
-            else:
-                self.ssl = False
+            self.ssl = protocol == "https"
             self.host = match.group(1)
         else:
             self.host = self.host_prompt.response
@@ -689,10 +686,7 @@ class NodeManagerMenu(BaseMenu):
         await self.host_prompt.responded.wait()
         if match := URL_REGEX.match(self.host_prompt.response):
             protocol = match.group(0)
-            if protocol == "https":
-                self.ssl = True
-            else:
-                self.ssl = False
+            self.ssl = protocol == "https"
             self.host = match.group(1)
         else:
             self.host = self.host_prompt.response

@@ -198,19 +198,20 @@ class QueueSource(menus.ListPageSource):
             return await self.cog.lavalink.construct_embed(
                 description="No active player found in server.", messageable=menu.ctx
             )
-        if not player.current:
-            page = await self.cog.lavalink.construct_embed(
-                description="There's nothing currently being played.", messageable=menu.ctx
-            )
-        else:
-            page = await player.get_queue_page(
+        return (
+            await player.get_queue_page(
                 page_index=menu.current_page,
                 per_page=self.per_page,
                 total_pages=self.get_max_pages(),
                 embed=True,
                 messageable=menu.ctx,
             )
-        return page
+            if player.current
+            else await self.cog.lavalink.construct_embed(
+                description="There's nothing currently being played.",
+                messageable=menu.ctx,
+            )
+        )
 
 
 class QueuePickerSource(QueueSource):
@@ -238,16 +239,17 @@ class QueuePickerSource(QueueSource):
             return await self.cog.lavalink.construct_embed(
                 description="No active player found in server.", messageable=menu.ctx
             )
-        if not player.current:
-            page = await self.cog.lavalink.construct_embed(
-                description="There's nothing currently being played.", messageable=menu.ctx
-            )
-        else:
-            page = await player.get_queue_page(
+        return (
+            await player.get_queue_page(
                 page_index=menu.current_page,
                 per_page=self.per_page,
                 total_pages=self.get_max_pages(),
                 embed=True,
                 messageable=menu.ctx,
             )
-        return page
+            if player.current
+            else await self.cog.lavalink.construct_embed(
+                description="There's nothing currently being played.",
+                messageable=menu.ctx,
+            )
+        )
