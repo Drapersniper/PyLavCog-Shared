@@ -95,19 +95,14 @@ class BaseMenu(discord.ui.View):
 
     async def show_checked_page(self, page_number: int, interaction: discord.Interaction) -> None:
         max_pages = self._source.get_max_pages()
-        try:
-            if max_pages is None:
+        with contextlib.suppress(IndexError):
+            if max_pages is None or page_number < max_pages and page_number >= 0:
                 # If it doesn't give maximum pages, it cannot be checked
                 await self.show_page(page_number, interaction)
             elif page_number >= max_pages:
                 await self.show_page(0, interaction)
-            elif page_number < 0:
+            else:
                 await self.show_page(max_pages - 1, interaction)
-            elif max_pages > page_number >= 0:
-                await self.show_page(page_number, interaction)
-        except IndexError:
-            # An error happened that can be handled, so ignore it.
-            pass
 
     async def interaction_check(self, interaction: discord.Interaction):
         """Just extends the default reaction_check to use owner_ids"""
@@ -271,10 +266,7 @@ class PromptYesOrNo(discord.ui.View):
         await self.send_initial_message(ctx)
 
     async def send_initial_message(self, ctx: PyLavContext | discord.Interaction):
-        if isinstance(ctx, discord.Interaction):
-            self.author = ctx.user
-        else:
-            self.author = ctx.author
+        self.author = ctx.user if isinstance(ctx, discord.Interaction) else ctx.author
         self.ctx = ctx
         self.message = await ctx.send(
             embed=await self.cog.lavalink.construct_embed(description=self.initial_message_str, messageable=ctx),
@@ -295,10 +287,7 @@ class PromptYesOrNo(discord.ui.View):
             await self.message.delete()
         else:
             await self.message.edit(view=None)
-        if self.yes_button.responded.is_set():
-            self.response = True
-        else:
-            self.response = False
+        self.response = bool(self.yes_button.responded.is_set())
         return self.response
 
     def stop(self):

@@ -234,30 +234,7 @@ class QueueMenu(BaseMenu):
             self.backward_button.disabled = True
             self.first_button.disabled = True
             self.last_button.disabled = True
-        player = self.cog.lavalink.get_player(self.source.guild_id)
-        if not player:
-            self.forward_button.disabled = True
-            self.backward_button.disabled = True
-            self.first_button.disabled = True
-            self.last_button.disabled = True
-            self.stop_button.disabled = True
-            self.skip_button.disabled = True
-            self.previous_track_button.disabled = True
-            self.repeat_button_off.disabled = True
-            self.shuffle_button.disabled = True
-            self.decrease_volume_button.disabled = True
-            self.increase_volume_button.disabled = True
-            self.resume_button.disabled = True
-            self.repeat_button_on.disabled = True
-            self.equalize_button.disabled = True
-            self.enqueue_button.disabled = True
-            self.remove_from_queue_button.disabled = True
-            self.play_now_button.disabled = True
-            self.repeat_queue_button_on.disabled = True
-
-            self.add_item(self.resume_button)
-            self.add_item(self.repeat_button_off)
-        else:
+        if player := self.cog.lavalink.get_player(self.source.guild_id):
             if player.paused:
                 self.add_item(self.resume_button)
             else:
@@ -282,6 +259,28 @@ class QueueMenu(BaseMenu):
             else:
                 self.add_item(self.repeat_button_off)
 
+        else:
+            self.forward_button.disabled = True
+            self.backward_button.disabled = True
+            self.first_button.disabled = True
+            self.last_button.disabled = True
+            self.stop_button.disabled = True
+            self.skip_button.disabled = True
+            self.previous_track_button.disabled = True
+            self.repeat_button_off.disabled = True
+            self.shuffle_button.disabled = True
+            self.decrease_volume_button.disabled = True
+            self.increase_volume_button.disabled = True
+            self.resume_button.disabled = True
+            self.repeat_button_on.disabled = True
+            self.equalize_button.disabled = True
+            self.enqueue_button.disabled = True
+            self.remove_from_queue_button.disabled = True
+            self.play_now_button.disabled = True
+            self.repeat_queue_button_on.disabled = True
+
+            self.add_item(self.resume_button)
+            self.add_item(self.repeat_button_off)
         self.add_item(self.skip_button)
         self.add_item(self.shuffle_button)
         self.add_item(self.decrease_volume_button)

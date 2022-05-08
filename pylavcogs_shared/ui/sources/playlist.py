@@ -171,9 +171,12 @@ class PlaylistListSource(menus.ListPageSource):
                     _("ID: {id}").format(id=playlist.id),
                     _("Tracks: {num}").format(num=len(playlist.tracks)),
                     _("Author: {name}").format(name=author_name),
-                    _("Scope: {scope}\n").format(scope=scope_name) if not is_same else "\n",
+                    "\n"
+                    if is_same
+                    else _("Scope: {scope}\n").format(scope=scope_name),
                 )
             )
+
             plist += f"`{i}.` {playlist_info}"
 
         embed = await self.cog.lavalink.construct_embed(

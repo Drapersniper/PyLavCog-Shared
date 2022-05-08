@@ -20,9 +20,10 @@ class SourceOption(discord.SelectOption):
         )
 
 
-SOURCE_OPTIONS = []
-for source in SUPPORTED_SOURCES:
-    SOURCE_OPTIONS.append(SourceOption(name=source, description=None, value=source))
+SOURCE_OPTIONS = [
+    SourceOption(name=source, description=None, value=source)
+    for source in SUPPORTED_SOURCES
+]
 
 
 class NodeOption(discord.SelectOption):

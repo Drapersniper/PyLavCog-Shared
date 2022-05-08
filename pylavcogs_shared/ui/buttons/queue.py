@@ -141,10 +141,7 @@ class ToggleRepeatButton(discord.ui.Button):
                 ),
                 ephemeral=True,
             )
-        if player.config.repeat_current:
-            repeat_queue = True
-        else:
-            repeat_queue = False
+        repeat_queue = bool(player.config.repeat_current)
         await self.cog.command_repeat.callback(self.cog, interaction, queue=repeat_queue)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
@@ -169,10 +166,7 @@ class ToggleRepeatQueueButton(discord.ui.Button):
                 ),
                 ephemeral=True,
             )
-        if player.config.repeat_current:
-            repeat_queue = True
-        else:
-            repeat_queue = False
+        repeat_queue = bool(player.config.repeat_current)
         await self.cog.command_repeat.callback(self.cog, interaction, queue=repeat_queue)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
