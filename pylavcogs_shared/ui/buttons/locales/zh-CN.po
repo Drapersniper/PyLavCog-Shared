@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-05-08 12:26+0000\n"
-"PO-Revision-Date: 2022-05-08 12:58\n"
+"POT-Creation-Date: 2022-05-08 19:46+0000\n"
+"PO-Revision-Date: 2022-05-08 19:49\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
@@ -94,7 +94,7 @@ msgstr "__启用源:\n"
 
 #: pylavcogs_shared/ui/buttons/player.py:34
 #: pylavcogs_shared/ui/buttons/player.py:98
-#: pylavcogs_shared/ui/buttons/player.py:161
+#: pylavcogs_shared/ui/buttons/player.py:160
 msgid "You are not authorized to perform this action."
 msgstr "您无权执行此操作。"
 
@@ -104,21 +104,21 @@ msgid "No Player Available For Action - Try Refreshing."
 msgstr "没有可用于操作的玩家 - 尝试刷新。"
 
 #: pylavcogs_shared/ui/buttons/player.py:64
-#: pylavcogs_shared/ui/buttons/player.py:127
-#: pylavcogs_shared/ui/buttons/player.py:196
+#: pylavcogs_shared/ui/buttons/player.py:126
+#: pylavcogs_shared/ui/buttons/player.py:195
 msgid "Bot Owner Action"
 msgstr "机器人所有者动作"
 
 #: pylavcogs_shared/ui/buttons/player.py:64
-#: pylavcogs_shared/ui/buttons/player.py:197
+#: pylavcogs_shared/ui/buttons/player.py:196
 msgid "Player disconnected."
 msgstr "玩家已断开连接。"
 
-#: pylavcogs_shared/ui/buttons/player.py:127
+#: pylavcogs_shared/ui/buttons/player.py:126
 msgid "Player stopped."
 msgstr "播放器已停止。"
 
-#: pylavcogs_shared/ui/buttons/player.py:175
+#: pylavcogs_shared/ui/buttons/player.py:174
 msgid "No Players Available For Action - Try Refreshing."
 msgstr "没有可供操作的玩家-尝试刷新。"
 
@@ -184,7 +184,7 @@ msgstr "选择播放列表"
 msgid "What should the playlist name be?"
 msgstr "播放列表名称应该是什么？"
 
-#: pylavcogs_shared/ui/buttons/queue.py:230
+#: pylavcogs_shared/ui/buttons/queue.py:224
 msgid "What do you want to enqueue?"
 msgstr "您想要排队什么？"
 

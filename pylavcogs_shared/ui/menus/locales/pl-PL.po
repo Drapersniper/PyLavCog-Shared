@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-05-08 12:26+0000\n"
-"PO-Revision-Date: 2022-05-08 12:59\n"
+"POT-Creation-Date: 2022-05-08 19:46+0000\n"
+"PO-Revision-Date: 2022-05-08 19:50\n"
 "Last-Translator: \n"
 "Language-Team: Polish\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgid "Enter the domain or IP address of the host"
 msgstr "Wprowadź domenę lub adres IP hosta"
 
 #: pylavcogs_shared/ui/menus/nodes.py:59
-#: pylavcogs_shared/ui/menus/nodes.py:497
+#: pylavcogs_shared/ui/menus/nodes.py:494
 msgid "Host"
 msgstr "Host"
 
@@ -31,7 +31,7 @@ msgid "Enter the host port to connect to"
 msgstr "Wprowadź port hosta do połączenia"
 
 #: pylavcogs_shared/ui/menus/nodes.py:67
-#: pylavcogs_shared/ui/menus/nodes.py:505
+#: pylavcogs_shared/ui/menus/nodes.py:502
 msgid "Port"
 msgstr "Port"
 
@@ -40,7 +40,7 @@ msgid "Enter the node's password"
 msgstr "Wprowadź hasło węzła"
 
 #: pylavcogs_shared/ui/menus/nodes.py:75
-#: pylavcogs_shared/ui/menus/nodes.py:513
+#: pylavcogs_shared/ui/menus/nodes.py:510
 msgid "Password"
 msgstr "Hasło"
 
@@ -49,7 +49,7 @@ msgid "Enter an easy to know name for the node."
 msgstr "Wprowadź łatwą do poznania nazwę węzła."
 
 #: pylavcogs_shared/ui/menus/nodes.py:83
-#: pylavcogs_shared/ui/menus/nodes.py:521
+#: pylavcogs_shared/ui/menus/nodes.py:518
 msgid "Name"
 msgstr "Nazwisko"
 
@@ -58,67 +58,67 @@ msgid "Enter a timeout in seconds."
 msgstr "Wprowadź limit czasu w sekundach."
 
 #: pylavcogs_shared/ui/menus/nodes.py:91
-#: pylavcogs_shared/ui/menus/nodes.py:529
+#: pylavcogs_shared/ui/menus/nodes.py:526
 msgid "Timeout"
 msgstr "Limit czasu"
 
 #: pylavcogs_shared/ui/menus/nodes.py:106
-#: pylavcogs_shared/ui/menus/nodes.py:557
+#: pylavcogs_shared/ui/menus/nodes.py:554
 msgid "Source to disable."
 msgstr "Źródło do wyłączenia."
 
 #: pylavcogs_shared/ui/menus/nodes.py:218
-#: pylavcogs_shared/ui/menus/nodes.py:667
+#: pylavcogs_shared/ui/menus/nodes.py:664
 msgid "Name set to {name}"
 msgstr "Nazwa ustawiona na {name}"
 
 #: pylavcogs_shared/ui/menus/nodes.py:231
-#: pylavcogs_shared/ui/menus/nodes.py:680
+#: pylavcogs_shared/ui/menus/nodes.py:677
 msgid "Password set to {password}"
 msgstr "Hasło ustawione na {password}"
 
-#: pylavcogs_shared/ui/menus/nodes.py:252
-#: pylavcogs_shared/ui/menus/nodes.py:701
+#: pylavcogs_shared/ui/menus/nodes.py:249
+#: pylavcogs_shared/ui/menus/nodes.py:695
 msgid "Host set to {host}"
 msgstr "Host ustawiony na {host}"
 
-#: pylavcogs_shared/ui/menus/nodes.py:269
-#: pylavcogs_shared/ui/menus/nodes.py:718
+#: pylavcogs_shared/ui/menus/nodes.py:266
+#: pylavcogs_shared/ui/menus/nodes.py:712
 msgid "Invalid port."
 msgstr "Nieprawidłowy port."
 
-#: pylavcogs_shared/ui/menus/nodes.py:277
-#: pylavcogs_shared/ui/menus/nodes.py:726
+#: pylavcogs_shared/ui/menus/nodes.py:274
+#: pylavcogs_shared/ui/menus/nodes.py:720
 msgid "Port set to {port}"
 msgstr "Port ustawiony na {port}"
 
-#: pylavcogs_shared/ui/menus/nodes.py:294
-#: pylavcogs_shared/ui/menus/nodes.py:743
+#: pylavcogs_shared/ui/menus/nodes.py:291
+#: pylavcogs_shared/ui/menus/nodes.py:737
 msgid "Invalid timeout, it must be a number in seconds."
 msgstr "Nieprawidłowy limit czasu, musi to być liczba w sekundach."
 
-#: pylavcogs_shared/ui/menus/nodes.py:302
-#: pylavcogs_shared/ui/menus/nodes.py:751
+#: pylavcogs_shared/ui/menus/nodes.py:299
+#: pylavcogs_shared/ui/menus/nodes.py:745
 msgid "Timeout set to {timeout} seconds."
 msgstr "Limit czasu ustawiony na {timeout} sekund."
 
-#: pylavcogs_shared/ui/menus/nodes.py:496
+#: pylavcogs_shared/ui/menus/nodes.py:493
 msgid "Change the domain or IP address of the host"
 msgstr "Zmień domenę lub adres IP hosta"
 
-#: pylavcogs_shared/ui/menus/nodes.py:504
+#: pylavcogs_shared/ui/menus/nodes.py:501
 msgid "Change the host port to connect to"
 msgstr "Zmień port hosta na połączenie"
 
-#: pylavcogs_shared/ui/menus/nodes.py:512
+#: pylavcogs_shared/ui/menus/nodes.py:509
 msgid "Change the node's password"
 msgstr "Zmień hasło węzła"
 
-#: pylavcogs_shared/ui/menus/nodes.py:520
+#: pylavcogs_shared/ui/menus/nodes.py:517
 msgid "Change the name of this node."
 msgstr "Zmień nazwę tego węzła."
 
-#: pylavcogs_shared/ui/menus/nodes.py:528
+#: pylavcogs_shared/ui/menus/nodes.py:525
 msgid "Enter the new timeout for this node."
 msgstr "Wprowadź nowy limit czasu dla tego węzła."
 
@@ -174,19 +174,19 @@ msgstr "Zapytanie"
 msgid "What query to remove from the playlist"
 msgstr "Jakie zapytanie chcesz usunąć z playlisty"
 
-#: pylavcogs_shared/ui/menus/queue.py:437
+#: pylavcogs_shared/ui/menus/queue.py:436
 msgid "Select Track To Remove"
 msgstr "Wybierz ścieżkę do usunięcia"
 
-#: pylavcogs_shared/ui/menus/queue.py:439
+#: pylavcogs_shared/ui/menus/queue.py:438
 msgid "Select Track To Play Now"
 msgstr "Wybierz ścieżkę, aby odtworzyć teraz"
 
-#: pylavcogs_shared/ui/menus/queue.py:541
+#: pylavcogs_shared/ui/menus/queue.py:540
 msgid "Pick An Effect Preset To Apply"
 msgstr "Wybierz ustawienie efektu aby zastosować"
 
-#: pylavcogs_shared/ui/menus/queue.py:690
+#: pylavcogs_shared/ui/menus/queue.py:689
 msgid "Select Track To Enqueue"
 msgstr "Wybierz ścieżkę do kolejki"
 

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-05-08 12:26+0000\n"
-"PO-Revision-Date: 2022-05-08 12:59\n"
+"POT-Creation-Date: 2022-05-08 19:46+0000\n"
+"PO-Revision-Date: 2022-05-08 19:50\n"
 "Last-Translator: \n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
@@ -94,7 +94,7 @@ msgstr "__Увімкнені джерела__:\n"
 
 #: pylavcogs_shared/ui/buttons/player.py:34
 #: pylavcogs_shared/ui/buttons/player.py:98
-#: pylavcogs_shared/ui/buttons/player.py:161
+#: pylavcogs_shared/ui/buttons/player.py:160
 msgid "You are not authorized to perform this action."
 msgstr "Ви не маєте прав на виконання цієї дії."
 
@@ -104,21 +104,21 @@ msgid "No Player Available For Action - Try Refreshing."
 msgstr "Немає доступного гравця для дії - спробуйте Оновити."
 
 #: pylavcogs_shared/ui/buttons/player.py:64
-#: pylavcogs_shared/ui/buttons/player.py:127
-#: pylavcogs_shared/ui/buttons/player.py:196
+#: pylavcogs_shared/ui/buttons/player.py:126
+#: pylavcogs_shared/ui/buttons/player.py:195
 msgid "Bot Owner Action"
 msgstr "Дія власника бота"
 
 #: pylavcogs_shared/ui/buttons/player.py:64
-#: pylavcogs_shared/ui/buttons/player.py:197
+#: pylavcogs_shared/ui/buttons/player.py:196
 msgid "Player disconnected."
 msgstr "Гравець від'єднався від мережі."
 
-#: pylavcogs_shared/ui/buttons/player.py:127
+#: pylavcogs_shared/ui/buttons/player.py:126
 msgid "Player stopped."
 msgstr "Гравець зупинився."
 
-#: pylavcogs_shared/ui/buttons/player.py:175
+#: pylavcogs_shared/ui/buttons/player.py:174
 msgid "No Players Available For Action - Try Refreshing."
 msgstr "Немає доступних гравців для дії - спробуйте Оновити."
 
@@ -184,7 +184,7 @@ msgstr "Вибрати плейліст"
 msgid "What should the playlist name be?"
 msgstr "Якою має бути назва плейліста?"
 
-#: pylavcogs_shared/ui/buttons/queue.py:230
+#: pylavcogs_shared/ui/buttons/queue.py:224
 msgid "What do you want to enqueue?"
 msgstr "Що ви хочете включити в чергу?"
 

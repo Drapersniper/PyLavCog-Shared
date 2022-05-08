@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-05-08 12:26+0000\n"
-"PO-Revision-Date: 2022-05-08 12:58\n"
+"POT-Creation-Date: 2022-05-08 19:46+0000\n"
+"PO-Revision-Date: 2022-05-08 19:49\n"
 "Last-Translator: \n"
 "Language-Team: Dutch\n"
 "MIME-Version: 1.0\n"
@@ -94,7 +94,7 @@ msgstr "__Ingeschakelde bronnen__:\n"
 
 #: pylavcogs_shared/ui/buttons/player.py:34
 #: pylavcogs_shared/ui/buttons/player.py:98
-#: pylavcogs_shared/ui/buttons/player.py:161
+#: pylavcogs_shared/ui/buttons/player.py:160
 msgid "You are not authorized to perform this action."
 msgstr "U bent niet bevoegd om deze actie uit te voeren."
 
@@ -104,21 +104,21 @@ msgid "No Player Available For Action - Try Refreshing."
 msgstr "Geen speler beschikbaar voor actie - Probeer te verversen."
 
 #: pylavcogs_shared/ui/buttons/player.py:64
-#: pylavcogs_shared/ui/buttons/player.py:127
-#: pylavcogs_shared/ui/buttons/player.py:196
+#: pylavcogs_shared/ui/buttons/player.py:126
+#: pylavcogs_shared/ui/buttons/player.py:195
 msgid "Bot Owner Action"
 msgstr "Bot Eigenaar Actie"
 
 #: pylavcogs_shared/ui/buttons/player.py:64
-#: pylavcogs_shared/ui/buttons/player.py:197
+#: pylavcogs_shared/ui/buttons/player.py:196
 msgid "Player disconnected."
 msgstr "Speler verbinding verbroken."
 
-#: pylavcogs_shared/ui/buttons/player.py:127
+#: pylavcogs_shared/ui/buttons/player.py:126
 msgid "Player stopped."
 msgstr "Speler gestopt."
 
-#: pylavcogs_shared/ui/buttons/player.py:175
+#: pylavcogs_shared/ui/buttons/player.py:174
 msgid "No Players Available For Action - Try Refreshing."
 msgstr "Geen spelers beschikbaar voor actie - Probeer te verversen."
 
@@ -184,7 +184,7 @@ msgstr "Kies een afspeellijst"
 msgid "What should the playlist name be?"
 msgstr "Wat moet de naam van de afspeellijst zijn?"
 
-#: pylavcogs_shared/ui/buttons/queue.py:230
+#: pylavcogs_shared/ui/buttons/queue.py:224
 msgid "What do you want to enqueue?"
 msgstr "Wat wilt u navraag doen?"
 

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-05-08 12:26+0000\n"
-"PO-Revision-Date: 2022-05-08 12:58\n"
+"POT-Creation-Date: 2022-05-08 19:46+0000\n"
+"PO-Revision-Date: 2022-05-08 19:49\n"
 "Last-Translator: \n"
 "Language-Team: Greek, Cyprus\n"
 "MIME-Version: 1.0\n"
@@ -94,7 +94,7 @@ msgstr "__Ενεργοποιημένες πηγές__:\n"
 
 #: pylavcogs_shared/ui/buttons/player.py:34
 #: pylavcogs_shared/ui/buttons/player.py:98
-#: pylavcogs_shared/ui/buttons/player.py:161
+#: pylavcogs_shared/ui/buttons/player.py:160
 msgid "You are not authorized to perform this action."
 msgstr "Δεν είστε εξουσιοδοτημένοι να εκτελέσετε αυτήν την ενέργεια."
 
@@ -104,21 +104,21 @@ msgid "No Player Available For Action - Try Refreshing."
 msgstr "Δεν Υπάρχει Διαθέσιμος Παίκτης Για Δράση - Δοκιμάστε Να Ανανεώσετε."
 
 #: pylavcogs_shared/ui/buttons/player.py:64
-#: pylavcogs_shared/ui/buttons/player.py:127
-#: pylavcogs_shared/ui/buttons/player.py:196
+#: pylavcogs_shared/ui/buttons/player.py:126
+#: pylavcogs_shared/ui/buttons/player.py:195
 msgid "Bot Owner Action"
 msgstr "Ενέργεια Ιδιοκτήτη Bot"
 
 #: pylavcogs_shared/ui/buttons/player.py:64
-#: pylavcogs_shared/ui/buttons/player.py:197
+#: pylavcogs_shared/ui/buttons/player.py:196
 msgid "Player disconnected."
 msgstr "Ο παίκτης αποσυνδέθηκε."
 
-#: pylavcogs_shared/ui/buttons/player.py:127
+#: pylavcogs_shared/ui/buttons/player.py:126
 msgid "Player stopped."
 msgstr "Ο παίκτης σταμάτησε."
 
-#: pylavcogs_shared/ui/buttons/player.py:175
+#: pylavcogs_shared/ui/buttons/player.py:174
 msgid "No Players Available For Action - Try Refreshing."
 msgstr "Δεν Υπάρχουν Διαθέσιμοι Παίκτες Για Δράση - Δοκιμάστε Να Ανανεώσετε."
 
@@ -184,7 +184,7 @@ msgstr "Επιλέξτε μια λίστα αναπαραγωγής"
 msgid "What should the playlist name be?"
 msgstr "Τι πρέπει να είναι το όνομα της λίστας αναπαραγωγής?"
 
-#: pylavcogs_shared/ui/buttons/queue.py:230
+#: pylavcogs_shared/ui/buttons/queue.py:224
 msgid "What do you want to enqueue?"
 msgstr "Τι θέλετε να κάνετε στην ουρά?"
 

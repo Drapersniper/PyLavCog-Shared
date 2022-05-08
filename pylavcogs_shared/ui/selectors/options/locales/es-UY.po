@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-05-07 17:58+0100\n"
-"PO-Revision-Date: 2022-05-08 12:59\n"
+"POT-Creation-Date: 2022-05-08 19:46+0000\n"
+"PO-Revision-Date: 2022-05-08 19:50\n"
 "Last-Translator: \n"
 "Language-Team: Spanish, Uruguay\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Crowdin-File-ID: 372\n"
 "Language: es_UY\n"
 
-#: pylavcogs_shared/ui/selectors/options/nodes.py:33
+#: pylavcogs_shared/ui/selectors/options/nodes.py:31
 msgid "ID: {} || SSL: {} || Search-only: {}"
 msgstr "ID: {} || SSL: {} || Buscar-solamente: {}"
 

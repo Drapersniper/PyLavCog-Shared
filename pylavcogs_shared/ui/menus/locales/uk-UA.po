@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-05-08 12:26+0000\n"
-"PO-Revision-Date: 2022-05-08 12:59\n"
+"POT-Creation-Date: 2022-05-08 19:46+0000\n"
+"PO-Revision-Date: 2022-05-08 19:50\n"
 "Last-Translator: \n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgid "Enter the domain or IP address of the host"
 msgstr "Введіть домен або IP-адресу хоста"
 
 #: pylavcogs_shared/ui/menus/nodes.py:59
-#: pylavcogs_shared/ui/menus/nodes.py:497
+#: pylavcogs_shared/ui/menus/nodes.py:494
 msgid "Host"
 msgstr "Хост"
 
@@ -31,7 +31,7 @@ msgid "Enter the host port to connect to"
 msgstr "Введіть порт хоста для підключення"
 
 #: pylavcogs_shared/ui/menus/nodes.py:67
-#: pylavcogs_shared/ui/menus/nodes.py:505
+#: pylavcogs_shared/ui/menus/nodes.py:502
 msgid "Port"
 msgstr "Порт"
 
@@ -40,7 +40,7 @@ msgid "Enter the node's password"
 msgstr "Введіть пароль вузла"
 
 #: pylavcogs_shared/ui/menus/nodes.py:75
-#: pylavcogs_shared/ui/menus/nodes.py:513
+#: pylavcogs_shared/ui/menus/nodes.py:510
 msgid "Password"
 msgstr "Пароль"
 
@@ -49,7 +49,7 @@ msgid "Enter an easy to know name for the node."
 msgstr "Введіть просту назву для вузла."
 
 #: pylavcogs_shared/ui/menus/nodes.py:83
-#: pylavcogs_shared/ui/menus/nodes.py:521
+#: pylavcogs_shared/ui/menus/nodes.py:518
 msgid "Name"
 msgstr "Ім'я"
 
@@ -58,67 +58,67 @@ msgid "Enter a timeout in seconds."
 msgstr "Введіть тайм-аут в секундах."
 
 #: pylavcogs_shared/ui/menus/nodes.py:91
-#: pylavcogs_shared/ui/menus/nodes.py:529
+#: pylavcogs_shared/ui/menus/nodes.py:526
 msgid "Timeout"
 msgstr "Тайм-аут"
 
 #: pylavcogs_shared/ui/menus/nodes.py:106
-#: pylavcogs_shared/ui/menus/nodes.py:557
+#: pylavcogs_shared/ui/menus/nodes.py:554
 msgid "Source to disable."
 msgstr "Джерело вимкнене."
 
 #: pylavcogs_shared/ui/menus/nodes.py:218
-#: pylavcogs_shared/ui/menus/nodes.py:667
+#: pylavcogs_shared/ui/menus/nodes.py:664
 msgid "Name set to {name}"
 msgstr "Ім'я встановлено на {name}"
 
 #: pylavcogs_shared/ui/menus/nodes.py:231
-#: pylavcogs_shared/ui/menus/nodes.py:680
+#: pylavcogs_shared/ui/menus/nodes.py:677
 msgid "Password set to {password}"
 msgstr "Пароль встановлено на {password}"
 
-#: pylavcogs_shared/ui/menus/nodes.py:252
-#: pylavcogs_shared/ui/menus/nodes.py:701
+#: pylavcogs_shared/ui/menus/nodes.py:249
+#: pylavcogs_shared/ui/menus/nodes.py:695
 msgid "Host set to {host}"
 msgstr "Хост встановлено на {host}"
 
-#: pylavcogs_shared/ui/menus/nodes.py:269
-#: pylavcogs_shared/ui/menus/nodes.py:718
+#: pylavcogs_shared/ui/menus/nodes.py:266
+#: pylavcogs_shared/ui/menus/nodes.py:712
 msgid "Invalid port."
 msgstr "Недійсний порт."
 
-#: pylavcogs_shared/ui/menus/nodes.py:277
-#: pylavcogs_shared/ui/menus/nodes.py:726
+#: pylavcogs_shared/ui/menus/nodes.py:274
+#: pylavcogs_shared/ui/menus/nodes.py:720
 msgid "Port set to {port}"
 msgstr "Порт встановлено на {port}"
 
-#: pylavcogs_shared/ui/menus/nodes.py:294
-#: pylavcogs_shared/ui/menus/nodes.py:743
+#: pylavcogs_shared/ui/menus/nodes.py:291
+#: pylavcogs_shared/ui/menus/nodes.py:737
 msgid "Invalid timeout, it must be a number in seconds."
 msgstr "Некоректний тайм-аут, це повинно бути число в секундах."
 
-#: pylavcogs_shared/ui/menus/nodes.py:302
-#: pylavcogs_shared/ui/menus/nodes.py:751
+#: pylavcogs_shared/ui/menus/nodes.py:299
+#: pylavcogs_shared/ui/menus/nodes.py:745
 msgid "Timeout set to {timeout} seconds."
 msgstr "Час очікування минув на {timeout} секунд."
 
-#: pylavcogs_shared/ui/menus/nodes.py:496
+#: pylavcogs_shared/ui/menus/nodes.py:493
 msgid "Change the domain or IP address of the host"
 msgstr "Змінити домен або IP-адресу хоста"
 
-#: pylavcogs_shared/ui/menus/nodes.py:504
+#: pylavcogs_shared/ui/menus/nodes.py:501
 msgid "Change the host port to connect to"
 msgstr "Змініть порт хоста для підключення"
 
-#: pylavcogs_shared/ui/menus/nodes.py:512
+#: pylavcogs_shared/ui/menus/nodes.py:509
 msgid "Change the node's password"
 msgstr "Змінити пароль вузла"
 
-#: pylavcogs_shared/ui/menus/nodes.py:520
+#: pylavcogs_shared/ui/menus/nodes.py:517
 msgid "Change the name of this node."
 msgstr "Змінити назву цього вузла."
 
-#: pylavcogs_shared/ui/menus/nodes.py:528
+#: pylavcogs_shared/ui/menus/nodes.py:525
 msgid "Enter the new timeout for this node."
 msgstr "Введіть новий тайм-аут для цього вузла."
 
@@ -174,19 +174,19 @@ msgstr "Запит"
 msgid "What query to remove from the playlist"
 msgstr "Який запит видалити зі списку відтворення"
 
-#: pylavcogs_shared/ui/menus/queue.py:437
+#: pylavcogs_shared/ui/menus/queue.py:436
 msgid "Select Track To Remove"
 msgstr "Вибрати доріжку, щоб видалити"
 
-#: pylavcogs_shared/ui/menus/queue.py:439
+#: pylavcogs_shared/ui/menus/queue.py:438
 msgid "Select Track To Play Now"
 msgstr "Вибрати доріжку, щоб грати зараз"
 
-#: pylavcogs_shared/ui/menus/queue.py:541
+#: pylavcogs_shared/ui/menus/queue.py:540
 msgid "Pick An Effect Preset To Apply"
 msgstr "Оберіть шаблон ефекту, щоб застосувати"
 
-#: pylavcogs_shared/ui/menus/queue.py:690
+#: pylavcogs_shared/ui/menus/queue.py:689
 msgid "Select Track To Enqueue"
 msgstr "Обрати трек до черги"
 

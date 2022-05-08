@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-05-08 12:26+0000\n"
-"PO-Revision-Date: 2022-05-08 12:29\n"
+"POT-Creation-Date: 2022-05-08 19:46+0000\n"
+"PO-Revision-Date: 2022-05-08 19:49\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "MIME-Version: 1.0\n"
@@ -93,7 +93,7 @@ msgstr "crwdns3974:0{sources}crwdne3974:0"
 
 #: pylavcogs_shared/ui/buttons/player.py:34
 #: pylavcogs_shared/ui/buttons/player.py:98
-#: pylavcogs_shared/ui/buttons/player.py:161
+#: pylavcogs_shared/ui/buttons/player.py:160
 msgid "You are not authorized to perform this action."
 msgstr "crwdns3406:0crwdne3406:0"
 
@@ -103,21 +103,21 @@ msgid "No Player Available For Action - Try Refreshing."
 msgstr "crwdns3408:0crwdne3408:0"
 
 #: pylavcogs_shared/ui/buttons/player.py:64
-#: pylavcogs_shared/ui/buttons/player.py:127
-#: pylavcogs_shared/ui/buttons/player.py:196
+#: pylavcogs_shared/ui/buttons/player.py:126
+#: pylavcogs_shared/ui/buttons/player.py:195
 msgid "Bot Owner Action"
 msgstr "crwdns3410:0crwdne3410:0"
 
 #: pylavcogs_shared/ui/buttons/player.py:64
-#: pylavcogs_shared/ui/buttons/player.py:197
+#: pylavcogs_shared/ui/buttons/player.py:196
 msgid "Player disconnected."
 msgstr "crwdns3412:0crwdne3412:0"
 
-#: pylavcogs_shared/ui/buttons/player.py:127
+#: pylavcogs_shared/ui/buttons/player.py:126
 msgid "Player stopped."
 msgstr "crwdns3414:0crwdne3414:0"
 
-#: pylavcogs_shared/ui/buttons/player.py:175
+#: pylavcogs_shared/ui/buttons/player.py:174
 msgid "No Players Available For Action - Try Refreshing."
 msgstr "crwdns3416:0crwdne3416:0"
 
@@ -182,7 +182,7 @@ msgstr "crwdns3444:0crwdne3444:0"
 msgid "What should the playlist name be?"
 msgstr "crwdns3446:0crwdne3446:0"
 
-#: pylavcogs_shared/ui/buttons/queue.py:230
+#: pylavcogs_shared/ui/buttons/queue.py:224
 msgid "What do you want to enqueue?"
 msgstr "crwdns3448:0crwdne3448:0"
 

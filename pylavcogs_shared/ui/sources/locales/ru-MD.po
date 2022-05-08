@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-05-08 12:26+0000\n"
-"PO-Revision-Date: 2022-05-08 12:30\n"
+"POT-Creation-Date: 2022-05-08 19:46+0000\n"
+"PO-Revision-Date: 2022-05-08 19:50\n"
 "Last-Translator: \n"
 "Language-Team: Russian, Moldova\n"
 "MIME-Version: 1.0\n"
@@ -158,32 +158,32 @@ msgstr "nodes"
 msgid "node"
 msgstr "узел"
 
-#: pylavcogs_shared/ui/sources/player.py:63
+#: pylavcogs_shared/ui/sources/player.py:65
 msgid "Nothing playing."
 msgstr "Ничего не играет."
 
-#: pylavcogs_shared/ui/sources/player.py:73
+#: pylavcogs_shared/ui/sources/player.py:75
 msgid "Server Owner"
 msgstr "Владелец сервера"
 
-#: pylavcogs_shared/ui/sources/player.py:74
+#: pylavcogs_shared/ui/sources/player.py:76
 msgid "Connected For"
 msgstr "Подключено для"
 
-#: pylavcogs_shared/ui/sources/player.py:75
+#: pylavcogs_shared/ui/sources/player.py:77
 msgid "Users in VC"
 msgstr "Пользователи в VC"
 
-#: pylavcogs_shared/ui/sources/player.py:76
+#: pylavcogs_shared/ui/sources/player.py:78
 msgid "Queue Length"
 msgstr "Длина очереди"
 
-#: pylavcogs_shared/ui/sources/player.py:86
+#: pylavcogs_shared/ui/sources/player.py:88
 msgid "Page {page_num}/{total_pages}  | Playing in {playing} servers."
 msgstr "Страница {page_num}/{total_pages}  | Воспроизведение на {playing} серверах."
 
 #: pylavcogs_shared/ui/sources/playlist.py:61
-#: pylavcogs_shared/ui/sources/playlist.py:185
+#: pylavcogs_shared/ui/sources/playlist.py:186
 msgid "Page {page_num}/{total_pages} | {num} playlists."
 msgstr "Страница {page_num}/{total_pages} | {num} плейлистов."
 
@@ -211,7 +211,7 @@ msgstr "Автор: {name}"
 msgid "Scope: {scope}\n"
 msgstr "Область: {scope}\n"
 
-#: pylavcogs_shared/ui/sources/playlist.py:181
+#: pylavcogs_shared/ui/sources/playlist.py:182
 msgid "Playlists you can access in this server:"
 msgstr "Плейлисты для доступа на этом сервере:"
 
