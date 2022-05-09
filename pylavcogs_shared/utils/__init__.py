@@ -37,7 +37,10 @@ class Mutator:
     def __init__(self, obj: object):  # sourcery skip: remove-unnecessary-cast
         self.obj = obj
         self.name = obj.name if hasattr(obj, "name") else str(obj.__class__.__name__)
-        i = hashlib.md5()
-        i.update(self.name.encode())
-        i.update(str(id(obj)).encode())
-        self.id = str(int(i.hexdigest(), 16))[:16]
+        if hasattr(obj, "id"):
+            self.id = str(obj.id)
+        else:
+            i = hashlib.md5()
+            i.update(self.name.encode())
+            i.update(str(id(obj)).encode())
+            self.id = str(int(i.hexdigest(), 16))[:16]
