@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-05-08 19:46+0000\n"
-"PO-Revision-Date: 2022-05-08 19:49\n"
+"POT-Creation-Date: 2022-05-09 23:05+0000\n"
+"PO-Revision-Date: 2022-05-09 23:09\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "MIME-Version: 1.0\n"
@@ -24,6 +24,18 @@ msgstr "crwdns3524:0crwdne3524:0"
 #: pylavcogs_shared/ui/sources/equalizer.py:35
 msgid "Author"
 msgstr "crwdns3526:0crwdne3526:0"
+
+#: pylavcogs_shared/ui/sources/generic.py:82
+msgid "Page {page_num}/{total_pages} | {num} {entries}."
+msgstr "crwdns4100:0{page_num}crwdnd4100:0{total_pages}crwdnd4100:0{num}crwdnd4100:0{entries}crwdne4100:0"
+
+#: pylavcogs_shared/ui/sources/generic.py:86
+msgid "entries"
+msgstr "crwdns4102:0crwdne4102:0"
+
+#: pylavcogs_shared/ui/sources/generic.py:86
+msgid "entry"
+msgstr "crwdns4104:0crwdne4104:0"
 
 #: pylavcogs_shared/ui/sources/nodes.py:49
 msgid "Page {page_num}/{total_pages} | {num} nodes."

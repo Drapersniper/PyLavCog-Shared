@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-05-07 17:58+0100\n"
-"PO-Revision-Date: 2022-05-08 12:59\n"
+"POT-Creation-Date: 2022-05-09 23:11+0000\n"
+"PO-Revision-Date: 2022-05-09 23:15\n"
 "Last-Translator: \n"
 "Language-Team: Romanian\n"
 "MIME-Version: 1.0\n"
@@ -25,11 +25,11 @@ msgstr "Mai multe noduri se potrivesc, alege-le pe cele pe care le-ai dorit."
 msgid "Pick a node"
 msgstr "Alege un nod"
 
-#: pylavcogs_shared/ui/prompts/playlists.py:28
+#: pylavcogs_shared/ui/prompts/playlists.py:30
 msgid "Multiple playlist matched, pick the one which you meant."
 msgstr "Mai multe liste de redare se potrivesc, alege-le pe cele pe care le-ai dorit."
 
-#: pylavcogs_shared/ui/prompts/playlists.py:34
+#: pylavcogs_shared/ui/prompts/playlists.py:36
 msgid "Pick a playlist"
 msgstr "Alege o listă de redare"
 
