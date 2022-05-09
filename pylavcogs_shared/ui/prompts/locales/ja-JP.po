@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-05-07 17:58+0100\n"
-"PO-Revision-Date: 2022-05-08 12:59\n"
+"POT-Creation-Date: 2022-05-09 23:11+0000\n"
+"PO-Revision-Date: 2022-05-09 23:15\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -25,11 +25,11 @@ msgstr "複数のノードが一致しました。意味するノードを選択
 msgid "Pick a node"
 msgstr "ノードを選択"
 
-#: pylavcogs_shared/ui/prompts/playlists.py:28
+#: pylavcogs_shared/ui/prompts/playlists.py:30
 msgid "Multiple playlist matched, pick the one which you meant."
 msgstr "複数のプレイリストが一致しました。意味するプレイリストを選択してください。"
 
-#: pylavcogs_shared/ui/prompts/playlists.py:34
+#: pylavcogs_shared/ui/prompts/playlists.py:36
 msgid "Pick a playlist"
 msgstr "プレイリストを選択"
 
