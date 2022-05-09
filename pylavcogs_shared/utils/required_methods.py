@@ -126,7 +126,7 @@ def _done_callback(task: asyncio.Task) -> None:
     with contextlib.suppress(asyncio.CancelledError):
         exc = task.exception()
         if exc is not None:
-            LOGGER.error("Error in connect task", exc_info=exc)
+            LOGGER.error("Error in initialize task", exc_info=exc)
 
 
 async def pylav_auto_setup(bot: BotT, cog_cls: type[CogT]) -> CogT:
