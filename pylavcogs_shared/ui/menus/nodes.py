@@ -12,7 +12,7 @@ from redbot.core.utils.chat_formatting import inline
 
 from pylav import emojis
 from pylav.sql.models import NodeModel
-from pylav.types import BotT, CogT, ContextT, Interaction
+from pylav.types import BotT, CogT, ContextT, InteractionT
 from pylav.utils import PyLavContext
 
 from pylavcogs_shared.ui.buttons.generic import CloseButton, DoneButton, NavigateButton, RefreshButton
@@ -182,11 +182,11 @@ class AddNodeFlow(discord.ui.View):
     async def wait_until_complete(self):
         await asyncio.wait_for(self.completed.wait(), timeout=self.timeout)
 
-    async def start(self, ctx: PyLavContext | Interaction, description: str = None, title: str = None):
+    async def start(self, ctx: PyLavContext | InteractionT, description: str = None, title: str = None):
         self.unique_identifier = ctx.message.id
         await self.send_initial_message(ctx, description=description, title=title)
 
-    async def interaction_check(self, interaction: Interaction):
+    async def interaction_check(self, interaction: InteractionT):
         """Just extends the default reaction_check to use owner_ids"""
         if (not await self.bot.allowed_by_whitelist_blacklist(interaction.user, guild=interaction.guild)) or (
             self.author and (interaction.user.id != self.author.id)
@@ -197,7 +197,7 @@ class AddNodeFlow(discord.ui.View):
             return False
         return True
 
-    async def send_initial_message(self, ctx: PyLavContext | Interaction, description: str = None, title: str = None):
+    async def send_initial_message(self, ctx: PyLavContext | InteractionT, description: str = None, title: str = None):
         self.ctx = ctx
         self.message = await ctx.send(
             embed=await self.cog.lavalink.construct_embed(description=description, title=title, messageable=ctx),
@@ -206,7 +206,7 @@ class AddNodeFlow(discord.ui.View):
         )
         return self.message
 
-    async def prompt_name(self, interaction: Interaction) -> None:
+    async def prompt_name(self, interaction: InteractionT) -> None:
         self.cancelled = False
         await interaction.response.send_modal(self.name_prompt)
         await self.name_prompt.responded.wait()
@@ -219,7 +219,7 @@ class AddNodeFlow(discord.ui.View):
             ephemeral=True,
         )
 
-    async def prompt_password(self, interaction: Interaction) -> None:
+    async def prompt_password(self, interaction: InteractionT) -> None:
         self.cancelled = False
         await interaction.response.send_modal(self.password_prompt)
         await self.password_prompt.responded.wait()
@@ -232,7 +232,7 @@ class AddNodeFlow(discord.ui.View):
             ephemeral=True,
         )
 
-    async def prompt_host(self, interaction: Interaction) -> None:
+    async def prompt_host(self, interaction: InteractionT) -> None:
         self.cancelled = False
         await interaction.response.send_modal(self.host_prompt)
         await self.host_prompt.responded.wait()
@@ -250,7 +250,7 @@ class AddNodeFlow(discord.ui.View):
             ephemeral=True,
         )
 
-    async def prompt_port(self, interaction: Interaction) -> None:
+    async def prompt_port(self, interaction: InteractionT) -> None:
         self.cancelled = False
         await interaction.response.send_modal(self.port_prompt)
         await self.port_prompt.responded.wait()
@@ -275,7 +275,7 @@ class AddNodeFlow(discord.ui.View):
                 ephemeral=True,
             )
 
-    async def prompt_resume_timeout(self, interaction: Interaction) -> None:
+    async def prompt_resume_timeout(self, interaction: InteractionT) -> None:
         self.cancelled = False
         await interaction.response.send_modal(self.resume_timeout_prompt)
         await self.resume_timeout_prompt.responded.wait()
@@ -409,7 +409,7 @@ class NodePickerMenu(BaseMenu):
             self.remove_item(self.select_view)
             self.select_view = None
 
-    async def start(self, ctx: PyLavContext | Interaction):
+    async def start(self, ctx: PyLavContext | InteractionT):
         if isinstance(ctx, discord.Interaction):
             ctx = await self.cog.bot.get_context(ctx)
         if ctx.interaction and not ctx.interaction.response.is_done():
@@ -417,7 +417,7 @@ class NodePickerMenu(BaseMenu):
         self.ctx = ctx
         await self.send_initial_message(ctx)
 
-    async def show_page(self, page_number: int, interaction: Interaction):
+    async def show_page(self, page_number: int, interaction: InteractionT):
         await self._source.get_page(page_number)
         await self.prepare()
         self.current_page = page_number
@@ -625,11 +625,11 @@ class NodeManagerMenu(BaseMenu):
     async def wait_until_complete(self):
         await asyncio.wait_for(self.completed.wait(), timeout=self.timeout)
 
-    async def start(self, ctx: PyLavContext | Interaction, description: str = None, title: str = None):
+    async def start(self, ctx: PyLavContext | InteractionT, description: str = None, title: str = None):
         self.unique_identifier = ctx.message.id
         await self.send_initial_message(ctx, description=description, title=title)
 
-    async def interaction_check(self, interaction: Interaction):
+    async def interaction_check(self, interaction: InteractionT):
         """Just extends the default reaction_check to use owner_ids"""
         if (not await self.bot.allowed_by_whitelist_blacklist(interaction.user, guild=interaction.guild)) or (
             self.author and (interaction.user.id != self.author.id)
@@ -640,7 +640,7 @@ class NodeManagerMenu(BaseMenu):
             return False
         return True
 
-    async def send_initial_message(self, ctx: PyLavContext | Interaction, description: str = None, title: str = None):
+    async def send_initial_message(self, ctx: PyLavContext | InteractionT, description: str = None, title: str = None):
         self.ctx = ctx
         await self.prepare()
         self.message = await ctx.send(
@@ -650,7 +650,7 @@ class NodeManagerMenu(BaseMenu):
         )
         return self.message
 
-    async def prompt_name(self, interaction: Interaction) -> None:
+    async def prompt_name(self, interaction: InteractionT) -> None:
         self.cancelled = False
         await interaction.response.send_modal(self.name_prompt)
         await self.name_prompt.responded.wait()
@@ -663,7 +663,7 @@ class NodeManagerMenu(BaseMenu):
             ephemeral=True,
         )
 
-    async def prompt_password(self, interaction: Interaction) -> None:
+    async def prompt_password(self, interaction: InteractionT) -> None:
         self.cancelled = False
         await interaction.response.send_modal(self.password_prompt)
         await self.password_prompt.responded.wait()
@@ -676,7 +676,7 @@ class NodeManagerMenu(BaseMenu):
             ephemeral=True,
         )
 
-    async def prompt_host(self, interaction: Interaction) -> None:
+    async def prompt_host(self, interaction: InteractionT) -> None:
         self.cancelled = False
         await interaction.response.send_modal(self.host_prompt)
         await self.host_prompt.responded.wait()
@@ -694,7 +694,7 @@ class NodeManagerMenu(BaseMenu):
             ephemeral=True,
         )
 
-    async def prompt_port(self, interaction: Interaction) -> None:
+    async def prompt_port(self, interaction: InteractionT) -> None:
         self.cancelled = False
         await interaction.response.send_modal(self.port_prompt)
         await self.port_prompt.responded.wait()
@@ -719,7 +719,7 @@ class NodeManagerMenu(BaseMenu):
                 ephemeral=True,
             )
 
-    async def prompt_resume_timeout(self, interaction: Interaction) -> None:
+    async def prompt_resume_timeout(self, interaction: InteractionT) -> None:
         self.cancelled = False
         await interaction.response.send_modal(self.resume_timeout_prompt)
         await self.resume_timeout_prompt.responded.wait()

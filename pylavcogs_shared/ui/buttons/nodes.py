@@ -9,7 +9,7 @@ from red_commons.logging import getLogger
 from redbot.core.i18n import Translator
 
 from pylav import emojis
-from pylav.types import CogT, Interaction
+from pylav.types import CogT, InteractionT
 
 if TYPE_CHECKING:
     from pylavcogs_shared.ui.menus.nodes import AddNodeFlow, NodeManagerMenu
@@ -37,7 +37,7 @@ class SSLNodeToggleButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: Interaction):
+    async def callback(self, interaction: InteractionT):
         if self.view.author.id != interaction.user.id:
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
@@ -79,7 +79,7 @@ class SearchOnlyNodeToggleButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: Interaction):
+    async def callback(self, interaction: InteractionT):
         if self.view.author.id != interaction.user.id:
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
@@ -115,7 +115,7 @@ class AddNodeDoneButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: Interaction):
+    async def callback(self, interaction: InteractionT):
         if self.view.author.id != interaction.user.id:
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
@@ -162,7 +162,7 @@ class NodeButton(discord.ui.Button):
         self.cog = cog
         self.op = op
 
-    async def callback(self, interaction: Interaction):
+    async def callback(self, interaction: InteractionT):
         if self.view.author.id != interaction.user.id:
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
@@ -194,7 +194,7 @@ class NodeDeleteButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: Interaction):
+    async def callback(self, interaction: InteractionT):
         if self.view.author.id != interaction.user.id:
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
@@ -226,7 +226,7 @@ class NodeShowEnabledSourcesButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: Interaction):
+    async def callback(self, interaction: InteractionT):
         if self.view.author.id != interaction.user.id:
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(

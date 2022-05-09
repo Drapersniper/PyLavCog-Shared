@@ -6,7 +6,7 @@ import discord
 from redbot.core.i18n import Translator
 
 from pylav import emojis
-from pylav.types import CogT, Interaction
+from pylav.types import CogT, InteractionT
 
 _ = Translator("PyLavShared", Path(__file__))
 
@@ -20,7 +20,7 @@ class EqualizerButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: Interaction):
+    async def callback(self, interaction: InteractionT):
         # TODO: Implement
         kwargs = await self.view.get_page(self.view.current_page)
         await self.view.prepare()

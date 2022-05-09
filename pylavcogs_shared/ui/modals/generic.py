@@ -5,13 +5,13 @@ import asyncio
 import discord
 from red_commons.logging import getLogger
 
-from pylav.types import CogT, Interaction
+from pylav.types import CogT, InteractionT
 
 LOGGER = getLogger("red.3pt.PyLav-Shared.ui.modals.generic")
 
 
 class PromptForInput(discord.ui.Modal):
-    interaction: Interaction
+    interaction: InteractionT
     response: str
 
     def __init__(
@@ -36,7 +36,7 @@ class PromptForInput(discord.ui.Modal):
         self.response = None  # type: ignore
         self.interaction = None  # type: ignore
 
-    async def on_submit(self, interaction: Interaction):
+    async def on_submit(self, interaction: InteractionT):
         self.interaction = interaction
         await interaction.response.defer()
         self.responded.set()

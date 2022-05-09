@@ -6,7 +6,7 @@ from typing import Any
 import discord
 from redbot.core.i18n import Translator
 
-from pylav.types import BotT, CogT, Interaction
+from pylav.types import BotT, CogT, InteractionT
 from pylav.utils import PyLavContext
 
 from pylavcogs_shared.ui.buttons.generic import CloseButton, LabelButton, NavigateButton, RefreshButton
@@ -183,7 +183,7 @@ class StatsMenu(BaseMenu):
     def source(self) -> PlayersSource:
         return self._source
 
-    async def start(self, ctx: PyLavContext | Interaction):
+    async def start(self, ctx: PyLavContext | InteractionT):
         if isinstance(ctx, discord.Interaction):
             ctx = await self.cog.bot.get_context(ctx)
         if ctx.interaction and not ctx.interaction.response.is_done():

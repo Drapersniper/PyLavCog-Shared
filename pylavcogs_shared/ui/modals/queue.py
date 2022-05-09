@@ -6,7 +6,7 @@ import discord
 from red_commons.logging import getLogger
 from redbot.core.i18n import Translator
 
-from pylav.types import CogT, Interaction
+from pylav.types import CogT, InteractionT
 
 LOGGER = getLogger("red.3pt.PyLav-Shared.ui.modals.queue")
 _ = Translator("PyLavShared", Path(__file__))
@@ -28,7 +28,7 @@ class EnqueueModal(discord.ui.Modal):
         )
         self.add_item(self.text)
 
-    async def on_submit(self, interaction: Interaction):
+    async def on_submit(self, interaction: InteractionT):
         await self.cog.command_play.callback(
             self.cog,
             interaction,
