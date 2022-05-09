@@ -7,17 +7,20 @@ from inspect import signature
 from pathlib import Path
 from types import MethodType
 
+from red_commons.logging import getLogger
 from redbot.core.data_manager import cog_data_path
 from redbot.core.i18n import Translator
 
 from pylav import Client, NoNodeAvailable
 from pylav.exceptions import NoNodeWithRequestFunctionalityAvailable
 from pylav.types import BotT, CogT
-from pylav.utils import LOGGER, PyLavContext
+from pylav.utils import PyLavContext
 
 from pylavcogs_shared.errors import MediaPlayerNotFoundError, UnauthorizedChannelError
 
 _ = Translator("PyLavShared", Path(__file__))
+
+LOGGER = getLogger("red.3pt.PyLav-Shared.utils.overrides")
 
 
 async def generic_cog_command_error(self, context: PyLavContext, error: Exception) -> None:
@@ -126,7 +129,7 @@ def _done_callback(task: asyncio.Task) -> None:
             LOGGER.error("Error in connect task", exc_info=exc)
 
 
-async def complex_setup(bot: BotT, cog_cls: type[CogT]) -> CogT:
+async def pylav_auto_setup(bot: BotT, cog_cls: type[CogT]) -> CogT:
     """Injects all the methods and attributes to respect PyLav Settings and keep the user experience consistent.
 
     Adds `.bot` attribute to the cog instance.
@@ -141,6 +144,13 @@ async def complex_setup(bot: BotT, cog_cls: type[CogT]) -> CogT:
         this will still be called after the built-in PyLav error handling if the error raised was unhandled.
     Overwrites initialize method to handle PyLav startup,
         calling the original initialize method once the PyLav initialization code is run, if such method exists. code is run.
+
+    Args:
+        bot (BotT): The bot instance to load the cog instance to.
+        cog_cls (type[CogT]): The cog class load.
+
+    Returns:
+        CogT: The cog instance loaded to the bot.
 
     """
     cog_instance = cog_cls(bot)
