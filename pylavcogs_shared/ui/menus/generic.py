@@ -10,7 +10,7 @@ from red_commons.logging import getLogger
 from redbot.core.i18n import Translator
 from redbot.vendored.discord.ext import menus
 
-from pylav.types import BotT, CogT, ContextT
+from pylav.types import BotT, CogT, ContextT, Interaction
 from pylav.utils import PyLavContext
 
 from pylavcogs_shared.types import SourcesT
@@ -77,14 +77,14 @@ class BaseMenu(discord.ui.View):
         elif isinstance(value, discord.Embed):
             return {"embed": value, "content": None}
 
-    async def send_initial_message(self, ctx: PyLavContext | discord.Interaction):
+    async def send_initial_message(self, ctx: PyLavContext | Interaction):
         self.ctx = ctx
         kwargs = await self.get_page(self.current_page)
         await self.prepare()
         self.message = await ctx.send(**kwargs, view=self, ephemeral=True)
         return self.message
 
-    async def show_page(self, page_number, interaction: discord.Interaction):
+    async def show_page(self, page_number, interaction: Interaction):
         self.current_page = page_number
         kwargs = await self.get_page(self.current_page)
         await self.prepare()
@@ -93,7 +93,7 @@ class BaseMenu(discord.ui.View):
         else:
             await interaction.followup.edit(**kwargs, view=self)
 
-    async def show_checked_page(self, page_number: int, interaction: discord.Interaction) -> None:
+    async def show_checked_page(self, page_number: int, interaction: Interaction) -> None:
         max_pages = self._source.get_max_pages()
         with contextlib.suppress(IndexError):
             if max_pages is None or page_number < max_pages and page_number >= 0:
@@ -104,7 +104,7 @@ class BaseMenu(discord.ui.View):
             else:
                 await self.show_page(max_pages - 1, interaction)
 
-    async def interaction_check(self, interaction: discord.Interaction):
+    async def interaction_check(self, interaction: Interaction):
         """Just extends the default reaction_check to use owner_ids"""
         if (not await self.bot.allowed_by_whitelist_blacklist(interaction.user, guild=interaction.guild)) or (
             self.author and (interaction.user.id != self.author.id)
@@ -118,7 +118,7 @@ class BaseMenu(discord.ui.View):
     async def prepare(self):
         return
 
-    async def on_error(self, error: Exception, item: discord.ui.Item[Any], interaction: discord.Interaction) -> None:
+    async def on_error(self, error: Exception, item: discord.ui.Item[Any], interaction: Interaction) -> None:
         LOGGER.info("Ignoring exception in view %s for item %s:", self, item, exc_info=error)
 
 
@@ -194,7 +194,7 @@ class PaginatingMenu(BaseMenu):
         self.add_item(self.forward_button)
         self.add_item(self.last_button)
 
-    async def start(self, ctx: PyLavContext | discord.Interaction):
+    async def start(self, ctx: PyLavContext | Interaction):
         if isinstance(ctx, discord.Interaction):
             ctx = await self.cog.bot.get_context(ctx)
         if ctx.interaction and not ctx.interaction.response.is_done():
@@ -256,7 +256,7 @@ class PromptYesOrNo(discord.ui.View):
             else:
                 await self.message.edit(view=None)
 
-    async def start(self, ctx: PyLavContext | discord.Interaction):
+    async def start(self, ctx: PyLavContext | Interaction):
         if isinstance(ctx, discord.Interaction):
             ctx = await self.cog.bot.get_context(ctx)
         if ctx.interaction and not ctx.interaction.response.is_done():
@@ -264,7 +264,7 @@ class PromptYesOrNo(discord.ui.View):
         self.ctx = ctx
         await self.send_initial_message(ctx)
 
-    async def send_initial_message(self, ctx: PyLavContext | discord.Interaction):
+    async def send_initial_message(self, ctx: PyLavContext | Interaction):
         self.author = ctx.user if isinstance(ctx, discord.Interaction) else ctx.author
         self.ctx = ctx
         self.message = await ctx.send(

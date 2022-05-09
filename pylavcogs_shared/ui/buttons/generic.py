@@ -8,7 +8,7 @@ import discord
 from redbot.core.i18n import Translator
 
 from pylav import emojis
-from pylav.types import CogT
+from pylav.types import CogT, Interaction
 
 _ = Translator("PyLavShared", Path(__file__))
 
@@ -32,7 +32,7 @@ class NavigateButton(discord.ui.Button):
     def direction(self) -> int:
         return self._direction if isinstance(self._direction, int) else self._direction()
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         max_pages = self.view.source.get_max_pages()
         if self.direction == 0:
             self.view.current_page = 0
@@ -60,7 +60,7 @@ class CloseButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         if self.view.author.id != interaction.user.id:
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
@@ -74,7 +74,7 @@ class CloseButton(discord.ui.Button):
 
 
 class YesButton(discord.ui.Button):
-    interaction: discord.Interaction
+    interaction: Interaction
 
     def __init__(self, cog: CogT, style: discord.ButtonStyle, row: int = None):
         super().__init__(style=style, emoji=None, row=row, label=_("Yes"))
@@ -82,7 +82,7 @@ class YesButton(discord.ui.Button):
         self.cog = cog
         self.interaction = None  # type: ignore
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         if self.view.author.id != interaction.user.id:
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
@@ -97,7 +97,7 @@ class YesButton(discord.ui.Button):
 
 
 class NoButton(discord.ui.Button):
-    interaction: discord.Interaction
+    interaction: Interaction
 
     def __init__(self, cog: CogT, style: discord.ButtonStyle, row: int = None):
         super().__init__(style=style, emoji=None, row=row, label=_("No"))
@@ -105,7 +105,7 @@ class NoButton(discord.ui.Button):
         self.cog = cog
         self.interaction = None  # type: ignore
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         if self.view.author.id != interaction.user.id:
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
@@ -127,7 +127,7 @@ class DoneButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         if self.view.author.id != interaction.user.id:
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
@@ -167,7 +167,7 @@ class RefreshButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
         await interaction.response.edit_message(view=self.view, **kwargs)

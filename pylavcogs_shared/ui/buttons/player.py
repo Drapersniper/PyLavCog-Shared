@@ -7,7 +7,7 @@ import discord
 from redbot.core.i18n import Translator
 
 from pylav import emojis
-from pylav.types import CogT
+from pylav.types import CogT, Interaction
 from pylav.utils import AsyncIter
 
 _ = Translator("PyLavShared", Path(__file__))
@@ -27,7 +27,7 @@ class DisconnectButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         if not await self.view.bot.is_owner(interaction.user):
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
@@ -91,7 +91,7 @@ class StopTrackButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         if not await self.view.bot.is_owner(interaction.user):
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
@@ -153,7 +153,7 @@ class DisconnectAllButton(discord.ui.Button):
         self.disconnect_type = disconnect_type
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         if not await self.view.bot.is_owner(interaction.user):
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(

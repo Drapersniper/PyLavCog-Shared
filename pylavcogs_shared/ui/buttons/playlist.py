@@ -11,7 +11,7 @@ from redbot.core.i18n import Translator
 
 from pylav import emojis
 from pylav.sql.models import PlaylistModel
-from pylav.types import CogT
+from pylav.types import CogT, Interaction
 
 from pylavcogs_shared.ui.modals.playlist import PlaylistSaveModal
 from pylavcogs_shared.ui.selectors.playlist import PlaylistPlaySelector
@@ -34,7 +34,7 @@ class PlaylistDeleteButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         if self.view.author.id != interaction.user.id:
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
@@ -66,7 +66,7 @@ class PlaylistClearButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         if self.view.author.id != interaction.user.id:
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
@@ -104,7 +104,7 @@ class PlaylistDownloadButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         if self.view.author.id != interaction.user.id:
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
@@ -142,7 +142,7 @@ class PlaylistUpdateButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         if self.view.author.id != interaction.user.id:
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
@@ -182,7 +182,7 @@ class PlaylistInfoButton(discord.ui.Button):
         self.cog = cog
         self.playlist = playlist
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         if self.view.author.id != interaction.user.id:
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
@@ -227,7 +227,7 @@ class PlaylistQueueButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         if self.view.author.id != interaction.user.id:
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
@@ -269,7 +269,7 @@ class PlaylistDedupeButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         if self.view.author.id != interaction.user.id:
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
@@ -315,7 +315,7 @@ class PlaylistUpsertButton(discord.ui.Button):
         self.cog = cog
         self.op = op
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         if self.view.author.id != interaction.user.id:
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
@@ -353,7 +353,7 @@ class EnqueuePlaylistButton(discord.ui.Button):
         )
         self.playlist = playlist
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
 
         if not self.playlist:
             playlists = await self.cog.lavalink.playlist_db_manager.get_all_for_user(
@@ -399,6 +399,6 @@ class SaveQueuePlaylistButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         modal = PlaylistSaveModal(self.cog, self, _("What should the playlist name be?"))
         await interaction.response.send_modal(modal)

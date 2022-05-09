@@ -7,7 +7,7 @@ import discord
 from redbot.core.i18n import Translator
 
 from pylav.sql.models import PlaylistModel
-from pylav.types import CogT
+from pylav.types import CogT, Interaction
 
 from pylavcogs_shared.ui.selectors.options.playlist import PlaylistOption
 
@@ -28,7 +28,7 @@ class PlaylistSelectSelector(discord.ui.Select):
         self.playlist: PlaylistModel = None  # type:ignore
         self.responded = asyncio.Event()
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         playlist_id = self.values[0]
         self.playlist: PlaylistModel = self.mapping.get(playlist_id)
         if self.playlist is None:
@@ -56,7 +56,7 @@ class PlaylistPlaySelector(discord.ui.Select):
         self.cog = cog
         self.mapping = mapping
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         if self.view.author.id != interaction.user.id:
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(

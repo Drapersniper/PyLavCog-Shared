@@ -10,7 +10,7 @@ from redbot.core.i18n import Translator
 
 from pylav import emojis
 from pylav.sql.models import PlaylistModel
-from pylav.types import BotT, CogT, ContextT
+from pylav.types import BotT, CogT, ContextT, Interaction
 from pylav.utils import PyLavContext
 
 from pylavcogs_shared.ui.buttons.generic import CloseButton, DoneButton, NavigateButton, RefreshButton
@@ -141,7 +141,7 @@ class PlaylistPickerMenu(BaseMenu):
             self.remove_item(self.select_view)
             self.select_view = None
 
-    async def start(self, ctx: PyLavContext | discord.Interaction):
+    async def start(self, ctx: PyLavContext | Interaction):
         if isinstance(ctx, discord.Interaction):
             ctx = await self.cog.bot.get_context(ctx)
         if ctx.interaction and not ctx.interaction.response.is_done():
@@ -149,7 +149,7 @@ class PlaylistPickerMenu(BaseMenu):
         self.ctx = ctx
         await self.send_initial_message(ctx)
 
-    async def show_page(self, page_number: int, interaction: discord.Interaction):
+    async def show_page(self, page_number: int, interaction: Interaction):
         await self._source.get_page(page_number)
         await self.prepare()
         self.current_page = page_number
@@ -234,9 +234,7 @@ class PlaylistCreationFlow(discord.ui.View):
         self.add_item(self.url_button)
         self.add_item(self.queue_button)
 
-    async def send_initial_message(
-        self, ctx: PyLavContext | discord.Interaction, description: str = None, title: str = None
-    ):
+    async def send_initial_message(self, ctx: PyLavContext | Interaction, description: str = None, title: str = None):
         self.ctx = ctx
         self.message = await ctx.send(
             embed=await self.cog.lavalink.construct_embed(description=description, title=title, messageable=ctx),
@@ -245,10 +243,10 @@ class PlaylistCreationFlow(discord.ui.View):
         )
         return self.message
 
-    async def start(self, ctx: PyLavContext | discord.Interaction, description: str = None, title: str = None):
+    async def start(self, ctx: PyLavContext | Interaction, description: str = None, title: str = None):
         await self.send_initial_message(ctx, description=description, title=title)
 
-    async def interaction_check(self, interaction: discord.Interaction):
+    async def interaction_check(self, interaction: Interaction):
         """Just extends the default reaction_check to use owner_ids"""
         if (not await self.bot.allowed_by_whitelist_blacklist(interaction.user, guild=interaction.guild)) or (
             self.author and (interaction.user.id != self.author.id)
@@ -259,18 +257,18 @@ class PlaylistCreationFlow(discord.ui.View):
             return False
         return True
 
-    async def prompt_url(self, interaction: discord.Interaction) -> None:
+    async def prompt_url(self, interaction: Interaction) -> None:
         await interaction.response.send_modal(self.url_prompt)
         await self.url_prompt.responded.wait()
         self.url = self.url_prompt.response
 
-    async def prompt_name(self, interaction: discord.Interaction) -> None:
+    async def prompt_name(self, interaction: Interaction) -> None:
         await interaction.response.send_modal(self.name_prompt)
         await self.name_prompt.responded.wait()
 
         self.name = self.name_prompt.response
 
-    async def prompt_scope(self, interaction: discord.Interaction) -> None:
+    async def prompt_scope(self, interaction: Interaction) -> None:
         await interaction.response.send_modal(self.scope_prompt)
         await self.scope_prompt.responded.wait()
         self.scope = self.scope_prompt.response
@@ -449,9 +447,7 @@ class PlaylistManageFlow(discord.ui.View):
             self.add_item(self.queue_button)
             self.add_item(self.dedupe_button)
 
-    async def send_initial_message(
-        self, ctx: PyLavContext | discord.Interaction, description: str = None, title: str = None
-    ):
+    async def send_initial_message(self, ctx: PyLavContext | Interaction, description: str = None, title: str = None):
         self.ctx = ctx
         if not ctx.channel.permissions_for(ctx.me).attach_files:
             self.download_button.disabled = True
@@ -462,10 +458,10 @@ class PlaylistManageFlow(discord.ui.View):
         )
         return self.message
 
-    async def start(self, ctx: PyLavContext | discord.Interaction, description: str = None, title: str = None):
+    async def start(self, ctx: PyLavContext | Interaction, description: str = None, title: str = None):
         await self.send_initial_message(ctx, description=description, title=title)
 
-    async def interaction_check(self, interaction: discord.Interaction):
+    async def interaction_check(self, interaction: Interaction):
         """Just extends the default reaction_check to use owner_ids"""
         if (not await self.bot.allowed_by_whitelist_blacklist(interaction.user, guild=interaction.guild)) or (
             self.author and (interaction.user.id != self.author.id)
@@ -476,32 +472,32 @@ class PlaylistManageFlow(discord.ui.View):
             return False
         return True
 
-    async def prompt_url(self, interaction: discord.Interaction) -> None:
+    async def prompt_url(self, interaction: Interaction) -> None:
         self.cancelled = False
         await interaction.response.send_modal(self.url_prompt)
         await self.url_prompt.responded.wait()
         self.url = self.url_prompt.response
 
-    async def prompt_name(self, interaction: discord.Interaction) -> None:
+    async def prompt_name(self, interaction: Interaction) -> None:
         self.cancelled = False
         await interaction.response.send_modal(self.name_prompt)
         await self.name_prompt.responded.wait()
 
         self.name = self.name_prompt.response
 
-    async def prompt_scope(self, interaction: discord.Interaction) -> None:
+    async def prompt_scope(self, interaction: Interaction) -> None:
         self.cancelled = False
         await interaction.response.send_modal(self.scope_prompt)
         await self.scope_prompt.responded.wait()
         self.scope = self.scope_prompt.response
 
-    async def prompt_add_tracks(self, interaction: discord.Interaction) -> None:
+    async def prompt_add_tracks(self, interaction: Interaction) -> None:
         self.cancelled = False
         await interaction.response.send_modal(self.add_prompt)
         await self.add_prompt.responded.wait()
         self.add_tracks.add(self.add_prompt.response)
 
-    async def prompt_remove_tracks(self, interaction: discord.Interaction) -> None:
+    async def prompt_remove_tracks(self, interaction: Interaction) -> None:
         self.cancelled = False
         await interaction.response.send_modal(self.remove_prompt)
         await self.remove_prompt.responded.wait()

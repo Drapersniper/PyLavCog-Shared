@@ -5,7 +5,7 @@ from pathlib import Path
 import discord
 from redbot.core.i18n import Translator
 
-from pylav.types import CogT
+from pylav.types import CogT, Interaction
 
 _ = Translator("PyLavShared", Path(__file__))
 
@@ -30,5 +30,5 @@ class PlaylistSaveModal(discord.ui.Modal):
         )
         self.add_item(self.text)
 
-    async def on_submit(self, interaction: discord.Interaction):
+    async def on_submit(self, interaction: Interaction):
         await self.cog.command_playlist_save.callback(self.cog, interaction, name=self.text.value.strip())

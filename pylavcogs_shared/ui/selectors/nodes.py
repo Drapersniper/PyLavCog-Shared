@@ -10,7 +10,7 @@ from redbot.core.utils.chat_formatting import humanize_list
 
 from pylav.constants import SUPPORTED_SOURCES
 from pylav.sql.models import NodeModel
-from pylav.types import CogT
+from pylav.types import CogT, Interaction
 
 from pylavcogs_shared.ui.selectors.options.nodes import SOURCE_OPTIONS, NodeOption
 
@@ -38,7 +38,7 @@ class SourceSelector(discord.ui.Select):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         if self.view.author.id != interaction.user.id:
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
@@ -69,7 +69,7 @@ class NodeSelectSelector(discord.ui.Select):
         self.node: NodeModel = None  # type:ignore
         self.responded = asyncio.Event()
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         playlist_id = self.values[0]
         self.node: NodeModel = self.mapping.get(playlist_id)
         if self.node is None:

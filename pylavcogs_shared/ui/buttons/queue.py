@@ -6,7 +6,7 @@ import discord
 from redbot.core.i18n import Translator
 
 from pylav import emojis
-from pylav.types import CogT
+from pylav.types import CogT, Interaction
 
 _ = Translator("PyLavShared", Path(__file__))
 
@@ -20,7 +20,7 @@ class PreviousTrackButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         await self.cog.command_previous.callback(self.cog, interaction)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
@@ -36,7 +36,7 @@ class StopTrackButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         await self.cog.command_stop.callback(self.cog, interaction)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
@@ -52,7 +52,7 @@ class PauseTrackButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         await self.cog.command_pause.callback(self.cog, interaction)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
@@ -68,7 +68,7 @@ class ResumeTrackButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         await self.cog.command_resume.callback(self.cog, interaction)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
@@ -84,7 +84,7 @@ class SkipTrackButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         await self.cog.command_skip.callback(self.cog, interaction)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
@@ -100,7 +100,7 @@ class IncreaseVolumeButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         await self.cog.command_volume_change_by.callback(self.cog, interaction, change_by=5)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
@@ -116,7 +116,7 @@ class DecreaseVolumeButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         await self.cog.command_volume_change_by.callback(self.cog, interaction, change_by=-5)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
@@ -132,7 +132,7 @@ class ToggleRepeatButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         player = self.cog.lavalink.get_player(interaction.guild)
         if not player:
             return await interaction.response.send_message(
@@ -157,7 +157,7 @@ class ToggleRepeatQueueButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         player = self.cog.lavalink.get_player(interaction.guild)
         if not player:
             return await interaction.response.send_message(
@@ -182,7 +182,7 @@ class ShuffleButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         await self.cog.command_shuffle.callback(self.cog, interaction)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
@@ -198,7 +198,7 @@ class DisconnectButton(discord.ui.Button):
         )
         self.cog = cog
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         await self.cog.command_disconnect.callback(self.cog, interaction)
         self.view.stop()
         await self.view.on_timeout()
@@ -218,7 +218,7 @@ class EnqueueButton(discord.ui.Button):
             row=row,
         )
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         from pylavcogs_shared.ui.modals.queue import EnqueueModal
 
         modal = EnqueueModal(self.cog, _("What do you want to enqueue?"))
@@ -242,7 +242,7 @@ class RemoveFromQueueButton(discord.ui.Button):
             row=row,
         )
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         from pylavcogs_shared.ui.menus.queue import QueuePickerMenu
         from pylavcogs_shared.ui.sources.queue import QueuePickerSource
 
@@ -276,7 +276,7 @@ class PlayNowFromQueueButton(discord.ui.Button):
             row=row,
         )
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         from pylavcogs_shared.ui.menus.queue import QueuePickerMenu
         from pylavcogs_shared.ui.sources.queue import QueuePickerSource
 
@@ -310,7 +310,7 @@ class EffectPickerButton(discord.ui.Button):
             row=row,
         )
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         from pylavcogs_shared.ui.menus.queue import EffectPickerMenu
         from pylavcogs_shared.ui.sources.queue import EffectsPickerSource
 

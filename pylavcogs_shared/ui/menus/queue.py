@@ -6,7 +6,7 @@ from typing import Any, Literal
 import discord
 from redbot.core.i18n import Translator
 
-from pylav.types import BotT, CogT
+from pylav.types import BotT, CogT, Interaction
 from pylav.utils import PyLavContext
 
 from pylavcogs_shared.ui.buttons.equalizer import EqualizerButton
@@ -296,7 +296,7 @@ class QueueMenu(BaseMenu):
     def source(self) -> QueueSource:
         return self._source
 
-    async def start(self, ctx: PyLavContext | discord.Interaction):
+    async def start(self, ctx: PyLavContext | Interaction):
         if isinstance(ctx, discord.Interaction):
             ctx = await self.cog.bot.get_context(ctx)
         if ctx.interaction and not ctx.interaction.response.is_done():
@@ -383,7 +383,7 @@ class QueuePickerMenu(BaseMenu):
     def source(self) -> QueuePickerSource:
         return self._source
 
-    async def start(self, ctx: PyLavContext | discord.Interaction):
+    async def start(self, ctx: PyLavContext | Interaction):
         if isinstance(ctx, discord.Interaction):
             ctx = await self.cog.bot.get_context(ctx)
         if ctx.interaction and not ctx.interaction.response.is_done():
@@ -391,7 +391,7 @@ class QueuePickerMenu(BaseMenu):
         self.ctx = ctx
         await self.send_initial_message(ctx)
 
-    async def send_initial_message(self, ctx: PyLavContext | discord.Interaction):
+    async def send_initial_message(self, ctx: PyLavContext | Interaction):
         await self._source.get_page(0)
         self.ctx = ctx
         embed = await self.source.format_page(self, [])
@@ -399,7 +399,7 @@ class QueuePickerMenu(BaseMenu):
         self.message = await ctx.send(embed=embed, view=self, ephemeral=True)
         return self.message
 
-    async def show_page(self, page_number: int, interaction: discord.Interaction):
+    async def show_page(self, page_number: int, interaction: Interaction):
         await self._source.get_page(page_number)
         await self.prepare()
         self.current_page = page_number
@@ -541,7 +541,7 @@ class EffectPickerMenu(BaseMenu):
         )
         self.add_item(self.select_view)
 
-    async def start(self, ctx: PyLavContext | discord.Interaction):
+    async def start(self, ctx: PyLavContext | Interaction):
         if isinstance(ctx, discord.Interaction):
             ctx = await self.cog.bot.get_context(ctx)
         if ctx.interaction and not ctx.interaction.response.is_done():
@@ -549,7 +549,7 @@ class EffectPickerMenu(BaseMenu):
         self.ctx = ctx
         await self.send_initial_message(ctx)
 
-    async def show_page(self, page_number: int, interaction: discord.Interaction):
+    async def show_page(self, page_number: int, interaction: Interaction):
         await self.prepare()
         self.current_page = page_number
         if not interaction.response.is_done():
@@ -652,7 +652,7 @@ class SearchPickerMenu(BaseMenu):
         self.add_item(self.queue_button)
         self.add_item(self.dedupe_button)
 
-    async def start(self, ctx: PyLavContext | discord.Interaction):
+    async def start(self, ctx: PyLavContext | Interaction):
         if isinstance(ctx, discord.Interaction):
             ctx = await self.cog.bot.get_context(ctx)
         if ctx.interaction and not ctx.interaction.response.is_done():
@@ -660,7 +660,7 @@ class SearchPickerMenu(BaseMenu):
         self.ctx = ctx
         await self.send_initial_message(ctx)
 
-    async def show_page(self, page_number: int, interaction: discord.Interaction):
+    async def show_page(self, page_number: int, interaction: Interaction):
         self.current_page = page_number
         kwargs = await self.get_page(self.current_page)
         await self.prepare()

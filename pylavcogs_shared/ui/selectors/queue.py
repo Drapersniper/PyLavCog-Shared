@@ -7,7 +7,7 @@ import discord
 from redbot.core.i18n import Translator
 
 from pylav.tracks import Track
-from pylav.types import CogT
+from pylav.types import CogT, Interaction
 
 from pylavcogs_shared.ui.selectors.options.queue import EffectsOption, QueueTrackOption, SearchTrackOption
 
@@ -28,7 +28,7 @@ class QueueSelectTrack(discord.ui.Select):
         self.interaction_type = interaction_type
         self.mapping = mapping
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         track_id = self.values[0]
         track: Track = self.mapping.get(track_id)
         if track is None:
@@ -77,7 +77,7 @@ class EffectsSelector(discord.ui.Select):
         self.cog = cog
         self.mapping = mapping
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         effect_value = self.values[0]
         label: str = self.mapping.get(effect_value)
         if label is None:
@@ -110,7 +110,7 @@ class SearchSelectTrack(discord.ui.Select):
         self.cog = cog
         self.mapping = mapping
 
-    async def callback(self, interaction: discord.Interaction):
+    async def callback(self, interaction: Interaction):
         track_id = self.values[0]
         track: Track = self.mapping.get(track_id)
 
