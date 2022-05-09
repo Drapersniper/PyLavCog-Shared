@@ -157,16 +157,16 @@ async def pylav_auto_setup(bot: BotT, cog_cls: type[CogT]) -> CogT:
     cog_instance.bot = bot
     cog_instance.lavalink = Client(bot=bot, cog=cog_instance, config_folder=cog_data_path(raw_name="PyLav"))
     if meth := cog_cls._get_overridden_method(cog_instance.cog_command_error):
-        cog_instance._cog_command_error = MethodType(copy(meth), cog_instance)
+        cog_instance._cog_command_error = copy(meth)
     cog_instance.cog_command_error = MethodType(generic_cog_command_error, cog_instance)
     if meth := cog_cls._get_overridden_method(cog_instance.cog_unload):
-        cog_instance._cog_unload = MethodType(copy(meth), cog_instance)
+        cog_instance._cog_unload = copy(meth)
     cog_instance.cog_unload = MethodType(generic_cog_unload, cog_instance)
     if meth := cog_cls._get_overridden_method(cog_instance.cog_check):
-        cog_instance._cog_check = MethodType(copy(meth), cog_instance)
+        cog_instance._cog_check = copy(meth)
     cog_instance.cog_check = MethodType(generic_cog_check, cog_instance)
     if init_meth := getattr(cog_instance, "initialize", None):
-        cog_instance._initialize = init_meth
+        cog_instance._initialize = copy(init_meth)
     cog_instance.initialize = MethodType(generic_initialize, cog_instance)
     await bot.add_cog(cog_instance)
     cog_instance._init_task = asyncio.create_task(cog_instance.initialize())
