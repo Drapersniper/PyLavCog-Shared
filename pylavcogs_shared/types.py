@@ -5,3 +5,4 @@ from typing import TypeVar
 T = TypeVar("T")
 
 SourcesT = TypeVar("SourcesT", bound="Union[menus.ListPageSource]")
+GenericT = TypeVar("GenericT")
