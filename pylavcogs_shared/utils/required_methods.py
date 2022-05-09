@@ -2,8 +2,8 @@ from __future__ import annotations
 
 import asyncio
 import contextlib
+import inspect
 from copy import copy
-from inspect import signature
 from pathlib import Path
 from types import MethodType
 
@@ -74,8 +74,8 @@ async def generic_cog_command_error(self, context: PyLavContext, error: Exceptio
             delete_after=10,
         )
     if unhandled:
-        if hasattr(self, "_cog_command_error"):
-            return await self._cog_command_error(context, error)
+        if hasattr(self, "_pylav_cog_command_error"):
+            return await self._pylav_cog_command_error(context, error)
         else:
             return await self.bot.on_command_error(context, error, unhandled_by_cog=True)  # type: ignore
 
@@ -84,26 +84,19 @@ async def generic_cog_unload(self) -> None:
     if self._init_task is not None:
         self._init_task.cancel()
     await self.bot.lavalink.unregister(cog=self)
-    if hasattr(self, "_cog_unload"):
-        return await self._cog_unload()
+    if hasattr(self, "_pylav_cog_unload"):
+        return await self._pylav_cog_unload()
 
 
 async def generic_initialize(self, *args, **kwargs) -> None:
     await self.lavalink.register(self)
     await self.lavalink.initialize()
-    if hasattr(self, "_initialize"):
-        try:
-            sig = signature(self._initialize)
-            if len(sig.parameters) == 0:
-                return await self._initialize()
-            else:
-                return await self._initialize(*args, **kwargs)
-        except ValueError:
-            return await self._initialize()
+    if hasattr(self, "_pylav_initialize"):
+        return await self._pylav_initialize()
 
 
 async def generic_cog_check(self, ctx: PyLavContext) -> bool:
-    method = self._cog_check if hasattr(self, "_cog_check") else None
+    method = self._pylav_cog_check if hasattr(self, "_pylav_cog_check") else None
     if not ctx.guild:
         return (await self.method(ctx)) if method else True
     if ctx.player:
@@ -129,7 +122,7 @@ def _done_callback(task: asyncio.Task) -> None:
             LOGGER.error("Error in initialize task", exc_info=exc)
 
 
-async def pylav_auto_setup(bot: BotT, cog_cls: type[CogT]) -> CogT:
+async def pylav_auto_setup(bot: BotT, cog_cls: type[CogT], *args: object, **kwargs: object) -> CogT:
     """Injects all the methods and attributes to respect PyLav Settings and keep the user experience consistent.
 
     Adds `.bot` attribute to the cog instance.
@@ -145,28 +138,55 @@ async def pylav_auto_setup(bot: BotT, cog_cls: type[CogT]) -> CogT:
     Overwrites initialize method to handle PyLav startup,
         calling the original initialize method once the PyLav initialization code is run, if such method exists. code is run.
 
+    :warning: If your Cog defines their own initialize method, the signature of the method must be:
+        `async def initialize(self) -> None`
+
+        If you need to pass arguments to the initialize method, use a different named method instead.
+        async def initialize(self) -> None:
+            await self.my_custom_initialize_method(*args, **kwargs)
+
+        async def my_custom_initialize_method(self, *args, **kwargs) -> object | None:
+            ...
+
     Args:
         bot (BotT): The bot instance to load the cog instance to.
         cog_cls (type[CogT]): The cog class load.
+        *args: The arguments to pass to the cog instance init.
+        **kwargs: The keyword arguments to pass to the cog instance init.
 
     Returns:
         CogT: The cog instance loaded to the bot.
 
+    Example:
+        >>> from pylavcogs_shared.utils.required_methods import pylav_auto_setup
+        >>> from discord.ext.commands import Cog
+        >>> class MyCogClass(Cog):
+        ...     def __init__(self, bot: BotT, special_arg: object):
+        ...         self.bot = bot
+        ...         self.special_arg = special_arg
+
+
+        >>> async def setup(bot: BotT) -> None:
+        ...     await pylav_auto_setup(bot, MyCogClass, special_arg=42)
+
     """
-    cog_instance = cog_cls(bot)
+    argspec = inspect.getfullargspec(cog_cls.__init__)
+    if "bot" in argspec.args or "bot" in argspec.kwonlyargs:
+        kwargs["bot"] = bot
+    cog_instance = cog_cls(*args, **kwargs)
     cog_instance.bot = bot
     cog_instance.lavalink = Client(bot=bot, cog=cog_instance, config_folder=cog_data_path(raw_name="PyLav"))
     if meth := cog_cls._get_overridden_method(cog_instance.cog_command_error):
-        cog_instance._cog_command_error = copy(meth)
+        cog_instance._pylav_cog_command_error = copy(meth)
     cog_instance.cog_command_error = MethodType(generic_cog_command_error, cog_instance)
     if meth := cog_cls._get_overridden_method(cog_instance.cog_unload):
-        cog_instance._cog_unload = copy(meth)
+        cog_instance._pylav_cog_unload = copy(meth)
     cog_instance.cog_unload = MethodType(generic_cog_unload, cog_instance)
     if meth := cog_cls._get_overridden_method(cog_instance.cog_check):
-        cog_instance._cog_check = copy(meth)
+        cog_instance._pylav_cog_check = copy(meth)
     cog_instance.cog_check = MethodType(generic_cog_check, cog_instance)
     if init_meth := getattr(cog_instance, "initialize", None):
-        cog_instance._initialize = copy(init_meth)
+        cog_instance._pylav_initialize = copy(init_meth)
     cog_instance.initialize = MethodType(generic_initialize, cog_instance)
     await bot.add_cog(cog_instance)
     cog_instance._init_task = asyncio.create_task(cog_instance.initialize())
