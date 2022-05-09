@@ -113,7 +113,6 @@ class BaseMenu(discord.ui.View):
                 content="You are not authorized to interact with this.", ephemeral=True
             )
             return False
-        LOGGER.critical("Interaction check - %s (%s)", interaction.user, interaction.user.id)
         return True
 
     async def prepare(self):
