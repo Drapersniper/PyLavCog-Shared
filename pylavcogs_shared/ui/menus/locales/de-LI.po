@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-05-08 19:46+0000\n"
-"PO-Revision-Date: 2022-05-08 19:49\n"
+"POT-Creation-Date: 2022-05-09 17:13+0000\n"
+"PO-Revision-Date: 2022-05-09 17:17\n"
 "Last-Translator: \n"
 "Language-Team: German, Liechtenstein\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgid "Enter the domain or IP address of the host"
 msgstr "Domain oder IP-Adresse des Hosts eingeben"
 
 #: pylavcogs_shared/ui/menus/nodes.py:59
-#: pylavcogs_shared/ui/menus/nodes.py:494
+#: pylavcogs_shared/ui/menus/nodes.py:492
 msgid "Host"
 msgstr "Host"
 
@@ -31,7 +31,7 @@ msgid "Enter the host port to connect to"
 msgstr "Geben Sie den Host-Port zum Verbinden ein"
 
 #: pylavcogs_shared/ui/menus/nodes.py:67
-#: pylavcogs_shared/ui/menus/nodes.py:502
+#: pylavcogs_shared/ui/menus/nodes.py:500
 msgid "Port"
 msgstr "Port"
 
@@ -40,7 +40,7 @@ msgid "Enter the node's password"
 msgstr "Passwort des Knotens eingeben"
 
 #: pylavcogs_shared/ui/menus/nodes.py:75
-#: pylavcogs_shared/ui/menus/nodes.py:510
+#: pylavcogs_shared/ui/menus/nodes.py:508
 msgid "Password"
 msgstr "Passwort"
 
@@ -49,7 +49,7 @@ msgid "Enter an easy to know name for the node."
 msgstr "Geben Sie einen leicht zu kennenden Namen für den Knoten ein."
 
 #: pylavcogs_shared/ui/menus/nodes.py:83
-#: pylavcogs_shared/ui/menus/nodes.py:518
+#: pylavcogs_shared/ui/menus/nodes.py:516
 msgid "Name"
 msgstr "Name"
 
@@ -58,67 +58,67 @@ msgid "Enter a timeout in seconds."
 msgstr "Geben Sie ein Timeout in Sekunden ein."
 
 #: pylavcogs_shared/ui/menus/nodes.py:91
-#: pylavcogs_shared/ui/menus/nodes.py:526
+#: pylavcogs_shared/ui/menus/nodes.py:524
 msgid "Timeout"
 msgstr "Timeout"
 
 #: pylavcogs_shared/ui/menus/nodes.py:106
-#: pylavcogs_shared/ui/menus/nodes.py:554
+#: pylavcogs_shared/ui/menus/nodes.py:552
 msgid "Source to disable."
 msgstr "Quelle zum Deaktivieren."
 
-#: pylavcogs_shared/ui/menus/nodes.py:218
-#: pylavcogs_shared/ui/menus/nodes.py:664
+#: pylavcogs_shared/ui/menus/nodes.py:216
+#: pylavcogs_shared/ui/menus/nodes.py:660
 msgid "Name set to {name}"
 msgstr "Name auf {name} gesetzt"
 
-#: pylavcogs_shared/ui/menus/nodes.py:231
-#: pylavcogs_shared/ui/menus/nodes.py:677
+#: pylavcogs_shared/ui/menus/nodes.py:229
+#: pylavcogs_shared/ui/menus/nodes.py:673
 msgid "Password set to {password}"
 msgstr "Passwort auf {password} gesetzt"
 
-#: pylavcogs_shared/ui/menus/nodes.py:249
-#: pylavcogs_shared/ui/menus/nodes.py:695
+#: pylavcogs_shared/ui/menus/nodes.py:247
+#: pylavcogs_shared/ui/menus/nodes.py:691
 msgid "Host set to {host}"
 msgstr "Host auf {host} gesetzt"
 
-#: pylavcogs_shared/ui/menus/nodes.py:266
-#: pylavcogs_shared/ui/menus/nodes.py:712
+#: pylavcogs_shared/ui/menus/nodes.py:264
+#: pylavcogs_shared/ui/menus/nodes.py:708
 msgid "Invalid port."
 msgstr "Ungültiger Port."
 
-#: pylavcogs_shared/ui/menus/nodes.py:274
-#: pylavcogs_shared/ui/menus/nodes.py:720
+#: pylavcogs_shared/ui/menus/nodes.py:272
+#: pylavcogs_shared/ui/menus/nodes.py:716
 msgid "Port set to {port}"
 msgstr "Port auf {port} gesetzt"
 
-#: pylavcogs_shared/ui/menus/nodes.py:291
-#: pylavcogs_shared/ui/menus/nodes.py:737
+#: pylavcogs_shared/ui/menus/nodes.py:289
+#: pylavcogs_shared/ui/menus/nodes.py:733
 msgid "Invalid timeout, it must be a number in seconds."
 msgstr "Ungültiges Timeout, es muss eine Zahl in Sekunden sein."
 
-#: pylavcogs_shared/ui/menus/nodes.py:299
-#: pylavcogs_shared/ui/menus/nodes.py:745
+#: pylavcogs_shared/ui/menus/nodes.py:297
+#: pylavcogs_shared/ui/menus/nodes.py:741
 msgid "Timeout set to {timeout} seconds."
 msgstr "Timeout auf {timeout} Sekunden gesetzt."
 
-#: pylavcogs_shared/ui/menus/nodes.py:493
+#: pylavcogs_shared/ui/menus/nodes.py:491
 msgid "Change the domain or IP address of the host"
 msgstr "Domain oder IP-Adresse des Hosts ändern"
 
-#: pylavcogs_shared/ui/menus/nodes.py:501
+#: pylavcogs_shared/ui/menus/nodes.py:499
 msgid "Change the host port to connect to"
 msgstr "Host-Port zum Verbinden ändern"
 
-#: pylavcogs_shared/ui/menus/nodes.py:509
+#: pylavcogs_shared/ui/menus/nodes.py:507
 msgid "Change the node's password"
 msgstr "Passwort des Knotens ändern"
 
-#: pylavcogs_shared/ui/menus/nodes.py:517
+#: pylavcogs_shared/ui/menus/nodes.py:515
 msgid "Change the name of this node."
 msgstr "Ändert den Namen dieses Knotens."
 
-#: pylavcogs_shared/ui/menus/nodes.py:525
+#: pylavcogs_shared/ui/menus/nodes.py:523
 msgid "Enter the new timeout for this node."
 msgstr "Geben Sie das neue Timeout für diesen Knoten ein."
 
@@ -139,12 +139,12 @@ msgid "Not connected anywhere."
 msgstr "Nirgendwo verbunden."
 
 #: pylavcogs_shared/ui/menus/playlist.py:186
-#: pylavcogs_shared/ui/menus/playlist.py:319
+#: pylavcogs_shared/ui/menus/playlist.py:317
 msgid "Please enter the playlist URL"
 msgstr "Bitte geben Sie die Playlist-URL ein"
 
 #: pylavcogs_shared/ui/menus/playlist.py:187
-#: pylavcogs_shared/ui/menus/playlist.py:320
+#: pylavcogs_shared/ui/menus/playlist.py:318
 msgid "Playlist URL"
 msgstr "Playlist-URL"
 
@@ -153,24 +153,24 @@ msgid "Please enter the playlist name"
 msgstr "Bitte geben Sie den Playlist-Namen ein"
 
 #: pylavcogs_shared/ui/menus/playlist.py:192
-#: pylavcogs_shared/ui/menus/playlist.py:325
+#: pylavcogs_shared/ui/menus/playlist.py:323
 msgid "Playlist Name"
 msgstr "Playlist-Name"
 
-#: pylavcogs_shared/ui/menus/playlist.py:325
+#: pylavcogs_shared/ui/menus/playlist.py:323
 msgid "Please enter the new playlist name"
 msgstr "Bitte geben Sie den neuen Playlist-Namen ein"
 
-#: pylavcogs_shared/ui/menus/playlist.py:330
+#: pylavcogs_shared/ui/menus/playlist.py:328
 msgid "What query to add to the playlist"
 msgstr "Welche Abfrage zur Playlist hinzugefügt werden soll"
 
-#: pylavcogs_shared/ui/menus/playlist.py:331
-#: pylavcogs_shared/ui/menus/playlist.py:339
+#: pylavcogs_shared/ui/menus/playlist.py:329
+#: pylavcogs_shared/ui/menus/playlist.py:337
 msgid "Query"
 msgstr "Abfrage"
 
-#: pylavcogs_shared/ui/menus/playlist.py:338
+#: pylavcogs_shared/ui/menus/playlist.py:336
 msgid "What query to remove from the playlist"
 msgstr "Welche Abfrage aus der Wiedergabeliste zu entfernen"
 
