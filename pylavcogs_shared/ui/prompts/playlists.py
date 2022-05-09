@@ -16,7 +16,9 @@ from pylavcogs_shared.ui.sources.playlist import PlaylistPickerSource
 _ = Translator("PyLavShared", Path(__file__))
 
 
-async def maybe_prompt_for_playlist(cog: CogT, context: PyLavContext, playlists: list[PlaylistModel]) -> PlaylistModel:
+async def maybe_prompt_for_playlist(
+    cog: CogT, context: PyLavContext, playlists: list[PlaylistModel]
+) -> PlaylistModel | None:
     if len(playlists) > 1:
         playlist_picker = PlaylistPickerMenu(
             cog=cog,

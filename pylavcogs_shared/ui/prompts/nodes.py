@@ -16,7 +16,7 @@ from pylavcogs_shared.ui.sources.nodes import NodePickerSource
 _ = Translator("PyLavShared", Path(__file__))
 
 
-async def maybe_prompt_for_node(cog: CogT, context: PyLavContext, nodes: list[NodeModel]) -> NodeModel:
+async def maybe_prompt_for_node(cog: CogT, context: PyLavContext, nodes: list[NodeModel]) -> NodeModel | None:
     if len(nodes) > 1:
         node_picker = NodePickerMenu(
             cog=cog,
