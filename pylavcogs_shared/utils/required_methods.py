@@ -7,6 +7,7 @@ from pathlib import Path
 
 import discord
 from red_commons.logging import getLogger
+from redbot.core import commands
 from redbot.core.data_manager import cog_data_path
 from redbot.core.i18n import Translator
 
@@ -51,9 +52,18 @@ def class_factory(
     - cog_command_error
     """
 
-    class PyLavCog(cls):
+    class PyLavCog(cls, commands.Cog):
         def __init__(self, bot: BotT, *args, **kwargs):
             super_cls = super()
+
+            self.__name__ = cls.__name__
+            self.__module__ = cls.__module__
+            self.__doc__ = cls.__doc__
+            self.__init_subclass__ = cls.__init_subclass__
+            self.__qualname__ = cls.__qualname__
+            self.__repr__ = cls.__repr__
+            self.__str__ = cls.__str__
+
             self.__cog_name__ = super_cls.__cog_name__
             self.__cog_description__ = super_cls.__cog_description__
             self.__cog_group_name__ = super_cls.__cog_group_name__
@@ -62,6 +72,10 @@ def class_factory(
             self.__cog_commands__ = super_cls.__cog_commands__
             self.__cog_app_commands__ = super_cls.__cog_app_commands__
             self.__cog_listeners__ = super_cls.__cog_listeners__
+            if hasattr(super_cls, "__cog_app_commands_group__"):
+                self.__cog_app_commands_group__ = super_cls.__cog_app_commands_group__
+            if hasattr(super_cls, "__cog_is_app_commands_group__"):
+                self.__cog_is_app_commands_group__ = super_cls.__cog_is_app_commands_group__
             self.bot = bot
             self.init_called = False
             self._init_task = None
