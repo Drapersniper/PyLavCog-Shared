@@ -63,15 +63,22 @@ def class_factory(
             self.__qualname__ = cls.__qualname__
             self.__repr__ = cls.__repr__
             self.__str__ = cls.__str__
-
-            self.__cog_name__ = super_cls.__cog_name__
-            self.__cog_description__ = super_cls.__cog_description__
-            self.__cog_group_name__ = super_cls.__cog_group_name__
-            self.__cog_group_description__ = super_cls.__cog_group_description__
-            self.__cog_settings__ = super_cls.__cog_settings__
-            self.__cog_commands__ = super_cls.__cog_commands__
-            self.__cog_app_commands__ = super_cls.__cog_app_commands__
-            self.__cog_listeners__ = super_cls.__cog_listeners__
+            if hasattr(super_cls, "__cog_name__"):
+                self.__cog_name__ = super_cls.__cog_name__
+            if hasattr(super_cls, "__cog_description__"):
+                self.__cog_description__ = super_cls.__cog_description__
+            if hasattr(super_cls, "__cog_group_name__"):
+                self.__cog_group_name__ = super_cls.__cog_group_name__
+            if hasattr(super_cls, "__cog_group_description__"):
+                self.__cog_group_description__ = super_cls.__cog_group_description__
+            if hasattr(super_cls, "__cog_settings__"):
+                self.__cog_settings__ = super_cls.__cog_settings__
+            if hasattr(super_cls, "__cog_commands__"):
+                self.__cog_commands__ = super_cls.__cog_commands__
+            if hasattr(super_cls, "__cog_app_commands__"):
+                self.__cog_app_commands__ = super_cls.__cog_app_commands__
+            if hasattr(super_cls, "__cog_listeners__"):
+                self.__cog_listeners__ = super_cls.__cog_listeners__
             if hasattr(super_cls, "__cog_app_commands_group__"):
                 self.__cog_app_commands_group__ = super_cls.__cog_app_commands_group__
             if hasattr(super_cls, "__cog_is_app_commands_group__"):
