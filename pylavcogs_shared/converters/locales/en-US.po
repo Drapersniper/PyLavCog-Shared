@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-05-10 19:03+0000\n"
-"PO-Revision-Date: 2022-05-10 19:07\n"
+"POT-Creation-Date: 2022-05-14 20:23+0000\n"
+"PO-Revision-Date: 2022-05-14 20:26\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "MIME-Version: 1.0\n"
@@ -17,42 +17,42 @@ msgstr ""
 "X-Crowdin-File-ID: 448\n"
 "Language: en_US\n"
 
-#: pylavcogs_shared/converters/equalzer.py:41
+#: pylavcogs_shared/converters/equalizer.py:46
 msgid "Bass boost with name `{arg}` not found."
 msgstr "crwdns4122:0{arg}crwdne4122:0"
 
-#: pylavcogs_shared/converters/equalzer.py:53
-#: pylavcogs_shared/converters/equalzer.py:61
-#: pylavcogs_shared/converters/equalzer.py:62
-#: pylavcogs_shared/converters/equalzer.py:63
+#: pylavcogs_shared/converters/equalizer.py:58
+#: pylavcogs_shared/converters/equalizer.py:66
+#: pylavcogs_shared/converters/equalizer.py:67
+#: pylavcogs_shared/converters/equalizer.py:68
 msgid "Maximum"
 msgstr "crwdns4124:0crwdne4124:0"
 
-#: pylavcogs_shared/converters/equalzer.py:54
+#: pylavcogs_shared/converters/equalizer.py:59
 msgid "Insane"
 msgstr "crwdns4126:0crwdne4126:0"
 
-#: pylavcogs_shared/converters/equalzer.py:55
+#: pylavcogs_shared/converters/equalizer.py:60
 msgid "Extreme"
 msgstr "crwdns4128:0crwdne4128:0"
 
-#: pylavcogs_shared/converters/equalzer.py:56
+#: pylavcogs_shared/converters/equalizer.py:61
 msgid "Very High"
 msgstr "crwdns4130:0crwdne4130:0"
 
-#: pylavcogs_shared/converters/equalzer.py:57
+#: pylavcogs_shared/converters/equalizer.py:62
 msgid "High"
 msgstr "crwdns4132:0crwdne4132:0"
 
-#: pylavcogs_shared/converters/equalzer.py:58
+#: pylavcogs_shared/converters/equalizer.py:63
 msgid "Medium"
 msgstr "crwdns4134:0crwdne4134:0"
 
-#: pylavcogs_shared/converters/equalzer.py:59
+#: pylavcogs_shared/converters/equalizer.py:64
 msgid "Cut-off"
 msgstr "crwdns4136:0crwdne4136:0"
 
-#: pylavcogs_shared/converters/equalzer.py:60
+#: pylavcogs_shared/converters/equalizer.py:65
 msgid "Off"
 msgstr "crwdns4138:0crwdne4138:0"
 
