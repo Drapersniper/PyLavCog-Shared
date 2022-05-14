@@ -87,6 +87,7 @@ def class_factory(
             self.init_called = False
             self._init_task = None
             self.lavalink = Client(bot=bot, cog=self, config_folder=cog_data_path(raw_name="PyLav"))
+            self.pylav = self.lavalink
             argspec = inspect.getfullargspec(super().__init__)
             new_args = args
             new_kwargs = {arg: kwargs[arg] for arg in argspec.args if arg in kwargs}
