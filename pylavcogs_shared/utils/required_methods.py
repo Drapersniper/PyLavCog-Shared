@@ -3,11 +3,13 @@ from __future__ import annotations
 import asyncio
 import contextlib
 import inspect
+import threading
 from pathlib import Path
 from types import MethodType
 
 import discord
 from red_commons.logging import getLogger
+from redbot.core import commands
 from redbot.core.data_manager import cog_data_path
 from redbot.core.i18n import Translator
 
@@ -19,15 +21,38 @@ from pylav.utils import PyLavContext
 from pylavcogs_shared.errors import MediaPlayerNotFoundError, UnauthorizedChannelError
 
 _ = Translator("PyLavShared", Path(__file__))
-
+_LOCK = threading.Lock()
 LOGGER = getLogger("red.3pt.PyLav-Shared.utils.overrides")
 
 
-async def generic_setup(bot: BotT, cog_cls: type[CogT]) -> None:
-    """Simple setup call which adds the cog instance to the bot and call the cogs Initialize method."""
-    cog_instance = cog_cls(bot)
-    await bot.add_cog(cog_instance)
-    cog_instance._init_task = asyncio.create_task(cog_instance.initialize())
+@commands.command(
+    cls=commands.commands._AlwaysAvailableCommand,
+    name="plcredits",
+    aliases=["pltranslation"],
+    i18n=_,
+)
+async def pylav_credits(context: PyLavContext) -> None:
+    """Shows the credits and translation details for the PyLav cogs and shared code."""
+    await context.send(
+        embed=await context.lavalink.construct_embed(
+            messageable=context,
+            description=_(
+                "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
+                "PyLav can be located in https://github.com/Drapersniper/PyLav\n"
+                "PyLavCog-Shared can be located in https://github.com/Drapersniper/PyLavCog-Shared\n"
+                "PyLav-Cogs can be located in https://github.com/Drapersniper/PyLav-Cogs\n\n"
+                "PyLav's support server can be found at https://discord.com/invite/Sjh2TSCYQB\n"
+                "\n\n"
+                "You can help translate PyLav by contributing to our Crowdin projects at:\n"
+                "https://crowdin.com/project/pylavshared and https://crowdin.com/project/mediaplayer\n\n\n"
+                "Contributor:\n"
+                "- https://github.com/Drapersniper/PyLav/graphs/contributors\n"
+                "- https://github.com/Drapersniper/PyLavCog-Shared/graphs/contributors\n"
+                "- https://github.com/Drapersniper/PyLav-Cogs/graphs/contributors\n"
+            ),
+        ),
+        ephemeral=True,
+    )
 
 
 def _done_callback(task: asyncio.Task) -> None:
@@ -37,7 +62,7 @@ def _done_callback(task: asyncio.Task) -> None:
             LOGGER.error("Error in initialize task", exc_info=exc)
 
 
-async def cog_command_error(self, context: PyLavContext, error: Exception) -> None:
+async def cog_command_error(self: CogT, context: PyLavContext, error: Exception) -> None:
     error = getattr(error, "original", error)
     unhandled = True
     if isinstance(error, MediaPlayerNotFoundError):
@@ -96,15 +121,18 @@ async def cog_command_error(self, context: PyLavContext, error: Exception) -> No
             return await self.bot.on_command_error(context, error, unhandled_by_cog=True)  # type: ignore
 
 
-async def cog_unload(self) -> None:
+async def cog_unload(self: CogT) -> None:
     if self._init_task is not None:
         self._init_task.cancel()
-    await self.bot.lavalink.unregister(cog=self)
+    client = self.lavalink
+    await client.unregister(cog=self)
+    if client._shutting_down:
+        self.bot.remove_command(pylav_credits.qualified_name)
     if meth := getattr(self, "__pylav_original_cog_unload", None):
         return await discord.utils.maybe_coroutine(meth)
 
 
-async def initialize(self, *args, **kwargs) -> None:
+async def initialize(self: CogT, *args, **kwargs) -> None:
     if not self.init_called:
         await self.lavalink.register(self)
         await self.lavalink.initialize()
@@ -113,7 +141,7 @@ async def initialize(self, *args, **kwargs) -> None:
         return await discord.utils.maybe_coroutine(meth, *args, **kwargs)
 
 
-async def cog_check(self, ctx: PyLavContext) -> bool:
+async def cog_check(self: CogT, ctx: PyLavContext) -> bool:
     meth = getattr(self, "__pylav_original_cog_check", None)
     if not ctx.guild:
         return await discord.utils.maybe_coroutine(meth, ctx) if meth else True
@@ -139,6 +167,8 @@ def class_factory(
     - initialize
     - cog_command_error
     """
+    if not bot.get_command(pylav_credits.qualified_name):
+        bot.add_command(pylav_credits)
     argspec = inspect.getfullargspec(cls.__init__)
     if ("bot" in argspec.args or "bot" in argspec.kwonlyargs) and bot not in cogargs:
         cogkwargs["bot"] = bot
@@ -226,8 +256,9 @@ async def pylav_auto_setup(
         initargs = ()
     if initkwargs is None:
         initkwargs = {}
-    cog_instance = class_factory(bot, cog_cls, cogargs, cogkwargs)
-    await bot.add_cog(cog_instance)
+    with _LOCK:
+        cog_instance = class_factory(bot, cog_cls, cogargs, cogkwargs)
+        await bot.add_cog(cog_instance)
     cog_instance._init_task = asyncio.create_task(cog_instance.initialize(*initargs, **initkwargs))
     cog_instance._init_task.add_done_callback(_done_callback)
     return cog_instance
