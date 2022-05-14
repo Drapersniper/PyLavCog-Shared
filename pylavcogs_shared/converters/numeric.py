@@ -7,7 +7,7 @@ from redbot.core.commands import commands
 from redbot.core.i18n import Translator
 
 from pylav.converters.ranges import RangeConverter as PLRangeConverter
-from pylav.types import ContextT
+from pylav.utils import PyLavContext
 
 _ = Translator("PyLavShared", Path(__file__))
 if TYPE_CHECKING:
@@ -17,7 +17,7 @@ else:
 
     class RangeConverter(PLRangeConverter):
         @classmethod
-        async def convert(cls, ctx: ContextT, arg: str) -> int:
+        async def convert(cls, ctx: PyLavContext, arg: str) -> int:
             """Converts a node name or ID to a list of matching objects."""
             try:
                 level = int(arg)

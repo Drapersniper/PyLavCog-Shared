@@ -4,10 +4,10 @@ import asyncio
 import contextlib
 import inspect
 from pathlib import Path
+from types import MethodType
 
 import discord
 from red_commons.logging import getLogger
-from redbot.core import commands
 from redbot.core.data_manager import cog_data_path
 from redbot.core.i18n import Translator
 
@@ -37,6 +37,95 @@ def _done_callback(task: asyncio.Task) -> None:
             LOGGER.error("Error in initialize task", exc_info=exc)
 
 
+async def cog_command_error(self, context: PyLavContext, error: Exception) -> None:
+    error = getattr(error, "original", error)
+    unhandled = True
+    if isinstance(error, MediaPlayerNotFoundError):
+        unhandled = False
+        await context.send(
+            embed=await self.lavalink.construct_embed(
+                messageable=context, description=_("This command requires an existing player to be run.")
+            ),
+            ephemeral=True,
+        )
+    elif isinstance(error, NoNodeAvailable):
+        unhandled = False
+        await context.send(
+            embed=await self.lavalink.construct_embed(
+                messageable=context,
+                description=_(
+                    "MediaPlayer cog is currently temporarily unavailable due to an outage with "
+                    "the backend services, please try again later."
+                ),
+                footer=_("No Lavalink node currently available.") if await self.bot.is_owner(context.author) else None,
+            ),
+            ephemeral=True,
+        )
+    elif isinstance(error, NoNodeWithRequestFunctionalityAvailable):
+        unhandled = False
+        await context.send(
+            embed=await self.lavalink.construct_embed(
+                messageable=context,
+                description=_("MediaPlayer is currently unable to process tracks belonging to {feature}.").format(
+                    feature=error.feature
+                ),
+                footer=_("No Lavalink node currently available with feature {feature}.").format(feature=error.feature)
+                if await self.bot.is_owner(context.author)
+                else None,
+            ),
+            ephemeral=True,
+        )
+    elif isinstance(error, UnauthorizedChannelError):
+        unhandled = False
+        await context.send(
+            embed=await self.lavalink.construct_embed(
+                messageable=context,
+                description=_("This command is not available in this channel. Please use {channel}").format(
+                    channel=channel.mention if (channel := context.guild.get_channel_or_thread(error.channel)) else None
+                ),
+            ),
+            ephemeral=True,
+            delete_after=10,
+        )
+    if unhandled:
+        if (meth := getattr(self, "__pylav_original_cog_command_error", None)) and (
+            func := self._get_overridden_method(meth)
+        ):
+            return await discord.utils.maybe_coroutine(func, context, error)
+        else:
+            return await self.bot.on_command_error(context, error, unhandled_by_cog=True)  # type: ignore
+
+
+async def cog_unload(self) -> None:
+    if self._init_task is not None:
+        self._init_task.cancel()
+    await self.bot.lavalink.unregister(cog=self)
+    if meth := getattr(self, "__pylav_original_cog_unload", None):
+        return await discord.utils.maybe_coroutine(meth)
+
+
+async def initialize(self, *args, **kwargs) -> None:
+    if not self.init_called:
+        await self.lavalink.register(self)
+        await self.lavalink.initialize()
+        self.init_called = True
+    if meth := getattr(self, "__pylav_original_initialize", None):
+        return await discord.utils.maybe_coroutine(meth, *args, **kwargs)
+
+
+async def cog_check(self, ctx: PyLavContext) -> bool:
+    meth = getattr(self, "__pylav_original_cog_check", None)
+    if not ctx.guild:
+        return await discord.utils.maybe_coroutine(meth, ctx) if meth else True
+    if ctx.player:
+        config = ctx.player.config
+    else:
+        config = await self.lavalink.player_config_manager.get_config(ctx.guild.id)
+    if config.text_channel_id and config.text_channel_id != ctx.channel.id:
+        raise UnauthorizedChannelError(channel=config.text_channel_id)
+    return await discord.utils.maybe_coroutine(meth, ctx) if meth else True
+
+
 def class_factory(
     bot: BotT,
     cls: type[CogT],
@@ -45,151 +134,40 @@ def class_factory(
 ) -> CogT:  # sourcery no-metrics
     """
     Creates a new class which inherits from the given class and overrides the following methods:
-    - __init__
     - cog_check
     - cog_unload
     - initialize
     - cog_command_error
     """
-
-    class PyLavCog(cls, commands.Cog):
-        def __init__(self, bot: BotT, *args, **kwargs):
-            super_cls = super()
-
-            self.__name__ = cls.__name__
-            self.__module__ = cls.__module__
-            self.__doc__ = cls.__doc__
-            self.__init_subclass__ = cls.__init_subclass__
-            self.__qualname__ = cls.__qualname__
-            self.__repr__ = cls.__repr__
-            self.__str__ = cls.__str__
-            if hasattr(super_cls, "__cog_name__"):
-                self.__cog_name__ = super_cls.__cog_name__
-            if hasattr(super_cls, "__cog_description__"):
-                self.__cog_description__ = super_cls.__cog_description__
-            if hasattr(super_cls, "__cog_group_name__"):
-                self.__cog_group_name__ = super_cls.__cog_group_name__
-            if hasattr(super_cls, "__cog_group_description__"):
-                self.__cog_group_description__ = super_cls.__cog_group_description__
-            if hasattr(super_cls, "__cog_settings__"):
-                self.__cog_settings__ = super_cls.__cog_settings__
-            if hasattr(super_cls, "__cog_commands__"):
-                self.__cog_commands__ = super_cls.__cog_commands__
-            if hasattr(super_cls, "__cog_app_commands__"):
-                self.__cog_app_commands__ = super_cls.__cog_app_commands__
-            if hasattr(super_cls, "__cog_listeners__"):
-                self.__cog_listeners__ = super_cls.__cog_listeners__
-            if hasattr(super_cls, "__cog_app_commands_group__"):
-                self.__cog_app_commands_group__ = super_cls.__cog_app_commands_group__
-            if hasattr(super_cls, "__cog_is_app_commands_group__"):
-                self.__cog_is_app_commands_group__ = super_cls.__cog_is_app_commands_group__
-            self.bot = bot
-            self.init_called = False
-            self._init_task = None
-            self.lavalink = Client(bot=bot, cog=self, config_folder=cog_data_path(raw_name="PyLav"))
-            self.pylav = self.lavalink
-            argspec = inspect.getfullargspec(super().__init__)
-            new_args = args
-            new_kwargs = {arg: kwargs[arg] for arg in argspec.args if arg in kwargs}
-            for arg in argspec.kwonlyargs:
-                if arg in kwargs:
-                    new_kwargs[arg] = kwargs[arg]
-            if "bot" in argspec.args or "bot" in argspec.kwonlyargs:
-                new_kwargs["bot"] = bot
-            if hasattr(super_cls, "__translator__"):
-                self.__translator__ = super_cls.__translator__
-            super_cls.__init__(*new_args, **new_kwargs)
-
-        async def cog_command_error(self, context: PyLavContext, error: Exception) -> None:
-            error = getattr(error, "original", error)
-            unhandled = True
-            if isinstance(error, MediaPlayerNotFoundError):
-                unhandled = False
-                await context.send(
-                    embed=await self.lavalink.construct_embed(
-                        messageable=context, description=_("This command requires an existing player to be run.")
-                    ),
-                    ephemeral=True,
-                )
-            elif isinstance(error, NoNodeAvailable):
-                unhandled = False
-                await context.send(
-                    embed=await self.lavalink.construct_embed(
-                        messageable=context,
-                        description=_(
-                            "MediaPlayer cog is currently temporarily unavailable due to an outage with "
-                            "the backend services, please try again later."
-                        ),
-                        footer=_("No Lavalink node currently available.")
-                        if await self.bot.is_owner(context.author)
-                        else None,
-                    ),
-                    ephemeral=True,
-                )
-            elif isinstance(error, NoNodeWithRequestFunctionalityAvailable):
-                unhandled = False
-                await context.send(
-                    embed=await self.lavalink.construct_embed(
-                        messageable=context,
-                        description=_(
-                            "MediaPlayer is currently unable to process tracks belonging to {feature}."
-                        ).format(feature=error.feature),
-                        footer=_("No Lavalink node currently available with feature {feature}.").format(
-                            feature=error.feature
-                        )
-                        if await self.bot.is_owner(context.author)
-                        else None,
-                    ),
-                    ephemeral=True,
-                )
-            elif isinstance(error, UnauthorizedChannelError):
-                unhandled = False
-                await context.send(
-                    embed=await self.lavalink.construct_embed(
-                        messageable=context,
-                        description=_("This command is not available in this channel. Please use {channel}").format(
-                            channel=channel.mention
-                            if (channel := context.guild.get_channel_or_thread(error.channel))
-                            else None
-                        ),
-                    ),
-                    ephemeral=True,
-                    delete_after=10,
-                )
-            if unhandled:
-                if func := super()._get_overridden_method(super().cog_command_error):
-                    return await discord.utils.maybe_coroutine(func, context, error)
-                else:
-                    return await self.bot.on_command_error(context, error, unhandled_by_cog=True)  # type: ignore
-
-        async def cog_unload(self) -> None:
-            if self._init_task is not None:
-                self._init_task.cancel()
-            await self.bot.lavalink.unregister(cog=self)
-            return await discord.utils.maybe_coroutine(super().cog_unload)
-
-        async def initialize(self, *args, **kwargs) -> None:
-            if not self.init_called:
-                await self.lavalink.register(self)
-                await self.lavalink.initialize()
-                self.init_called = True
-            if hasattr(super(), "initialize"):
-                return await discord.utils.maybe_coroutine(super().initialize, *args, **kwargs)
-
-        async def cog_check(self, ctx: PyLavContext) -> bool:
-            if not ctx.guild:
-                return await discord.utils.maybe_coroutine(super().cog_check, ctx)
-            if ctx.player:
-                config = ctx.player.config
-            else:
-                config = await self.lavalink.player_config_manager.get_config(ctx.guild.id)
-            if config.text_channel_id and config.text_channel_id != ctx.channel.id:
-                raise UnauthorizedChannelError(channel=config.text_channel_id)
-            return await discord.utils.maybe_coroutine(super().cog_check, ctx)
-
-    if "bot" not in cogkwargs:
+    argspec = inspect.getfullargspec(cls.__init__)
+    if ("bot" in argspec.args or "bot" in argspec.kwonlyargs) and bot not in cogargs:
         cogkwargs["bot"] = bot
-    return PyLavCog(*cogargs, **cogkwargs)
+
+    cog_instance = cls(*cogargs, **cogkwargs)
+    cog_instance.lavalink = Client(bot=bot, cog=cog_instance, config_folder=cog_data_path(raw_name="PyLav"))
+    cog_instance.bot = bot
+    cog_instance.init_called = False
+    cog_instance._init_task = cls.cog_check
+    cog_instance.pylav = cog_instance.lavalink
+    old_cog_on_command_error = cog_instance._get_overridden_method(cog_instance.cog_command_error)
+    old_cog_unload = cog_instance._get_overridden_method(cog_instance.cog_unload)
+    old_cog_check = cog_instance._get_overridden_method(cog_instance.cog_check)
+    old_cog_initialize = getattr(cog_instance, "initialize", None)
+    if old_cog_on_command_error:
+        cog_instance.__pylav_original_cog_command_error = old_cog_on_command_error
+    if old_cog_unload:
+        cog_instance.__pylav_original_cog_unload = old_cog_unload
+    if old_cog_check:
+        cog_instance.__pylav_original_cog_check = old_cog_check
+    if old_cog_initialize:
+        cog_instance.__pylav_original_initialize = old_cog_initialize
+
+    cog_instance.cog_command_error = MethodType(cog_command_error, cog_instance)
+    cog_instance.cog_unload = MethodType(cog_unload, cog_instance)
+    cog_instance.initialize = MethodType(initialize, cog_instance)
+    cog_instance.cog_check = MethodType(cog_check, cog_instance)
+
+    return cog_instance
 
 
 async def pylav_auto_setup(

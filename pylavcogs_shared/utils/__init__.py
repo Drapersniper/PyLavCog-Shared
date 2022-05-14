@@ -6,8 +6,6 @@ from typing import Any, MutableMapping
 
 __all__ = ("decorators", "rgetattr", "rsetattr")
 
-from pylavcogs_shared.types import GenericT
-
 
 def rsetattr(obj: object, attr: str, val: Any) -> None:
     pre, _, post = attr.rpartition(".")
