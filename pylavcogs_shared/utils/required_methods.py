@@ -174,6 +174,8 @@ def class_factory(
         cogkwargs["bot"] = bot
 
     cog_instance = cls(*cogargs, **cogkwargs)
+    if not hasattr(cog_instance, "__version__"):
+        cog_instance.__version__ = "0.0.0"
     cog_instance.lavalink = Client(bot=bot, cog=cog_instance, config_folder=cog_data_path(raw_name="PyLav"))
     cog_instance.bot = bot
     cog_instance.init_called = False
