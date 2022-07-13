@@ -2,8 +2,8 @@ from __future__ import annotations
 
 import functools
 import hashlib
-from typing import Any
 from collections.abc import MutableMapping
+from typing import Any
 
 __all__ = ("decorators", "rgetattr", "rsetattr")
 
