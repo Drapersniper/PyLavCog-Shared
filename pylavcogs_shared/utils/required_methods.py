@@ -132,6 +132,16 @@ async def cog_unload(self: CogT) -> None:
         return await discord.utils.maybe_coroutine(meth)
 
 
+async def cog_before_invoke(self: CogT, context: PyLavContext):
+    self.lavalink
+    try:
+        await self.lavalink.wait_until_ready(timeout=30)
+    except asyncio.TimeoutError:
+        return
+    if meth := getattr(self, "__pylav_original_cog_before_invoke", None):
+        return await discord.utils.maybe_coroutine(meth)
+
+
 async def initialize(self: CogT, *args, **kwargs) -> None:
     if not self.init_called:
         await self.lavalink.register(self)
@@ -164,6 +174,7 @@ def class_factory(
     Creates a new class which inherits from the given class and overrides the following methods:
     - cog_check
     - cog_unload
+    - cog_before_invoke
     - initialize
     - cog_command_error
     """
@@ -183,12 +194,15 @@ def class_factory(
     cog_instance.pylav = cog_instance.lavalink
     old_cog_on_command_error = cog_instance._get_overridden_method(cog_instance.cog_command_error)
     old_cog_unload = cog_instance._get_overridden_method(cog_instance.cog_unload)
+    old_cog_before_invoke = cog_instance._get_overridden_method(cog_instance.cog_before_invoke)
     old_cog_check = cog_instance._get_overridden_method(cog_instance.cog_check)
     old_cog_initialize = getattr(cog_instance, "initialize", None)
     if old_cog_on_command_error:
         cog_instance.__pylav_original_cog_command_error = old_cog_on_command_error
     if old_cog_unload:
         cog_instance.__pylav_original_cog_unload = old_cog_unload
+    if old_cog_before_invoke:
+        cog_instance.__pylav_original_cog_before_invoke = old_cog_before_invoke
     if old_cog_check:
         cog_instance.__pylav_original_cog_check = old_cog_check
     if old_cog_initialize:
@@ -196,6 +210,7 @@ def class_factory(
 
     cog_instance.cog_command_error = MethodType(cog_command_error, cog_instance)
     cog_instance.cog_unload = MethodType(cog_unload, cog_instance)
+    cog_instance.cog_before_invoke = MethodType(cog_before_invoke, cog_instance)
     cog_instance.initialize = MethodType(initialize, cog_instance)
     cog_instance.cog_check = MethodType(cog_check, cog_instance)
 
@@ -216,6 +231,8 @@ async def pylav_auto_setup(
     Adds `.lavalink` attribute to the cog instance and starts up PyLav
     Overwrites cog_unload method to unregister the cog from Lavalink,
         calling the original cog_unload method once the PyLav unregister code is run.
+    Overwrites cog_before_invoke
+        To force commands to wait for PyLav to be ready
     Overwrites cog_check method to check if the cog is allowed to run in the current context,
         If called within a Guild then we check if we can run as per the PyLav Command channel lock,
         if this check passes then the original cog_check method is called.
