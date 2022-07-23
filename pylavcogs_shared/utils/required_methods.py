@@ -160,7 +160,7 @@ async def cog_check(self: CogT, ctx: PyLavContext) -> bool:
     else:
         config = await self.lavalink.player_config_manager.get_config(ctx.guild.id)
     if config.text_channel_id and config.text_channel_id != ctx.channel.id:
-        raise UnauthorizedChannelError(channel=config.text_channel_id)
+        raise False
     return await discord.utils.maybe_coroutine(meth, ctx) if meth else True
 
 
