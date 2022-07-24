@@ -133,10 +133,15 @@ async def cog_unload(self: CogT) -> None:
 
 
 async def cog_before_invoke(self: CogT, context: PyLavContext):
-    self.lavalink
     try:
         await self.lavalink.wait_until_ready(timeout=30)
     except asyncio.TimeoutError:
+        LOGGER.debug("Discarded command due to PyLav not being ready within 30 seconds")
+        LOGGER.verbose(
+            "Discarded command due to PyLav not being ready within 30 seconds - Guild: %s - Command: %s",
+            context.guild,
+            context.command.qualified_name,
+        )
         return
     if meth := getattr(self, "__pylav_original_cog_before_invoke", None):
         return await discord.utils.maybe_coroutine(meth)
