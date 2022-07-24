@@ -142,7 +142,8 @@ async def cog_before_invoke(self: CogT, context: PyLavContext):
             context.guild,
             context.command.qualified_name,
         )
-        return
+
+        raise discord.ext.commands.CheckFailure(_("PyLav is not ready - Please try again shortly."))
     if meth := getattr(self, "__pylav_original_cog_before_invoke", None):
         return await discord.utils.maybe_coroutine(meth)
 
