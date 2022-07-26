@@ -137,7 +137,7 @@ class ToggleRepeatButton(discord.ui.Button):
         if not player:
             return await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
-                    description="Not connected to a voice channel.", messageable=interaction
+                    description=_("Not connected to a voice channel."), messageable=interaction
                 ),
                 ephemeral=True,
             )
@@ -162,7 +162,7 @@ class ToggleRepeatQueueButton(discord.ui.Button):
         if not player:
             return await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
-                    description="Not connected to a voice channel.", messageable=interaction
+                    description=_("Not connected to a voice channel."), messageable=interaction
                 ),
                 ephemeral=True,
             )
@@ -202,6 +202,36 @@ class DisconnectButton(discord.ui.Button):
         await self.cog.command_disconnect.callback(self.cog, interaction)
         self.view.stop()
         await self.view.on_timeout()
+
+
+class EmptyQueueButton(discord.ui.Button):
+    def __init__(self, cog: CogT, style: discord.ButtonStyle, row: int = None):
+        super().__init__(
+            style=style,
+            emoji=emojis.TRASH,
+            row=row,
+        )
+        self.cog = cog
+
+    async def callback(self, interaction: InteractionT):
+        player = self.cog.lavalink.get_player(interaction.guild)
+        if not player.queue.size():
+            return await interaction.response.send_message(
+                embed=await self.cog.lavalink.construct_embed(
+                    description=_("There's nothing in the Queue."), messageable=interaction
+                ),
+                ephemeral=True,
+            )
+        player.queue.clear()
+        await interaction.response.send_message(
+            embed=await self.cog.lavalink.construct_embed(
+                description=_("Removed tracks from the queue."), messageable=interaction
+            ),
+            ephemeral=True,
+        )
+        await self.view.prepare()
+        kwargs = await self.view.get_page(self.view.current_page)
+        await (await interaction.original_message()).edit(view=self.view, **kwargs)
 
 
 class EnqueueButton(discord.ui.Button):

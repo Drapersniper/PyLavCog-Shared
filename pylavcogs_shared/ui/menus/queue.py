@@ -14,6 +14,7 @@ from pylavcogs_shared.ui.buttons.generic import CloseButton, NavigateButton, Ref
 from pylavcogs_shared.ui.buttons.queue import (
     DecreaseVolumeButton,
     DisconnectButton,
+    EmptyQueueButton,
     EnqueueButton,
     IncreaseVolumeButton,
     PauseTrackButton,
@@ -123,6 +124,7 @@ class QueueMenu(BaseMenu):
             row=1,
             cog=cog,
         )
+        self.clear_queue_button = EmptyQueueButton(style=discord.ButtonStyle.red, row=1, cog=cog)
 
         self.previous_track_button = PreviousTrackButton(
             style=discord.ButtonStyle.grey,
@@ -192,6 +194,7 @@ class QueueMenu(BaseMenu):
         max_pages = self.source.get_max_pages()
         self.add_item(self.close_button)
         self.add_item(self.queue_disconnect)
+        self.add_item(self.clear_queue_button)
 
         self.add_item(self.first_button)
         self.add_item(self.backward_button)
@@ -202,6 +205,7 @@ class QueueMenu(BaseMenu):
         self.repeat_button_on.disabled = False
         self.repeat_button_off.disabled = False
         self.repeat_queue_button_on.disabled = False
+        self.clear_queue_button.disabled = False
 
         self.forward_button.disabled = False
         self.backward_button.disabled = False
@@ -243,6 +247,7 @@ class QueueMenu(BaseMenu):
                 self.shuffle_button.disabled = True
                 self.remove_from_queue_button.disabled = True
                 self.play_now_button.disabled = True
+                self.clear_queue_button.disabled = True
             if not player.current:
                 self.equalize_button.disabled = True
                 self.stop_button.disabled = True
@@ -278,6 +283,7 @@ class QueueMenu(BaseMenu):
             self.remove_from_queue_button.disabled = True
             self.play_now_button.disabled = True
             self.repeat_queue_button_on.disabled = True
+            self.clear_queue_button.disabled = True
 
             self.add_item(self.resume_button)
             self.add_item(self.repeat_button_off)
