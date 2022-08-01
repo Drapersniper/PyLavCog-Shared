@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-05-09 17:13+0000\n"
-"PO-Revision-Date: 2022-05-09 17:17\n"
+"POT-Creation-Date: 2022-07-26 18:33+0000\n"
+"PO-Revision-Date: 2022-07-26 18:37\n"
 "Last-Translator: \n"
 "Language-Team: Dutch\n"
 "MIME-Version: 1.0\n"
@@ -174,19 +174,19 @@ msgstr "Zoekopdracht"
 msgid "What query to remove from the playlist"
 msgstr "Welke query uit de afspeellijst te verwijderen"
 
-#: pylavcogs_shared/ui/menus/queue.py:436
+#: pylavcogs_shared/ui/menus/queue.py:442
 msgid "Select Track To Remove"
 msgstr "Selecteer track om te verwijderen"
 
-#: pylavcogs_shared/ui/menus/queue.py:438
+#: pylavcogs_shared/ui/menus/queue.py:444
 msgid "Select Track To Play Now"
 msgstr "Selecteer track To Play Nu"
 
-#: pylavcogs_shared/ui/menus/queue.py:540
+#: pylavcogs_shared/ui/menus/queue.py:546
 msgid "Pick An Effect Preset To Apply"
 msgstr "Kies een Effect voorinstelling om toe te passen"
 
-#: pylavcogs_shared/ui/menus/queue.py:689
+#: pylavcogs_shared/ui/menus/queue.py:695
 msgid "Select Track To Enqueue"
 msgstr "Selecteer track To Enqueue"
 

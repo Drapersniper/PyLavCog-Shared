@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-05-08 19:46+0000\n"
-"PO-Revision-Date: 2022-05-08 19:49\n"
+"POT-Creation-Date: 2022-07-26 18:33+0000\n"
+"PO-Revision-Date: 2022-07-26 18:37\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "MIME-Version: 1.0\n"
@@ -182,7 +182,20 @@ msgstr "crwdns3444:0crwdne3444:0"
 msgid "What should the playlist name be?"
 msgstr "crwdns3446:0crwdne3446:0"
 
-#: pylavcogs_shared/ui/buttons/queue.py:224
+#: pylavcogs_shared/ui/buttons/queue.py:140
+#: pylavcogs_shared/ui/buttons/queue.py:165
+msgid "Not connected to a voice channel."
+msgstr "crwdns4322:0crwdne4322:0"
+
+#: pylavcogs_shared/ui/buttons/queue.py:221
+msgid "There's nothing in the Queue."
+msgstr "crwdns4324:0crwdne4324:0"
+
+#: pylavcogs_shared/ui/buttons/queue.py:228
+msgid "Removed tracks from the queue."
+msgstr "crwdns4326:0crwdne4326:0"
+
+#: pylavcogs_shared/ui/buttons/queue.py:254
 msgid "What do you want to enqueue?"
 msgstr "crwdns3448:0crwdne3448:0"
 
