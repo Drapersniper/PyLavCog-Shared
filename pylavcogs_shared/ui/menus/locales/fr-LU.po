@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-07-26 18:33+0000\n"
-"PO-Revision-Date: 2022-07-26 18:37\n"
+"POT-Creation-Date: 2022-08-02 21:17+0000\n"
+"PO-Revision-Date: 2022-08-02 21:21\n"
 "Last-Translator: \n"
 "Language-Team: French, Luxembourg\n"
 "MIME-Version: 1.0\n"
@@ -174,19 +174,19 @@ msgstr "Requête"
 msgid "What query to remove from the playlist"
 msgstr "Quelle requête à supprimer de la playlist"
 
-#: pylavcogs_shared/ui/menus/queue.py:442
+#: pylavcogs_shared/ui/menus/queue.py:453
 msgid "Select Track To Remove"
 msgstr "Sélectionnez la piste à supprimer"
 
-#: pylavcogs_shared/ui/menus/queue.py:444
+#: pylavcogs_shared/ui/menus/queue.py:455
 msgid "Select Track To Play Now"
 msgstr "Sélectionnez la piste à lire maintenant"
 
-#: pylavcogs_shared/ui/menus/queue.py:546
+#: pylavcogs_shared/ui/menus/queue.py:557
 msgid "Pick An Effect Preset To Apply"
 msgstr "Choisissez un préréglage d'effet à appliquer"
 
-#: pylavcogs_shared/ui/menus/queue.py:695
+#: pylavcogs_shared/ui/menus/queue.py:706
 msgid "Select Track To Enqueue"
 msgstr "Sélectionnez la piste à mettre en file d'attente"
 

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-07-26 18:33+0000\n"
-"PO-Revision-Date: 2022-07-26 18:37\n"
+"POT-Creation-Date: 2022-08-02 21:17+0000\n"
+"PO-Revision-Date: 2022-08-02 21:20\n"
 "Last-Translator: \n"
 "Language-Team: Czech\n"
 "MIME-Version: 1.0\n"
@@ -174,19 +174,19 @@ msgstr "Dotaz"
 msgid "What query to remove from the playlist"
 msgstr "Jaký dotaz má být odebrán ze seznamu skladeb"
 
-#: pylavcogs_shared/ui/menus/queue.py:442
+#: pylavcogs_shared/ui/menus/queue.py:453
 msgid "Select Track To Remove"
 msgstr "Vyberte skladbu pro odstranění"
 
-#: pylavcogs_shared/ui/menus/queue.py:444
+#: pylavcogs_shared/ui/menus/queue.py:455
 msgid "Select Track To Play Now"
 msgstr "Vyberte skladbu pro přehrání"
 
-#: pylavcogs_shared/ui/menus/queue.py:546
+#: pylavcogs_shared/ui/menus/queue.py:557
 msgid "Pick An Effect Preset To Apply"
 msgstr "Vyberte předvolbu efektu pro použití"
 
-#: pylavcogs_shared/ui/menus/queue.py:695
+#: pylavcogs_shared/ui/menus/queue.py:706
 msgid "Select Track To Enqueue"
 msgstr "Vyberte skladbu do fronty"
 
