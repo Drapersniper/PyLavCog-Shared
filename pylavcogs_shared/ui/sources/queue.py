@@ -160,17 +160,18 @@ class EffectsPickerSource(menus.ListPageSource):
 
 
 class QueueSource(menus.ListPageSource):
-    def __init__(self, guild_id: int, cog: CogT):  # noqa
+    def __init__(self, guild_id: int, cog: CogT, history: bool = False):  # noqa
         self.cog = cog
         self.per_page = 10
         self.guild_id = guild_id
+        self.history = history
 
     @property
     def entries(self) -> Iterable[Track]:
         player = self.cog.lavalink.get_player(self.guild_id)
         if not player:
             return []
-        return player.queue.raw_queue
+        return player.history.raw_queue if self.history else player.queue.raw_queue
 
     def is_paginating(self) -> bool:
         return True
@@ -183,7 +184,8 @@ class QueueSource(menus.ListPageSource):
         player = self.cog.lavalink.get_player(self.guild_id)
         if not player:
             return 1
-        pages, left_over = divmod(player.queue.size(), self.per_page)
+        pages, left_over = divmod(player.history.size() if self.history else player.queue.size(), self.per_page)
+
         if left_over:
             pages += 1
         return pages or 1
@@ -206,10 +208,13 @@ class QueueSource(menus.ListPageSource):
                 total_pages=self.get_max_pages(),
                 embed=True,
                 messageable=menu.ctx,
+                history=self.history,
             )
-            if player.current
+            if player.current and (True if not self.history else player.history.size())
             else await self.cog.lavalink.construct_embed(
-                description="There's nothing currently being played.",
+                description="There's nothing currently being played."
+                if not self.history
+                else "There's nothing in recently played.",
                 messageable=menu.ctx,
             )
         )

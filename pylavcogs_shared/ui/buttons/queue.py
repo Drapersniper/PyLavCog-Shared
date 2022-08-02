@@ -148,6 +148,36 @@ class ToggleRepeatButton(discord.ui.Button):
         await (await interaction.original_message()).edit(view=self.view, **kwargs)
 
 
+class QueueHistoryButton(discord.ui.Button):
+    def __init__(self, cog: CogT, style: discord.ButtonStyle, row: int = None):
+        super().__init__(
+            style=style,
+            emoji=emojis.PLAYLIST,
+            row=row,
+        )
+        self.cog = cog
+
+    async def callback(self, interaction: InteractionT):
+        from pylavcogs_shared.ui.menus.queue import QueueMenu
+        from pylavcogs_shared.ui.sources.queue import QueueSource
+
+        player = self.cog.lavalink.get_player(interaction.guild)
+        if not player:
+            return await interaction.response.send_message(
+                embed=await self.cog.lavalink.construct_embed(
+                    description=_("Not connected to a voice channel."), messageable=interaction
+                ),
+                ephemeral=True,
+            )
+
+        await QueueMenu(
+            cog=self.cog,
+            bot=self.cog.bot,
+            source=QueueSource(guild_id=interaction.guild.id, cog=self.cog, history=True),
+            original_author=interaction.user,
+        ).start(ctx=interaction)
+
+
 class ToggleRepeatQueueButton(discord.ui.Button):
     def __init__(self, cog: CogT, style: discord.ButtonStyle, row: int = None):
         super().__init__(

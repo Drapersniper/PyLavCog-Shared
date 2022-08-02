@@ -20,6 +20,7 @@ from pylavcogs_shared.ui.buttons.queue import (
     PauseTrackButton,
     PlayNowFromQueueButton,
     PreviousTrackButton,
+    QueueHistoryButton,
     RemoveFromQueueButton,
     ResumeTrackButton,
     ShuffleButton,
@@ -118,6 +119,11 @@ class QueueMenu(BaseMenu):
             row=1,
             cog=cog,
         )
+        self.show_history_button = QueueHistoryButton(
+            style=discord.ButtonStyle.grey,
+            row=1,
+            cog=cog,
+        )
 
         self.close_button = CloseButton(
             style=discord.ButtonStyle.red,
@@ -206,6 +212,7 @@ class QueueMenu(BaseMenu):
         self.repeat_button_off.disabled = False
         self.repeat_queue_button_on.disabled = False
         self.clear_queue_button.disabled = False
+        self.show_history_button.disabled = False
 
         self.forward_button.disabled = False
         self.backward_button.disabled = False
@@ -257,6 +264,9 @@ class QueueMenu(BaseMenu):
                 self.increase_volume_button.disabled = True
             if player.history.empty():
                 self.previous_track_button.disabled = True
+                self.show_history_button.disabled = True
+            else:
+                self.add_item(self.show_history_button)
             if player.config.repeat_current:
                 self.add_item(self.repeat_button_on)
             elif player.config.repeat_queue:
@@ -273,6 +283,7 @@ class QueueMenu(BaseMenu):
             self.skip_button.disabled = True
             self.previous_track_button.disabled = True
             self.repeat_button_off.disabled = True
+            self.show_history_button.disabled = True
             self.shuffle_button.disabled = True
             self.decrease_volume_button.disabled = True
             self.increase_volume_button.disabled = True
