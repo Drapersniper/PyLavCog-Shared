@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-07-26 18:33+0000\n"
-"PO-Revision-Date: 2022-07-26 18:37\n"
+"POT-Creation-Date: 2022-08-02 21:17+0000\n"
+"PO-Revision-Date: 2022-08-02 21:21\n"
 "Last-Translator: \n"
 "Language-Team: Swedish, Finland\n"
 "MIME-Version: 1.0\n"
@@ -174,19 +174,19 @@ msgstr "Fråga"
 msgid "What query to remove from the playlist"
 msgstr "Vilken fråga att ta bort från spellistan"
 
-#: pylavcogs_shared/ui/menus/queue.py:442
+#: pylavcogs_shared/ui/menus/queue.py:453
 msgid "Select Track To Remove"
 msgstr "Välj spår för att ta bort"
 
-#: pylavcogs_shared/ui/menus/queue.py:444
+#: pylavcogs_shared/ui/menus/queue.py:455
 msgid "Select Track To Play Now"
 msgstr "Välj spår för att spela nu"
 
-#: pylavcogs_shared/ui/menus/queue.py:546
+#: pylavcogs_shared/ui/menus/queue.py:557
 msgid "Pick An Effect Preset To Apply"
 msgstr "Välj en förinställd effekt att tillämpa"
 
-#: pylavcogs_shared/ui/menus/queue.py:695
+#: pylavcogs_shared/ui/menus/queue.py:706
 msgid "Select Track To Enqueue"
 msgstr "Välj Track To Enqueue"
 
