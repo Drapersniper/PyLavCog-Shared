@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-08-02 21:17+0000\n"
-"PO-Revision-Date: 2022-08-02 21:21\n"
+"POT-Creation-Date: 2022-08-05 21:17+0000\n"
+"PO-Revision-Date: 2022-08-05 21:21\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "MIME-Version: 1.0\n"
@@ -174,19 +174,19 @@ msgstr "crwdns3512:0crwdne3512:0"
 msgid "What query to remove from the playlist"
 msgstr "crwdns3514:0crwdne3514:0"
 
-#: pylavcogs_shared/ui/menus/queue.py:453
+#: pylavcogs_shared/ui/menus/queue.py:458
 msgid "Select Track To Remove"
 msgstr "crwdns3516:0crwdne3516:0"
 
-#: pylavcogs_shared/ui/menus/queue.py:455
+#: pylavcogs_shared/ui/menus/queue.py:460
 msgid "Select Track To Play Now"
 msgstr "crwdns3518:0crwdne3518:0"
 
-#: pylavcogs_shared/ui/menus/queue.py:557
+#: pylavcogs_shared/ui/menus/queue.py:562
 msgid "Pick An Effect Preset To Apply"
 msgstr "crwdns3520:0crwdne3520:0"
 
-#: pylavcogs_shared/ui/menus/queue.py:706
+#: pylavcogs_shared/ui/menus/queue.py:711
 msgid "Select Track To Enqueue"
 msgstr "crwdns3522:0crwdne3522:0"
 
