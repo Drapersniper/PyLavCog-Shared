@@ -51,6 +51,7 @@ class QueueMenu(BaseMenu):
         timeout: int = 600,
         message: discord.Message = None,
         starting_page: int = 0,
+        history: bool = False,
         **kwargs: Any,
     ) -> None:
         super().__init__(
@@ -64,7 +65,7 @@ class QueueMenu(BaseMenu):
             **kwargs,
         )
         self.author = original_author
-
+        self.is_history = history
         self.forward_button = NavigateButton(
             style=discord.ButtonStyle.grey,
             emoji="\N{BLACK RIGHT-POINTING TRIANGLE}\N{VARIATION SELECTOR-16}",
@@ -198,9 +199,10 @@ class QueueMenu(BaseMenu):
     async def prepare(self):
         self.clear_items()
         max_pages = self.source.get_max_pages()
-        self.add_item(self.close_button)
-        self.add_item(self.queue_disconnect)
-        self.add_item(self.clear_queue_button)
+        if not self.is_history:
+            self.add_item(self.close_button)
+            self.add_item(self.queue_disconnect)
+            self.add_item(self.clear_queue_button)
 
         self.add_item(self.first_button)
         self.add_item(self.backward_button)
@@ -208,17 +210,29 @@ class QueueMenu(BaseMenu):
         self.add_item(self.last_button)
         self.add_item(self.refresh_button)
 
-        self.repeat_button_on.disabled = False
-        self.repeat_button_off.disabled = False
-        self.repeat_queue_button_on.disabled = False
-        self.clear_queue_button.disabled = False
-        self.show_history_button.disabled = False
+        if not self.is_history:
+            self.repeat_button_on.disabled = False
+            self.repeat_button_off.disabled = False
+            self.repeat_queue_button_on.disabled = False
+            self.clear_queue_button.disabled = False
+            self.show_history_button.disabled = False
 
         self.forward_button.disabled = False
         self.backward_button.disabled = False
         self.first_button.disabled = False
         self.last_button.disabled = False
         self.refresh_button.disabled = False
+
+        if max_pages == 2:
+            self.first_button.disabled = True
+            self.last_button.disabled = True
+        elif max_pages == 1:
+            self.forward_button.disabled = True
+            self.backward_button.disabled = True
+            self.first_button.disabled = True
+            self.last_button.disabled = True
+        if self.is_history:
+            return
 
         self.previous_track_button.disabled = False
         self.paused_button.disabled = False
@@ -237,14 +251,6 @@ class QueueMenu(BaseMenu):
         self.add_item(self.previous_track_button)
         self.add_item(self.stop_button)
 
-        if max_pages == 2:
-            self.first_button.disabled = True
-            self.last_button.disabled = True
-        elif max_pages == 1:
-            self.forward_button.disabled = True
-            self.backward_button.disabled = True
-            self.first_button.disabled = True
-            self.last_button.disabled = True
         if player := self.cog.lavalink.get_player(self.source.guild_id):
             if player.paused:
                 self.add_item(self.resume_button)
@@ -306,7 +312,6 @@ class QueueMenu(BaseMenu):
         self.add_item(self.enqueue_button)
         self.add_item(self.remove_from_queue_button)
         self.add_item(self.play_now_button)
-        self.equalize_button.disabled = True
         self.equalize_button.disabled = True
 
     @property

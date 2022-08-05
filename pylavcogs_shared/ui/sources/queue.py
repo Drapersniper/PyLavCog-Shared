@@ -210,11 +210,11 @@ class QueueSource(menus.ListPageSource):
                 messageable=menu.ctx,
                 history=self.history,
             )
-            if player.current and (True if not self.history else player.history.size())
+            if player.current and (player.history.size() if self.history else True)
             else await self.cog.lavalink.construct_embed(
-                description="There's nothing currently being played."
-                if not self.history
-                else "There's nothing in recently played.",
+                description="There's nothing in recently played."
+                if self.history
+                else "There's nothing currently being played.",
                 messageable=menu.ctx,
             )
         )

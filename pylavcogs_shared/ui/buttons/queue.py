@@ -175,6 +175,7 @@ class QueueHistoryButton(discord.ui.Button):
             bot=self.cog.bot,
             source=QueueSource(guild_id=interaction.guild.id, cog=self.cog, history=True),
             original_author=interaction.user,
+            history=True,
         ).start(ctx=interaction)
 
 
