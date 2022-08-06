@@ -33,3 +33,12 @@ class MediaPlayerNotFoundError(MediaPlayerCheckError, commands.CheckFailure):
 
     def __init__(self, context: PyLavContext) -> None:
         self.context = context
+
+
+class NotDJError(MediaPlayerCheckError, commands.CheckFailure):
+    """
+    Raised when user does not have DJ Perms.
+    """
+
+    def __init__(self, context: PyLavContext) -> None:
+        self.context = context

@@ -22,6 +22,8 @@ def always_hidden():
 
 def requires_player():
     async def pred(context: PyLavContext):
+        if not (getattr(context, "lavalink", None)):
+            return False
         # TODO: Check room setting if present allow bot to connect to it instead of throwing error
         player = context.cog.lavalink.get_player(context.guild)  # type:ignore
         if not player:
@@ -35,14 +37,34 @@ def requires_player():
 
 def can_run_command_in_channel():
     async def pred(context: PyLavContext):
+        if not (getattr(context, "lavalink", None)):
+            return False
         if not context.guild:
             return True
-        if context.player:
+        if getattr(context, "player", None):
             config = context.player.config
         else:
             config = await context.lavalink.player_config_manager.get_config(context.guild.id)
         if config.text_channel_id and config.text_channel_id != context.channel.id:
             raise UnauthorizedChannelError(channel=config.text_channel_id)
+        return True
+
+    return commands.check(pred)
+
+
+def invoker_is_dj():
+    async def pred(context: PyLavContext):
+        if not (getattr(context, "lavalink", None) and context.guild):
+            return False
+        if await context.bot.allowed_by_whitelist_blacklist(who=context.author, guild=context.author.guild):
+            return True
+        is_dj = await context.lavalink.is_dj(
+            user=context.author, guild=context.guild, additional_role_ids=None, additional_user_ids=None
+        )  # type:ignore
+        if not is_dj:
+            raise errors.NotDJError(
+                context,
+            )
         return True
 
     return commands.check(pred)

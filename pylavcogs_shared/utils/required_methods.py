@@ -18,7 +18,7 @@ from pylav.exceptions import NoNodeWithRequestFunctionalityAvailable
 from pylav.types import BotT, CogT
 from pylav.utils import PyLavContext
 
-from pylavcogs_shared.errors import MediaPlayerNotFoundError, UnauthorizedChannelError
+from pylavcogs_shared.errors import MediaPlayerNotFoundError, NotDJError, UnauthorizedChannelError
 
 _ = Translator("PyLavShared", Path(__file__))
 _LOCK = threading.Lock()
@@ -112,6 +112,16 @@ async def cog_command_error(self: CogT, context: PyLavContext, error: Exception)
             ephemeral=True,
             delete_after=10,
         )
+    elif isinstance(error, NotDJError):
+        unhandled = False
+        await context.send(
+            embed=await self.lavalink.construct_embed(
+                messageable=context,
+                description=_("This command requires you to be a DJ."),
+            ),
+            ephemeral=True,
+            delete_after=10,
+        )
     if unhandled:
         if (meth := getattr(self, "__pylav_original_cog_command_error", None)) and (
             func := self._get_overridden_method(meth)
@@ -158,6 +168,8 @@ async def initialize(self: CogT, *args, **kwargs) -> None:
 
 
 async def cog_check(self: CogT, context: PyLavContext) -> bool:
+    if not (getattr(context, "lavalink", None)):
+        return False
     meth = getattr(self, "__pylav_original_cog_check", None)
     if not context.guild:
         return await discord.utils.maybe_coroutine(meth, context) if meth else True
