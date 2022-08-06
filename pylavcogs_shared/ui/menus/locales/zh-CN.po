@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-08-05 21:17+0000\n"
-"PO-Revision-Date: 2022-08-05 21:21\n"
+"POT-Creation-Date: 2022-08-06 11:50+0000\n"
+"PO-Revision-Date: 2022-08-06 11:50\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
@@ -174,19 +174,19 @@ msgstr "查询"
 msgid "What query to remove from the playlist"
 msgstr "要从播放列表中删除的查询"
 
-#: pylavcogs_shared/ui/menus/queue.py:458
+#: pylavcogs_shared/ui/menus/queue.py:462
 msgid "Select Track To Remove"
 msgstr "选择要删除的轨道"
 
-#: pylavcogs_shared/ui/menus/queue.py:460
+#: pylavcogs_shared/ui/menus/queue.py:464
 msgid "Select Track To Play Now"
 msgstr "选择要立即播放的曲目"
 
-#: pylavcogs_shared/ui/menus/queue.py:562
+#: pylavcogs_shared/ui/menus/queue.py:566
 msgid "Pick An Effect Preset To Apply"
 msgstr "选择要应用的效果预设"
 
-#: pylavcogs_shared/ui/menus/queue.py:711
+#: pylavcogs_shared/ui/menus/queue.py:715
 msgid "Select Track To Enqueue"
 msgstr "选择要加入队列的轨道"
 

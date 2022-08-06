@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-07-24 09:59+0000\n"
-"PO-Revision-Date: 2022-07-24 10:03\n"
+"POT-Creation-Date: 2022-08-06 10:48+0000\n"
+"PO-Revision-Date: 2022-08-06 10:52\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "MIME-Version: 1.0\n"
@@ -60,7 +60,11 @@ msgstr "crwdns4088:0{feature}crwdne4088:0"
 msgid "This command is not available in this channel. Please use {channel}"
 msgstr "crwdns4090:0{channel}crwdne4090:0"
 
-#: pylavcogs_shared/utils/required_methods.py:146
+#: pylavcogs_shared/utils/required_methods.py:120
+msgid "This command requires you to be a DJ."
+msgstr "crwdns4342:0crwdne4342:0"
+
+#: pylavcogs_shared/utils/required_methods.py:156
 msgid "PyLav is not ready - Please try again shortly."
 msgstr "crwdns4316:0crwdne4316:0"
 
