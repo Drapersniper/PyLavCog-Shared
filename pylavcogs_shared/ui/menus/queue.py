@@ -315,6 +315,8 @@ class QueueMenu(BaseMenu):
         self.add_item(self.remove_from_queue_button)
         self.add_item(self.play_now_button)
         self.equalize_button.disabled = True
+        if is_dj is False:
+            self.queue_disconnect.disabled = True
 
     @property
     def source(self) -> QueueSource:
