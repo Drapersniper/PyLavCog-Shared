@@ -52,7 +52,7 @@ def can_run_command_in_channel():
     return commands.check(pred)
 
 
-async def is_dj_logic(context: PyLavContext) -> bool | type[NotDJError]:
+async def is_dj_logic(context: PyLavContext) -> bool | None:
     if not (getattr(context, "lavalink", None) and context.guild):
         return False
     if await context.bot.allowed_by_whitelist_blacklist(who=context.author, guild=context.author.guild):
@@ -61,17 +61,17 @@ async def is_dj_logic(context: PyLavContext) -> bool | type[NotDJError]:
         user=context.author, guild=context.guild, additional_role_ids=None, additional_user_ids=None
     )
     if not is_dj:
-        return errors.NotDJError
+        return None
     return True
 
 
 def invoker_is_dj():
     async def pred(context: PyLavContext):
         is_dj = await is_dj_logic(context)
-        if isinstance(is_dj, bool):
-            return is_dj
-        raise is_dj(
-            context,
-        )
+        if is_dj is None:
+            raise NotDJError(
+                context,
+            )
+        return is_dj
 
     return commands.check(pred)
