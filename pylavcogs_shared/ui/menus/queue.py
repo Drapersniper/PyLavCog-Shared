@@ -33,6 +33,7 @@ from pylavcogs_shared.ui.menus.generic import BaseMenu
 from pylavcogs_shared.ui.selectors.playlist import PlaylistSelectSelector
 from pylavcogs_shared.ui.selectors.queue import EffectsSelector, QueueSelectTrack, SearchSelectTrack
 from pylavcogs_shared.ui.sources.queue import EffectsPickerSource, QueuePickerSource, QueueSource, SearchPickerSource
+from pylavcogs_shared.utils.decorators import is_dj_logic
 
 _ = Translator("PyLavShared", Path(__file__))
 
@@ -199,6 +200,7 @@ class QueueMenu(BaseMenu):
     async def prepare(self):
         self.clear_items()
         max_pages = self.source.get_max_pages()
+        is_dj = await is_dj_logic(self.ctx)
         if not self.is_history:
             self.add_item(self.close_button)
             self.add_item(self.queue_disconnect)
@@ -251,7 +253,7 @@ class QueueMenu(BaseMenu):
         self.add_item(self.previous_track_button)
         self.add_item(self.stop_button)
 
-        if player := self.cog.lavalink.get_player(self.source.guild_id):
+        if (player := self.cog.lavalink.get_player(self.source.guild_id)) and is_dj is not False:
             if player.paused:
                 self.add_item(self.resume_button)
             else:

@@ -2,9 +2,11 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import discord
 from redbot.core import commands
 from redbot.core.i18n import Translator
 
+from pylav.types import InteractionT
 from pylav.utils import PyLavContext
 
 from pylavcogs_shared import errors
@@ -22,10 +24,10 @@ def always_hidden():
 
 def requires_player():
     async def pred(context: PyLavContext):
-        if not (getattr(context, "lavalink", None)):
+        if not (getattr(context.bot, "lavalink", None)):
             return False
         # TODO: Check room setting if present allow bot to connect to it instead of throwing error
-        player = context.cog.lavalink.get_player(context.guild)  # type:ignore
+        player = context.bot.lavalink.get_player(context.guild)  # type:ignore
         if not player:
             raise errors.MediaPlayerNotFoundError(
                 context,
@@ -37,14 +39,14 @@ def requires_player():
 
 def can_run_command_in_channel():
     async def pred(context: PyLavContext):
-        if not (getattr(context, "lavalink", None)):
+        if not (getattr(context.bot, "lavalink", None)):
             return False
         if not context.guild:
             return True
         if getattr(context, "player", None):
             config = context.player.config
         else:
-            config = await context.lavalink.player_config_manager.get_config(context.guild.id)
+            config = await context.bot.lavalink.player_config_manager.get_config(context.guild.id)
         if config.text_channel_id and config.text_channel_id != context.channel.id:
             raise UnauthorizedChannelError(channel=config.text_channel_id)
         return True
@@ -52,26 +54,30 @@ def can_run_command_in_channel():
     return commands.check(pred)
 
 
-async def is_dj_logic(context: PyLavContext) -> bool | None:
-    if not (getattr(context, "lavalink", None) and context.guild):
+async def is_dj_logic(context: PyLavContext | InteractionT) -> bool | None:
+    guild = context.guild
+    if isinstance(context, discord.Interaction):
+        bot = context.client
+        author = context.user
+    else:
+        bot = context.bot
+        author = context.author
+
+    if not (getattr(bot, "lavalink", None) and guild):
         return False
-    if await context.bot.allowed_by_whitelist_blacklist(who=context.author, guild=context.author.guild):
-        return True
-    is_dj = await context.lavalink.is_dj(
-        user=context.author, guild=context.guild, additional_role_ids=None, additional_user_ids=None
+    is_dj = await bot.lavalink.is_dj(
+        user=author, guild=guild, additional_role_ids=None, additional_user_ids={*bot.owner_ids, guild.owner_id}  # type: ignore
     )
-    if not is_dj:
-        return None
-    return True
+    return is_dj
 
 
 def invoker_is_dj():
     async def pred(context: PyLavContext):
         is_dj = await is_dj_logic(context)
-        if is_dj is None:
+        if is_dj is False:
             raise NotDJError(
                 context,
             )
-        return is_dj
+        return True
 
     return commands.check(pred)

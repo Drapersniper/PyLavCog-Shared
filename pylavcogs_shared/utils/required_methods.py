@@ -168,7 +168,7 @@ async def initialize(self: CogT, *args, **kwargs) -> None:
 
 
 async def cog_check(self: CogT, context: PyLavContext) -> bool:
-    if not (getattr(context, "lavalink", None)):
+    if not (getattr(context.bot, "lavalink", None)):
         return False
     meth = getattr(self, "__pylav_original_cog_check", None)
     if not context.guild:
@@ -176,7 +176,7 @@ async def cog_check(self: CogT, context: PyLavContext) -> bool:
     if getattr(context, "player", None):
         config = context.player.config
     else:
-        config = await self.lavalink.player_config_manager.get_config(context.guild.id)
+        config = await context.bot.lavalink.player_config_manager.get_config(context.guild.id)
     if config.text_channel_id and config.text_channel_id != context.channel.id:
         return False
     return await discord.utils.maybe_coroutine(meth, context) if meth else True
