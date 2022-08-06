@@ -157,17 +157,17 @@ async def initialize(self: CogT, *args, **kwargs) -> None:
         return await discord.utils.maybe_coroutine(meth, *args, **kwargs)
 
 
-async def cog_check(self: CogT, ctx: PyLavContext) -> bool:
+async def cog_check(self: CogT, context: PyLavContext) -> bool:
     meth = getattr(self, "__pylav_original_cog_check", None)
-    if not ctx.guild:
-        return await discord.utils.maybe_coroutine(meth, ctx) if meth else True
-    if ctx.player:
-        config = ctx.player.config
+    if not context.guild:
+        return await discord.utils.maybe_coroutine(meth, context) if meth else True
+    if getattr(context, "player", None):
+        config = context.player.config
     else:
-        config = await self.lavalink.player_config_manager.get_config(ctx.guild.id)
-    if config.text_channel_id and config.text_channel_id != ctx.channel.id:
+        config = await self.lavalink.player_config_manager.get_config(context.guild.id)
+    if config.text_channel_id and config.text_channel_id != context.channel.id:
         return False
-    return await discord.utils.maybe_coroutine(meth, ctx) if meth else True
+    return await discord.utils.maybe_coroutine(meth, context) if meth else True
 
 
 def class_factory(
