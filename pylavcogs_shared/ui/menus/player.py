@@ -50,38 +50,39 @@ class StatsMenu(BaseMenu):
             style=discord.ButtonStyle.grey,
             emoji="\N{BLACK RIGHT-POINTING TRIANGLE}\N{VARIATION SELECTOR-16}",
             direction=1,
-            row=4,
+            row=0,
             cog=cog,
         )
         self.backward_button = NavigateButton(
             style=discord.ButtonStyle.grey,
             emoji="\N{BLACK LEFT-POINTING TRIANGLE}\N{VARIATION SELECTOR-16}",
             direction=-1,
-            row=4,
+            row=0,
             cog=cog,
         )
         self.first_button = NavigateButton(
             style=discord.ButtonStyle.grey,
             emoji="\N{BLACK LEFT-POINTING DOUBLE TRIANGLE}",
             direction=0,
-            row=4,
+            row=0,
             cog=cog,
         )
         self.last_button = NavigateButton(
             style=discord.ButtonStyle.grey,
             emoji="\N{BLACK RIGHT-POINTING DOUBLE TRIANGLE}",
             direction=self.source.get_max_pages,
-            row=4,
-            cog=cog,
-        )
-        self.close_button = CloseButton(
-            style=discord.ButtonStyle.red,
-            row=4,
+            row=0,
             cog=cog,
         )
         self.refresh_button = RefreshButton(
             style=discord.ButtonStyle.grey,
-            row=4,
+            row=0,
+            cog=cog,
+        )
+
+        self.close_button = CloseButton(
+            style=discord.ButtonStyle.red,
+            row=1,
             cog=cog,
         )
         self.stop_button = StopTrackButton(
@@ -129,10 +130,13 @@ class StatsMenu(BaseMenu):
         self.add_item(self.forward_button)
         self.add_item(self.last_button)
         self.add_item(self.refresh_button)
-        self.add_item(self.queue_disconnect_inactive_label)
-        self.add_item(self.queue_disconnect_inactive)
-        self.add_item(self.queue_disconnect_all_label)
-        self.add_item(self.queue_disconnect_all)
+        if self.source.specified_guild is None or not (
+            self.cog.lavalink.player_manager.get(self.source.specified_guild)
+        ):
+            self.add_item(self.queue_disconnect_inactive_label)
+            self.add_item(self.queue_disconnect_inactive)
+            self.add_item(self.queue_disconnect_all_label)
+            self.add_item(self.queue_disconnect_all)
 
         self.forward_button.disabled = False
         self.backward_button.disabled = False

@@ -24,22 +24,28 @@ _ = Translator("PyLavShared", Path(__file__))
 
 
 class PlayersSource(menus.ListPageSource):
-    def __init__(self, cog: CogT):
+    def __init__(self, cog: CogT, specified_guild: int = None):
         super().__init__([], per_page=1)
         self.cog = cog
         self.current_player = None
+        self.specified_guild = specified_guild
 
     @property
     def entries(self) -> list[Player]:
-        return list(self.cog.lavalink.player_manager.players.values())
+        if self.specified_guild is not None and (player := self.cog.lavalink.player_manager.get(self.specified_guild)):
+            return [player]
+        return self.cog.lavalink.player_manager.connected_players
 
     @entries.setter
     def entries(self, players: list[Player]):
         pass
 
     def get_max_pages(self):
-        players = self.cog.lavalink.player_manager.connected_players
-        pages, left_over = divmod(len(list(players)), self.per_page)
+        if self.specified_guild is not None and (player := self.cog.lavalink.player_manager.get(self.specified_guild)):
+            players = [player]
+        else:
+            players = self.cog.lavalink.player_manager.connected_players
+        pages, left_over = divmod(len(players), self.per_page)
         if left_over:
             pages += 1
         return pages or 1
@@ -57,7 +63,8 @@ class PlayersSource(menus.ListPageSource):
         )
         self.current_player = player
         guild_name = player.guild.name
-        queue_len = len(player.queue)
+        queue_len = player.queue.size()
+        history_queue_len = player.history.size()
         server_owner = f"{player.guild.owner} ({player.guild.owner.id})"
         current_track = (
             await player.current.get_track_display_name(max_length=50, with_url=True)
@@ -75,7 +82,13 @@ class PlayersSource(menus.ListPageSource):
                 (_("Server Owner"), server_owner),
                 (_("Connected For"), connect_dur),
                 (_("Users in VC"), listeners),
-                (_("Queue Length"), f"{queue_len} tracks"),
+                (_("Queue Length"), _("{} {}").format(queue_len, _("track" if queue_len == 1 else "tracks"))),
+                (
+                    _("Queue History Length"),
+                    _("{count} {track_translation}").format(
+                        count=history_queue_len, track_translation=_("track") if history_queue_len == 1 else _("tracks")
+                    ),
+                ),
             ]
         )
         current_track += field_values
@@ -85,10 +98,11 @@ class PlayersSource(menus.ListPageSource):
         )
 
         embed.set_footer(
-            text=_("Page {page_num}/{total_pages}  | Playing in {playing} servers.").format(
+            text=_("Page {page_num}/{total_pages}  | Playing in {playing} {server_translation}.").format(
                 page_num=humanize_number(page_num + 1),
                 total_pages=humanize_number(self.get_max_pages()),
                 playing=humanize_number(len(self.cog.lavalink.player_manager.playing_players)),
+                server_translation=_("server") if history_queue_len == 1 else _("servers"),
             )
         )
         return embed
