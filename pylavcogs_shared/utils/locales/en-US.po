@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-08-06 10:48+0000\n"
-"PO-Revision-Date: 2022-08-06 10:52\n"
+"POT-Creation-Date: 2022-08-11 19:49+0000\n"
+"PO-Revision-Date: 2022-08-11 19:52\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "MIME-Version: 1.0\n"
@@ -36,35 +36,48 @@ msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
 "- https://github.com/Drapersniper/PyLav-Cogs/graphs/contributors\n"
 msgstr "crwdns4160:0crwdne4160:0"
 
-#: pylavcogs_shared/utils/required_methods.py:72
+#: pylavcogs_shared/utils/required_methods.py:65
+#, docstring
+msgid "Show the version of PyLav and PyLavCogs-Shared libraries."
+msgstr "crwdns4372:0crwdne4372:0"
+
+#: pylavcogs_shared/utils/required_methods.py:77
+msgid "Library"
+msgstr "crwdns4374:0crwdne4374:0"
+
+#: pylavcogs_shared/utils/required_methods.py:77
+msgid "Version"
+msgstr "crwdns4376:0crwdne4376:0"
+
+#: pylavcogs_shared/utils/required_methods.py:98
 msgid "This command requires an existing player to be run."
 msgstr "crwdns4080:0crwdne4080:0"
 
-#: pylavcogs_shared/utils/required_methods.py:81
+#: pylavcogs_shared/utils/required_methods.py:107
 msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later."
 msgstr "crwdns4082:0crwdne4082:0"
 
-#: pylavcogs_shared/utils/required_methods.py:85
+#: pylavcogs_shared/utils/required_methods.py:111
 msgid "No Lavalink node currently available."
 msgstr "crwdns4084:0crwdne4084:0"
 
-#: pylavcogs_shared/utils/required_methods.py:94
+#: pylavcogs_shared/utils/required_methods.py:120
 msgid "MediaPlayer is currently unable to process tracks belonging to {feature}."
 msgstr "crwdns4086:0{feature}crwdne4086:0"
 
-#: pylavcogs_shared/utils/required_methods.py:97
+#: pylavcogs_shared/utils/required_methods.py:123
 msgid "No Lavalink node currently available with feature {feature}."
 msgstr "crwdns4088:0{feature}crwdne4088:0"
 
-#: pylavcogs_shared/utils/required_methods.py:108
+#: pylavcogs_shared/utils/required_methods.py:134
 msgid "This command is not available in this channel. Please use {channel}"
 msgstr "crwdns4090:0{channel}crwdne4090:0"
 
-#: pylavcogs_shared/utils/required_methods.py:120
+#: pylavcogs_shared/utils/required_methods.py:146
 msgid "This command requires you to be a DJ."
 msgstr "crwdns4342:0crwdne4342:0"
 
-#: pylavcogs_shared/utils/required_methods.py:156
+#: pylavcogs_shared/utils/required_methods.py:182
 msgid "PyLav is not ready - Please try again shortly."
 msgstr "crwdns4316:0crwdne4316:0"
 
