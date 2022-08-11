@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-08-06 11:50+0000\n"
-"PO-Revision-Date: 2022-08-06 11:51\n"
+"POT-Creation-Date: 2022-08-07 19:24+0000\n"
+"PO-Revision-Date: 2022-08-07 19:28\n"
 "Last-Translator: \n"
 "Language-Team: Spanish, Venezuela\n"
 "MIME-Version: 1.0\n"
@@ -122,19 +122,19 @@ msgstr "Cambiar el nombre de este nodo."
 msgid "Enter the new timeout for this node."
 msgstr "Introduzca el nuevo tiempo de espera para este nodo."
 
-#: pylavcogs_shared/ui/menus/player.py:92
+#: pylavcogs_shared/ui/menus/player.py:93
 msgid "selected"
 msgstr "seleccionado"
 
-#: pylavcogs_shared/ui/menus/player.py:99
+#: pylavcogs_shared/ui/menus/player.py:100
 msgid "inactive"
 msgstr "inactivo"
 
-#: pylavcogs_shared/ui/menus/player.py:109
+#: pylavcogs_shared/ui/menus/player.py:110
 msgid "all"
 msgstr "todo"
 
-#: pylavcogs_shared/ui/menus/player.py:200
+#: pylavcogs_shared/ui/menus/player.py:204
 msgid "Not connected anywhere."
 msgstr "No conectado a ninguna parte."
 

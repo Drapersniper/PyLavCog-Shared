@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-07-13 17:10+0000\n"
-"PO-Revision-Date: 2022-07-13 17:13\n"
+"POT-Creation-Date: 2022-08-07 19:24+0000\n"
+"PO-Revision-Date: 2022-08-07 19:28\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "MIME-Version: 1.0\n"
@@ -162,29 +162,57 @@ msgstr "crwdns3568:0crwdne3568:0"
 msgid "node"
 msgstr "crwdns3570:0crwdne3570:0"
 
-#: pylavcogs_shared/ui/sources/player.py:65
+#: pylavcogs_shared/ui/sources/player.py:72
 msgid "Nothing playing."
 msgstr "crwdns3572:0crwdne3572:0"
 
-#: pylavcogs_shared/ui/sources/player.py:75
+#: pylavcogs_shared/ui/sources/player.py:82
 msgid "Server Owner"
 msgstr "crwdns3574:0crwdne3574:0"
 
-#: pylavcogs_shared/ui/sources/player.py:76
+#: pylavcogs_shared/ui/sources/player.py:83
 msgid "Connected For"
 msgstr "crwdns3576:0crwdne3576:0"
 
-#: pylavcogs_shared/ui/sources/player.py:77
+#: pylavcogs_shared/ui/sources/player.py:84
 msgid "Users in VC"
 msgstr "crwdns3578:0crwdne3578:0"
 
-#: pylavcogs_shared/ui/sources/player.py:78
+#: pylavcogs_shared/ui/sources/player.py:85
 msgid "Queue Length"
 msgstr "crwdns3580:0crwdne3580:0"
 
+#: pylavcogs_shared/ui/sources/player.py:85
+msgid "{} {}"
+msgstr "crwdns4350:0crwdne4350:0"
+
+#: pylavcogs_shared/ui/sources/player.py:87
+msgid "Queue History Length"
+msgstr "crwdns4352:0crwdne4352:0"
+
 #: pylavcogs_shared/ui/sources/player.py:88
-msgid "Page {page_num}/{total_pages}  | Playing in {playing} servers."
-msgstr "crwdns3582:0{page_num}crwdnd3582:0{total_pages}crwdnd3582:0{playing}crwdne3582:0"
+msgid "{count} {track_translation}"
+msgstr "crwdns4354:0{count}crwdnd4354:0{track_translation}crwdne4354:0"
+
+#: pylavcogs_shared/ui/sources/player.py:89
+msgid "track"
+msgstr "crwdns4356:0crwdne4356:0"
+
+#: pylavcogs_shared/ui/sources/player.py:89
+msgid "tracks"
+msgstr "crwdns4358:0crwdne4358:0"
+
+#: pylavcogs_shared/ui/sources/player.py:101
+msgid "Page {page_num}/{total_pages}  | Playing in {playing} {server_translation}."
+msgstr "crwdns4360:0{page_num}crwdnd4360:0{total_pages}crwdnd4360:0{playing}crwdnd4360:0{server_translation}crwdne4360:0"
+
+#: pylavcogs_shared/ui/sources/player.py:105
+msgid "server"
+msgstr "crwdns4362:0crwdne4362:0"
+
+#: pylavcogs_shared/ui/sources/player.py:105
+msgid "servers"
+msgstr "crwdns4364:0crwdne4364:0"
 
 #: pylavcogs_shared/ui/sources/playlist.py:61
 #: pylavcogs_shared/ui/sources/playlist.py:186

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-08-05 21:17+0000\n"
-"PO-Revision-Date: 2022-08-05 21:21\n"
+"POT-Creation-Date: 2022-08-07 19:24+0000\n"
+"PO-Revision-Date: 2022-08-07 19:28\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "MIME-Version: 1.0\n"
@@ -91,33 +91,33 @@ msgid "__Enabled sources__:\n"
 "{sources}"
 msgstr "crwdns3974:0{sources}crwdne3974:0"
 
-#: pylavcogs_shared/ui/buttons/player.py:34
-#: pylavcogs_shared/ui/buttons/player.py:98
-#: pylavcogs_shared/ui/buttons/player.py:160
+#: pylavcogs_shared/ui/buttons/player.py:35
+#: pylavcogs_shared/ui/buttons/player.py:81
+#: pylavcogs_shared/ui/buttons/player.py:131
 msgid "You are not authorized to perform this action."
 msgstr "crwdns3406:0crwdne3406:0"
 
-#: pylavcogs_shared/ui/buttons/player.py:43
-#: pylavcogs_shared/ui/buttons/player.py:107
+#: pylavcogs_shared/ui/buttons/player.py:44
+#: pylavcogs_shared/ui/buttons/player.py:90
 msgid "No Player Available For Action - Try Refreshing."
 msgstr "crwdns3408:0crwdne3408:0"
 
-#: pylavcogs_shared/ui/buttons/player.py:64
-#: pylavcogs_shared/ui/buttons/player.py:126
-#: pylavcogs_shared/ui/buttons/player.py:195
+#: pylavcogs_shared/ui/buttons/player.py:53
+#: pylavcogs_shared/ui/buttons/player.py:101
+#: pylavcogs_shared/ui/buttons/player.py:155
 msgid "Bot Owner Action"
 msgstr "crwdns3410:0crwdne3410:0"
 
-#: pylavcogs_shared/ui/buttons/player.py:64
-#: pylavcogs_shared/ui/buttons/player.py:196
-msgid "Player disconnected."
-msgstr "crwdns3412:0crwdne3412:0"
+#: pylavcogs_shared/ui/buttons/player.py:53
+#: pylavcogs_shared/ui/buttons/player.py:155
+msgid "Player disconnected"
+msgstr "crwdns4348:0crwdne4348:0"
 
-#: pylavcogs_shared/ui/buttons/player.py:126
+#: pylavcogs_shared/ui/buttons/player.py:101
 msgid "Player stopped."
 msgstr "crwdns3414:0crwdne3414:0"
 
-#: pylavcogs_shared/ui/buttons/player.py:174
+#: pylavcogs_shared/ui/buttons/player.py:145
 msgid "No Players Available For Action - Try Refreshing."
 msgstr "crwdns3416:0crwdne3416:0"
 

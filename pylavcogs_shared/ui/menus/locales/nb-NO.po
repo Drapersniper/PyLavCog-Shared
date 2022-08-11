@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-08-06 11:50+0000\n"
-"PO-Revision-Date: 2022-08-06 11:51\n"
+"POT-Creation-Date: 2022-08-07 19:24+0000\n"
+"PO-Revision-Date: 2022-08-07 19:29\n"
 "Last-Translator: \n"
 "Language-Team: Norwegian Bokmal\n"
 "MIME-Version: 1.0\n"
@@ -122,19 +122,19 @@ msgstr "Endre navnet på denne noden."
 msgid "Enter the new timeout for this node."
 msgstr "Skriv inn den nye tidsavbruddet for denne noden."
 
-#: pylavcogs_shared/ui/menus/player.py:92
+#: pylavcogs_shared/ui/menus/player.py:93
 msgid "selected"
 msgstr "valgt"
 
-#: pylavcogs_shared/ui/menus/player.py:99
+#: pylavcogs_shared/ui/menus/player.py:100
 msgid "inactive"
 msgstr "inaktiv"
 
-#: pylavcogs_shared/ui/menus/player.py:109
+#: pylavcogs_shared/ui/menus/player.py:110
 msgid "all"
 msgstr "alle"
 
-#: pylavcogs_shared/ui/menus/player.py:200
+#: pylavcogs_shared/ui/menus/player.py:204
 msgid "Not connected anywhere."
 msgstr "Ikke koblet noen steder."
 
