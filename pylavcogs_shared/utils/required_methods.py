@@ -55,6 +55,32 @@ async def pylav_credits(context: PyLavContext) -> None:
     )
 
 
+@commands.command(
+    cls=commands.commands._AlwaysAvailableCommand,
+    name="plversion",
+    aliases=["pylavversion"],
+    i18n=_,
+)
+async def pylav_credits(context: PyLavContext) -> None:
+    """Show the version of PyLav and PyLavCogs-Shared libraries."""
+    if isinstance(context, discord.Interaction):
+        context = await context.client.get_context(context)
+    if context.interaction and not context.interaction.response.is_done():
+        await context.defer(ephemeral=True)
+    data = [
+        ("PyLavCogs-Shared", pylavcogs_shared.__VERSION__),
+        ("PyLav", self.bot.lavalink.lib_version),
+    ]
+
+    await context.send(
+        embed=await context.lavalink.construct_embed(
+            description=box(tabulate(data, headers=(_("Library"), _("Version")), tablefmt="fancy_grid")),
+            messageable=context,
+        ),
+        ephemeral=True,
+    )
+
+
 def _done_callback(task: asyncio.Task) -> None:
     with contextlib.suppress(asyncio.CancelledError):
         exc = task.exception()
