@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-08-07 19:24+0000\n"
-"PO-Revision-Date: 2022-08-07 19:28\n"
+"POT-Creation-Date: 2022-08-15 19:37+0000\n"
+"PO-Revision-Date: 2022-08-15 19:40\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "MIME-Version: 1.0\n"
@@ -24,17 +24,17 @@ msgstr ""
 #: pylavcogs_shared/ui/buttons/nodes.py:44
 #: pylavcogs_shared/ui/buttons/nodes.py:86
 #: pylavcogs_shared/ui/buttons/nodes.py:122
-#: pylavcogs_shared/ui/buttons/nodes.py:169
-#: pylavcogs_shared/ui/buttons/nodes.py:201
-#: pylavcogs_shared/ui/buttons/nodes.py:233
+#: pylavcogs_shared/ui/buttons/nodes.py:168
+#: pylavcogs_shared/ui/buttons/nodes.py:200
+#: pylavcogs_shared/ui/buttons/nodes.py:232
 #: pylavcogs_shared/ui/buttons/playlist.py:41
 #: pylavcogs_shared/ui/buttons/playlist.py:73
-#: pylavcogs_shared/ui/buttons/playlist.py:111
-#: pylavcogs_shared/ui/buttons/playlist.py:149
-#: pylavcogs_shared/ui/buttons/playlist.py:189
-#: pylavcogs_shared/ui/buttons/playlist.py:234
-#: pylavcogs_shared/ui/buttons/playlist.py:276
-#: pylavcogs_shared/ui/buttons/playlist.py:322
+#: pylavcogs_shared/ui/buttons/playlist.py:113
+#: pylavcogs_shared/ui/buttons/playlist.py:156
+#: pylavcogs_shared/ui/buttons/playlist.py:198
+#: pylavcogs_shared/ui/buttons/playlist.py:242
+#: pylavcogs_shared/ui/buttons/playlist.py:284
+#: pylavcogs_shared/ui/buttons/playlist.py:330
 msgid "You are not authorized to interact with this option."
 msgstr "crwdns3384:0crwdne3384:0"
 
@@ -74,19 +74,19 @@ msgstr "crwdns3400:0crwdne3400:0"
 msgid "This node will be used for search and playback..."
 msgstr "crwdns3402:0crwdne3402:0"
 
-#: pylavcogs_shared/ui/buttons/nodes.py:130
+#: pylavcogs_shared/ui/buttons/nodes.py:129
 msgid "Please fill out all the fields before continuing."
 msgstr "crwdns3404:0crwdne3404:0"
 
-#: pylavcogs_shared/ui/buttons/nodes.py:208
+#: pylavcogs_shared/ui/buttons/nodes.py:207
 msgid "When you press done this node will be permanently delete..."
 msgstr "crwdns3970:0crwdne3970:0"
 
-#: pylavcogs_shared/ui/buttons/nodes.py:210
+#: pylavcogs_shared/ui/buttons/nodes.py:209
 msgid "This node will no longer be deleted once you press done..."
 msgstr "crwdns3972:0crwdne3972:0"
 
-#: pylavcogs_shared/ui/buttons/nodes.py:241
+#: pylavcogs_shared/ui/buttons/nodes.py:239
 msgid "__Enabled sources__:\n"
 "{sources}"
 msgstr "crwdns3974:0{sources}crwdne3974:0"
@@ -137,48 +137,48 @@ msgstr "crwdns3422:0crwdne3422:0"
 msgid "No longer clearing tracks from the playlist..."
 msgstr "crwdns3424:0crwdne3424:0"
 
-#: pylavcogs_shared/ui/buttons/playlist.py:121
+#: pylavcogs_shared/ui/buttons/playlist.py:123
 msgid "Here is your playlist: {name}{extras}"
 msgstr "crwdns3426:0{name}crwdnd3426:0{extras}crwdne3426:0"
 
-#: pylavcogs_shared/ui/buttons/playlist.py:123
+#: pylavcogs_shared/ui/buttons/playlist.py:125
 msgid "\n"
 " (compressed using gzip to make it possible to send via Discord - you can use <https://gzip.swimburger.net/> to decompress it)"
 msgstr "crwdns3428:0crwdne3428:0"
 
-#: pylavcogs_shared/ui/buttons/playlist.py:156
+#: pylavcogs_shared/ui/buttons/playlist.py:164
 msgid "Updating playlist with the latest tracks..."
 msgstr "crwdns3430:0crwdne3430:0"
 
-#: pylavcogs_shared/ui/buttons/playlist.py:159
+#: pylavcogs_shared/ui/buttons/playlist.py:167
 msgid "Not updating playlist..."
 msgstr "crwdns3432:0crwdne3432:0"
 
-#: pylavcogs_shared/ui/buttons/playlist.py:242
+#: pylavcogs_shared/ui/buttons/playlist.py:250
 msgid "Adding the current queue to playlist..."
 msgstr "crwdns3434:0crwdne3434:0"
 
-#: pylavcogs_shared/ui/buttons/playlist.py:249
+#: pylavcogs_shared/ui/buttons/playlist.py:257
 msgid "No longer adding the current queue to playlist..."
 msgstr "crwdns3436:0crwdne3436:0"
 
-#: pylavcogs_shared/ui/buttons/playlist.py:284
+#: pylavcogs_shared/ui/buttons/playlist.py:292
 msgid "Removing all duplicate tracks from the queue..."
 msgstr "crwdns3438:0crwdne3438:0"
 
-#: pylavcogs_shared/ui/buttons/playlist.py:291
+#: pylavcogs_shared/ui/buttons/playlist.py:299
 msgid "No longer all duplicate tracks from the queue..."
 msgstr "crwdns3440:0crwdne3440:0"
 
-#: pylavcogs_shared/ui/buttons/playlist.py:377
+#: pylavcogs_shared/ui/buttons/playlist.py:384
 msgid "Playlists you can currently play"
 msgstr "crwdns3442:0crwdne3442:0"
 
-#: pylavcogs_shared/ui/buttons/playlist.py:383
+#: pylavcogs_shared/ui/buttons/playlist.py:390
 msgid "Pick a playlist"
 msgstr "crwdns3444:0crwdne3444:0"
 
-#: pylavcogs_shared/ui/buttons/playlist.py:403
+#: pylavcogs_shared/ui/buttons/playlist.py:410
 msgid "What should the playlist name be?"
 msgstr "crwdns3446:0crwdne3446:0"
 
