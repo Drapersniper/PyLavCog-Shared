@@ -39,7 +39,7 @@ class SSLNodeToggleButton(discord.ui.Button):
 
     async def callback(self, interaction: InteractionT):
         if self.view.author.id != interaction.user.id:
-            await interaction.response.send_message(
+            return await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("You are not authorized to interact with this option.")
                 ),
@@ -81,7 +81,7 @@ class SearchOnlyNodeToggleButton(discord.ui.Button):
 
     async def callback(self, interaction: InteractionT):
         if self.view.author.id != interaction.user.id:
-            await interaction.response.send_message(
+            return await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("You are not authorized to interact with this option.")
                 ),
@@ -117,13 +117,12 @@ class AddNodeDoneButton(discord.ui.Button):
 
     async def callback(self, interaction: InteractionT):
         if self.view.author.id != interaction.user.id:
-            await interaction.response.send_message(
+            return await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("You are not authorized to interact with this option.")
                 ),
                 ephemeral=True,
             )
-
         if not all([self.view.name, self.view.host, self.view.port, self.view.password]):
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
@@ -164,7 +163,7 @@ class NodeButton(discord.ui.Button):
 
     async def callback(self, interaction: InteractionT):
         if self.view.author.id != interaction.user.id:
-            await interaction.response.send_message(
+            return await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("You are not authorized to interact with this option.")
                 ),
@@ -196,7 +195,7 @@ class NodeDeleteButton(discord.ui.Button):
 
     async def callback(self, interaction: InteractionT):
         if self.view.author.id != interaction.user.id:
-            await interaction.response.send_message(
+            return await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("You are not authorized to interact with this option.")
                 ),
@@ -228,13 +227,12 @@ class NodeShowEnabledSourcesButton(discord.ui.Button):
 
     async def callback(self, interaction: InteractionT):
         if self.view.author.id != interaction.user.id:
-            await interaction.response.send_message(
+            return await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("You are not authorized to interact with this option.")
                 ),
                 ephemeral=True,
             )
-
         await interaction.response.send_message(
             embed=await self.cog.lavalink.construct_embed(
                 messageable=interaction,

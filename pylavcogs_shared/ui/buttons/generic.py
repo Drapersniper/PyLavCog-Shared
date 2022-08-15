@@ -62,7 +62,7 @@ class CloseButton(discord.ui.Button):
 
     async def callback(self, interaction: InteractionT):
         if self.view.author.id != interaction.user.id:
-            await interaction.response.send_message(
+            return await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("You are not authorized to interact with this option.")
                 ),
@@ -129,7 +129,7 @@ class DoneButton(discord.ui.Button):
 
     async def callback(self, interaction: InteractionT):
         if self.view.author.id != interaction.user.id:
-            await interaction.response.send_message(
+            return await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("You are not authorized to interact with this option.")
                 ),

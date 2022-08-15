@@ -36,7 +36,7 @@ class PlaylistDeleteButton(discord.ui.Button):
 
     async def callback(self, interaction: InteractionT):
         if self.view.author.id != interaction.user.id:
-            await interaction.response.send_message(
+            return await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("You are not authorized to interact with this option.")
                 ),
@@ -68,7 +68,7 @@ class PlaylistClearButton(discord.ui.Button):
 
     async def callback(self, interaction: InteractionT):
         if self.view.author.id != interaction.user.id:
-            await interaction.response.send_message(
+            return await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("You are not authorized to interact with this option.")
                 ),
@@ -105,17 +105,19 @@ class PlaylistDownloadButton(discord.ui.Button):
         self.cog = cog
 
     async def callback(self, interaction: InteractionT):
+        await interaction.response.defer(ephemeral=True, thinking=True)
         if self.view.author.id != interaction.user.id:
-            await interaction.response.send_message(
+            return await interaction.followup.send(
+                wait=True,
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("You are not authorized to interact with this option.")
                 ),
                 ephemeral=True,
             )
-
-        async with self.view.playlist.to_yaml(guild=interaction.guild) as yaml_file:
+        async with self.view.playlist.to_yaml(guild=interaction.guild) as (yaml_file, compressed):
             yaml_file: BytesIO
-            await interaction.response.send_message(
+            await interaction.followup.send(
+                wait=True,
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction,
                     description=_("Here is your playlist: {name}{extras}").format(
@@ -123,7 +125,11 @@ class PlaylistDownloadButton(discord.ui.Button):
                         extras=_(
                             "\n (compressed using gzip to make it possible to send via Discord "
                             "- you can use <https://gzip.swimburger.net/> to decompress it)"
-                        ),
+                        )
+                        if compressed == "gzip"
+                        else ""
+                        if compressed == "brotli"
+                        else "",
                     ),
                 ),
                 file=discord.File(filename=f"{self.view.playlist.name}.yaml", fp=yaml_file),
@@ -143,12 +149,14 @@ class PlaylistUpdateButton(discord.ui.Button):
         self.cog = cog
 
     async def callback(self, interaction: InteractionT):
+        await interaction.response.defer(ephemeral=True, thinking=True)
         if self.view.author.id != interaction.user.id:
-            await interaction.response.send_message(
+            return await interaction.followup.send(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("You are not authorized to interact with this option.")
                 ),
                 ephemeral=True,
+                wait=True,
             )
         self.view.cancelled = False
         self.view.update = not self.view.update
@@ -157,9 +165,10 @@ class PlaylistUpdateButton(discord.ui.Button):
         else:
             self.view.update = False
             response = _("Not updating playlist...")
-        await interaction.response.send_message(
+        await interaction.followup.send(
             embed=await self.cog.lavalink.construct_embed(messageable=interaction, description=response),
             ephemeral=True,
+            wait=True,
         )
 
 
@@ -184,13 +193,12 @@ class PlaylistInfoButton(discord.ui.Button):
 
     async def callback(self, interaction: InteractionT):
         if self.view.author.id != interaction.user.id:
-            await interaction.response.send_message(
+            return await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("You are not authorized to interact with this option.")
                 ),
                 ephemeral=True,
             )
-
         from pylavcogs_shared.ui.menus.generic import PaginatingMenu
         from pylavcogs_shared.ui.sources.playlist import Base64Source
 
@@ -229,7 +237,7 @@ class PlaylistQueueButton(discord.ui.Button):
 
     async def callback(self, interaction: InteractionT):
         if self.view.author.id != interaction.user.id:
-            await interaction.response.send_message(
+            return await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("You are not authorized to interact with this option.")
                 ),
@@ -271,7 +279,7 @@ class PlaylistDedupeButton(discord.ui.Button):
 
     async def callback(self, interaction: InteractionT):
         if self.view.author.id != interaction.user.id:
-            await interaction.response.send_message(
+            return await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("You are not authorized to interact with this option.")
                 ),
@@ -317,7 +325,7 @@ class PlaylistUpsertButton(discord.ui.Button):
 
     async def callback(self, interaction: InteractionT):
         if self.view.author.id != interaction.user.id:
-            await interaction.response.send_message(
+            return await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("You are not authorized to interact with this option.")
                 ),
@@ -354,7 +362,6 @@ class EnqueuePlaylistButton(discord.ui.Button):
         self.playlist = playlist
 
     async def callback(self, interaction: InteractionT):
-
         if not self.playlist:
             playlists = await self.cog.lavalink.playlist_db_manager.get_all_for_user(
                 requester=interaction.user.id,
