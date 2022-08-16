@@ -18,6 +18,7 @@ from pylav.exceptions import NoNodeWithRequestFunctionalityAvailable
 from pylav.types import BotT, CogT
 from pylav.utils import PyLavContext
 
+from pylavcogs_shared import __VERSION__ as pylavcogs_shared_version
 from pylavcogs_shared.errors import MediaPlayerNotFoundError, NotDJError, UnauthorizedChannelError
 
 _ = Translator("PyLavShared", Path(__file__))
@@ -65,15 +66,15 @@ async def pylav_credits(context: PyLavContext) -> None:
     aliases=["pylavversion"],
     i18n=_,
 )
-async def pylav_credits(context: PyLavContext) -> None:
+async def pylav_version(context: PyLavContext) -> None:
     """Show the version of PyLav and PyLavCogs-Shared libraries."""
     if isinstance(context, discord.Interaction):
         context = await context.client.get_context(context)
     if context.interaction and not context.interaction.response.is_done():
         await context.defer(ephemeral=True)
     data = [
-        ("PyLavCogs-Shared", pylavcogs_shared.__VERSION__),
-        ("PyLav", self.bot.lavalink.lib_version),
+        ("PyLavCogs-Shared", pylavcogs_shared_version),
+        ("PyLav", context.lavalink.lib_version),
     ]
 
     await context.send(
@@ -168,6 +169,7 @@ async def cog_unload(self: CogT) -> None:
     await client.unregister(cog=self)
     if client._shutting_down:
         self.bot.remove_command(pylav_credits.qualified_name)
+        self.bot.remove_command(pylav_version.qualified_name)
     if meth := getattr(self, "__pylav_original_cog_unload", None):
         return await discord.utils.maybe_coroutine(meth)
 
@@ -233,6 +235,8 @@ def class_factory(
     """
     if not bot.get_command(pylav_credits.qualified_name):
         bot.add_command(pylav_credits)
+    if not bot.get_command(pylav_version.qualified_name):
+        bot.add_command(pylav_version)
     argspec = inspect.getfullargspec(cls.__init__)
     if ("bot" in argspec.args or "bot" in argspec.kwonlyargs) and bot not in cogargs:
         cogkwargs["bot"] = bot
