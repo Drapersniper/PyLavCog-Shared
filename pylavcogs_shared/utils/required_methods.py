@@ -21,7 +21,12 @@ from pylav.types import BotT, CogT
 from pylav.utils import PyLavContext
 
 from pylavcogs_shared import __VERSION__ as pylavcogs_shared_version
-from pylavcogs_shared.errors import MediaPlayerNotFoundError, NotDJError, UnauthorizedChannelError
+from pylavcogs_shared.errors import (
+    IncompatibleException,
+    MediaPlayerNotFoundError,
+    NotDJError,
+    UnauthorizedChannelError,
+)
 
 _ = Translator("PyLavShared", Path(__file__))
 _LOCK = threading.Lock()
@@ -326,7 +331,7 @@ async def pylav_auto_setup(
         ...     await pylav_auto_setup(bot, MyCogClass, cogargs=(), cogkwargs=dict(special_arg=42), initargs=(), initkwargs=dict())
 
     """
-    if any(bot.get_cog(name) is not None for name in INCOMPATIBLE_COGS):
+    if any(bot.get_cog(name) is not None for name in INCOMPATIBLE_COGS if (name := name)):
         raise IncompatibleException(
             f"{name} is loaded, this cog is incompatible with PyLav - PyLav will not work as long as this cog is loaded."
         )
