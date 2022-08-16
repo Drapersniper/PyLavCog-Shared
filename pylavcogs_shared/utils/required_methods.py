@@ -24,6 +24,10 @@ _ = Translator("PyLavShared", Path(__file__))
 _LOCK = threading.Lock()
 LOGGER = getLogger("red.3pt.PyLav-Shared.utils.overrides")
 
+INCOMPATIBLE_COGS = {
+    "ReactToCommand",
+}
+
 
 @commands.command(
     cls=commands.commands._AlwaysAvailableCommand,
@@ -194,6 +198,11 @@ async def initialize(self: CogT, *args, **kwargs) -> None:
 
 
 async def cog_check(self: CogT, context: PyLavContext) -> bool:
+
+    # This cog mock discord objects and sends them on the listener
+    #   Due to the potential risk for unexpected behaviour - disabled all commands if this cog is loaded.
+    if any(context.bot.get_cog(name) is not None for name in INCOMPATIBLE_COGS):
+        return False
     if not (getattr(context.bot, "lavalink", None)):
         return False
     meth = getattr(self, "__pylav_original_cog_check", None)
@@ -311,6 +320,10 @@ async def pylav_auto_setup(
         ...     await pylav_auto_setup(bot, MyCogClass, cogargs=(), cogkwargs=dict(special_arg=42), initargs=(), initkwargs=dict())
 
     """
+    if any(bot.get_cog(name) is not None for name in INCOMPATIBLE_COGS):
+        raise IncompatibleException(
+            f"{name} is loaded, this cog is incompatible with PyLav - PyLav will not work as long as this cog is loaded."
+        )
     if cogargs is None:
         cogargs = ()
     if cogkwargs is None:

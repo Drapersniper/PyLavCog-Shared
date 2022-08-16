@@ -5,6 +5,10 @@ from redbot.core import commands
 from pylav.utils import PyLavContext
 
 
+class IncompatibleException(EnvironmentError):
+    """Command raised when an incompatible cog is already loaded."""
+
+
 class MediaPlayerError(commands.CommandError):
     """
     Base class for all media player errors.
