@@ -7,6 +7,7 @@ import threading
 from pathlib import Path
 from types import MethodType
 
+import asyncstdlib
 import discord
 from red_commons.logging import getLogger
 from redbot.core import commands
@@ -210,7 +211,7 @@ async def cog_check(self: CogT, context: PyLavContext) -> bool:
 
     # This cog mock discord objects and sends them on the listener
     #   Due to the potential risk for unexpected behaviour - disabled all commands if this cog is loaded.
-    if any(context.bot.get_cog(name) is not None for name in INCOMPATIBLE_COGS):
+    if await asyncstdlib.any(context.bot.get_cog(name) is not None for name in INCOMPATIBLE_COGS):
         return False
     if not (getattr(context.bot, "lavalink", None)):
         return False
@@ -331,7 +332,7 @@ async def pylav_auto_setup(
         ...     await pylav_auto_setup(bot, MyCogClass, cogargs=(), cogkwargs=dict(special_arg=42), initargs=(), initkwargs=dict())
 
     """
-    if any(bot.get_cog(name) is not None for name in INCOMPATIBLE_COGS if (name := name)):
+    if await asyncstdlib.any(bot.get_cog(name) is not None for name in INCOMPATIBLE_COGS if (name := name)):
         raise IncompatibleException(
             f"{name} is loaded, this cog is incompatible with PyLav - PyLav will not work as long as this cog is loaded."
         )

@@ -3,6 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import TYPE_CHECKING, Literal
 
+import asyncstdlib
 import discord
 from discord import Emoji, PartialEmoji
 from red_commons.logging import getLogger
@@ -123,7 +124,7 @@ class AddNodeDoneButton(discord.ui.Button):
                 ),
                 ephemeral=True,
             )
-        if not all([self.view.name, self.view.host, self.view.port, self.view.password]):
+        if not await asyncstdlib.all([self.view.name, self.view.host, self.view.port, self.view.password]):
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("Please fill out all the fields before continuing.")

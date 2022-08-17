@@ -4,6 +4,7 @@ import contextlib
 from pathlib import Path
 from typing import TYPE_CHECKING
 
+import asyncstdlib
 import discord
 import humanize
 from red_commons.logging import getLogger
@@ -132,7 +133,7 @@ class NodeListSource(menus.ListPageSource):
             _("Region"): region or _("N/A"),
             _("Host"): host,
             _("Port"): f"{port}",
-            _("Password"): "*" * min(len(password), 10),
+            _("Password"): "*" * await asyncstdlib.min([len(password), 10]),
             _("SSL"): secure,
             _("Available"): connected,
             _("Search Only"): search_only,
@@ -251,7 +252,7 @@ class NodeManageSource(menus.ListPageSource):
             _("Region"): region or _("N/A"),
             _("Host"): host,
             _("Port"): f"{port}",
-            _("Password"): "*" * min(len(password), 10),
+            _("Password"): "*" * await asyncstdlib.min([len(password), 10]),
             _("SSL"): secure,
             _("Available"): connected,
             _("Search Only"): search_only,

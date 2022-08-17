@@ -1,10 +1,10 @@
 from __future__ import annotations
 
-import itertools
 from collections.abc import Iterable
 from pathlib import Path
 from typing import TYPE_CHECKING
 
+import asyncstdlib
 import discord
 from red_commons.logging import getLogger
 from redbot.core.i18n import Translator
@@ -178,7 +178,7 @@ class QueueSource(menus.ListPageSource):
 
     async def get_page(self, page_number: int) -> list[Track]:
         base = page_number * self.per_page
-        return list(itertools.islice(self.entries, base, base + self.per_page))
+        return await asyncstdlib.list(asyncstdlib.islice(self.entries, base, base + self.per_page))
 
     def get_max_pages(self) -> int:
         player = self.cog.lavalink.get_player(self.guild_id)
@@ -234,7 +234,9 @@ class QueuePickerSource(QueueSource):
         base = page_number * self.per_page
         self.select_options.clear()
         self.select_mapping.clear()
-        for i, track in enumerate(list(itertools.islice(self.entries, base, base + self.per_page)), start=base):
+        for i, track in enumerate(
+            await asyncstdlib.list(asyncstdlib.islice(self.entries, base, base + self.per_page)), start=base
+        ):
             self.select_options.append(await QueueTrackOption.from_track(track=track, index=i))
             self.select_mapping[track.id] = track
         return []

@@ -4,6 +4,7 @@ import datetime
 from pathlib import Path
 from typing import TYPE_CHECKING
 
+import asyncstdlib
 import discord
 from red_commons.logging import getLogger
 from redbot.core.i18n import Translator
@@ -72,7 +73,7 @@ class PlayersSource(menus.ListPageSource):
             else _("Nothing playing.")
         )
 
-        listener_count = sum(True for m in rgetattr(player, "channel.members", []) if not m.bot)
+        listener_count = await asyncstdlib.sum(True for m in rgetattr(player, "channel.members", []) if not m.bot)
         listeners = humanize_number(listener_count)
         current_track += "\n"
 
