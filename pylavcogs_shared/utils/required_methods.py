@@ -332,9 +332,9 @@ async def pylav_auto_setup(
         ...     await pylav_auto_setup(bot, MyCogClass, cogargs=(), cogkwargs=dict(special_arg=42), initargs=(), initkwargs=dict())
 
     """
-    if await asyncstdlib.any(bot.get_cog(name) is not None for name in INCOMPATIBLE_COGS if (name := name)):
+    if await asyncstdlib.any(bot.get_cog(name) is not None for name in INCOMPATIBLE_COGS if (_name := name)):
         raise IncompatibleException(
-            f"{name} is loaded, this cog is incompatible with PyLav - PyLav will not work as long as this cog is loaded."
+            f"{_name} is loaded, this cog is incompatible with PyLav - PyLav will not work as long as this cog is loaded."
         )
     if cogargs is None:
         cogargs = ()
