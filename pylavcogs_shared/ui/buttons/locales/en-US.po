@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-08-15 19:37+0000\n"
-"PO-Revision-Date: 2022-08-15 19:40\n"
+"POT-Creation-Date: 2022-08-17 12:25+0000\n"
+"PO-Revision-Date: 2022-08-17 12:29\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "MIME-Version: 1.0\n"
@@ -21,12 +21,12 @@ msgstr ""
 #: pylavcogs_shared/ui/buttons/generic.py:89
 #: pylavcogs_shared/ui/buttons/generic.py:112
 #: pylavcogs_shared/ui/buttons/generic.py:134
-#: pylavcogs_shared/ui/buttons/nodes.py:44
-#: pylavcogs_shared/ui/buttons/nodes.py:86
-#: pylavcogs_shared/ui/buttons/nodes.py:122
-#: pylavcogs_shared/ui/buttons/nodes.py:168
-#: pylavcogs_shared/ui/buttons/nodes.py:200
-#: pylavcogs_shared/ui/buttons/nodes.py:232
+#: pylavcogs_shared/ui/buttons/nodes.py:45
+#: pylavcogs_shared/ui/buttons/nodes.py:87
+#: pylavcogs_shared/ui/buttons/nodes.py:123
+#: pylavcogs_shared/ui/buttons/nodes.py:169
+#: pylavcogs_shared/ui/buttons/nodes.py:201
+#: pylavcogs_shared/ui/buttons/nodes.py:233
 #: pylavcogs_shared/ui/buttons/playlist.py:41
 #: pylavcogs_shared/ui/buttons/playlist.py:73
 #: pylavcogs_shared/ui/buttons/playlist.py:113
@@ -58,35 +58,35 @@ msgstr "crwdns3392:0crwdne3392:0"
 msgid "player"
 msgstr "crwdns3394:0crwdne3394:0"
 
-#: pylavcogs_shared/ui/buttons/nodes.py:52
+#: pylavcogs_shared/ui/buttons/nodes.py:53
 msgid "Connecting to the node with SSL enabled..."
 msgstr "crwdns3396:0crwdne3396:0"
 
-#: pylavcogs_shared/ui/buttons/nodes.py:59
+#: pylavcogs_shared/ui/buttons/nodes.py:60
 msgid "Connecting to the node with SSL disabled..."
 msgstr "crwdns3398:0crwdne3398:0"
 
-#: pylavcogs_shared/ui/buttons/nodes.py:94
+#: pylavcogs_shared/ui/buttons/nodes.py:95
 msgid "This node will only be used for searches..."
 msgstr "crwdns3400:0crwdne3400:0"
 
-#: pylavcogs_shared/ui/buttons/nodes.py:101
+#: pylavcogs_shared/ui/buttons/nodes.py:102
 msgid "This node will be used for search and playback..."
 msgstr "crwdns3402:0crwdne3402:0"
 
-#: pylavcogs_shared/ui/buttons/nodes.py:129
+#: pylavcogs_shared/ui/buttons/nodes.py:130
 msgid "Please fill out all the fields before continuing."
 msgstr "crwdns3404:0crwdne3404:0"
 
-#: pylavcogs_shared/ui/buttons/nodes.py:207
+#: pylavcogs_shared/ui/buttons/nodes.py:208
 msgid "When you press done this node will be permanently delete..."
 msgstr "crwdns3970:0crwdne3970:0"
 
-#: pylavcogs_shared/ui/buttons/nodes.py:209
+#: pylavcogs_shared/ui/buttons/nodes.py:210
 msgid "This node will no longer be deleted once you press done..."
 msgstr "crwdns3972:0crwdne3972:0"
 
-#: pylavcogs_shared/ui/buttons/nodes.py:239
+#: pylavcogs_shared/ui/buttons/nodes.py:240
 msgid "__Enabled sources__:\n"
 "{sources}"
 msgstr "crwdns3974:0{sources}crwdne3974:0"
