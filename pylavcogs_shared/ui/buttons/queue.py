@@ -141,6 +141,7 @@ class ToggleRepeatButton(discord.ui.Button):
                 ),
                 ephemeral=True,
             )
+        await player.config.update()
         repeat_queue = bool(player.config.repeat_current)
         await self.cog.command_repeat.callback(self.cog, interaction, queue=repeat_queue)
         await self.view.prepare()
@@ -197,6 +198,7 @@ class ToggleRepeatQueueButton(discord.ui.Button):
                 ),
                 ephemeral=True,
             )
+        await player.config.update()
         repeat_queue = bool(player.config.repeat_current)
         await self.cog.command_repeat.callback(self.cog, interaction, queue=repeat_queue)
         await self.view.prepare()

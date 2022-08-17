@@ -45,6 +45,7 @@ def can_run_command_in_channel():
             return True
         if getattr(context, "player", None):
             config = context.player.config
+            await config.update()
         else:
             config = await context.bot.lavalink.player_config_manager.get_config(context.guild.id)
         if config.text_channel_id and config.text_channel_id != context.channel.id:

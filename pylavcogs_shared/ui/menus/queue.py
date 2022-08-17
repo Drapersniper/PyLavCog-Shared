@@ -254,6 +254,7 @@ class QueueMenu(BaseMenu):
         self.add_item(self.stop_button)
 
         if (player := self.cog.lavalink.get_player(self.source.guild_id)) and is_dj is not False:
+            await player.config.update()
             if player.paused:
                 self.add_item(self.resume_button)
             else:
