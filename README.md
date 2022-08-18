@@ -3,3 +3,4 @@
 [![GitHub license](https://img.shields.io/github/license/Drapersniper/PyLavCog-Shared.svg)](https://github.com/Drapersniper/PyLavCog-Shared/blob/master/LICENSE)
 [![Support Server](https://img.shields.io/discord/970987707834720266)](https://discord.com/invite/Sjh2TSCYQB)
 [![PyPi](https://img.shields.io/pypi/v/pylavcogs-shared?style=plastic)](https://pypi.org/project/pylavcogs-shared/)
+[![Documentation Status](https://readthedocs.org/projects/pylavcog-shared/badge/?version=latest)](https://pylavcog-shared.readthedocs.io/en/latest/?badge=latest)
