@@ -125,7 +125,13 @@ class NodeListSource(menus.ListPageSource):
             allocated = "?"
             reservable = "?"
             penalty = "?"
-
+        plugins = await node.get_plugins()
+        plugins_str = ""
+        for plugin in plugins:
+            plugins_str += _("Name: {name}\nVersion: {version}\n\n").format(
+                name=plugin.get("name", _("Unknown")), version=plugin.get("version", _("version"))
+            )
+        plugins_str = plugins_str.strip() or _("None")
         humanize.i18n.deactivate()
         t_property = _("Property")
         t_values = _("Value")
@@ -139,11 +145,14 @@ class NodeListSource(menus.ListPageSource):
             _("Search Only"): search_only,
             _("Players\nConnected\nActive"): f"-\n{pylav_connected_players}/{server_connected_players or '?'}\n"
             f"{pylav_active_players}/{server_active_players or '?'}",
-            _("Frames Lost"): f"{(abs(frames_deficit) + abs(frames_nulled))/(frames_sent or 1) * 100:.2f}%",
+            _("Frames Lost"): f"{(abs(frames_deficit) + abs(frames_nulled))/(frames_sent or 1) * 100:.2f}%"
+            if ((abs(frames_deficit) + abs(frames_nulled)) / (frames_sent or 1)) > 0
+            else "0%",
             _("Uptime"): uptime,
-            _("Load\nLavalink\nSystem"): f"-\n{lavalink_load}%\n{system_load}%",
+            _("CPU Load\nLavalink\nSystem"): f"-\n{lavalink_load}%\n{system_load}%",
             _("Penalty"): penalty,
             _("Memory\nUsed\nFree\nAllocated\nReservable"): f"-\n{used}\n{free}\n{allocated}\n{reservable}",
+            _("Plugins"): plugins_str,
         }
         description = box(
             tabulate([{t_property: k, t_values: v} for k, v in data.items()], headers="keys", tablefmt="fancy_grid")
@@ -248,6 +257,14 @@ class NodeManageSource(menus.ListPageSource):
         humanize.i18n.deactivate()
         t_property = _("Property")
         t_values = _("Value")
+        plugins = await node.get_plugins()
+        plugins_str = ""
+        for plugin in plugins:
+            plugins_str += _("Name: {name}\nVersion: {version}\n\n").format(
+                name=plugin.get("name", _("Unknown")), version=plugin.get("version", _("version"))
+            )
+        plugins_str = plugins_str.strip() or _("None")
+        humanize.i18n.deactivate()
         data = {
             _("Region"): region or _("N/A"),
             _("Host"): host,
@@ -258,11 +275,14 @@ class NodeManageSource(menus.ListPageSource):
             _("Search Only"): search_only,
             _("Players\nConnected\nActive"): f"-\n{pylav_connected_players}/{server_connected_players or '?'}\n"
             f"{pylav_active_players}/{server_active_players or '?'}",
-            _("Frames Lost"): f"{(abs(frames_deficit) + abs(frames_nulled)) / (frames_sent or 1) * 100:.2f}%",
+            _("Frames Lost"): f"{(abs(frames_deficit) + abs(frames_nulled)) / (frames_sent or 1) * 100:.2f}%"
+            if ((abs(frames_deficit) + abs(frames_nulled)) / (frames_sent or 1)) > 0
+            else "0%",
             _("Uptime"): uptime,
-            _("Load\nLavalink\nSystem"): f"-\n{lavalink_load}%\n{system_load}%",
+            _("CPU Load\nLavalink\nSystem"): f"-\n{lavalink_load}%\n{system_load}%",
             _("Penalty"): penalty,
             _("Memory\nUsed\nFree\nAllocated\nReservable"): f"-\n{used}\n{free}\n{allocated}\n{reservable}",
+            _("Plugins"): plugins_str,
         }
         description = box(
             tabulate([{t_property: k, t_values: v} for k, v in data.items()], headers="keys", tablefmt="fancy_grid")
