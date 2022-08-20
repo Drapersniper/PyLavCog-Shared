@@ -104,7 +104,7 @@ class NodeListSource(menus.ListPageSource):
             frames_nulled = node.stats.frames_nulled
             frames_deficit = node.stats.frames_deficit
 
-            uptime = humanize.naturaldelta(node.stats.uptime)
+            uptime = humanize.naturaldelta(node.stats.uptime_seconds)
             system_load = humanize_number(round(node.stats.system_load, 2))
             lavalink_load = humanize_number(round(node.stats.lavalink_load, 2))
 
