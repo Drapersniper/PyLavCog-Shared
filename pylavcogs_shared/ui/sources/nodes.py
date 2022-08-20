@@ -125,13 +125,16 @@ class NodeListSource(menus.ListPageSource):
             allocated = "?"
             reservable = "?"
             penalty = "?"
-        plugins = await node.get_plugins()
+        try:
+            plugins = await node.get_plugins()
+        except Exception:
+            plugins = {}
         plugins_str = ""
         for plugin in plugins:
             plugins_str += _("Name: {name}\nVersion: {version}\n\n").format(
                 name=plugin.get("name", _("Unknown")), version=plugin.get("version", _("version"))
             )
-        plugins_str = plugins_str.strip() or _("None")
+        plugins_str = plugins_str.strip() or _("None / Unknown")
         humanize.i18n.deactivate()
         t_property = _("Property")
         t_values = _("Value")
