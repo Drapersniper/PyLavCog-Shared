@@ -85,6 +85,7 @@ class NodeListSource(menus.ListPageSource):
 
         idx_start, page_num = self.get_starting_index_and_page_number(menu)
         region = node.region
+        coord = node.coordinates
         host = node.host
         port = node.port
         password = node.password
@@ -140,6 +141,9 @@ class NodeListSource(menus.ListPageSource):
         t_values = _("Value")
         data = {
             _("Region"): region or _("N/A"),
+            _("Coordinates"): _("Latitude: {lat}\nLongitude: {lon}").format(
+                lat=coord[0] if coord else "?", lon=coord[1] if coord else "?"
+            ),
             _("Host"): host,
             _("Port"): f"{port}",
             _("Password"): "*" * await asyncstdlib.min([len(password), 10]),
