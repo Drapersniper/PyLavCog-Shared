@@ -113,7 +113,7 @@ class NodeListSource(menus.ListPageSource):
             used = humanize.naturalsize(node.stats.memory_used, binary=True)
             allocated = humanize.naturalsize(node.stats.memory_allocated, binary=True)
             reservable = humanize.naturalsize(node.stats.memory_reservable, binary=True)
-            penalty = humanize_number(round(node.stats.penalty.total - 1, 2))
+            penalty = humanize_number(round(node.penalty - 1, 2))
         else:
             frames_sent = 0
             frames_nulled = 0
@@ -220,6 +220,7 @@ class NodeManageSource(menus.ListPageSource):
         await menu.prepare()
         idx_start, page_num = self.get_starting_index_and_page_number(menu)
         region = node.region
+        coord = node.coordinates
         host = node.host
         port = node.port
         password = node.password
@@ -247,7 +248,7 @@ class NodeManageSource(menus.ListPageSource):
             used = humanize.naturalsize(node.stats.memory_used, binary=True)
             allocated = humanize.naturalsize(node.stats.memory_allocated, binary=True)
             reservable = humanize.naturalsize(node.stats.memory_reservable, binary=True)
-            penalty = humanize_number(round(node.stats.penalty.total - 1, 2))
+            penalty = humanize_number(round(node.penalty - 1, 2))
         else:
             frames_sent = 0
             frames_nulled = 0
@@ -274,6 +275,9 @@ class NodeManageSource(menus.ListPageSource):
         humanize.i18n.deactivate()
         data = {
             _("Region"): region or _("N/A"),
+            _("Coordinates"): _("Latitude: {lat}\nLongitude: {lon}").format(
+                lat=coord[0] if coord else "?", lon=coord[1] if coord else "?"
+            ),
             _("Host"): host,
             _("Port"): f"{port}",
             _("Password"): "*" * await asyncstdlib.min([len(password), 10]),
