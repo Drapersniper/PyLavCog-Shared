@@ -9,6 +9,7 @@ from types import MethodType
 
 import asyncstdlib
 import discord
+from discord.ext.commands import CheckFailure
 from red_commons.logging import getLogger
 from redbot.core import commands
 from redbot.core.data_manager import cog_data_path
@@ -58,10 +59,12 @@ async def pylav_credits(context: PyLavContext) -> None:
                 "\n\n"
                 "You can help translate PyLav by contributing to our Crowdin projects at:\n"
                 "https://crowdin.com/project/pylavshared and https://crowdin.com/project/mediaplayer\n\n\n"
-                "Contributor:\n"
+                "Contributors:\n"
                 "- https://github.com/Drapersniper/PyLav/graphs/contributors\n"
                 "- https://github.com/Drapersniper/PyLavCog-Shared/graphs/contributors\n"
                 "- https://github.com/Drapersniper/PyLav-Cogs/graphs/contributors\n"
+                "If you wish to buy me a coffee for my work, you can do so at:\n"
+                "https://www.buymeacoffee.com/draper"
             ),
         ),
         ephemeral=True,
@@ -88,6 +91,29 @@ async def pylav_version(context: PyLavContext) -> None:
     await context.send(
         embed=await context.lavalink.construct_embed(
             description=box(tabulate(data, headers=(_("Library"), _("Version")), tablefmt="fancy_grid")),
+            messageable=context,
+        ),
+        ephemeral=True,
+    )
+
+
+@commands.command(
+    cls=commands.commands._AlwaysAvailableCommand,
+    name="plsynchslash",
+    aliases=["plss"],
+    i18n=_,
+)
+async def pylav_sync_slash(context: PyLavContext) -> None:
+    """Sync the Bots slash commands."""
+    if isinstance(context, discord.Interaction):
+        context = await context.client.get_context(context)
+    if context.interaction and not context.interaction.response.is_done():
+        await context.defer(ephemeral=True)
+    await context.bot.wait_until_ready()
+    await context.bot.tree.sync()
+    await context.send(
+        embed=await context.lavalink.construct_embed(
+            description=box(_("Synced the bots slash commands.")),
             messageable=context,
         ),
         ephemeral=True,
@@ -193,7 +219,7 @@ async def cog_before_invoke(self: CogT, context: PyLavContext):
             context.command.qualified_name,
         )
 
-        raise discord.ext.commands.CheckFailure(_("PyLav is not ready - Please try again shortly."))
+        raise CheckFailure(_("PyLav is not ready - Please try again shortly."))
     if meth := getattr(self, "__pylav_original_cog_before_invoke", None):
         return await discord.utils.maybe_coroutine(meth)
 
@@ -246,6 +272,8 @@ def class_factory(
         bot.add_command(pylav_credits)
     if not bot.get_command(pylav_version.qualified_name):
         bot.add_command(pylav_version)
+    if not bot.get_command(pylav_sync_slash.qualified_name):
+        bot.add_command(pylav_sync_slash)
     argspec = inspect.getfullargspec(cls.__init__)
     if ("bot" in argspec.args or "bot" in argspec.kwonlyargs) and bot not in cogargs:
         cogkwargs["bot"] = bot
