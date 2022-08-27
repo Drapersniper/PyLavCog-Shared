@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-08-01 16:57+0000\n"
-"PO-Revision-Date: 2022-08-01 17:00\n"
+"POT-Creation-Date: 2022-08-26 22:40+0000\n"
+"PO-Revision-Date: 2022-08-26 22:43\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "MIME-Version: 1.0\n"
@@ -21,42 +21,42 @@ msgstr ""
 msgid "Bass boost with name `{arg}` not found."
 msgstr "crwdns4122:0{arg}crwdne4122:0"
 
-#: pylavcogs_shared/converters/equalizer.py:59
-#: pylavcogs_shared/converters/equalizer.py:68
-#: pylavcogs_shared/converters/equalizer.py:69
+#: pylavcogs_shared/converters/equalizer.py:61
 #: pylavcogs_shared/converters/equalizer.py:70
+#: pylavcogs_shared/converters/equalizer.py:71
+#: pylavcogs_shared/converters/equalizer.py:72
 msgid "Maximum"
 msgstr "crwdns4124:0crwdne4124:0"
 
-#: pylavcogs_shared/converters/equalizer.py:60
+#: pylavcogs_shared/converters/equalizer.py:62
 msgid "Insane"
 msgstr "crwdns4126:0crwdne4126:0"
 
-#: pylavcogs_shared/converters/equalizer.py:61
+#: pylavcogs_shared/converters/equalizer.py:63
 msgid "Extreme"
 msgstr "crwdns4128:0crwdne4128:0"
 
-#: pylavcogs_shared/converters/equalizer.py:62
+#: pylavcogs_shared/converters/equalizer.py:64
 msgid "Very High"
 msgstr "crwdns4130:0crwdne4130:0"
 
-#: pylavcogs_shared/converters/equalizer.py:63
+#: pylavcogs_shared/converters/equalizer.py:65
 msgid "High"
 msgstr "crwdns4132:0crwdne4132:0"
 
-#: pylavcogs_shared/converters/equalizer.py:64
+#: pylavcogs_shared/converters/equalizer.py:66
 msgid "Medium"
 msgstr "crwdns4134:0crwdne4134:0"
 
-#: pylavcogs_shared/converters/equalizer.py:65
+#: pylavcogs_shared/converters/equalizer.py:67
 msgid "Fine Tuned"
 msgstr "crwdns4328:0crwdne4328:0"
 
-#: pylavcogs_shared/converters/equalizer.py:66
+#: pylavcogs_shared/converters/equalizer.py:68
 msgid "Cut-off"
 msgstr "crwdns4136:0crwdne4136:0"
 
-#: pylavcogs_shared/converters/equalizer.py:67
+#: pylavcogs_shared/converters/equalizer.py:69
 msgid "Off"
 msgstr "crwdns4138:0crwdne4138:0"
 
