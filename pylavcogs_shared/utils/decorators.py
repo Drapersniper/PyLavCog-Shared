@@ -23,31 +23,43 @@ def always_hidden():
 
 
 def requires_player():
-    async def pred(context: PyLavContext):
-        if not (getattr(context.bot, "lavalink", None)):
+    async def pred(context: PyLavContext | InteractionT):
+        if isinstance(context, discord.Interaction):
+            await context.response.defer(ephemeral=True)
+            bot = context.client
+            _lavalink = getattr(bot, "lavalink", None)
+            player = _lavalink.get_player(context.guild) if _lavalink else None
+        else:
+            bot = context.bot
+            _lavalink = getattr(bot, "lavalink", None)
+            player = getattr(context, "player", None)
+        if not getattr(bot, "lavalink", None):
             return False
-        # TODO: Check room setting if present allow bot to connect to it instead of throwing error
-        player = context.bot.lavalink.get_player(context.guild)  # type:ignore
         if not player:
-            raise errors.MediaPlayerNotFoundError(
-                context,
-            )
+            raise errors.MediaPlayerNotFoundError(context)
         return True
 
     return commands.check(pred)
 
 
 def can_run_command_in_channel():
-    async def pred(context: PyLavContext):
-        if not (getattr(context.bot, "lavalink", None)):
+    async def pred(context: PyLavContext | InteractionT):
+        if isinstance(context, discord.Interaction):
+            await context.response.defer(ephemeral=True)
+            bot = context.client
+            player = bot.lavalink.get_player(context.guild)  # type:ignore
+        else:
+            bot = context.bot
+            player = getattr(context, "player", None)
+        if not (getattr(bot, "lavalink", None)):
             return False
         if not context.guild:
             return True
-        if getattr(context, "player", None):
+        if player:
             config = context.player.config
             await config.update()
         else:
-            config = await context.bot.lavalink.player_config_manager.get_config(context.guild.id)
+            config = await bot.lavalink.player_config_manager.get_config(context.guild.id)
         if config.text_channel_id and config.text_channel_id != context.channel.id:
             raise UnauthorizedChannelError(channel=config.text_channel_id)
         return True
@@ -73,7 +85,7 @@ async def is_dj_logic(context: PyLavContext | InteractionT) -> bool | None:
 
 
 def invoker_is_dj():
-    async def pred(context: PyLavContext):
+    async def pred(context: PyLavContext | InteractionT):
         is_dj = await is_dj_logic(context)
         if is_dj is False:
             raise NotDJError(
