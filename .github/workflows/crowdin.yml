@@ -21,11 +21,23 @@ jobs:
         -   name: Generate source files
             run: |
                 python3.8 -m redgettext --command-docstrings --verbose --recursive .
+        -   name: Import GPG key
+            uses: crazy-max/ghaction-import-gpg@v5
+            with:
+                gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+                git_user_signingkey: true
+                git_commit_gpgsign: true
+                git_tag_gpgsign: true
+            id: import_gpg
         -   name: crowdin action
             uses: crowdin/github-action@1.4.12
             with:
                 upload_translations: true
                 download_translations: true
+                commit_message: '[patch] Update translations'
+                download_translations_args: --all --skip-untranslated-strings
+                skip_untranslated_strings: true
+                skip_untranslated_files: true
             env:
                 CROWDIN_API_KEY: ${{ secrets.crowdin_token}}
                 CROWDIN_PROJECT_ID: ${{ secrets.crowdin_identifier }}
