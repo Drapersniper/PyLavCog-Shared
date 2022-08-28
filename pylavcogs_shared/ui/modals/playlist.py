@@ -31,4 +31,4 @@ class PlaylistSaveModal(discord.ui.Modal):
         self.add_item(self.text)
 
     async def on_submit(self, interaction: InteractionT):
-        await self.cog.command_playlist_save.callback(self.cog, interaction, name=self.text.value.strip())
+        await self.cog.slash_playlist_save.callback(self.cog, interaction, name=self.text.value.strip())

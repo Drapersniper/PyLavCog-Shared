@@ -39,8 +39,11 @@ class SSLNodeToggleButton(discord.ui.Button):
         self.cog = cog
 
     async def callback(self, interaction: InteractionT):
+        if not interaction.response.is_done():
+            await interaction.response.defer(ephemeral=True)
+        context = await self.cog.bot.get_context(interaction)
         if self.view.author.id != interaction.user.id:
-            return await interaction.response.send_message(
+            return await context.send(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("You are not authorized to interact with this option.")
                 ),
@@ -48,14 +51,14 @@ class SSLNodeToggleButton(discord.ui.Button):
             )
         self.view.ssl = not self.view.ssl
         if self.view.ssl:
-            await interaction.response.send_message(
+            await context.send(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("Connecting to the node with SSL enabled...")
                 ),
                 ephemeral=True,
             )
         else:
-            await interaction.response.send_message(
+            await context.send(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("Connecting to the node with SSL disabled...")
                 ),
@@ -81,8 +84,11 @@ class SearchOnlyNodeToggleButton(discord.ui.Button):
         self.cog = cog
 
     async def callback(self, interaction: InteractionT):
+        if not interaction.response.is_done():
+            await interaction.response.defer(ephemeral=True)
+        context = await self.cog.bot.get_context(interaction)
         if self.view.author.id != interaction.user.id:
-            return await interaction.response.send_message(
+            return await context.send(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("You are not authorized to interact with this option.")
                 ),
@@ -90,14 +96,14 @@ class SearchOnlyNodeToggleButton(discord.ui.Button):
             )
         self.view.search_only = not self.view.search_only
         if self.view.search_only:
-            await interaction.response.send_message(
+            await context.send(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("This node will only be used for searches...")
                 ),
                 ephemeral=True,
             )
         else:
-            await interaction.response.send_message(
+            await context.send(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("This node will be used for search and playback...")
                 ),
@@ -117,22 +123,24 @@ class AddNodeDoneButton(discord.ui.Button):
         self.cog = cog
 
     async def callback(self, interaction: InteractionT):
+        if not interaction.response.is_done():
+            await interaction.response.defer(ephemeral=True)
+        context = await self.cog.bot.get_context(interaction)
         if self.view.author.id != interaction.user.id:
-            return await interaction.response.send_message(
+            return await context.send(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("You are not authorized to interact with this option.")
                 ),
                 ephemeral=True,
             )
         if not await asyncstdlib.all([self.view.name, self.view.host, self.view.port, self.view.password]):
-            await interaction.response.send_message(
+            await context.send(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("Please fill out all the fields before continuing.")
                 ),
                 ephemeral=True,
             )
             return
-        await interaction.response.defer(ephemeral=True)
         self.view.last_interaction = interaction
         self.view.done = True
         self.view.disabled_sources = self.view.disabled_sources_selector.values
@@ -195,8 +203,11 @@ class NodeDeleteButton(discord.ui.Button):
         self.cog = cog
 
     async def callback(self, interaction: InteractionT):
+        if interaction.response.is_done():
+            await interaction.response.defer(ephemeral=True)
+        context = await self.cog.bot.get_context(interaction)
         if self.view.author.id != interaction.user.id:
-            return await interaction.response.send_message(
+            return await context.send(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("You are not authorized to interact with this option.")
                 ),
@@ -209,7 +220,7 @@ class NodeDeleteButton(discord.ui.Button):
         else:
             response = _("This node will no longer be deleted once you press done...")
 
-        await interaction.response.send_message(
+        await context.send(
             embed=await self.cog.lavalink.construct_embed(messageable=interaction, description=response),
             ephemeral=True,
         )
@@ -227,14 +238,17 @@ class NodeShowEnabledSourcesButton(discord.ui.Button):
         self.cog = cog
 
     async def callback(self, interaction: InteractionT):
+        if interaction.response.is_done():
+            await interaction.response.defer(ephemeral=True)
+        context = await self.cog.bot.get_context(interaction)
         if self.view.author.id != interaction.user.id:
-            return await interaction.response.send_message(
+            return await context.send(
                 embed=await self.cog.lavalink.construct_embed(
                     messageable=interaction, description=_("You are not authorized to interact with this option.")
                 ),
                 ephemeral=True,
             )
-        await interaction.response.send_message(
+        await context.send(
             embed=await self.cog.lavalink.construct_embed(
                 messageable=interaction,
                 description=_("__Enabled sources__:\n{sources}").format(

@@ -21,7 +21,10 @@ class PreviousTrackButton(discord.ui.Button):
         self.cog = cog
 
     async def callback(self, interaction: InteractionT):
-        await self.cog.command_previous.callback(self.cog, interaction)
+        if not interaction.response.is_done():
+            await interaction.response.defer(ephemeral=True, thinking=True)
+        context = await self.cog.bot.get_context(interaction)
+        await self.cog.command_previous.callback(self.cog, context)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
         await (await interaction.original_message()).edit(view=self.view, **kwargs)
@@ -37,7 +40,10 @@ class StopTrackButton(discord.ui.Button):
         self.cog = cog
 
     async def callback(self, interaction: InteractionT):
-        await self.cog.command_stop.callback(self.cog, interaction)
+        if not interaction.response.is_done():
+            await interaction.response.defer(ephemeral=True, thinking=True)
+        context = await self.cog.bot.get_context(interaction)
+        await self.cog.command_stop.callback(self.cog, context)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
         await (await interaction.original_message()).edit(view=self.view, **kwargs)
@@ -53,7 +59,10 @@ class PauseTrackButton(discord.ui.Button):
         self.cog = cog
 
     async def callback(self, interaction: InteractionT):
-        await self.cog.command_pause.callback(self.cog, interaction)
+        if not interaction.response.is_done():
+            await interaction.response.defer(ephemeral=True, thinking=True)
+        context = await self.cog.bot.get_context(interaction)
+        await self.cog.command_pause.callback(self.cog, context)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
         await (await interaction.original_message()).edit(view=self.view, **kwargs)
@@ -69,7 +78,10 @@ class ResumeTrackButton(discord.ui.Button):
         self.cog = cog
 
     async def callback(self, interaction: InteractionT):
-        await self.cog.command_resume.callback(self.cog, interaction)
+        if not interaction.response.is_done():
+            await interaction.response.defer(ephemeral=True, thinking=True)
+        context = await self.cog.bot.get_context(interaction)
+        await self.cog.command_resume.callback(self.cog, context)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
         await (await interaction.original_message()).edit(view=self.view, **kwargs)
@@ -85,7 +97,10 @@ class SkipTrackButton(discord.ui.Button):
         self.cog = cog
 
     async def callback(self, interaction: InteractionT):
-        await self.cog.command_skip.callback(self.cog, interaction)
+        if not interaction.response.is_done():
+            await interaction.response.defer(ephemeral=True, thinking=True)
+        context = await self.cog.bot.get_context(interaction)
+        await self.cog.command_skip.callback(self.cog, context)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
         await (await interaction.original_message()).edit(view=self.view, **kwargs)
@@ -101,7 +116,10 @@ class IncreaseVolumeButton(discord.ui.Button):
         self.cog = cog
 
     async def callback(self, interaction: InteractionT):
-        await self.cog.command_volume_change_by.callback(self.cog, interaction, change_by=5)
+        if not interaction.response.is_done():
+            await interaction.response.defer(ephemeral=True, thinking=True)
+        context = await self.cog.bot.get_context(interaction)
+        await self.cog.command_volume_change_by.callback(self.cog, context, change_by=5)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
         await (await interaction.original_message()).edit(view=self.view, **kwargs)
@@ -117,7 +135,10 @@ class DecreaseVolumeButton(discord.ui.Button):
         self.cog = cog
 
     async def callback(self, interaction: InteractionT):
-        await self.cog.command_volume_change_by.callback(self.cog, interaction, change_by=-5)
+        if not interaction.response.is_done():
+            await interaction.response.defer(ephemeral=True, thinking=True)
+        context = await self.cog.bot.get_context(interaction)
+        await self.cog.command_volume_change_by.callback(self.cog, context, change_by=-5)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
         await (await interaction.original_message()).edit(view=self.view, **kwargs)
@@ -133,9 +154,12 @@ class ToggleRepeatButton(discord.ui.Button):
         self.cog = cog
 
     async def callback(self, interaction: InteractionT):
-        player = self.cog.lavalink.get_player(interaction.guild)
+        if not interaction.response.is_done():
+            await interaction.response.defer(ephemeral=True, thinking=True)
+        context = await self.cog.bot.get_context(interaction)
+        player = context.player
         if not player:
-            return await interaction.response.send_message(
+            return await context.send(
                 embed=await self.cog.lavalink.construct_embed(
                     description=_("Not connected to a voice channel."), messageable=interaction
                 ),
@@ -143,7 +167,7 @@ class ToggleRepeatButton(discord.ui.Button):
             )
         await player.config.update()
         repeat_queue = bool(player.config.repeat_current)
-        await self.cog.command_repeat.callback(self.cog, interaction, queue=repeat_queue)
+        await self.cog.command_repeat.callback(self.cog, context, queue=repeat_queue)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
         await (await interaction.original_message()).edit(view=self.view, **kwargs)
@@ -162,9 +186,12 @@ class QueueHistoryButton(discord.ui.Button):
         from pylavcogs_shared.ui.menus.queue import QueueMenu
         from pylavcogs_shared.ui.sources.queue import QueueSource
 
-        player = self.cog.lavalink.get_player(interaction.guild)
+        if not interaction.response.is_done():
+            await interaction.response.defer(ephemeral=True, thinking=True)
+        context = await self.cog.bot.get_context(interaction)
+        player = context.player
         if not player:
-            return await interaction.response.send_message(
+            return await context.send(
                 embed=await self.cog.lavalink.construct_embed(
                     description=_("Not connected to a voice channel."), messageable=interaction
                 ),
@@ -177,7 +204,7 @@ class QueueHistoryButton(discord.ui.Button):
             source=QueueSource(guild_id=interaction.guild.id, cog=self.cog, history=True),
             original_author=interaction.user,
             history=True,
-        ).start(ctx=interaction)
+        ).start(ctx=context)
 
 
 class ToggleRepeatQueueButton(discord.ui.Button):
@@ -190,9 +217,12 @@ class ToggleRepeatQueueButton(discord.ui.Button):
         self.cog = cog
 
     async def callback(self, interaction: InteractionT):
-        player = self.cog.lavalink.get_player(interaction.guild)
+        if not interaction.response.is_done():
+            await interaction.response.defer(ephemeral=True, thinking=True)
+        context = await self.cog.bot.get_context(interaction)
+        player = context.player
         if not player:
-            return await interaction.response.send_message(
+            return await context.send_message(
                 embed=await self.cog.lavalink.construct_embed(
                     description=_("Not connected to a voice channel."), messageable=interaction
                 ),
@@ -200,7 +230,7 @@ class ToggleRepeatQueueButton(discord.ui.Button):
             )
         await player.config.update()
         repeat_queue = bool(player.config.repeat_current)
-        await self.cog.command_repeat.callback(self.cog, interaction, queue=repeat_queue)
+        await self.cog.command_repeat.callback(self.cog, context, queue=repeat_queue)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
         await (await interaction.original_message()).edit(view=self.view, **kwargs)
@@ -216,7 +246,10 @@ class ShuffleButton(discord.ui.Button):
         self.cog = cog
 
     async def callback(self, interaction: InteractionT):
-        await self.cog.command_shuffle.callback(self.cog, interaction)
+        if not interaction.response.is_done():
+            await interaction.response.defer(ephemeral=True, thinking=True)
+        context = await self.cog.bot.get_context(interaction)
+        await self.cog.command_shuffle.callback(self.cog, context)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
         await (await interaction.original_message()).edit(view=self.view, **kwargs)
@@ -232,7 +265,10 @@ class DisconnectButton(discord.ui.Button):
         self.cog = cog
 
     async def callback(self, interaction: InteractionT):
-        await self.cog.command_disconnect.callback(self.cog, interaction)
+        if not interaction.response.is_done():
+            await interaction.response.defer(ephemeral=True, thinking=True)
+        context = await self.cog.bot.get_context(interaction)
+        await self.cog.command_disconnect.callback(self.cog, context)
         self.view.stop()
         await self.view.on_timeout()
 
@@ -247,16 +283,19 @@ class EmptyQueueButton(discord.ui.Button):
         self.cog = cog
 
     async def callback(self, interaction: InteractionT):
-        player = self.cog.lavalink.get_player(interaction.guild)
+        if not interaction.response.is_done():
+            await interaction.response.defer(ephemeral=True, thinking=True)
+        context = await self.cog.bot.get_context(interaction)
+        player = context.player
         if not player.queue.size():
-            return await interaction.response.send_message(
+            return await context.send(
                 embed=await self.cog.lavalink.construct_embed(
                     description=_("There's nothing in the Queue."), messageable=interaction
                 ),
                 ephemeral=True,
             )
         player.queue.clear()
-        await interaction.response.send_message(
+        await context.send(
             embed=await self.cog.lavalink.construct_embed(
                 description=_("Removed tracks from the queue."), messageable=interaction
             ),
@@ -309,6 +348,10 @@ class RemoveFromQueueButton(discord.ui.Button):
         from pylavcogs_shared.ui.menus.queue import QueuePickerMenu
         from pylavcogs_shared.ui.sources.queue import QueuePickerSource
 
+        if not interaction.response.is_done():
+            await interaction.response.defer(ephemeral=True, thinking=True)
+        context = await self.cog.bot.get_context(interaction)
+
         picker = QueuePickerMenu(
             bot=self.cog.bot,
             cog=self.cog,
@@ -318,7 +361,7 @@ class RemoveFromQueueButton(discord.ui.Button):
             menu_type="remove",
             original_author=interaction.user,
         )
-        await picker.start(interaction)
+        await picker.start(context)
         await picker.wait()
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
@@ -343,6 +386,9 @@ class PlayNowFromQueueButton(discord.ui.Button):
         from pylavcogs_shared.ui.menus.queue import QueuePickerMenu
         from pylavcogs_shared.ui.sources.queue import QueuePickerSource
 
+        if not interaction.response.is_done():
+            await interaction.response.defer(ephemeral=True, thinking=True)
+        context = await self.cog.bot.get_context(interaction)
         picker = QueuePickerMenu(
             bot=self.cog.bot,
             cog=self.cog,
@@ -352,7 +398,7 @@ class PlayNowFromQueueButton(discord.ui.Button):
             menu_type="play",
             original_author=interaction.user,
         )
-        await picker.start(interaction)
+        await picker.start(context)
         await picker.wait()
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
@@ -377,6 +423,9 @@ class EffectPickerButton(discord.ui.Button):
         from pylavcogs_shared.ui.menus.queue import EffectPickerMenu
         from pylavcogs_shared.ui.sources.queue import EffectsPickerSource
 
+        if not interaction.response.is_done():
+            await interaction.response.defer(ephemeral=True, thinking=True)
+        context = await self.cog.bot.get_context(interaction)
         await EffectPickerMenu(
             cog=self.cog,
             bot=self.cog.bot,
@@ -386,7 +435,7 @@ class EffectPickerButton(discord.ui.Button):
             starting_page=0,
             menu_type="play",
             original_author=interaction.user,
-        ).start(interaction)
+        ).start(context)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
         await (await interaction.original_message()).edit(view=self.view, **kwargs)

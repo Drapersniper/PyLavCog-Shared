@@ -192,7 +192,7 @@ class AddNodeFlow(discord.ui.View):
             self.author and (interaction.user.id != self.author.id)
         ):
             await interaction.response.send_message(
-                content="You are not authorized to interact with this.", ephemeral=True
+                content=_("You are not authorized to interact with this."), ephemeral=True
             )
             return False
         return True
