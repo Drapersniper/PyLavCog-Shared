@@ -1,0 +1,314 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pylavshared\n"
+"POT-Creation-Date: 2022-08-21 15:25+0000\n"
+"PO-Revision-Date: 2022-08-21 15:29\n"
+"Last-Translator: \n"
+"Language-Team: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: redgettext 3.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: pylavshared\n"
+"X-Crowdin-Project-ID: 514316\n"
+"X-Crowdin-Language: en\n"
+"X-Crowdin-File: /pylavcogs_shared/ui/sources/locales/messages.pot\n"
+"X-Crowdin-File-ID: 410\n"
+"Language: en_US\n"
+
+#: pylavcogs_shared/ui/sources/equalizer.py:34
+msgid "Preset Name"
+msgstr "crwdns3524:0crwdne3524:0"
+
+#: pylavcogs_shared/ui/sources/equalizer.py:35
+msgid "Author"
+msgstr "crwdns3526:0crwdne3526:0"
+
+#: pylavcogs_shared/ui/sources/generic.py:83
+msgid "Page {page_num}/{total_pages} | {num} {entries}."
+msgstr "crwdns4100:0{page_num}crwdnd4100:0{total_pages}crwdnd4100:0{num}crwdnd4100:0{entries}crwdne4100:0"
+
+#: pylavcogs_shared/ui/sources/generic.py:87
+msgid "entries"
+msgstr "crwdns4102:0crwdne4102:0"
+
+#: pylavcogs_shared/ui/sources/generic.py:87
+msgid "entry"
+msgstr "crwdns4104:0crwdne4104:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:50
+msgid "Page {page_num}/{total_pages} | {num} nodes."
+msgstr "crwdns3528:0{page_num}crwdnd3528:0{total_pages}crwdnd3528:0{num}crwdne3528:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:92
+#: pylavcogs_shared/ui/sources/nodes.py:93
+#: pylavcogs_shared/ui/sources/nodes.py:94
+#: pylavcogs_shared/ui/sources/nodes.py:227
+#: pylavcogs_shared/ui/sources/nodes.py:228
+#: pylavcogs_shared/ui/sources/nodes.py:229
+msgid "Yes"
+msgstr "crwdns3530:0crwdne3530:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:92
+#: pylavcogs_shared/ui/sources/nodes.py:93
+#: pylavcogs_shared/ui/sources/nodes.py:94
+#: pylavcogs_shared/ui/sources/nodes.py:227
+#: pylavcogs_shared/ui/sources/nodes.py:228
+#: pylavcogs_shared/ui/sources/nodes.py:229
+msgid "No"
+msgstr "crwdns3532:0crwdne3532:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:135
+#: pylavcogs_shared/ui/sources/nodes.py:271
+msgid "Name: {name}\n"
+"Version: {version}\n\n"
+msgstr "crwdns4432:0{name}crwdnd4432:0{version}crwdne4432:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:136
+#: pylavcogs_shared/ui/sources/nodes.py:272
+#: pylavcogs_shared/ui/sources/playlist.py:166
+msgid "Unknown"
+msgstr "crwdns3588:0crwdne3588:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:136
+#: pylavcogs_shared/ui/sources/nodes.py:272
+msgid "version"
+msgstr "crwdns4434:0crwdne4434:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:138
+msgid "None / Unknown"
+msgstr "crwdns4542:0crwdne4542:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:140
+#: pylavcogs_shared/ui/sources/nodes.py:266
+msgid "Property"
+msgstr "crwdns3534:0crwdne3534:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:141
+#: pylavcogs_shared/ui/sources/nodes.py:267
+msgid "Value"
+msgstr "crwdns3536:0crwdne3536:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:143
+#: pylavcogs_shared/ui/sources/nodes.py:277
+msgid "Region"
+msgstr "crwdns3538:0crwdne3538:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:143
+#: pylavcogs_shared/ui/sources/nodes.py:277
+msgid "N/A"
+msgstr "crwdns3540:0crwdne3540:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:144
+#: pylavcogs_shared/ui/sources/nodes.py:278
+msgid "Coordinates"
+msgstr "crwdns4562:0crwdne4562:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:144
+#: pylavcogs_shared/ui/sources/nodes.py:278
+msgid "Latitude: {lat}\n"
+"Longitude: {lon}"
+msgstr "crwdns4564:0{lat}crwdnd4564:0{lon}crwdne4564:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:147
+#: pylavcogs_shared/ui/sources/nodes.py:281
+msgid "Host"
+msgstr "crwdns3542:0crwdne3542:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:148
+#: pylavcogs_shared/ui/sources/nodes.py:282
+msgid "Port"
+msgstr "crwdns3544:0crwdne3544:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:149
+#: pylavcogs_shared/ui/sources/nodes.py:283
+msgid "Password"
+msgstr "crwdns3546:0crwdne3546:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:150
+#: pylavcogs_shared/ui/sources/nodes.py:284
+msgid "SSL"
+msgstr "crwdns3548:0crwdne3548:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:151
+#: pylavcogs_shared/ui/sources/nodes.py:285
+msgid "Available"
+msgstr "crwdns3550:0crwdne3550:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:152
+#: pylavcogs_shared/ui/sources/nodes.py:286
+msgid "Search Only"
+msgstr "crwdns3552:0crwdne3552:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:153
+#: pylavcogs_shared/ui/sources/nodes.py:287
+msgid "Players\n"
+"Connected\n"
+"Active"
+msgstr "crwdns3554:0crwdne3554:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:155
+#: pylavcogs_shared/ui/sources/nodes.py:289
+msgid "Frames Lost"
+msgstr "crwdns3556:0crwdne3556:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:158
+#: pylavcogs_shared/ui/sources/nodes.py:292
+msgid "Uptime"
+msgstr "crwdns3558:0crwdne3558:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:159
+#: pylavcogs_shared/ui/sources/nodes.py:293
+msgid "CPU Load\n"
+"Lavalink\n"
+"System"
+msgstr "crwdns4438:0crwdne4438:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:160
+#: pylavcogs_shared/ui/sources/nodes.py:294
+msgid "Penalty"
+msgstr "crwdns3562:0crwdne3562:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:161
+#: pylavcogs_shared/ui/sources/nodes.py:295
+msgid "Memory\n"
+"Used\n"
+"Free\n"
+"Allocated\n"
+"Reservable"
+msgstr "crwdns3564:0crwdne3564:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:162
+#: pylavcogs_shared/ui/sources/nodes.py:296
+msgid "Plugins"
+msgstr "crwdns4440:0crwdne4440:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:173
+#: pylavcogs_shared/ui/sources/nodes.py:307
+msgid "Page {page_num}/{total_pages} | {num} {plural}."
+msgstr "crwdns3566:0{page_num}crwdnd3566:0{total_pages}crwdnd3566:0{num}crwdnd3566:0{plural}crwdne3566:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:177
+#: pylavcogs_shared/ui/sources/nodes.py:311
+msgid "nodes"
+msgstr "crwdns3568:0crwdne3568:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:177
+#: pylavcogs_shared/ui/sources/nodes.py:311
+msgid "node"
+msgstr "crwdns3570:0crwdne3570:0"
+
+#: pylavcogs_shared/ui/sources/nodes.py:274
+msgid "None"
+msgstr "crwdns4436:0crwdne4436:0"
+
+#: pylavcogs_shared/ui/sources/player.py:73
+msgid "Nothing playing."
+msgstr "crwdns3572:0crwdne3572:0"
+
+#: pylavcogs_shared/ui/sources/player.py:83
+msgid "Server Owner"
+msgstr "crwdns3574:0crwdne3574:0"
+
+#: pylavcogs_shared/ui/sources/player.py:84
+msgid "Connected For"
+msgstr "crwdns3576:0crwdne3576:0"
+
+#: pylavcogs_shared/ui/sources/player.py:85
+msgid "Users in VC"
+msgstr "crwdns3578:0crwdne3578:0"
+
+#: pylavcogs_shared/ui/sources/player.py:86
+msgid "Queue Length"
+msgstr "crwdns3580:0crwdne3580:0"
+
+#: pylavcogs_shared/ui/sources/player.py:86
+msgid "{} {}"
+msgstr "crwdns4350:0crwdne4350:0"
+
+#: pylavcogs_shared/ui/sources/player.py:88
+msgid "Queue History Length"
+msgstr "crwdns4352:0crwdne4352:0"
+
+#: pylavcogs_shared/ui/sources/player.py:89
+msgid "{count} {track_translation}"
+msgstr "crwdns4354:0{count}crwdnd4354:0{track_translation}crwdne4354:0"
+
+#: pylavcogs_shared/ui/sources/player.py:90
+msgid "track"
+msgstr "crwdns4356:0crwdne4356:0"
+
+#: pylavcogs_shared/ui/sources/player.py:90
+msgid "tracks"
+msgstr "crwdns4358:0crwdne4358:0"
+
+#: pylavcogs_shared/ui/sources/player.py:102
+msgid "Page {page_num}/{total_pages}  | Playing in {playing} {server_translation}."
+msgstr "crwdns4360:0{page_num}crwdnd4360:0{total_pages}crwdnd4360:0{playing}crwdnd4360:0{server_translation}crwdne4360:0"
+
+#: pylavcogs_shared/ui/sources/player.py:106
+msgid "server"
+msgstr "crwdns4362:0crwdne4362:0"
+
+#: pylavcogs_shared/ui/sources/player.py:106
+msgid "servers"
+msgstr "crwdns4364:0crwdne4364:0"
+
+#: pylavcogs_shared/ui/sources/playlist.py:61
+#: pylavcogs_shared/ui/sources/playlist.py:186
+msgid "Page {page_num}/{total_pages} | {num} playlists."
+msgstr "crwdns3584:0{page_num}crwdnd3584:0{total_pages}crwdnd3584:0{num}crwdne3584:0"
+
+#: pylavcogs_shared/ui/sources/playlist.py:124
+msgid "Tracks in __{name}__"
+msgstr "crwdns3586:0{name}crwdne3586:0"
+
+#: pylavcogs_shared/ui/sources/playlist.py:171
+msgid "ID: {id}"
+msgstr "crwdns3590:0{id}crwdne3590:0"
+
+#: pylavcogs_shared/ui/sources/playlist.py:172
+msgid "Tracks: {num}"
+msgstr "crwdns3592:0{num}crwdne3592:0"
+
+#: pylavcogs_shared/ui/sources/playlist.py:173
+msgid "Author: {name}"
+msgstr "crwdns3594:0{name}crwdne3594:0"
+
+#: pylavcogs_shared/ui/sources/playlist.py:174
+msgid "Scope: {scope}\n"
+msgstr "crwdns3596:0{scope}crwdne3596:0"
+
+#: pylavcogs_shared/ui/sources/playlist.py:182
+msgid "Playlists you can access in this server:"
+msgstr "crwdns3598:0crwdne3598:0"
+
+#: pylavcogs_shared/ui/sources/queue.py:97
+msgid "Reset the effects to default."
+msgstr "crwdns3600:0crwdne3600:0"
+
+#: pylavcogs_shared/ui/sources/queue.py:106
+msgid "Apply the Nightcore effect."
+msgstr "crwdns3602:0crwdne3602:0"
+
+#: pylavcogs_shared/ui/sources/queue.py:115
+msgid "Apply the Vaporwave effect."
+msgstr "crwdns3604:0crwdne3604:0"
+
+#: pylavcogs_shared/ui/sources/queue.py:124
+msgid "Apply the Synth effect."
+msgstr "crwdns3606:0crwdne3606:0"
+
+#: pylavcogs_shared/ui/sources/queue.py:133
+msgid "Apply the Bassboost equalizer preset."
+msgstr "crwdns3608:0crwdne3608:0"
+
+#: pylavcogs_shared/ui/sources/queue.py:142
+msgid "Apply the Metal equalizer preset."
+msgstr "crwdns3610:0crwdne3610:0"
+
+#: pylavcogs_shared/ui/sources/queue.py:151
+msgid "Apply the Piano equalizer preset."
+msgstr "crwdns3612:0crwdne3612:0"
+

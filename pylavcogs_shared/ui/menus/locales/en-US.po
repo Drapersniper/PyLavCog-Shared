@@ -1,0 +1,199 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pylavshared\n"
+"POT-Creation-Date: 2022-08-28 00:18+0000\n"
+"PO-Revision-Date: 2022-08-28 00:21\n"
+"Last-Translator: \n"
+"Language-Team: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: redgettext 3.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: pylavshared\n"
+"X-Crowdin-Project-ID: 514316\n"
+"X-Crowdin-Language: en\n"
+"X-Crowdin-File: /pylavcogs_shared/ui/menus/locales/messages.pot\n"
+"X-Crowdin-File-ID: 408\n"
+"Language: en_US\n"
+
+#: pylavcogs_shared/ui/menus/generic.py:115
+#: pylavcogs_shared/ui/menus/nodes.py:195
+#: pylavcogs_shared/ui/menus/playlist.py:255
+#: pylavcogs_shared/ui/menus/playlist.py:470
+msgid "You are not authorized to interact with this."
+msgstr "crwdns4662:0crwdne4662:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:58
+msgid "Enter the domain or IP address of the host"
+msgstr "crwdns3458:0crwdne3458:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:59
+#: pylavcogs_shared/ui/menus/nodes.py:492
+msgid "Host"
+msgstr "crwdns3460:0crwdne3460:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:66
+msgid "Enter the host port to connect to"
+msgstr "crwdns3462:0crwdne3462:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:67
+#: pylavcogs_shared/ui/menus/nodes.py:500
+msgid "Port"
+msgstr "crwdns3464:0crwdne3464:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:74
+msgid "Enter the node's password"
+msgstr "crwdns3466:0crwdne3466:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:75
+#: pylavcogs_shared/ui/menus/nodes.py:508
+msgid "Password"
+msgstr "crwdns3468:0crwdne3468:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:82
+msgid "Enter an easy to know name for the node."
+msgstr "crwdns3470:0crwdne3470:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:83
+#: pylavcogs_shared/ui/menus/nodes.py:516
+msgid "Name"
+msgstr "crwdns3472:0crwdne3472:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:90
+msgid "Enter a timeout in seconds."
+msgstr "crwdns3474:0crwdne3474:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:91
+#: pylavcogs_shared/ui/menus/nodes.py:524
+msgid "Timeout"
+msgstr "crwdns3976:0crwdne3976:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:106
+#: pylavcogs_shared/ui/menus/nodes.py:552
+msgid "Source to disable."
+msgstr "crwdns3476:0crwdne3476:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:216
+#: pylavcogs_shared/ui/menus/nodes.py:660
+msgid "Name set to {name}"
+msgstr "crwdns3478:0{name}crwdne3478:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:229
+#: pylavcogs_shared/ui/menus/nodes.py:673
+msgid "Password set to {password}"
+msgstr "crwdns3480:0{password}crwdne3480:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:247
+#: pylavcogs_shared/ui/menus/nodes.py:691
+msgid "Host set to {host}"
+msgstr "crwdns3482:0{host}crwdne3482:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:264
+#: pylavcogs_shared/ui/menus/nodes.py:708
+msgid "Invalid port."
+msgstr "crwdns3484:0crwdne3484:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:272
+#: pylavcogs_shared/ui/menus/nodes.py:716
+msgid "Port set to {port}"
+msgstr "crwdns3486:0{port}crwdne3486:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:289
+#: pylavcogs_shared/ui/menus/nodes.py:733
+msgid "Invalid timeout, it must be a number in seconds."
+msgstr "crwdns3488:0crwdne3488:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:297
+#: pylavcogs_shared/ui/menus/nodes.py:741
+msgid "Timeout set to {timeout} seconds."
+msgstr "crwdns3490:0{timeout}crwdne3490:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:491
+msgid "Change the domain or IP address of the host"
+msgstr "crwdns3978:0crwdne3978:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:499
+msgid "Change the host port to connect to"
+msgstr "crwdns3980:0crwdne3980:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:507
+msgid "Change the node's password"
+msgstr "crwdns3982:0crwdne3982:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:515
+msgid "Change the name of this node."
+msgstr "crwdns3984:0crwdne3984:0"
+
+#: pylavcogs_shared/ui/menus/nodes.py:523
+msgid "Enter the new timeout for this node."
+msgstr "crwdns3986:0crwdne3986:0"
+
+#: pylavcogs_shared/ui/menus/player.py:93
+msgid "selected"
+msgstr "crwdns3492:0crwdne3492:0"
+
+#: pylavcogs_shared/ui/menus/player.py:100
+msgid "inactive"
+msgstr "crwdns3494:0crwdne3494:0"
+
+#: pylavcogs_shared/ui/menus/player.py:110
+msgid "all"
+msgstr "crwdns3496:0crwdne3496:0"
+
+#: pylavcogs_shared/ui/menus/player.py:204
+msgid "Not connected anywhere."
+msgstr "crwdns3498:0crwdne3498:0"
+
+#: pylavcogs_shared/ui/menus/playlist.py:186
+#: pylavcogs_shared/ui/menus/playlist.py:317
+msgid "Please enter the playlist URL"
+msgstr "crwdns3500:0crwdne3500:0"
+
+#: pylavcogs_shared/ui/menus/playlist.py:187
+#: pylavcogs_shared/ui/menus/playlist.py:318
+msgid "Playlist URL"
+msgstr "crwdns3502:0crwdne3502:0"
+
+#: pylavcogs_shared/ui/menus/playlist.py:192
+msgid "Please enter the playlist name"
+msgstr "crwdns3504:0crwdne3504:0"
+
+#: pylavcogs_shared/ui/menus/playlist.py:192
+#: pylavcogs_shared/ui/menus/playlist.py:323
+msgid "Playlist Name"
+msgstr "crwdns3506:0crwdne3506:0"
+
+#: pylavcogs_shared/ui/menus/playlist.py:323
+msgid "Please enter the new playlist name"
+msgstr "crwdns3508:0crwdne3508:0"
+
+#: pylavcogs_shared/ui/menus/playlist.py:328
+msgid "What query to add to the playlist"
+msgstr "crwdns3510:0crwdne3510:0"
+
+#: pylavcogs_shared/ui/menus/playlist.py:329
+#: pylavcogs_shared/ui/menus/playlist.py:337
+msgid "Query"
+msgstr "crwdns3512:0crwdne3512:0"
+
+#: pylavcogs_shared/ui/menus/playlist.py:336
+msgid "What query to remove from the playlist"
+msgstr "crwdns3514:0crwdne3514:0"
+
+#: pylavcogs_shared/ui/menus/queue.py:463
+msgid "Select Track To Remove"
+msgstr "crwdns3516:0crwdne3516:0"
+
+#: pylavcogs_shared/ui/menus/queue.py:465
+msgid "Select Track To Play Now"
+msgstr "crwdns3518:0crwdne3518:0"
+
+#: pylavcogs_shared/ui/menus/queue.py:567
+msgid "Pick An Effect Preset To Apply"
+msgstr "crwdns3520:0crwdne3520:0"
+
+#: pylavcogs_shared/ui/menus/queue.py:716
+msgid "Select Track To Enqueue"
+msgstr "crwdns3522:0crwdne3522:0"
+

@@ -1,0 +1,202 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pylavshared\n"
+"POT-Creation-Date: 2022-08-28 00:18+0000\n"
+"PO-Revision-Date: 2022-08-28 00:21\n"
+"Last-Translator: \n"
+"Language-Team: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: redgettext 3.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: pylavshared\n"
+"X-Crowdin-Project-ID: 514316\n"
+"X-Crowdin-Language: en\n"
+"X-Crowdin-File: /pylavcogs_shared/ui/buttons/locales/messages.pot\n"
+"X-Crowdin-File-ID: 388\n"
+"Language: en_US\n"
+
+#: pylavcogs_shared/ui/buttons/generic.py:67
+#: pylavcogs_shared/ui/buttons/generic.py:89
+#: pylavcogs_shared/ui/buttons/generic.py:112
+#: pylavcogs_shared/ui/buttons/generic.py:134
+#: pylavcogs_shared/ui/buttons/nodes.py:48
+#: pylavcogs_shared/ui/buttons/nodes.py:93
+#: pylavcogs_shared/ui/buttons/nodes.py:132
+#: pylavcogs_shared/ui/buttons/nodes.py:177
+#: pylavcogs_shared/ui/buttons/nodes.py:212
+#: pylavcogs_shared/ui/buttons/nodes.py:247
+#: pylavcogs_shared/ui/buttons/playlist.py:44
+#: pylavcogs_shared/ui/buttons/playlist.py:79
+#: pylavcogs_shared/ui/buttons/playlist.py:121
+#: pylavcogs_shared/ui/buttons/playlist.py:166
+#: pylavcogs_shared/ui/buttons/playlist.py:211
+#: pylavcogs_shared/ui/buttons/playlist.py:258
+#: pylavcogs_shared/ui/buttons/playlist.py:304
+#: pylavcogs_shared/ui/buttons/playlist.py:350
+msgid "You are not authorized to interact with this option."
+msgstr "crwdns3384:0crwdne3384:0"
+
+#: pylavcogs_shared/ui/buttons/generic.py:80
+msgid "Yes"
+msgstr "crwdns3386:0crwdne3386:0"
+
+#: pylavcogs_shared/ui/buttons/generic.py:103
+msgid "No"
+msgstr "crwdns3388:0crwdne3388:0"
+
+#: pylavcogs_shared/ui/buttons/generic.py:156
+msgid "Disconnect {} {}"
+msgstr "crwdns3390:0crwdne3390:0"
+
+#: pylavcogs_shared/ui/buttons/generic.py:157
+msgid "players"
+msgstr "crwdns3392:0crwdne3392:0"
+
+#: pylavcogs_shared/ui/buttons/generic.py:157
+msgid "player"
+msgstr "crwdns3394:0crwdne3394:0"
+
+#: pylavcogs_shared/ui/buttons/nodes.py:56
+msgid "Connecting to the node with SSL enabled..."
+msgstr "crwdns3396:0crwdne3396:0"
+
+#: pylavcogs_shared/ui/buttons/nodes.py:63
+msgid "Connecting to the node with SSL disabled..."
+msgstr "crwdns3398:0crwdne3398:0"
+
+#: pylavcogs_shared/ui/buttons/nodes.py:101
+msgid "This node will only be used for searches..."
+msgstr "crwdns3400:0crwdne3400:0"
+
+#: pylavcogs_shared/ui/buttons/nodes.py:108
+msgid "This node will be used for search and playback..."
+msgstr "crwdns3402:0crwdne3402:0"
+
+#: pylavcogs_shared/ui/buttons/nodes.py:139
+msgid "Please fill out all the fields before continuing."
+msgstr "crwdns3404:0crwdne3404:0"
+
+#: pylavcogs_shared/ui/buttons/nodes.py:219
+msgid "When you press done this node will be permanently delete..."
+msgstr "crwdns3970:0crwdne3970:0"
+
+#: pylavcogs_shared/ui/buttons/nodes.py:221
+msgid "This node will no longer be deleted once you press done..."
+msgstr "crwdns3972:0crwdne3972:0"
+
+#: pylavcogs_shared/ui/buttons/nodes.py:254
+msgid "__Enabled sources__:\n"
+"{sources}"
+msgstr "crwdns3974:0{sources}crwdne3974:0"
+
+#: pylavcogs_shared/ui/buttons/player.py:38
+#: pylavcogs_shared/ui/buttons/player.py:87
+#: pylavcogs_shared/ui/buttons/player.py:140
+msgid "You are not authorized to perform this action."
+msgstr "crwdns3406:0crwdne3406:0"
+
+#: pylavcogs_shared/ui/buttons/player.py:47
+#: pylavcogs_shared/ui/buttons/player.py:96
+msgid "No Player Available For Action - Try Refreshing."
+msgstr "crwdns3408:0crwdne3408:0"
+
+#: pylavcogs_shared/ui/buttons/player.py:56
+#: pylavcogs_shared/ui/buttons/player.py:107
+#: pylavcogs_shared/ui/buttons/player.py:164
+msgid "Bot Owner Action"
+msgstr "crwdns3410:0crwdne3410:0"
+
+#: pylavcogs_shared/ui/buttons/player.py:56
+#: pylavcogs_shared/ui/buttons/player.py:164
+msgid "Player disconnected"
+msgstr "crwdns4348:0crwdne4348:0"
+
+#: pylavcogs_shared/ui/buttons/player.py:107
+msgid "Player stopped."
+msgstr "crwdns3414:0crwdne3414:0"
+
+#: pylavcogs_shared/ui/buttons/player.py:154
+msgid "No Players Available For Action - Try Refreshing."
+msgstr "crwdns3416:0crwdne3416:0"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:51
+msgid "When you press done this playlist will be permanently delete..."
+msgstr "crwdns3418:0crwdne3418:0"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:53
+msgid "This playlist will no longer be deleted once you press done..."
+msgstr "crwdns3420:0crwdne3420:0"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:86
+msgid "Clearing all tracks from the playlist playlist..."
+msgstr "crwdns3422:0crwdne3422:0"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:88
+msgid "No longer clearing tracks from the playlist..."
+msgstr "crwdns3424:0crwdne3424:0"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:131
+msgid "Here is your playlist: {name}{extras}"
+msgstr "crwdns3426:0{name}crwdnd3426:0{extras}crwdne3426:0"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:133
+msgid "\n"
+" (compressed using gzip to make it possible to send via Discord - you can use <https://gzip.swimburger.net/> to decompress it)"
+msgstr "crwdns3428:0crwdne3428:0"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:174
+msgid "Updating playlist with the latest tracks..."
+msgstr "crwdns3430:0crwdne3430:0"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:177
+msgid "Not updating playlist..."
+msgstr "crwdns3432:0crwdne3432:0"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:266
+msgid "Adding the current queue to playlist..."
+msgstr "crwdns3434:0crwdne3434:0"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:273
+msgid "No longer adding the current queue to playlist..."
+msgstr "crwdns3436:0crwdne3436:0"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:312
+msgid "Removing all duplicate tracks from the queue..."
+msgstr "crwdns3438:0crwdne3438:0"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:319
+msgid "No longer all duplicate tracks from the queue..."
+msgstr "crwdns3440:0crwdne3440:0"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:406
+msgid "Playlists you can currently play"
+msgstr "crwdns3442:0crwdne3442:0"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:412
+msgid "Pick a playlist"
+msgstr "crwdns3444:0crwdne3444:0"
+
+#: pylavcogs_shared/ui/buttons/playlist.py:432
+msgid "What should the playlist name be?"
+msgstr "crwdns3446:0crwdne3446:0"
+
+#: pylavcogs_shared/ui/buttons/queue.py:164
+#: pylavcogs_shared/ui/buttons/queue.py:196
+#: pylavcogs_shared/ui/buttons/queue.py:227
+msgid "Not connected to a voice channel."
+msgstr "crwdns4322:0crwdne4322:0"
+
+#: pylavcogs_shared/ui/buttons/queue.py:293
+msgid "There's nothing in the Queue."
+msgstr "crwdns4324:0crwdne4324:0"
+
+#: pylavcogs_shared/ui/buttons/queue.py:300
+msgid "Removed tracks from the queue."
+msgstr "crwdns4326:0crwdne4326:0"
+
+#: pylavcogs_shared/ui/buttons/queue.py:326
+msgid "What do you want to enqueue?"
+msgstr "crwdns3448:0crwdne3448:0"
+

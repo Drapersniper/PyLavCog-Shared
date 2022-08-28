@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pylavshared\n"
+"POT-Creation-Date: 2022-05-07 17:58+0100\n"
+"PO-Revision-Date: 2022-05-08 12:59\n"
+"Last-Translator: \n"
+"Language-Team: Russian, Ukraine\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: redgettext 3.4.2\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Crowdin-Project: pylavshared\n"
+"X-Crowdin-Project-ID: 514316\n"
+"X-Crowdin-Language: ru-UA\n"
+"X-Crowdin-File: /pylavcogs_shared/ui/modals/locales/messages.pot\n"
+"X-Crowdin-File-ID: 374\n"
+"Language: ru_UA\n"
+
+#: pylavcogs_shared/ui/modals/playlist.py:26
+msgid "Enter the name for the new playlist"
+msgstr "Введите имя для нового плейлиста"
+
+#: pylavcogs_shared/ui/modals/playlist.py:27
+msgid "My awesome new playlist"
+msgstr "Мой потрясающий новый плейлист"
+
+#: pylavcogs_shared/ui/modals/queue.py:26
+msgid "Search for a song to add to the queue"
+msgstr "Ищите песню, чтобы добавить в очередь"
+
+#: pylavcogs_shared/ui/modals/queue.py:27
+msgid "Hello by Adele, tts:Hello, https://open.spotify.com/playlist/37i9dQZF1DX6XceWZP1znY"
+msgstr "Здравствуйте, Адель, tts:Hello, https://open.spotify.com/playlist/37i9dQZF1DX6XceWZP1znY"
+

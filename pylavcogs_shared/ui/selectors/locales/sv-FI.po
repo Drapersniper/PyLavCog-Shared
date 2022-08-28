@@ -1,0 +1,45 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pylavshared\n"
+"POT-Creation-Date: 2022-05-07 17:58+0100\n"
+"PO-Revision-Date: 2022-05-08 12:59\n"
+"Last-Translator: \n"
+"Language-Team: Swedish, Finland\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: redgettext 3.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: pylavshared\n"
+"X-Crowdin-Project-ID: 514316\n"
+"X-Crowdin-Language: sv-FI\n"
+"X-Crowdin-File: /pylavcogs_shared/ui/selectors/locales/messages.pot\n"
+"X-Crowdin-File-ID: 384\n"
+"Language: sv_FI\n"
+
+#: pylavcogs_shared/ui/selectors/nodes.py:45
+#: pylavcogs_shared/ui/selectors/playlist.py:63
+msgid "You are not authorized to interact with this option."
+msgstr "Du har inte behörighet att interagera med det här alternativet."
+
+#: pylavcogs_shared/ui/selectors/nodes.py:52
+msgid "Disabling the following sources: {sources}"
+msgstr "Inaktivera följande källor: {sources}"
+
+#: pylavcogs_shared/ui/selectors/nodes.py:77
+msgid "Node not found."
+msgstr "Nod hittades inte."
+
+#: pylavcogs_shared/ui/selectors/playlist.py:36
+#: pylavcogs_shared/ui/selectors/playlist.py:72
+msgid "Playlist not found."
+msgstr "Spellistan hittades inte."
+
+#: pylavcogs_shared/ui/selectors/queue.py:85
+msgid "No Preset Selected."
+msgstr "Inget förval valt."
+
+#: pylavcogs_shared/ui/selectors/queue.py:119
+msgid "Track not found."
+msgstr "Spåret hittades inte."
+
