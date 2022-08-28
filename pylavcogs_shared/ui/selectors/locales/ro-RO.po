@@ -1,0 +1,45 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pylavshared\n"
+"POT-Creation-Date: 2022-05-07 17:58+0100\n"
+"PO-Revision-Date: 2022-05-08 12:59\n"
+"Last-Translator: \n"
+"Language-Team: Romanian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: redgettext 3.4.2\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100>0 && n%100<20)) ? 1 : 2);\n"
+"X-Crowdin-Project: pylavshared\n"
+"X-Crowdin-Project-ID: 514316\n"
+"X-Crowdin-Language: ro\n"
+"X-Crowdin-File: /pylavcogs_shared/ui/selectors/locales/messages.pot\n"
+"X-Crowdin-File-ID: 384\n"
+"Language: ro_RO\n"
+
+#: pylavcogs_shared/ui/selectors/nodes.py:45
+#: pylavcogs_shared/ui/selectors/playlist.py:63
+msgid "You are not authorized to interact with this option."
+msgstr "Nu sunteți autorizat să interacționați cu această opțiune."
+
+#: pylavcogs_shared/ui/selectors/nodes.py:52
+msgid "Disabling the following sources: {sources}"
+msgstr "Se dezactivează următoarele surse: {sources}"
+
+#: pylavcogs_shared/ui/selectors/nodes.py:77
+msgid "Node not found."
+msgstr "Modulul nu a fost găsit."
+
+#: pylavcogs_shared/ui/selectors/playlist.py:36
+#: pylavcogs_shared/ui/selectors/playlist.py:72
+msgid "Playlist not found."
+msgstr "Playlist negăsit."
+
+#: pylavcogs_shared/ui/selectors/queue.py:85
+msgid "No Preset Selected."
+msgstr "Nu există presetări selectate."
+
+#: pylavcogs_shared/ui/selectors/queue.py:119
+msgid "Track not found."
+msgstr "Piesa nu a fost găsită."
+

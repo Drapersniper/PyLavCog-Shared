@@ -1,0 +1,94 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pylavshared\n"
+"POT-Creation-Date: 2022-08-26 19:16+0000\n"
+"PO-Revision-Date: 2022-08-26 19:19\n"
+"Last-Translator: \n"
+"Language-Team: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: redgettext 3.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: pylavshared\n"
+"X-Crowdin-Project-ID: 514316\n"
+"X-Crowdin-Language: en\n"
+"X-Crowdin-File: /pylavcogs_shared/utils/locales/messages.pot\n"
+"X-Crowdin-File-ID: 370\n"
+"Language: en_US\n"
+
+#: pylavcogs_shared/utils/required_methods.py:49
+#, docstring
+msgid "Shows the credits and translation details for the PyLav cogs and shared code."
+msgstr "crwdns4158:0crwdne4158:0"
+
+#: pylavcogs_shared/utils/required_methods.py:53
+msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
+"PyLav can be located in https://github.com/Drapersniper/PyLav\n"
+"PyLavCog-Shared can be located in https://github.com/Drapersniper/PyLavCog-Shared\n"
+"PyLav-Cogs can be located in https://github.com/Drapersniper/PyLav-Cogs\n\n"
+"PyLav's support server can be found at https://discord.com/invite/Sjh2TSCYQB\n\n\n"
+"You can help translate PyLav by contributing to our Crowdin projects at:\n"
+"https://crowdin.com/project/pylavshared and https://crowdin.com/project/mediaplayer\n\n\n"
+"Contributors:\n"
+"- https://github.com/Drapersniper/PyLav/graphs/contributors\n"
+"- https://github.com/Drapersniper/PyLavCog-Shared/graphs/contributors\n"
+"- https://github.com/Drapersniper/PyLav-Cogs/graphs/contributors\n"
+"If you wish to buy me a coffee for my work, you can do so at:\n"
+"https://www.buymeacoffee.com/draper"
+msgstr "crwdns4566:0crwdne4566:0"
+
+#: pylavcogs_shared/utils/required_methods.py:81
+#, docstring
+msgid "Show the version of PyLav and PyLavCogs-Shared libraries."
+msgstr "crwdns4372:0crwdne4372:0"
+
+#: pylavcogs_shared/utils/required_methods.py:93
+msgid "Library"
+msgstr "crwdns4374:0crwdne4374:0"
+
+#: pylavcogs_shared/utils/required_methods.py:93
+msgid "Version"
+msgstr "crwdns4376:0crwdne4376:0"
+
+#: pylavcogs_shared/utils/required_methods.py:107
+#, docstring
+msgid "Sync the Bots slash commands."
+msgstr "crwdns4568:0crwdne4568:0"
+
+#: pylavcogs_shared/utils/required_methods.py:116
+msgid "Synced the bots slash commands."
+msgstr "crwdns4570:0crwdne4570:0"
+
+#: pylavcogs_shared/utils/required_methods.py:137
+msgid "This command requires an existing player to be run."
+msgstr "crwdns4080:0crwdne4080:0"
+
+#: pylavcogs_shared/utils/required_methods.py:146
+msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later."
+msgstr "crwdns4082:0crwdne4082:0"
+
+#: pylavcogs_shared/utils/required_methods.py:150
+msgid "No Lavalink node currently available."
+msgstr "crwdns4084:0crwdne4084:0"
+
+#: pylavcogs_shared/utils/required_methods.py:159
+msgid "MediaPlayer is currently unable to process tracks belonging to {feature}."
+msgstr "crwdns4086:0{feature}crwdne4086:0"
+
+#: pylavcogs_shared/utils/required_methods.py:162
+msgid "No Lavalink node currently available with feature {feature}."
+msgstr "crwdns4088:0{feature}crwdne4088:0"
+
+#: pylavcogs_shared/utils/required_methods.py:173
+msgid "This command is not available in this channel. Please use {channel}"
+msgstr "crwdns4090:0{channel}crwdne4090:0"
+
+#: pylavcogs_shared/utils/required_methods.py:185
+msgid "This command requires you to be a DJ."
+msgstr "crwdns4342:0crwdne4342:0"
+
+#: pylavcogs_shared/utils/required_methods.py:222
+msgid "PyLav is not ready - Please try again shortly."
+msgstr "crwdns4316:0crwdne4316:0"
+

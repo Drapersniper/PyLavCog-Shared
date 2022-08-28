@@ -1,0 +1,45 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pylavshared\n"
+"POT-Creation-Date: 2022-05-07 17:58+0100\n"
+"PO-Revision-Date: 2022-05-08 12:58\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: redgettext 3.4.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: pylavshared\n"
+"X-Crowdin-Project-ID: 514316\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /pylavcogs_shared/ui/selectors/locales/messages.pot\n"
+"X-Crowdin-File-ID: 384\n"
+"Language: zh_CN\n"
+
+#: pylavcogs_shared/ui/selectors/nodes.py:45
+#: pylavcogs_shared/ui/selectors/playlist.py:63
+msgid "You are not authorized to interact with this option."
+msgstr "您无权与此选项进行交互。"
+
+#: pylavcogs_shared/ui/selectors/nodes.py:52
+msgid "Disabling the following sources: {sources}"
+msgstr "禁用以下源: {sources}"
+
+#: pylavcogs_shared/ui/selectors/nodes.py:77
+msgid "Node not found."
+msgstr "找不到节点。"
+
+#: pylavcogs_shared/ui/selectors/playlist.py:36
+#: pylavcogs_shared/ui/selectors/playlist.py:72
+msgid "Playlist not found."
+msgstr "未找到播放列表。"
+
+#: pylavcogs_shared/ui/selectors/queue.py:85
+msgid "No Preset Selected."
+msgstr "未选择预设。"
+
+#: pylavcogs_shared/ui/selectors/queue.py:119
+msgid "Track not found."
+msgstr "找不到曲目。"
+
