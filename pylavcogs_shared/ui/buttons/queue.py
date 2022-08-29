@@ -189,22 +189,22 @@ class QueueHistoryButton(discord.ui.Button):
         if not interaction.response.is_done():
             await interaction.response.defer(ephemeral=True, thinking=True)
         context = await self.cog.bot.get_context(interaction)
-        player = context.player
-        if not player:
+        if __ := context.player:
+            await QueueMenu(
+                cog=self.cog,
+                bot=self.cog.bot,
+                source=QueueSource(guild_id=interaction.guild.id, cog=self.cog, history=True),
+                original_author=interaction.user,
+                history=True,
+            ).start(ctx=context)
+
+        else:
             return await context.send(
                 embed=await self.cog.lavalink.construct_embed(
                     description=_("Not connected to a voice channel."), messageable=interaction
                 ),
                 ephemeral=True,
             )
-
-        await QueueMenu(
-            cog=self.cog,
-            bot=self.cog.bot,
-            source=QueueSource(guild_id=interaction.guild.id, cog=self.cog, history=True),
-            original_author=interaction.user,
-            history=True,
-        ).start(ctx=context)
 
 
 class ToggleRepeatQueueButton(discord.ui.Button):
