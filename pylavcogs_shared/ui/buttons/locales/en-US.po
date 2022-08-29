@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavshared\n"
-"POT-Creation-Date: 2022-08-28 22:18+0000\n"
-"PO-Revision-Date: 2022-08-28 22:20\n"
+"POT-Creation-Date: 2022-08-29 21:54+0000\n"
+"PO-Revision-Date: 2022-08-29 21:56\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "MIME-Version: 1.0\n"
@@ -170,20 +170,20 @@ msgstr "crwdns3438:0crwdne3438:0"
 msgid "No longer all duplicate tracks from the queue..."
 msgstr "crwdns3440:0crwdne3440:0"
 
-#: pylavcogs_shared/ui/buttons/playlist.py:402
+#: pylavcogs_shared/ui/buttons/playlist.py:403
 msgid "Playlists you can currently play"
 msgstr "crwdns3442:0crwdne3442:0"
 
-#: pylavcogs_shared/ui/buttons/playlist.py:408
+#: pylavcogs_shared/ui/buttons/playlist.py:409
 msgid "Pick a playlist"
 msgstr "crwdns3444:0crwdne3444:0"
 
-#: pylavcogs_shared/ui/buttons/playlist.py:428
+#: pylavcogs_shared/ui/buttons/playlist.py:429
 msgid "What should the playlist name be?"
 msgstr "crwdns3446:0crwdne3446:0"
 
 #: pylavcogs_shared/ui/buttons/queue.py:164
-#: pylavcogs_shared/ui/buttons/queue.py:196
+#: pylavcogs_shared/ui/buttons/queue.py:204
 #: pylavcogs_shared/ui/buttons/queue.py:227
 msgid "Not connected to a voice channel."
 msgstr "crwdns4322:0crwdne4322:0"
