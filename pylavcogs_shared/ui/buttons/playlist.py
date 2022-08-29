@@ -380,12 +380,13 @@ class EnqueuePlaylistButton(discord.ui.Button):
     async def callback(self, interaction: InteractionT):
         if not interaction.response.is_done():
             await interaction.response.defer(ephemeral=True)
+        context = await self.cog.bot.get_context(interaction)
         if not self.playlist:
             playlists = await self.cog.lavalink.playlist_db_manager.get_all_for_user(
-                requester=interaction.user.id,
-                vc=rgetattr(interaction.user, "voice.channel", None),
-                guild=interaction.guild,
-                channel=interaction.channel,
+                requester=context.author.id,
+                vc=rgetattr(context.author, "voice.channel", None),
+                guild=context.guild,
+                channel=context.channel,
             )
             playlists = list(itertools.chain.from_iterable(playlists))
             from pylavcogs_shared.ui.menus.playlist import PlaylistPickerMenu
@@ -396,7 +397,7 @@ class EnqueuePlaylistButton(discord.ui.Button):
                 bot=self.cog.bot,
                 selector_cls=PlaylistPlaySelector,
                 source=PlaylistPickerSource(
-                    guild_id=interaction.guild.id,
+                    guild_id=context.guild.id,
                     cog=self.cog,
                     pages=playlists,
                     message_str=_("Playlists you can currently play"),
@@ -404,15 +405,15 @@ class EnqueuePlaylistButton(discord.ui.Button):
                 delete_after_timeout=True,
                 clear_buttons_after=True,
                 starting_page=0,
-                original_author=interaction.user,
+                original_author=context.author,
                 selector_text=_("Pick a playlist"),
-            ).start(interaction)
+            ).start(context)
         else:
             await self.cog.command_playlist_play.callback(self.cog, interaction, playlist=[self.playlist])
         if hasattr(self.view, "prepare"):
             await self.view.prepare()
             kwargs = await self.view.get_page(self.view.current_page)
-            await (await interaction.original_message()).edit(view=self.view, **kwargs)
+            await context.message.edit(view=self.view, **kwargs)
 
 
 class SaveQueuePlaylistButton(discord.ui.Button):
