@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-30 19:02+0000\n"
-"PO-Revision-Date: 2022-08-30 19:03\n"
+"PO-Revision-Date: 2022-08-30 19:29\n"
 "Last-Translator: \n"
 "Language-Team: Dutch\n"
 "MIME-Version: 1.0\n"
@@ -22,178 +22,178 @@ msgstr ""
 #: pylavcogs_shared/ui/menus/playlist.py:255
 #: pylavcogs_shared/ui/menus/playlist.py:470
 msgid "You are not authorized to interact with this."
-msgstr ""
+msgstr "Je bent niet bevoegd om hiermee te communiceren."
 
 #: pylavcogs_shared/ui/menus/nodes.py:58
 msgid "Enter the domain or IP address of the host"
-msgstr ""
+msgstr "Voer het domein of IP-adres van de host in"
 
 #: pylavcogs_shared/ui/menus/nodes.py:59
 #: pylavcogs_shared/ui/menus/nodes.py:492
 msgid "Host"
-msgstr ""
+msgstr "Hostnaam"
 
 #: pylavcogs_shared/ui/menus/nodes.py:66
 msgid "Enter the host port to connect to"
-msgstr ""
+msgstr "Voer de host poort in om mee te verbinden"
 
 #: pylavcogs_shared/ui/menus/nodes.py:67
 #: pylavcogs_shared/ui/menus/nodes.py:500
 msgid "Port"
-msgstr ""
+msgstr "Poort"
 
 #: pylavcogs_shared/ui/menus/nodes.py:74
 msgid "Enter the node's password"
-msgstr ""
+msgstr "Voer het wachtwoord van de node in"
 
 #: pylavcogs_shared/ui/menus/nodes.py:75
 #: pylavcogs_shared/ui/menus/nodes.py:508
 msgid "Password"
-msgstr ""
+msgstr "Wachtwoord"
 
 #: pylavcogs_shared/ui/menus/nodes.py:82
 msgid "Enter an easy to know name for the node."
-msgstr ""
+msgstr "Voer een eenvoudige naam in om de node te kennen."
 
 #: pylavcogs_shared/ui/menus/nodes.py:83
 #: pylavcogs_shared/ui/menus/nodes.py:516
 msgid "Name"
-msgstr ""
+msgstr "naam"
 
 #: pylavcogs_shared/ui/menus/nodes.py:90
 msgid "Enter a timeout in seconds."
-msgstr ""
+msgstr "Voer een time-out in seconden in."
 
 #: pylavcogs_shared/ui/menus/nodes.py:91
 #: pylavcogs_shared/ui/menus/nodes.py:524
 msgid "Timeout"
-msgstr ""
+msgstr "Time-out"
 
 #: pylavcogs_shared/ui/menus/nodes.py:106
 #: pylavcogs_shared/ui/menus/nodes.py:552
 msgid "Source to disable."
-msgstr ""
+msgstr "Bron om uit te schakelen."
 
 #: pylavcogs_shared/ui/menus/nodes.py:216
 #: pylavcogs_shared/ui/menus/nodes.py:660
 msgid "Name set to {name}"
-msgstr ""
+msgstr "Naam ingesteld op {name}"
 
 #: pylavcogs_shared/ui/menus/nodes.py:229
 #: pylavcogs_shared/ui/menus/nodes.py:673
 msgid "Password set to {password}"
-msgstr ""
+msgstr "Wachtwoord ingesteld op {password}"
 
 #: pylavcogs_shared/ui/menus/nodes.py:247
 #: pylavcogs_shared/ui/menus/nodes.py:691
 msgid "Host set to {host}"
-msgstr ""
+msgstr "Host ingesteld op {host}"
 
 #: pylavcogs_shared/ui/menus/nodes.py:264
 #: pylavcogs_shared/ui/menus/nodes.py:708
 msgid "Invalid port."
-msgstr ""
+msgstr "Ongeldige poort."
 
 #: pylavcogs_shared/ui/menus/nodes.py:272
 #: pylavcogs_shared/ui/menus/nodes.py:716
 msgid "Port set to {port}"
-msgstr ""
+msgstr "Poort ingesteld op {port}"
 
 #: pylavcogs_shared/ui/menus/nodes.py:289
 #: pylavcogs_shared/ui/menus/nodes.py:733
 msgid "Invalid timeout, it must be a number in seconds."
-msgstr ""
+msgstr "Ongeldige time-out, het moet een getal in seconden zijn."
 
 #: pylavcogs_shared/ui/menus/nodes.py:297
 #: pylavcogs_shared/ui/menus/nodes.py:741
 msgid "Timeout set to {timeout} seconds."
-msgstr ""
+msgstr "Time-out ingesteld op {timeout} seconden."
 
 #: pylavcogs_shared/ui/menus/nodes.py:491
 msgid "Change the domain or IP address of the host"
-msgstr ""
+msgstr "Het domein of IP-adres van de host wijzigen"
 
 #: pylavcogs_shared/ui/menus/nodes.py:499
 msgid "Change the host port to connect to"
-msgstr ""
+msgstr "Wijzig de host poort om mee te verbinden"
 
 #: pylavcogs_shared/ui/menus/nodes.py:507
 msgid "Change the node's password"
-msgstr ""
+msgstr "Verander het wachtwoord van het knooppunt"
 
 #: pylavcogs_shared/ui/menus/nodes.py:515
 msgid "Change the name of this node."
-msgstr ""
+msgstr "Verander de naam van deze node."
 
 #: pylavcogs_shared/ui/menus/nodes.py:523
 msgid "Enter the new timeout for this node."
-msgstr ""
+msgstr "Geef de nieuwe time-out voor deze node"
 
 #: pylavcogs_shared/ui/menus/player.py:93
 msgid "selected"
-msgstr ""
+msgstr "Geselecteerd"
 
 #: pylavcogs_shared/ui/menus/player.py:100
 msgid "inactive"
-msgstr ""
+msgstr "Inactief"
 
 #: pylavcogs_shared/ui/menus/player.py:110
 msgid "all"
-msgstr ""
+msgstr "alle"
 
 #: pylavcogs_shared/ui/menus/player.py:204
 msgid "Not connected anywhere."
-msgstr ""
+msgstr "Geen verbinding gemaakt."
 
 #: pylavcogs_shared/ui/menus/playlist.py:186
 #: pylavcogs_shared/ui/menus/playlist.py:317
 msgid "Please enter the playlist URL"
-msgstr ""
+msgstr "Voer de afspeellijst URL in"
 
 #: pylavcogs_shared/ui/menus/playlist.py:187
 #: pylavcogs_shared/ui/menus/playlist.py:318
 msgid "Playlist URL"
-msgstr ""
+msgstr "Afspeellijst URL"
 
 #: pylavcogs_shared/ui/menus/playlist.py:192
 msgid "Please enter the playlist name"
-msgstr ""
+msgstr "Voer de naam van de afspeellijst in"
 
 #: pylavcogs_shared/ui/menus/playlist.py:192
 #: pylavcogs_shared/ui/menus/playlist.py:323
 msgid "Playlist Name"
-msgstr ""
+msgstr "Naam afspeellijst"
 
 #: pylavcogs_shared/ui/menus/playlist.py:323
 msgid "Please enter the new playlist name"
-msgstr ""
+msgstr "Voer de nieuwe naam van de afspeellijst in"
 
 #: pylavcogs_shared/ui/menus/playlist.py:328
 msgid "What query to add to the playlist"
-msgstr ""
+msgstr "Welke query aan de afspeellijst toe te voegen"
 
 #: pylavcogs_shared/ui/menus/playlist.py:329
 #: pylavcogs_shared/ui/menus/playlist.py:337
 msgid "Query"
-msgstr ""
+msgstr "Zoekopdracht"
 
 #: pylavcogs_shared/ui/menus/playlist.py:336
 msgid "What query to remove from the playlist"
-msgstr ""
+msgstr "Welke query uit de afspeellijst te verwijderen"
 
 #: pylavcogs_shared/ui/menus/queue.py:463
 msgid "Select Track To Remove"
-msgstr ""
+msgstr "Selecteer track om te verwijderen"
 
 #: pylavcogs_shared/ui/menus/queue.py:465
 msgid "Select Track To Play Now"
-msgstr ""
+msgstr "Selecteer track To Play Nu"
 
 #: pylavcogs_shared/ui/menus/queue.py:567
 msgid "Pick An Effect Preset To Apply"
-msgstr ""
+msgstr "Kies een Effect voorinstelling om toe te passen"
 
 #: pylavcogs_shared/ui/menus/queue.py:716
 msgid "Select Track To Enqueue"
-msgstr ""
+msgstr "Selecteer track To Enqueue"
 

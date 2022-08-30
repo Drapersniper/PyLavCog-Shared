@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-30 19:02+0000\n"
-"PO-Revision-Date: 2022-08-30 19:03\n"
+"PO-Revision-Date: 2022-08-30 19:29\n"
 "Last-Translator: \n"
 "Language-Team: Danish\n"
 "MIME-Version: 1.0\n"
@@ -19,44 +19,44 @@ msgstr ""
 
 #: pylavcogs_shared/converters/equalizer.py:47
 msgid "Bass boost with name `{arg}` not found."
-msgstr ""
+msgstr "Basforstærkning med navnet `{arg}` blev ikke fundet."
 
 #: pylavcogs_shared/converters/equalizer.py:61
 #: pylavcogs_shared/converters/equalizer.py:70
 #: pylavcogs_shared/converters/equalizer.py:71
 #: pylavcogs_shared/converters/equalizer.py:72
 msgid "Maximum"
-msgstr ""
+msgstr "Maksimum"
 
 #: pylavcogs_shared/converters/equalizer.py:62
 msgid "Insane"
-msgstr ""
+msgstr "Vanvittig"
 
 #: pylavcogs_shared/converters/equalizer.py:63
 msgid "Extreme"
-msgstr ""
+msgstr "Ekstrem"
 
 #: pylavcogs_shared/converters/equalizer.py:64
 msgid "Very High"
-msgstr ""
+msgstr "Meget Høj"
 
 #: pylavcogs_shared/converters/equalizer.py:65
 msgid "High"
-msgstr ""
+msgstr "Høj"
 
 #: pylavcogs_shared/converters/equalizer.py:66
 msgid "Medium"
-msgstr ""
+msgstr "Mellem"
 
 #: pylavcogs_shared/converters/equalizer.py:67
 msgid "Fine Tuned"
-msgstr ""
+msgstr "Fint Tunet"
 
 #: pylavcogs_shared/converters/equalizer.py:68
 msgid "Cut-off"
-msgstr ""
+msgstr "Afskæring"
 
 #: pylavcogs_shared/converters/equalizer.py:69
 msgid "Off"
-msgstr ""
+msgstr "Fra"
 

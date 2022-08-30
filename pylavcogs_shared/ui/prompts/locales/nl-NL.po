@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-30 19:02+0000\n"
-"PO-Revision-Date: 2022-08-30 19:03\n"
+"PO-Revision-Date: 2022-08-30 19:29\n"
 "Last-Translator: \n"
 "Language-Team: Dutch\n"
 "MIME-Version: 1.0\n"
@@ -19,17 +19,17 @@ msgstr ""
 
 #: pylavcogs_shared/ui/prompts/nodes.py:28
 msgid "Multiple nodes matched, pick the one which you meant."
-msgstr ""
+msgstr "Meerdere knooppunten gevonden, kies het knooppunt dat je bedoelt."
 
 #: pylavcogs_shared/ui/prompts/nodes.py:34
 msgid "Pick a node"
-msgstr ""
+msgstr "Kies een node"
 
 #: pylavcogs_shared/ui/prompts/playlists.py:30
 msgid "Multiple playlist matched, pick the one which you meant."
-msgstr ""
+msgstr "Meerdere afspeellijst gevonden, kies de afspeellijst die je bedoelde."
 
 #: pylavcogs_shared/ui/prompts/playlists.py:36
 msgid "Pick a playlist"
-msgstr ""
+msgstr "Kies een afspeellijst"
 

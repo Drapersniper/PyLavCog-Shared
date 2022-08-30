@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-30 19:02+0000\n"
-"PO-Revision-Date: 2022-08-30 19:03\n"
+"PO-Revision-Date: 2022-08-30 19:29\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 #: pylavcogs_shared/utils/required_methods.py:49
 #, docstring
 msgid "Shows the credits and translation details for the PyLav cogs and shared code."
-msgstr ""
+msgstr "Affiche les détails des crédits et des traductions pour les cogs PyLav et le code partagé."
 
 #: pylavcogs_shared/utils/required_methods.py:53
 msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
@@ -36,59 +36,71 @@ msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
 "- https://github.com/Drapersniper/PyLav-Cogs/graphs/contributors\n"
 "If you wish to buy me a coffee for my work, you can do so at:\n"
 "https://www.buymeacoffee.com/draper or https://github.com/sponsors/Drapersniper"
-msgstr ""
+msgstr "PyLav a été créé par [Draper#6666](https://github.com/Drapersniper).\n\n"
+"PyLav peut être situé sur https://github. om/Drapersniper/PyLav\n"
+"PyLavCog-Shared peut être situé sur https://github.com/Drapersniper/PyLavCog-Shared\n"
+"PyLav-Cogs peut être situé sur https://github. Le serveur de support de om/Drapersniper/PyLav-Cogs\n\n"
+"PyLav, peut être trouvé sur https://discord.com/invite/Sjh2TSCYQB\n\n\n"
+"Vous pouvez aider à traduire PyLav en contribuant à nos projets Crowdin sur:\n"
+"https://crowdin. om/project/pylav et https://crowdin.com/project/pylavcogs-shared et https://crowdin.com/project/pylavcogs\n\n\n"
+"Contributeurs :\n"
+"- https://github.com/Drapersniper/PyLav/graphs/contributors\n"
+"- https://github. om/Drapersniper/PyLavCog-Shared/graphs/contributors\n"
+"- https://github.com/Drapersniper/PyLav-Cogs/graphs/contributors\n"
+"Si vous souhaitez m'acheter un café pour mon travail, vous pouvez le faire sur :\n"
+"https://www.buymeacoffee.com/draper ou https://github.com/sponsors/Drapersniper"
 
 #: pylavcogs_shared/utils/required_methods.py:83
 #, docstring
 msgid "Show the version of PyLav and PyLavCogs-Shared libraries."
-msgstr ""
+msgstr "Afficher la version des bibliothèques PyLav et PyLavCogs-Shared ."
 
 #: pylavcogs_shared/utils/required_methods.py:95
 msgid "Library"
-msgstr ""
+msgstr "Bibliothèque"
 
 #: pylavcogs_shared/utils/required_methods.py:95
 msgid "Version"
-msgstr ""
+msgstr "Version"
 
 #: pylavcogs_shared/utils/required_methods.py:109
 #, docstring
 msgid "Sync the Bots slash commands."
-msgstr ""
+msgstr "Synchroniser les commandes slash des Bots."
 
 #: pylavcogs_shared/utils/required_methods.py:118
 msgid "Synced the bots slash commands."
-msgstr ""
+msgstr "Synchronisation des commandes slash des bots."
 
 #: pylavcogs_shared/utils/required_methods.py:139
 msgid "This command requires an existing player to be run."
-msgstr ""
+msgstr "Cette commande nécessite l'exécution d'un joueur existant."
 
 #: pylavcogs_shared/utils/required_methods.py:148
 msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later."
-msgstr ""
+msgstr "Le cog MediaPlayer est actuellement indisponible en raison d'une panne avec les services d'arrière-plan, veuillez réessayer plus tard."
 
 #: pylavcogs_shared/utils/required_methods.py:152
 msgid "No Lavalink node currently available."
-msgstr ""
+msgstr "Aucun noeud Lavalink n'est actuellement disponible."
 
 #: pylavcogs_shared/utils/required_methods.py:161
 msgid "MediaPlayer is currently unable to process tracks belonging to {feature}."
-msgstr ""
+msgstr "MediaPlayer ne peut actuellement pas traiter les pistes appartenant à {feature}."
 
 #: pylavcogs_shared/utils/required_methods.py:164
 msgid "No Lavalink node currently available with feature {feature}."
-msgstr ""
+msgstr "Aucun noeud Lavalink actuellement disponible avec la fonctionnalité {feature}."
 
 #: pylavcogs_shared/utils/required_methods.py:175
 msgid "This command is not available in this channel. Please use {channel}"
-msgstr ""
+msgstr "Cette commande n'est pas disponible dans ce salon. Veuillez utiliser {channel}"
 
 #: pylavcogs_shared/utils/required_methods.py:187
 msgid "This command requires you to be a DJ."
-msgstr ""
+msgstr "Cette commande nécessite d'être un DJ."
 
 #: pylavcogs_shared/utils/required_methods.py:224
 msgid "PyLav is not ready - Please try again shortly."
-msgstr ""
+msgstr "PyLav n'est pas prêt - Veuillez réessayer sous peu."
 

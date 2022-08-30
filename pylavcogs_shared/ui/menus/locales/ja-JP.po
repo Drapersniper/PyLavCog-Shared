@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-30 19:02+0000\n"
-"PO-Revision-Date: 2022-08-30 19:03\n"
+"PO-Revision-Date: 2022-08-30 19:29\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -22,178 +22,178 @@ msgstr ""
 #: pylavcogs_shared/ui/menus/playlist.py:255
 #: pylavcogs_shared/ui/menus/playlist.py:470
 msgid "You are not authorized to interact with this."
-msgstr ""
+msgstr "これとやり取りする権限がありません。"
 
 #: pylavcogs_shared/ui/menus/nodes.py:58
 msgid "Enter the domain or IP address of the host"
-msgstr ""
+msgstr "ホストのドメインまたは IP アドレスを入力してください"
 
 #: pylavcogs_shared/ui/menus/nodes.py:59
 #: pylavcogs_shared/ui/menus/nodes.py:492
 msgid "Host"
-msgstr ""
+msgstr "ホスト"
 
 #: pylavcogs_shared/ui/menus/nodes.py:66
 msgid "Enter the host port to connect to"
-msgstr ""
+msgstr "接続するホストポートを入力してください"
 
 #: pylavcogs_shared/ui/menus/nodes.py:67
 #: pylavcogs_shared/ui/menus/nodes.py:500
 msgid "Port"
-msgstr ""
+msgstr "ポート"
 
 #: pylavcogs_shared/ui/menus/nodes.py:74
 msgid "Enter the node's password"
-msgstr ""
+msgstr "ノードのパスワードを入力してください"
 
 #: pylavcogs_shared/ui/menus/nodes.py:75
 #: pylavcogs_shared/ui/menus/nodes.py:508
 msgid "Password"
-msgstr ""
+msgstr "パスワード"
 
 #: pylavcogs_shared/ui/menus/nodes.py:82
 msgid "Enter an easy to know name for the node."
-msgstr ""
+msgstr "ノードの名前を簡単に入力してください。"
 
 #: pylavcogs_shared/ui/menus/nodes.py:83
 #: pylavcogs_shared/ui/menus/nodes.py:516
 msgid "Name"
-msgstr ""
+msgstr "名前"
 
 #: pylavcogs_shared/ui/menus/nodes.py:90
 msgid "Enter a timeout in seconds."
-msgstr ""
+msgstr "タイムアウトを秒単位で入力します。"
 
 #: pylavcogs_shared/ui/menus/nodes.py:91
 #: pylavcogs_shared/ui/menus/nodes.py:524
 msgid "Timeout"
-msgstr ""
+msgstr "タイムアウト"
 
 #: pylavcogs_shared/ui/menus/nodes.py:106
 #: pylavcogs_shared/ui/menus/nodes.py:552
 msgid "Source to disable."
-msgstr ""
+msgstr "無効にするソース"
 
 #: pylavcogs_shared/ui/menus/nodes.py:216
 #: pylavcogs_shared/ui/menus/nodes.py:660
 msgid "Name set to {name}"
-msgstr ""
+msgstr "名前を {name} に設定しました"
 
 #: pylavcogs_shared/ui/menus/nodes.py:229
 #: pylavcogs_shared/ui/menus/nodes.py:673
 msgid "Password set to {password}"
-msgstr ""
+msgstr "パスワードが {password} に設定されました"
 
 #: pylavcogs_shared/ui/menus/nodes.py:247
 #: pylavcogs_shared/ui/menus/nodes.py:691
 msgid "Host set to {host}"
-msgstr ""
+msgstr "ホストが {host} に設定されました"
 
 #: pylavcogs_shared/ui/menus/nodes.py:264
 #: pylavcogs_shared/ui/menus/nodes.py:708
 msgid "Invalid port."
-msgstr ""
+msgstr "無効なポートです。"
 
 #: pylavcogs_shared/ui/menus/nodes.py:272
 #: pylavcogs_shared/ui/menus/nodes.py:716
 msgid "Port set to {port}"
-msgstr ""
+msgstr "ポートを {port} に設定しました"
 
 #: pylavcogs_shared/ui/menus/nodes.py:289
 #: pylavcogs_shared/ui/menus/nodes.py:733
 msgid "Invalid timeout, it must be a number in seconds."
-msgstr ""
+msgstr "無効なタイムアウトです。数字を秒で入力してください。"
 
 #: pylavcogs_shared/ui/menus/nodes.py:297
 #: pylavcogs_shared/ui/menus/nodes.py:741
 msgid "Timeout set to {timeout} seconds."
-msgstr ""
+msgstr "タイムアウトを {timeout} 秒に設定しました。"
 
 #: pylavcogs_shared/ui/menus/nodes.py:491
 msgid "Change the domain or IP address of the host"
-msgstr ""
+msgstr "ホストのドメインまたは IP アドレスを変更する"
 
 #: pylavcogs_shared/ui/menus/nodes.py:499
 msgid "Change the host port to connect to"
-msgstr ""
+msgstr "ホストポートを接続するように変更する"
 
 #: pylavcogs_shared/ui/menus/nodes.py:507
 msgid "Change the node's password"
-msgstr ""
+msgstr "ノードのパスワードを変更する"
 
 #: pylavcogs_shared/ui/menus/nodes.py:515
 msgid "Change the name of this node."
-msgstr ""
+msgstr "このノードの名前を変更します。"
 
 #: pylavcogs_shared/ui/menus/nodes.py:523
 msgid "Enter the new timeout for this node."
-msgstr ""
+msgstr "このノードの新しいタイムアウトを入力してください。"
 
 #: pylavcogs_shared/ui/menus/player.py:93
 msgid "selected"
-msgstr ""
+msgstr "選択済み"
 
 #: pylavcogs_shared/ui/menus/player.py:100
 msgid "inactive"
-msgstr ""
+msgstr "非アクティブ"
 
 #: pylavcogs_shared/ui/menus/player.py:110
 msgid "all"
-msgstr ""
+msgstr "すべて"
 
 #: pylavcogs_shared/ui/menus/player.py:204
 msgid "Not connected anywhere."
-msgstr ""
+msgstr "どこにも接続されていません"
 
 #: pylavcogs_shared/ui/menus/playlist.py:186
 #: pylavcogs_shared/ui/menus/playlist.py:317
 msgid "Please enter the playlist URL"
-msgstr ""
+msgstr "プレイリストURLを入力してください"
 
 #: pylavcogs_shared/ui/menus/playlist.py:187
 #: pylavcogs_shared/ui/menus/playlist.py:318
 msgid "Playlist URL"
-msgstr ""
+msgstr "プレイリストURL"
 
 #: pylavcogs_shared/ui/menus/playlist.py:192
 msgid "Please enter the playlist name"
-msgstr ""
+msgstr "プレイリスト名を入力してください"
 
 #: pylavcogs_shared/ui/menus/playlist.py:192
 #: pylavcogs_shared/ui/menus/playlist.py:323
 msgid "Playlist Name"
-msgstr ""
+msgstr "プレイリスト名"
 
 #: pylavcogs_shared/ui/menus/playlist.py:323
 msgid "Please enter the new playlist name"
-msgstr ""
+msgstr "新しいプレイリスト名を入力してください"
 
 #: pylavcogs_shared/ui/menus/playlist.py:328
 msgid "What query to add to the playlist"
-msgstr ""
+msgstr "プレイリストに追加するクエリ"
 
 #: pylavcogs_shared/ui/menus/playlist.py:329
 #: pylavcogs_shared/ui/menus/playlist.py:337
 msgid "Query"
-msgstr ""
+msgstr "クエリ"
 
 #: pylavcogs_shared/ui/menus/playlist.py:336
 msgid "What query to remove from the playlist"
-msgstr ""
+msgstr "プレイリストから削除するクエリ"
 
 #: pylavcogs_shared/ui/menus/queue.py:463
 msgid "Select Track To Remove"
-msgstr ""
+msgstr "削除するトラックを選択"
 
 #: pylavcogs_shared/ui/menus/queue.py:465
 msgid "Select Track To Play Now"
-msgstr ""
+msgstr "今すぐ再生するトラックを選択"
 
 #: pylavcogs_shared/ui/menus/queue.py:567
 msgid "Pick An Effect Preset To Apply"
-msgstr ""
+msgstr "適用する効果プリセットを選択"
 
 #: pylavcogs_shared/ui/menus/queue.py:716
 msgid "Select Track To Enqueue"
-msgstr ""
+msgstr "キューに追加するトラックを選択"
 

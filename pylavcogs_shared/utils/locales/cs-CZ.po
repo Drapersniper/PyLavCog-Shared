@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-30 19:02+0000\n"
-"PO-Revision-Date: 2022-08-30 19:03\n"
+"PO-Revision-Date: 2022-08-30 19:29\n"
 "Last-Translator: \n"
 "Language-Team: Czech\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 #: pylavcogs_shared/utils/required_methods.py:49
 #, docstring
 msgid "Shows the credits and translation details for the PyLav cogs and shared code."
-msgstr ""
+msgstr "Zobrazí kredity a detaily překladu pro PyLav ozdobení a sdílený kód."
 
 #: pylavcogs_shared/utils/required_methods.py:53
 msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
@@ -36,59 +36,71 @@ msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
 "- https://github.com/Drapersniper/PyLav-Cogs/graphs/contributors\n"
 "If you wish to buy me a coffee for my work, you can do so at:\n"
 "https://www.buymeacoffee.com/draper or https://github.com/sponsors/Drapersniper"
-msgstr ""
+msgstr "PyLav byl vytvořen [Draper#6666](https://github.com/Drapersniper).\n\n"
+"PyLav může být umístěn v https://github. om/Drapersniper/PyLav\n"
+"PyLavCog-Shared může být umístěn v https://github.com/Drapersniper/PyLavCog-Shared\n"
+"PyLav-Cogs může být umístěn v https://github. om/Drapersniper/PyLav-Cogs\n\n"
+"Podpůrný server PyLava naleznete na https://discord.com/invite/Sjh2TSCYQB\n\n\n"
+"Můžete pomoci přeložit PyLav přispěním k našim projektům Crowdin na:\n"
+"https://crowdin. om/project/pylav a https://crowdin.com/project/pylavcogs-share a https://crowdin.com/project/pylavcogs\n\n\n"
+"Přispěvatelé:\n"
+"- https://github.com/Drapersniper/PyLav/graphs/contributors\n"
+"- https://github. om/Drapersniper/PyLavCog-Shared/graphs/contributors\n"
+"- https://github.com/Drapersniper/PyLav-Cogs/graphs/contributors\n"
+"Pokud si přejete koupit kávu pro mou práci, můžete to udělat na:\n"
+"https://www.buymeacoffee.com/draper nebo https://github.com/sponsors/Drapersniper"
 
 #: pylavcogs_shared/utils/required_methods.py:83
 #, docstring
 msgid "Show the version of PyLav and PyLavCogs-Shared libraries."
-msgstr ""
+msgstr "Zobrazit verzi PyLav a PyLavCogs-Sdílených knihoven."
 
 #: pylavcogs_shared/utils/required_methods.py:95
 msgid "Library"
-msgstr ""
+msgstr "Knihovna"
 
 #: pylavcogs_shared/utils/required_methods.py:95
 msgid "Version"
-msgstr ""
+msgstr "Verze"
 
 #: pylavcogs_shared/utils/required_methods.py:109
 #, docstring
 msgid "Sync the Bots slash commands."
-msgstr ""
+msgstr "Synchronizujte příkazy lomítka."
 
 #: pylavcogs_shared/utils/required_methods.py:118
 msgid "Synced the bots slash commands."
-msgstr ""
+msgstr "Synchronizovali boti příkazy lomítka."
 
 #: pylavcogs_shared/utils/required_methods.py:139
 msgid "This command requires an existing player to be run."
-msgstr ""
+msgstr "Tento příkaz vyžaduje spuštění existujícího přehrávače."
 
 #: pylavcogs_shared/utils/required_methods.py:148
 msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later."
-msgstr ""
+msgstr "MediaPlayer cog je v současné době dočasně nedostupný z důvodu výpadku s backendovými službami, zkuste to prosím později."
 
 #: pylavcogs_shared/utils/required_methods.py:152
 msgid "No Lavalink node currently available."
-msgstr ""
+msgstr "Není k dispozici žádný Lavalink uzel."
 
 #: pylavcogs_shared/utils/required_methods.py:161
 msgid "MediaPlayer is currently unable to process tracks belonging to {feature}."
-msgstr ""
+msgstr "MediaPlayer momentálně není schopen zpracovávat skladby patřící k {feature}."
 
 #: pylavcogs_shared/utils/required_methods.py:164
 msgid "No Lavalink node currently available with feature {feature}."
-msgstr ""
+msgstr "Žádný Lavalink uzel není momentálně k dispozici s funkcí {feature}."
 
 #: pylavcogs_shared/utils/required_methods.py:175
 msgid "This command is not available in this channel. Please use {channel}"
-msgstr ""
+msgstr "Tento příkaz není v tomto kanálu k dispozici. Použijte prosím {channel}"
 
 #: pylavcogs_shared/utils/required_methods.py:187
 msgid "This command requires you to be a DJ."
-msgstr ""
+msgstr "Tento příkaz vyžaduje, aby jsi DJ."
 
 #: pylavcogs_shared/utils/required_methods.py:224
 msgid "PyLav is not ready - Please try again shortly."
-msgstr ""
+msgstr "PyLav není připraven - zkuste to prosím později."
 
