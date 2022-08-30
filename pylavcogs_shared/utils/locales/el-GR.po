@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-08-30 19:02+0000\n"
-"PO-Revision-Date: 2022-08-30 19:29\n"
+"POT-Creation-Date: 2022-08-30 20:55+0000\n"
+"PO-Revision-Date: 2022-08-30 20:57\n"
 "Last-Translator: \n"
 "Language-Team: Greek\n"
 "MIME-Version: 1.0\n"
@@ -100,7 +100,7 @@ msgstr "Αυτή η εντολή δεν είναι διαθέσιμη σε αυ�
 msgid "This command requires you to be a DJ."
 msgstr "Αυτή η εντολή απαιτεί να γίνετε DJ."
 
-#: pylavcogs_shared/utils/required_methods.py:224
+#: pylavcogs_shared/utils/required_methods.py:225
 msgid "PyLav is not ready - Please try again shortly."
 msgstr "Το PyLav δεν είναι έτοιμο - Παρακαλώ δοκιμάστε ξανά σύντομα."
 

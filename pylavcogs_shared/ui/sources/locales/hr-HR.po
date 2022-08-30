@@ -1,0 +1,314 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pylavcogs-shared\n"
+"POT-Creation-Date: 2022-08-30 19:02+0000\n"
+"PO-Revision-Date: 2022-08-30 20:48\n"
+"Last-Translator: \n"
+"Language-Team: Croatian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: redgettext 3.4.2\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Crowdin-Project: pylavcogs-shared\n"
+"X-Crowdin-Project-ID: 535248\n"
+"X-Crowdin-Language: hr\n"
+"X-Crowdin-File: /pylavcogs_shared/ui/sources/locales/messages.pot\n"
+"X-Crowdin-File-ID: 630\n"
+"Language: hr_HR\n"
+
+#: pylavcogs_shared/ui/sources/equalizer.py:34
+msgid "Preset Name"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/equalizer.py:35
+msgid "Author"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/generic.py:83
+msgid "Page {page_num}/{total_pages} | {num} {entries}."
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/generic.py:87
+msgid "entries"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/generic.py:87
+msgid "entry"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:50
+msgid "Page {page_num}/{total_pages} | {num} nodes."
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:92
+#: pylavcogs_shared/ui/sources/nodes.py:93
+#: pylavcogs_shared/ui/sources/nodes.py:94
+#: pylavcogs_shared/ui/sources/nodes.py:227
+#: pylavcogs_shared/ui/sources/nodes.py:228
+#: pylavcogs_shared/ui/sources/nodes.py:229
+msgid "Yes"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:92
+#: pylavcogs_shared/ui/sources/nodes.py:93
+#: pylavcogs_shared/ui/sources/nodes.py:94
+#: pylavcogs_shared/ui/sources/nodes.py:227
+#: pylavcogs_shared/ui/sources/nodes.py:228
+#: pylavcogs_shared/ui/sources/nodes.py:229
+msgid "No"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:135
+#: pylavcogs_shared/ui/sources/nodes.py:271
+msgid "Name: {name}\n"
+"Version: {version}\n\n"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:136
+#: pylavcogs_shared/ui/sources/nodes.py:272
+#: pylavcogs_shared/ui/sources/playlist.py:166
+msgid "Unknown"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:136
+#: pylavcogs_shared/ui/sources/nodes.py:272
+msgid "version"
+msgstr "verzija"
+
+#: pylavcogs_shared/ui/sources/nodes.py:138
+msgid "None / Unknown"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:140
+#: pylavcogs_shared/ui/sources/nodes.py:266
+msgid "Property"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:141
+#: pylavcogs_shared/ui/sources/nodes.py:267
+msgid "Value"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:143
+#: pylavcogs_shared/ui/sources/nodes.py:277
+msgid "Region"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:143
+#: pylavcogs_shared/ui/sources/nodes.py:277
+msgid "N/A"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:144
+#: pylavcogs_shared/ui/sources/nodes.py:278
+msgid "Coordinates"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:144
+#: pylavcogs_shared/ui/sources/nodes.py:278
+msgid "Latitude: {lat}\n"
+"Longitude: {lon}"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:147
+#: pylavcogs_shared/ui/sources/nodes.py:281
+msgid "Host"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:148
+#: pylavcogs_shared/ui/sources/nodes.py:282
+msgid "Port"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:149
+#: pylavcogs_shared/ui/sources/nodes.py:283
+msgid "Password"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:150
+#: pylavcogs_shared/ui/sources/nodes.py:284
+msgid "SSL"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:151
+#: pylavcogs_shared/ui/sources/nodes.py:285
+msgid "Available"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:152
+#: pylavcogs_shared/ui/sources/nodes.py:286
+msgid "Search Only"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:153
+#: pylavcogs_shared/ui/sources/nodes.py:287
+msgid "Players\n"
+"Connected\n"
+"Active"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:155
+#: pylavcogs_shared/ui/sources/nodes.py:289
+msgid "Frames Lost"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:158
+#: pylavcogs_shared/ui/sources/nodes.py:292
+msgid "Uptime"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:159
+#: pylavcogs_shared/ui/sources/nodes.py:293
+msgid "CPU Load\n"
+"Lavalink\n"
+"System"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:160
+#: pylavcogs_shared/ui/sources/nodes.py:294
+msgid "Penalty"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:161
+#: pylavcogs_shared/ui/sources/nodes.py:295
+msgid "Memory\n"
+"Used\n"
+"Free\n"
+"Allocated\n"
+"Reservable"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:162
+#: pylavcogs_shared/ui/sources/nodes.py:296
+msgid "Plugins"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:173
+#: pylavcogs_shared/ui/sources/nodes.py:307
+msgid "Page {page_num}/{total_pages} | {num} {plural}."
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:177
+#: pylavcogs_shared/ui/sources/nodes.py:311
+msgid "nodes"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:177
+#: pylavcogs_shared/ui/sources/nodes.py:311
+msgid "node"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/nodes.py:274
+msgid "None"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/player.py:73
+msgid "Nothing playing."
+msgstr "Ništa ne svira."
+
+#: pylavcogs_shared/ui/sources/player.py:83
+msgid "Server Owner"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/player.py:84
+msgid "Connected For"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/player.py:85
+msgid "Users in VC"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/player.py:86
+msgid "Queue Length"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/player.py:86
+msgid "{} {}"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/player.py:88
+msgid "Queue History Length"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/player.py:89
+msgid "{count} {track_translation}"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/player.py:90
+msgid "track"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/player.py:90
+msgid "tracks"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/player.py:102
+msgid "Page {page_num}/{total_pages}  | Playing in {playing} {server_translation}."
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/player.py:106
+msgid "server"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/player.py:106
+msgid "servers"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/playlist.py:61
+#: pylavcogs_shared/ui/sources/playlist.py:186
+msgid "Page {page_num}/{total_pages} | {num} playlists."
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/playlist.py:124
+msgid "Tracks in __{name}__"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/playlist.py:171
+msgid "ID: {id}"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/playlist.py:172
+msgid "Tracks: {num}"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/playlist.py:173
+msgid "Author: {name}"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/playlist.py:174
+msgid "Scope: {scope}\n"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/playlist.py:182
+msgid "Playlists you can access in this server:"
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/queue.py:97
+msgid "Reset the effects to default."
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/queue.py:106
+msgid "Apply the Nightcore effect."
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/queue.py:115
+msgid "Apply the Vaporwave effect."
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/queue.py:124
+msgid "Apply the Synth effect."
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/queue.py:133
+msgid "Apply the Bassboost equalizer preset."
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/queue.py:142
+msgid "Apply the Metal equalizer preset."
+msgstr ""
+
+#: pylavcogs_shared/ui/sources/queue.py:151
+msgid "Apply the Piano equalizer preset."
+msgstr ""
+
