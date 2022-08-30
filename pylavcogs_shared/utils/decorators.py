@@ -25,15 +25,16 @@ def always_hidden():
 def requires_player():
     async def pred(context: PyLavContext | InteractionT):
         if isinstance(context, discord.Interaction):
-            await context.response.defer(ephemeral=True)
+            if not context.response.is_done():
+                await context.response.defer(ephemeral=True)
             bot = context.client
             _lavalink = getattr(bot, "lavalink", None)
             player = _lavalink.get_player(context.guild) if _lavalink else None
         else:
             bot = context.bot
             _lavalink = getattr(bot, "lavalink", None)
-            player = getattr(context, "player", None)
-        if not getattr(bot, "lavalink", None):
+            player = _lavalink.get_player(context.guild) if _lavalink else None
+        if not _lavalink:
             return False
         if not player:
             raise errors.MediaPlayerNotFoundError(context)
@@ -45,18 +46,21 @@ def requires_player():
 def can_run_command_in_channel():
     async def pred(context: PyLavContext | InteractionT):
         if isinstance(context, discord.Interaction):
-            await context.response.defer(ephemeral=True)
+            if not context.response.is_done():
+                await context.response.defer(ephemeral=True)
             bot = context.client
-            player = bot.lavalink.get_player(context.guild)  # type:ignore
+            _lavalink = getattr(bot, "lavalink", None)
+            player = _lavalink.get_player(context.guild) if _lavalink else None
         else:
             bot = context.bot
-            player = getattr(context, "player", None)
-        if not (getattr(bot, "lavalink", None)):
+            _lavalink = getattr(bot, "lavalink", None)
+            player = _lavalink.get_player(context.guild) if _lavalink else None
+        if not _lavalink:
             return False
         if not context.guild:
             return True
         if player:
-            config = context.player.config
+            config = player.config
             await config.update()
         else:
             config = await bot.lavalink.player_config_manager.get_config(context.guild.id)
@@ -70,6 +74,8 @@ def can_run_command_in_channel():
 async def is_dj_logic(context: PyLavContext | InteractionT) -> bool | None:
     guild = context.guild
     if isinstance(context, discord.Interaction):
+        if not context.response.is_done():
+            await context.response.defer(ephemeral=True)
         bot = context.client
         author = context.user
     else:
