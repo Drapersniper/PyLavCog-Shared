@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-30 19:02+0000\n"
-"PO-Revision-Date: 2022-08-30 19:03\n"
+"PO-Revision-Date: 2022-08-30 19:29\n"
 "Last-Translator: \n"
 "Language-Team: Italian\n"
 "MIME-Version: 1.0\n"
@@ -20,26 +20,26 @@ msgstr ""
 #: pylavcogs_shared/ui/selectors/nodes.py:45
 #: pylavcogs_shared/ui/selectors/playlist.py:63
 msgid "You are not authorized to interact with this option."
-msgstr ""
+msgstr "Non sei autorizzato a interagire con questa opzione."
 
 #: pylavcogs_shared/ui/selectors/nodes.py:52
 msgid "Disabling the following sources: {sources}"
-msgstr ""
+msgstr "Disabilitare le seguenti fonti: {sources}"
 
 #: pylavcogs_shared/ui/selectors/nodes.py:77
 msgid "Node not found."
-msgstr ""
+msgstr "Nodo non trovato."
 
 #: pylavcogs_shared/ui/selectors/playlist.py:36
 #: pylavcogs_shared/ui/selectors/playlist.py:72
 msgid "Playlist not found."
-msgstr ""
+msgstr "Playlist non trovata."
 
 #: pylavcogs_shared/ui/selectors/queue.py:85
 msgid "No Preset Selected."
-msgstr ""
+msgstr "Nessuna Preset Selezionata."
 
 #: pylavcogs_shared/ui/selectors/queue.py:119
 msgid "Track not found."
-msgstr ""
+msgstr "Traccia non trovata."
 

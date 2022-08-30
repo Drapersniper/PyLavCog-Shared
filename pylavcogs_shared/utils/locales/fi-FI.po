@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-30 19:02+0000\n"
-"PO-Revision-Date: 2022-08-30 19:03\n"
+"PO-Revision-Date: 2022-08-30 19:29\n"
 "Last-Translator: \n"
 "Language-Team: Finnish\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 #: pylavcogs_shared/utils/required_methods.py:49
 #, docstring
 msgid "Shows the credits and translation details for the PyLav cogs and shared code."
-msgstr ""
+msgstr "Näyttää krediitit ja käännökset PyLav koodeille ja jaetuille koodille."
 
 #: pylavcogs_shared/utils/required_methods.py:53
 msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
@@ -36,59 +36,71 @@ msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
 "- https://github.com/Drapersniper/PyLav-Cogs/graphs/contributors\n"
 "If you wish to buy me a coffee for my work, you can do so at:\n"
 "https://www.buymeacoffee.com/draper or https://github.com/sponsors/Drapersniper"
-msgstr ""
+msgstr "PyLavin on luonut [Draper#66](https://github.com/Drapersniper).\n\n"
+"PyLav voi sijaita osoitteessa https://github. om/Drapersniper/PyLav\n"
+"PyLavCog-Shared voi sijaita osoitteessa https://github.com/Drapersniper/PyLavCog-Shared\n"
+"PyLav-Cogs voi sijaita osoitteessa https://github. om/Drapersniper/PyLav-Cogs\n\n"
+"PyLavin tukipalvelin löytyy osoitteesta https://discord.com/invite/Sjh2TSCYQB\n\n\n"
+"Voit auttaa PyLavia kääntämisessä osallistumalla Crowdin-projekteihimme:\n"
+"https://crowdin. om/project/pylav ja https://crowdin.com/project/pylavcogs-shared ja https://crowdin.com/project/pylavcogs\n\n\n"
+"Kehittäjät:\n"
+"- https://github.com/Drapersniper/PyLav/graphs/contributors\n"
+"- https://github. om/Drapersniper/PyLavCog-Shared/graphs/contributors\n"
+"- https://github.com/Drapersniper/PyLav-Cogs/graphs/contributors\n"
+"Jos haluat ostaa minulle kahvin työtäni varten:\n"
+"https://www.buymeacoffee.com/draper tai https://github.com/sponsors/Drapersniper"
 
 #: pylavcogs_shared/utils/required_methods.py:83
 #, docstring
 msgid "Show the version of PyLav and PyLavCogs-Shared libraries."
-msgstr ""
+msgstr "Näytä PyLav- ja PyLavCogs-jaettujen kirjastojen versio."
 
 #: pylavcogs_shared/utils/required_methods.py:95
 msgid "Library"
-msgstr ""
+msgstr "Kirjasto"
 
 #: pylavcogs_shared/utils/required_methods.py:95
 msgid "Version"
-msgstr ""
+msgstr "Versio"
 
 #: pylavcogs_shared/utils/required_methods.py:109
 #, docstring
 msgid "Sync the Bots slash commands."
-msgstr ""
+msgstr "Synkronoi Botit kauttaviivakomennot."
 
 #: pylavcogs_shared/utils/required_methods.py:118
 msgid "Synced the bots slash commands."
-msgstr ""
+msgstr "Synkronoi botit kauttaviivakomennot"
 
 #: pylavcogs_shared/utils/required_methods.py:139
 msgid "This command requires an existing player to be run."
-msgstr ""
+msgstr "Tämä komento vaatii olemassa olevan pelaajan suorittamisen."
 
 #: pylavcogs_shared/utils/required_methods.py:148
 msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later."
-msgstr ""
+msgstr "MediaPlayerin koodaus on tällä hetkellä tilapäisesti poissa käytöstä, koska taustaosan palvelut eivät ole enää käytettävissä, yritä myöhemmin uudelleen."
 
 #: pylavcogs_shared/utils/required_methods.py:152
 msgid "No Lavalink node currently available."
-msgstr ""
+msgstr "Ei Lavalink solmua tällä hetkellä saatavilla."
 
 #: pylavcogs_shared/utils/required_methods.py:161
 msgid "MediaPlayer is currently unable to process tracks belonging to {feature}."
-msgstr ""
+msgstr "MediaPlayer ei tällä hetkellä pysty käsittelemään ryhmään {feature} kuuluvia kappaleita."
 
 #: pylavcogs_shared/utils/required_methods.py:164
 msgid "No Lavalink node currently available with feature {feature}."
-msgstr ""
+msgstr "Ei Lavalink solmua tällä hetkellä saatavilla ominaisuudella {feature}."
 
 #: pylavcogs_shared/utils/required_methods.py:175
 msgid "This command is not available in this channel. Please use {channel}"
-msgstr ""
+msgstr "Tämä komento ei ole käytettävissä tällä kanavalla. Käytä {channel}"
 
 #: pylavcogs_shared/utils/required_methods.py:187
 msgid "This command requires you to be a DJ."
-msgstr ""
+msgstr "Tämä komento edellyttää, että olet DJ."
 
 #: pylavcogs_shared/utils/required_methods.py:224
 msgid "PyLav is not ready - Please try again shortly."
-msgstr ""
+msgstr "PyLav ei ole valmis - Yritä hetken kuluttua uudelleen."
 

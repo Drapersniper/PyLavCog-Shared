@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-30 19:02+0000\n"
-"PO-Revision-Date: 2022-08-30 19:03\n"
+"PO-Revision-Date: 2022-08-30 19:29\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese\n"
 "MIME-Version: 1.0\n"
@@ -19,9 +19,9 @@ msgstr ""
 
 #: pylavcogs_shared/ui/selectors/options/nodes.py:31
 msgid "ID: {} || SSL: {} || Search-only: {}"
-msgstr ""
+msgstr "ID: {} econtra-SSL: {} Somente Pesquisas: {}"
 
 #: pylavcogs_shared/ui/selectors/options/playlist.py:19
 msgid "Tracks: {} || {} || {}"
-msgstr ""
+msgstr "Faixas: {} ^\\\\{} econtramens"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-30 19:02+0000\n"
-"PO-Revision-Date: 2022-08-30 19:03\n"
+"PO-Revision-Date: 2022-08-30 19:29\n"
 "Last-Translator: \n"
 "Language-Team: Dutch\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 #: pylavcogs_shared/utils/required_methods.py:49
 #, docstring
 msgid "Shows the credits and translation details for the PyLav cogs and shared code."
-msgstr ""
+msgstr "Toont de credits en vertaaldetails voor de PyLav cogs en gedeelde code."
 
 #: pylavcogs_shared/utils/required_methods.py:53
 msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
@@ -36,59 +36,71 @@ msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
 "- https://github.com/Drapersniper/PyLav-Cogs/graphs/contributors\n"
 "If you wish to buy me a coffee for my work, you can do so at:\n"
 "https://www.buymeacoffee.com/draper or https://github.com/sponsors/Drapersniper"
-msgstr ""
+msgstr "PyLav is gemaakt door [Draper#66](https://github.com/Drapersniper).\n\n"
+"PyLav kan zich bevinden op https://github. /Drapersniper/PyLav\n"
+"PyLavCog-Shared kan zich bevinden in https://github.com/Drapersniper/PyLavCog-Shared\n"
+"PyLav-Cog-Cogs kunnen geplaatst worden op https://github. om/Drapersniper/PyLav-Cogs\n\n"
+"PyLav's ondersteuningsserver kan worden gevonden op https://discord.com/invite/Sjh2TSCYQB\n\n\n"
+"Je kunt helpen met het vertalen van PyLav door een bijdrage te leveren aan onze Crowdin-projecten op:\n"
+"https://crowdin. om/project/pylav en https://crowdin.com/project/pylavcogs-shared en https://crowdin.com/project/pylavcogs\n\n\n"
+"Contributors:\n"
+"- https://github.com/Drapersniper/PyLav/graphs/contributors\n"
+"- https://github. om/Drapersniper/PyLavCog-Shared/graphs/contributors\n"
+"- https://github.com/Drapersniper/PyLav-Cogs/graphs/contributors\n"
+"Als je me een koffie wilt kopen voor mijn werk, kan je dat doen op:\n"
+"https://www.buymeacoffee.com/draper of https://github.com/sponsors/Drapersniper"
 
 #: pylavcogs_shared/utils/required_methods.py:83
 #, docstring
 msgid "Show the version of PyLav and PyLavCogs-Shared libraries."
-msgstr ""
+msgstr "Toon de versie van PyLav en PyLavCogs-Gedeelde bibliotheken."
 
 #: pylavcogs_shared/utils/required_methods.py:95
 msgid "Library"
-msgstr ""
+msgstr "Bibliotheek"
 
 #: pylavcogs_shared/utils/required_methods.py:95
 msgid "Version"
-msgstr ""
+msgstr "Versie"
 
 #: pylavcogs_shared/utils/required_methods.py:109
 #, docstring
 msgid "Sync the Bots slash commands."
-msgstr ""
+msgstr "Synchroniseer de bots slash commando's."
 
 #: pylavcogs_shared/utils/required_methods.py:118
 msgid "Synced the bots slash commands."
-msgstr ""
+msgstr "De bots slash commando's gesynchroniseerd."
 
 #: pylavcogs_shared/utils/required_methods.py:139
 msgid "This command requires an existing player to be run."
-msgstr ""
+msgstr "Deze opdracht vereist dat een bestaande speler wordt uitgevoerd."
 
 #: pylavcogs_shared/utils/required_methods.py:148
 msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later."
-msgstr ""
+msgstr "MediaPlayer cog is momenteel tijdelijk niet beschikbaar vanwege een storing met de backend diensten, probeer het later alstublieft opnieuw."
 
 #: pylavcogs_shared/utils/required_methods.py:152
 msgid "No Lavalink node currently available."
-msgstr ""
+msgstr "Er is geen Lavalink node momenteel beschikbaar."
 
 #: pylavcogs_shared/utils/required_methods.py:161
 msgid "MediaPlayer is currently unable to process tracks belonging to {feature}."
-msgstr ""
+msgstr "MediaPlayer kan momenteel geen tracks van {feature} verwerken."
 
 #: pylavcogs_shared/utils/required_methods.py:164
 msgid "No Lavalink node currently available with feature {feature}."
-msgstr ""
+msgstr "Er is geen Lavalink node beschikbaar met feature {feature}."
 
 #: pylavcogs_shared/utils/required_methods.py:175
 msgid "This command is not available in this channel. Please use {channel}"
-msgstr ""
+msgstr "Deze opdracht is niet beschikbaar in dit kanaal. Gebruik {channel}"
 
 #: pylavcogs_shared/utils/required_methods.py:187
 msgid "This command requires you to be a DJ."
-msgstr ""
+msgstr "Dit commando vereist dat je een DJ bent."
 
 #: pylavcogs_shared/utils/required_methods.py:224
 msgid "PyLav is not ready - Please try again shortly."
-msgstr ""
+msgstr "PyLav is niet klaar - Probeer het binnenkort opnieuw."
 
