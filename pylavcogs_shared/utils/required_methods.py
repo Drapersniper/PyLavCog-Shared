@@ -58,13 +58,15 @@ async def pylav_credits(context: PyLavContext) -> None:
                 "PyLav's support server can be found at https://discord.com/invite/Sjh2TSCYQB\n"
                 "\n\n"
                 "You can help translate PyLav by contributing to our Crowdin projects at:\n"
-                "https://crowdin.com/project/pylavshared and https://crowdin.com/project/mediaplayer\n\n\n"
+                "https://crowdin.com/project/pylav and "
+                "https://crowdin.com/project/pylavcogs-shared and "
+                "https://crowdin.com/project/pylavcogs\n\n\n"
                 "Contributors:\n"
                 "- https://github.com/Drapersniper/PyLav/graphs/contributors\n"
                 "- https://github.com/Drapersniper/PyLavCog-Shared/graphs/contributors\n"
                 "- https://github.com/Drapersniper/PyLav-Cogs/graphs/contributors\n"
                 "If you wish to buy me a coffee for my work, you can do so at:\n"
-                "https://www.buymeacoffee.com/draper"
+                "https://www.buymeacoffee.com/draper or https://github.com/sponsors/Drapersniper"
             ),
         ),
         ephemeral=True,

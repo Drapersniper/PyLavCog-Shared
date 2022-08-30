@@ -3,5 +3,5 @@ api_token_env: CROWDIN_API_KEY
 base_path: ./
 preserve_hierarchy: true
 files:
--   source: '**/messages.pot'
-    translation: '%original_path%/%locale%.po'
+-   source: pylavcogs_shared/**/messages.pot
+    translation: /%original_path%/%locale%.po
