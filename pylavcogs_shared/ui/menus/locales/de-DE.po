@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-31 13:15+0000\n"
-"PO-Revision-Date: 2022-08-31 13:19\n"
+"PO-Revision-Date: 2022-08-31 13:42\n"
 "Last-Translator: \n"
 "Language-Team: German\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr ""
 #: pylavcogs_shared/ui/menus/playlist.py:255
 #: pylavcogs_shared/ui/menus/playlist.py:470
 msgid "You are not authorized to interact with this"
-msgstr ""
+msgstr "Sie sind nicht berechtigt mit diesem zu interagieren"
 
 #: pylavcogs_shared/ui/menus/nodes.py:58
 msgid "Enter the domain or IP address of the host"
@@ -53,7 +53,7 @@ msgstr "Passwort"
 
 #: pylavcogs_shared/ui/menus/nodes.py:82
 msgid "Enter an easy to know name for the node"
-msgstr ""
+msgstr "Geben Sie einen leicht zu kennenden Namen für den Knoten ein"
 
 #: pylavcogs_shared/ui/menus/nodes.py:83
 #: pylavcogs_shared/ui/menus/nodes.py:516
@@ -62,7 +62,7 @@ msgstr "Name"
 
 #: pylavcogs_shared/ui/menus/nodes.py:90
 msgid "Enter a timeout in seconds"
-msgstr ""
+msgstr "Timeout in Sekunden eingeben"
 
 #: pylavcogs_shared/ui/menus/nodes.py:91
 #: pylavcogs_shared/ui/menus/nodes.py:524
@@ -72,7 +72,7 @@ msgstr "Timeout"
 #: pylavcogs_shared/ui/menus/nodes.py:106
 #: pylavcogs_shared/ui/menus/nodes.py:552
 msgid "Source to disable"
-msgstr ""
+msgstr "Zu deaktivierende Quelle"
 
 #: pylavcogs_shared/ui/menus/nodes.py:216
 #: pylavcogs_shared/ui/menus/nodes.py:660
@@ -92,7 +92,7 @@ msgstr "Host auf {host} gesetzt"
 #: pylavcogs_shared/ui/menus/nodes.py:264
 #: pylavcogs_shared/ui/menus/nodes.py:708
 msgid "Invalid port"
-msgstr ""
+msgstr "Ungültiger Port"
 
 #: pylavcogs_shared/ui/menus/nodes.py:272
 #: pylavcogs_shared/ui/menus/nodes.py:716
@@ -102,12 +102,12 @@ msgstr "Port auf {port} gesetzt"
 #: pylavcogs_shared/ui/menus/nodes.py:289
 #: pylavcogs_shared/ui/menus/nodes.py:733
 msgid "Invalid timeout, it must be a number in seconds"
-msgstr ""
+msgstr "Ungültiges Timeout, es muss eine Zahl in Sekunden sein"
 
 #: pylavcogs_shared/ui/menus/nodes.py:297
 #: pylavcogs_shared/ui/menus/nodes.py:741
 msgid "Timeout set to {timeout} seconds"
-msgstr ""
+msgstr "Timeout auf {timeout} Sekunden gesetzt"
 
 #: pylavcogs_shared/ui/menus/nodes.py:491
 msgid "Change the domain or IP address of the host"
@@ -123,11 +123,11 @@ msgstr "Passwort des Knotens ändern"
 
 #: pylavcogs_shared/ui/menus/nodes.py:515
 msgid "Change the name of this node"
-msgstr ""
+msgstr "Ändere den Namen dieses Knotens"
 
 #: pylavcogs_shared/ui/menus/nodes.py:523
 msgid "Enter the new timeout for this node"
-msgstr ""
+msgstr "Neuen Timeout für diesen Knoten eingeben"
 
 #: pylavcogs_shared/ui/menus/player.py:93
 msgid "selected"
@@ -143,7 +143,7 @@ msgstr "alle"
 
 #: pylavcogs_shared/ui/menus/player.py:204
 msgid "Not connected anywhere"
-msgstr ""
+msgstr "Keine Verbindung"
 
 #: pylavcogs_shared/ui/menus/playlist.py:186
 #: pylavcogs_shared/ui/menus/playlist.py:317

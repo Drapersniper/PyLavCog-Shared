@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-31 13:15+0000\n"
-"PO-Revision-Date: 2022-08-31 13:19\n"
+"PO-Revision-Date: 2022-08-31 13:42\n"
 "Last-Translator: \n"
 "Language-Team: Croatian\n"
 "MIME-Version: 1.0\n"
@@ -36,7 +36,7 @@ msgstr ""
 #: pylavcogs_shared/ui/buttons/playlist.py:300
 #: pylavcogs_shared/ui/buttons/playlist.py:346
 msgid "You are not authorized to interact with this option"
-msgstr ""
+msgstr "Niste ovlašteni za interakciju s ovom opcijom"
 
 #: pylavcogs_shared/ui/buttons/generic.py:80
 msgid "Yes"
@@ -95,7 +95,7 @@ msgstr ""
 #: pylavcogs_shared/ui/buttons/player.py:87
 #: pylavcogs_shared/ui/buttons/player.py:140
 msgid "You are not authorized to perform this action"
-msgstr ""
+msgstr "Niste autorizirani za tu radnju"
 
 #: pylavcogs_shared/ui/buttons/player.py:47
 #: pylavcogs_shared/ui/buttons/player.py:96
@@ -115,7 +115,7 @@ msgstr "Player odspojen"
 
 #: pylavcogs_shared/ui/buttons/player.py:107
 msgid "Player stopped"
-msgstr ""
+msgstr "Reproduciranje zaustavljeno"
 
 #: pylavcogs_shared/ui/buttons/player.py:154
 msgid "No Players Available For Action - Try Refreshing"
@@ -186,15 +186,15 @@ msgstr ""
 #: pylavcogs_shared/ui/buttons/queue.py:204
 #: pylavcogs_shared/ui/buttons/queue.py:227
 msgid "Not connected to a voice channel"
-msgstr ""
+msgstr "Nisam spojen na glasovni kanal"
 
 #: pylavcogs_shared/ui/buttons/queue.py:293
 msgid "There's nothing in the Queue"
-msgstr ""
+msgstr "Nema ičega u redu čekanja"
 
 #: pylavcogs_shared/ui/buttons/queue.py:300
 msgid "Removed tracks from the queue"
-msgstr ""
+msgstr "Pjesme maknute iz reda čekanja"
 
 #: pylavcogs_shared/ui/buttons/queue.py:326
 msgid "What do you want to enqueue?"

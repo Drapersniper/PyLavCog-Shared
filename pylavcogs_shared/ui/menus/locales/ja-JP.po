@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-31 13:15+0000\n"
-"PO-Revision-Date: 2022-08-31 13:19\n"
+"PO-Revision-Date: 2022-08-31 13:42\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr ""
 #: pylavcogs_shared/ui/menus/playlist.py:255
 #: pylavcogs_shared/ui/menus/playlist.py:470
 msgid "You are not authorized to interact with this"
-msgstr ""
+msgstr "これとやり取りする権限がありません"
 
 #: pylavcogs_shared/ui/menus/nodes.py:58
 msgid "Enter the domain or IP address of the host"
@@ -53,7 +53,7 @@ msgstr "パスワード"
 
 #: pylavcogs_shared/ui/menus/nodes.py:82
 msgid "Enter an easy to know name for the node"
-msgstr ""
+msgstr "ノードの名前を簡単に入力してください"
 
 #: pylavcogs_shared/ui/menus/nodes.py:83
 #: pylavcogs_shared/ui/menus/nodes.py:516
@@ -62,7 +62,7 @@ msgstr "名前"
 
 #: pylavcogs_shared/ui/menus/nodes.py:90
 msgid "Enter a timeout in seconds"
-msgstr ""
+msgstr "タイムアウト時間を秒単位で入力してください"
 
 #: pylavcogs_shared/ui/menus/nodes.py:91
 #: pylavcogs_shared/ui/menus/nodes.py:524
@@ -72,7 +72,7 @@ msgstr "タイムアウト"
 #: pylavcogs_shared/ui/menus/nodes.py:106
 #: pylavcogs_shared/ui/menus/nodes.py:552
 msgid "Source to disable"
-msgstr ""
+msgstr "無効にするソース"
 
 #: pylavcogs_shared/ui/menus/nodes.py:216
 #: pylavcogs_shared/ui/menus/nodes.py:660
@@ -92,7 +92,7 @@ msgstr "ホストが {host} に設定されました"
 #: pylavcogs_shared/ui/menus/nodes.py:264
 #: pylavcogs_shared/ui/menus/nodes.py:708
 msgid "Invalid port"
-msgstr ""
+msgstr "無効なポート"
 
 #: pylavcogs_shared/ui/menus/nodes.py:272
 #: pylavcogs_shared/ui/menus/nodes.py:716
@@ -102,12 +102,12 @@ msgstr "ポートを {port} に設定しました"
 #: pylavcogs_shared/ui/menus/nodes.py:289
 #: pylavcogs_shared/ui/menus/nodes.py:733
 msgid "Invalid timeout, it must be a number in seconds"
-msgstr ""
+msgstr "無効なタイムアウトです。数字を秒で入力してください。"
 
 #: pylavcogs_shared/ui/menus/nodes.py:297
 #: pylavcogs_shared/ui/menus/nodes.py:741
 msgid "Timeout set to {timeout} seconds"
-msgstr ""
+msgstr "タイムアウトを {timeout} 秒に設定しました"
 
 #: pylavcogs_shared/ui/menus/nodes.py:491
 msgid "Change the domain or IP address of the host"
@@ -123,11 +123,11 @@ msgstr "ノードのパスワードを変更する"
 
 #: pylavcogs_shared/ui/menus/nodes.py:515
 msgid "Change the name of this node"
-msgstr ""
+msgstr "このノードの名前を変更する"
 
 #: pylavcogs_shared/ui/menus/nodes.py:523
 msgid "Enter the new timeout for this node"
-msgstr ""
+msgstr "このノードの新しいタイムアウトを入力してください"
 
 #: pylavcogs_shared/ui/menus/player.py:93
 msgid "selected"
@@ -143,7 +143,7 @@ msgstr "すべて"
 
 #: pylavcogs_shared/ui/menus/player.py:204
 msgid "Not connected anywhere"
-msgstr ""
+msgstr "どこにも接続されていません"
 
 #: pylavcogs_shared/ui/menus/playlist.py:186
 #: pylavcogs_shared/ui/menus/playlist.py:317

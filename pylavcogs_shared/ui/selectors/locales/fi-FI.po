@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-31 13:15+0000\n"
-"PO-Revision-Date: 2022-08-31 13:19\n"
+"PO-Revision-Date: 2022-08-31 13:42\n"
 "Last-Translator: \n"
 "Language-Team: Finnish\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 #: pylavcogs_shared/ui/selectors/nodes.py:45
 #: pylavcogs_shared/ui/selectors/playlist.py:63
 msgid "You are not authorized to interact with this option"
-msgstr ""
+msgstr "Sinulla ei ole oikeutta olla vuorovaikutuksessa tämän vaihtoehdon kanssa"
 
 #: pylavcogs_shared/ui/selectors/nodes.py:52
 msgid "Disabling the following sources: {sources}"
@@ -28,18 +28,18 @@ msgstr "Poistetaan seuraavat lähteet käytöstä: {sources}"
 
 #: pylavcogs_shared/ui/selectors/nodes.py:77
 msgid "Node not found"
-msgstr ""
+msgstr "Solmua ei löydy"
 
 #: pylavcogs_shared/ui/selectors/playlist.py:36
 #: pylavcogs_shared/ui/selectors/playlist.py:72
 msgid "Playlist not found"
-msgstr ""
+msgstr "Soittolistaa ei löydy"
 
 #: pylavcogs_shared/ui/selectors/queue.py:85
 msgid "No Preset Selected"
-msgstr ""
+msgstr "Ei Esiasetusta Valittu"
 
 #: pylavcogs_shared/ui/selectors/queue.py:119
 msgid "Track not found"
-msgstr ""
+msgstr "Kappaletta ei löytynyt"
 

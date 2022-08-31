@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-31 13:15+0000\n"
-"PO-Revision-Date: 2022-08-31 13:19\n"
+"PO-Revision-Date: 2022-08-31 13:42\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr ""
 #: pylavcogs_shared/ui/menus/playlist.py:255
 #: pylavcogs_shared/ui/menus/playlist.py:470
 msgid "You are not authorized to interact with this"
-msgstr ""
+msgstr "Вы не авторизованы для взаимодействия с этим"
 
 #: pylavcogs_shared/ui/menus/nodes.py:58
 msgid "Enter the domain or IP address of the host"
@@ -53,7 +53,7 @@ msgstr "Пароль"
 
 #: pylavcogs_shared/ui/menus/nodes.py:82
 msgid "Enter an easy to know name for the node"
-msgstr ""
+msgstr "Введите легко знать имя узла"
 
 #: pylavcogs_shared/ui/menus/nodes.py:83
 #: pylavcogs_shared/ui/menus/nodes.py:516
@@ -62,7 +62,7 @@ msgstr "Наименование"
 
 #: pylavcogs_shared/ui/menus/nodes.py:90
 msgid "Enter a timeout in seconds"
-msgstr ""
+msgstr "Введите таймаут в секундах"
 
 #: pylavcogs_shared/ui/menus/nodes.py:91
 #: pylavcogs_shared/ui/menus/nodes.py:524
@@ -72,7 +72,7 @@ msgstr "Таймаут"
 #: pylavcogs_shared/ui/menus/nodes.py:106
 #: pylavcogs_shared/ui/menus/nodes.py:552
 msgid "Source to disable"
-msgstr ""
+msgstr "Источник для отключения"
 
 #: pylavcogs_shared/ui/menus/nodes.py:216
 #: pylavcogs_shared/ui/menus/nodes.py:660
@@ -92,7 +92,7 @@ msgstr "Узел установлен в {host}"
 #: pylavcogs_shared/ui/menus/nodes.py:264
 #: pylavcogs_shared/ui/menus/nodes.py:708
 msgid "Invalid port"
-msgstr ""
+msgstr "Неверный порт"
 
 #: pylavcogs_shared/ui/menus/nodes.py:272
 #: pylavcogs_shared/ui/menus/nodes.py:716
@@ -102,12 +102,12 @@ msgstr "Порт изменен на {port}"
 #: pylavcogs_shared/ui/menus/nodes.py:289
 #: pylavcogs_shared/ui/menus/nodes.py:733
 msgid "Invalid timeout, it must be a number in seconds"
-msgstr ""
+msgstr "Недопустимый таймаут, это должно быть числом в секундах"
 
 #: pylavcogs_shared/ui/menus/nodes.py:297
 #: pylavcogs_shared/ui/menus/nodes.py:741
 msgid "Timeout set to {timeout} seconds"
-msgstr ""
+msgstr "Таймаут установлен на {timeout} секунд"
 
 #: pylavcogs_shared/ui/menus/nodes.py:491
 msgid "Change the domain or IP address of the host"
@@ -123,11 +123,11 @@ msgstr "Изменить пароль узла"
 
 #: pylavcogs_shared/ui/menus/nodes.py:515
 msgid "Change the name of this node"
-msgstr ""
+msgstr "Изменить имя этого узла"
 
 #: pylavcogs_shared/ui/menus/nodes.py:523
 msgid "Enter the new timeout for this node"
-msgstr ""
+msgstr "Введите новый тайм-аут для этого узла"
 
 #: pylavcogs_shared/ui/menus/player.py:93
 msgid "selected"
@@ -143,7 +143,7 @@ msgstr "все"
 
 #: pylavcogs_shared/ui/menus/player.py:204
 msgid "Not connected anywhere"
-msgstr ""
+msgstr "Нигде не подключено"
 
 #: pylavcogs_shared/ui/menus/playlist.py:186
 #: pylavcogs_shared/ui/menus/playlist.py:317

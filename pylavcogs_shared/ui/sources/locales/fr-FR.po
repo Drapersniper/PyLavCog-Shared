@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-31 13:15+0000\n"
-"PO-Revision-Date: 2022-08-31 13:19\n"
+"PO-Revision-Date: 2022-08-31 13:42\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,7 @@ msgstr "Auteur"
 
 #: pylavcogs_shared/ui/sources/generic.py:83
 msgid "Page {page_num}/{total_pages} | {num} {entries}"
-msgstr ""
+msgstr "Page {page_num}/{total_pages} | {num} {entries}"
 
 #: pylavcogs_shared/ui/sources/generic.py:87
 msgid "entries"
@@ -39,7 +39,7 @@ msgstr "entrée"
 
 #: pylavcogs_shared/ui/sources/nodes.py:50
 msgid "Page {page_num}/{total_pages} | {num} nodes"
-msgstr ""
+msgstr "Page {page_num}/{total_pages} | {num} nodes"
 
 #: pylavcogs_shared/ui/sources/nodes.py:92
 #: pylavcogs_shared/ui/sources/nodes.py:93
@@ -197,7 +197,7 @@ msgstr "Plugins"
 #: pylavcogs_shared/ui/sources/nodes.py:173
 #: pylavcogs_shared/ui/sources/nodes.py:307
 msgid "Page {page_num}/{total_pages} | {num} {plural}"
-msgstr ""
+msgstr "Page {page_num}/{total_pages} | {num} {plural}"
 
 #: pylavcogs_shared/ui/sources/nodes.py:177
 #: pylavcogs_shared/ui/sources/nodes.py:311
@@ -215,7 +215,7 @@ msgstr "Aucun"
 
 #: pylavcogs_shared/ui/sources/player.py:73
 msgid "Nothing playing"
-msgstr ""
+msgstr "Rien ne joue"
 
 #: pylavcogs_shared/ui/sources/player.py:83
 msgid "Server Owner"
@@ -247,7 +247,7 @@ msgstr "Pistes"
 
 #: pylavcogs_shared/ui/sources/player.py:102
 msgid "Page {page_num}/{total_pages}  | Playing in {playing} {server_translation}"
-msgstr ""
+msgstr "Page {page_num}/{total_pages}  | Joue dans {playing} {server_translation}"
 
 #: pylavcogs_shared/ui/sources/player.py:106
 msgid "server"
@@ -260,15 +260,15 @@ msgstr "Serveurs"
 #: pylavcogs_shared/ui/sources/playlist.py:61
 #: pylavcogs_shared/ui/sources/playlist.py:188
 msgid "Page {page_num}/{total_pages} | {num} playlists"
-msgstr ""
+msgstr "Page {page_num}/{total_pages} | {num} listes de lecture"
 
 #: pylavcogs_shared/ui/sources/playlist.py:125
 msgid "Tracks in"
-msgstr ""
+msgstr "Pistes dans"
 
 #: pylavcogs_shared/ui/sources/playlist.py:130
 msgid "Page {page_num}/{total_pages} | {num_tracks} tracks\n"
-msgstr ""
+msgstr "Page {page_num}/{total_pages} | {num_tracks} pistes\n"
 
 #: pylavcogs_shared/ui/sources/playlist.py:173
 msgid "ID: {id}"
@@ -292,43 +292,43 @@ msgstr "Playlists auxquelles vous pouvez accéder sur ce serveur:"
 
 #: pylavcogs_shared/ui/sources/queue.py:97
 msgid "Reset the effects to default"
-msgstr ""
+msgstr "Réinitialiser les effets par défaut"
 
 #: pylavcogs_shared/ui/sources/queue.py:106
 msgid "Apply the Nightcore effect"
-msgstr ""
+msgstr "Appliquer l'effet Noir"
 
 #: pylavcogs_shared/ui/sources/queue.py:115
 msgid "Apply the Vaporwave effect"
-msgstr ""
+msgstr "Appliquer l'effet Vaporwave"
 
 #: pylavcogs_shared/ui/sources/queue.py:124
 msgid "Apply the Synth effect"
-msgstr ""
+msgstr "Appliquer l'effet Synth"
 
 #: pylavcogs_shared/ui/sources/queue.py:133
 msgid "Apply the Bassboost equalizer preset"
-msgstr ""
+msgstr "Appliquer le préréglage de l'égaliseur Bassboost"
 
 #: pylavcogs_shared/ui/sources/queue.py:142
 msgid "Apply the Metal equalizer preset"
-msgstr ""
+msgstr "Appliquer le préréglage de l'égaliseur métallique"
 
 #: pylavcogs_shared/ui/sources/queue.py:151
 msgid "Apply the Piano equalizer preset"
-msgstr ""
+msgstr "Appliquer le préréglage de l'égaliseur Piano"
 
 #: pylavcogs_shared/ui/sources/queue.py:211
 msgid "There's nothing in recently played"
-msgstr ""
+msgstr "Il n'y a rien dans les joués récemment"
 
 #: pylavcogs_shared/ui/sources/queue.py:213
 #: pylavcogs_shared/ui/sources/queue.py:256
 msgid "There's nothing currently being played"
-msgstr ""
+msgstr "Il n'y a rien en cours de lecture"
 
 #: pylavcogs_shared/ui/sources/queue.py:219
 #: pylavcogs_shared/ui/sources/queue.py:262
 msgid "No active player found in server"
-msgstr ""
+msgstr "Aucun joueur actif trouvé dans le serveur"
 
