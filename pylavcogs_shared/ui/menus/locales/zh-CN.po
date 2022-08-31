@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-08-30 19:02+0000\n"
-"PO-Revision-Date: 2022-08-30 19:29\n"
+"POT-Creation-Date: 2022-08-31 13:15+0000\n"
+"PO-Revision-Date: 2022-08-31 13:19\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
@@ -21,8 +21,8 @@ msgstr ""
 #: pylavcogs_shared/ui/menus/nodes.py:195
 #: pylavcogs_shared/ui/menus/playlist.py:255
 #: pylavcogs_shared/ui/menus/playlist.py:470
-msgid "You are not authorized to interact with this."
-msgstr "您无权与此进行交互。"
+msgid "You are not authorized to interact with this"
+msgstr ""
 
 #: pylavcogs_shared/ui/menus/nodes.py:58
 msgid "Enter the domain or IP address of the host"
@@ -52,8 +52,8 @@ msgid "Password"
 msgstr "密码"
 
 #: pylavcogs_shared/ui/menus/nodes.py:82
-msgid "Enter an easy to know name for the node."
-msgstr "输入一个容易知道的节点名称。"
+msgid "Enter an easy to know name for the node"
+msgstr ""
 
 #: pylavcogs_shared/ui/menus/nodes.py:83
 #: pylavcogs_shared/ui/menus/nodes.py:516
@@ -61,8 +61,8 @@ msgid "Name"
 msgstr "名称"
 
 #: pylavcogs_shared/ui/menus/nodes.py:90
-msgid "Enter a timeout in seconds."
-msgstr "以秒为单位输入超时。"
+msgid "Enter a timeout in seconds"
+msgstr ""
 
 #: pylavcogs_shared/ui/menus/nodes.py:91
 #: pylavcogs_shared/ui/menus/nodes.py:524
@@ -71,8 +71,8 @@ msgstr "超时"
 
 #: pylavcogs_shared/ui/menus/nodes.py:106
 #: pylavcogs_shared/ui/menus/nodes.py:552
-msgid "Source to disable."
-msgstr "要禁用的源代码。"
+msgid "Source to disable"
+msgstr ""
 
 #: pylavcogs_shared/ui/menus/nodes.py:216
 #: pylavcogs_shared/ui/menus/nodes.py:660
@@ -91,8 +91,8 @@ msgstr "主机设置为 {host}"
 
 #: pylavcogs_shared/ui/menus/nodes.py:264
 #: pylavcogs_shared/ui/menus/nodes.py:708
-msgid "Invalid port."
-msgstr "无效端口。"
+msgid "Invalid port"
+msgstr ""
 
 #: pylavcogs_shared/ui/menus/nodes.py:272
 #: pylavcogs_shared/ui/menus/nodes.py:716
@@ -101,13 +101,13 @@ msgstr "端口设置为 {port}"
 
 #: pylavcogs_shared/ui/menus/nodes.py:289
 #: pylavcogs_shared/ui/menus/nodes.py:733
-msgid "Invalid timeout, it must be a number in seconds."
-msgstr "无效的超时，它必须是一个以秒为单位的数字。"
+msgid "Invalid timeout, it must be a number in seconds"
+msgstr ""
 
 #: pylavcogs_shared/ui/menus/nodes.py:297
 #: pylavcogs_shared/ui/menus/nodes.py:741
-msgid "Timeout set to {timeout} seconds."
-msgstr "超时设置为 {timeout} 秒。"
+msgid "Timeout set to {timeout} seconds"
+msgstr ""
 
 #: pylavcogs_shared/ui/menus/nodes.py:491
 msgid "Change the domain or IP address of the host"
@@ -122,12 +122,12 @@ msgid "Change the node's password"
 msgstr "更改节点密码"
 
 #: pylavcogs_shared/ui/menus/nodes.py:515
-msgid "Change the name of this node."
-msgstr "更改此节点的名称。"
+msgid "Change the name of this node"
+msgstr ""
 
 #: pylavcogs_shared/ui/menus/nodes.py:523
-msgid "Enter the new timeout for this node."
-msgstr "输入此节点的新超时。"
+msgid "Enter the new timeout for this node"
+msgstr ""
 
 #: pylavcogs_shared/ui/menus/player.py:93
 msgid "selected"
@@ -142,8 +142,8 @@ msgid "all"
 msgstr "所有的"
 
 #: pylavcogs_shared/ui/menus/player.py:204
-msgid "Not connected anywhere."
-msgstr "未连接任何地方。"
+msgid "Not connected anywhere"
+msgstr ""
 
 #: pylavcogs_shared/ui/menus/playlist.py:186
 #: pylavcogs_shared/ui/menus/playlist.py:317

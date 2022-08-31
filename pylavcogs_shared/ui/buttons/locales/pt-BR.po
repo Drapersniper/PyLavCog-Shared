@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-08-30 19:02+0000\n"
-"PO-Revision-Date: 2022-08-30 19:29\n"
+"POT-Creation-Date: 2022-08-31 13:15+0000\n"
+"PO-Revision-Date: 2022-08-31 13:19\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese, Brazilian\n"
 "MIME-Version: 1.0\n"
@@ -35,8 +35,8 @@ msgstr ""
 #: pylavcogs_shared/ui/buttons/playlist.py:254
 #: pylavcogs_shared/ui/buttons/playlist.py:300
 #: pylavcogs_shared/ui/buttons/playlist.py:346
-msgid "You are not authorized to interact with this option."
-msgstr "Você não está autorizado a interagir com esta opção."
+msgid "You are not authorized to interact with this option"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/generic.py:80
 msgid "Yes"
@@ -59,32 +59,32 @@ msgid "player"
 msgstr "jogador"
 
 #: pylavcogs_shared/ui/buttons/nodes.py:56
-msgid "Connecting to the node with SSL enabled..."
-msgstr "Conectando-se ao nó com SSL habilitado..."
+msgid "Connecting to the node with SSL enabled"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/nodes.py:63
-msgid "Connecting to the node with SSL disabled..."
-msgstr "Conectar ao nó com SSL desabilitado..."
+msgid "Connecting to the node with SSL disabled"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/nodes.py:101
-msgid "This node will only be used for searches..."
-msgstr "Este nó só será usado para pesquisas..."
+msgid "This node will only be used for searches"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/nodes.py:108
-msgid "This node will be used for search and playback..."
-msgstr "Este nó será usado para busca e reprodução..."
+msgid "This node will be used for search and playback"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/nodes.py:139
-msgid "Please fill out all the fields before continuing."
-msgstr "Por favor, preencha todos os campos antes de continuar."
+msgid "Please fill out all the fields before continuing"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/nodes.py:219
-msgid "When you press done this node will be permanently delete..."
-msgstr "Quando clicar em fazer isso, este nó será excluído permanentemente..."
+msgid "When you press done this node will be permanently delete"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/nodes.py:221
-msgid "This node will no longer be deleted once you press done..."
-msgstr "Este nó não será mais excluído quando você pressionar em breve..."
+msgid "This node will no longer be deleted once you press done"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/nodes.py:254
 msgid "__Enabled sources__:\n"
@@ -95,13 +95,13 @@ msgstr "__Fontes habilitadas__:\n"
 #: pylavcogs_shared/ui/buttons/player.py:38
 #: pylavcogs_shared/ui/buttons/player.py:87
 #: pylavcogs_shared/ui/buttons/player.py:140
-msgid "You are not authorized to perform this action."
-msgstr "Você não está autorizado a executar esta ação."
+msgid "You are not authorized to perform this action"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/player.py:47
 #: pylavcogs_shared/ui/buttons/player.py:96
-msgid "No Player Available For Action - Try Refreshing."
-msgstr "Nenhum jogador disponível para ação - tente atualizar."
+msgid "No Player Available For Action - Try Refreshing"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/player.py:56
 #: pylavcogs_shared/ui/buttons/player.py:107
@@ -115,28 +115,28 @@ msgid "Player disconnected"
 msgstr "Jogador desconectado"
 
 #: pylavcogs_shared/ui/buttons/player.py:107
-msgid "Player stopped."
-msgstr "Reprodutor parou."
+msgid "Player stopped"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/player.py:154
-msgid "No Players Available For Action - Try Refreshing."
-msgstr "Nenhum jogador disponível para ação - tente atualizar."
+msgid "No Players Available For Action - Try Refreshing"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/playlist.py:51
-msgid "When you press done this playlist will be permanently delete..."
-msgstr "Quando você pressionar essa playlist será excluída permanentemente..."
+msgid "When you press done this playlist will be permanently delete"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/playlist.py:53
-msgid "This playlist will no longer be deleted once you press done..."
-msgstr "Essa playlist não será mais excluída depois que você pressionar em breve..."
+msgid "This playlist will no longer be deleted once you press done"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/playlist.py:86
-msgid "Clearing all tracks from the playlist playlist..."
-msgstr "Limpando todas as faixas da lista de reprodução..."
+msgid "Clearing all tracks from the playlist playlist"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/playlist.py:88
-msgid "No longer clearing tracks from the playlist..."
-msgstr "Não mais limpando as músicas da playlist..."
+msgid "No longer clearing tracks from the playlist"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/playlist.py:129
 msgid "Here is your playlist: {name}{extras}"
@@ -149,28 +149,28 @@ msgstr "\n"
 " (compactado usando o gzip para tornar possível o envio via Discord - você pode usar <https://gzip.swimburger.net/> para descompactá-lo)"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:171
-msgid "Updating playlist with the latest tracks..."
-msgstr "Atualizando playlist com as últimas faixas..."
+msgid "Updating playlist with the latest tracks"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/playlist.py:174
-msgid "Not updating playlist..."
-msgstr "Não atualizando playlist..."
+msgid "Not updating playlist"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/playlist.py:262
-msgid "Adding the current queue to playlist..."
-msgstr "Adicionando a fila atual à playlist..."
+msgid "Adding the current queue to playlist"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/playlist.py:269
-msgid "No longer adding the current queue to playlist..."
-msgstr "Não mais adicionando a fila atual à lista de reprodução..."
+msgid "No longer adding the current queue to playlist"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/playlist.py:308
-msgid "Removing all duplicate tracks from the queue..."
-msgstr "Removendo todas as faixas duplicadas da fila..."
+msgid "Removing all duplicate tracks from the queue"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/playlist.py:315
-msgid "No longer all duplicate tracks from the queue..."
-msgstr "Não há mais faixas duplicadas da fila..."
+msgid "No longer all duplicate tracks from the queue"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/playlist.py:403
 msgid "Playlists you can currently play"
@@ -187,16 +187,16 @@ msgstr "Qual deve ser o nome da playlist?"
 #: pylavcogs_shared/ui/buttons/queue.py:164
 #: pylavcogs_shared/ui/buttons/queue.py:204
 #: pylavcogs_shared/ui/buttons/queue.py:227
-msgid "Not connected to a voice channel."
-msgstr "Não está conectado a um canal de voz."
+msgid "Not connected to a voice channel"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/queue.py:293
-msgid "There's nothing in the Queue."
-msgstr "Não há nada na fila."
+msgid "There's nothing in the Queue"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/queue.py:300
-msgid "Removed tracks from the queue."
-msgstr "Músicas removidas da fila."
+msgid "Removed tracks from the queue"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/queue.py:326
 msgid "What do you want to enqueue?"

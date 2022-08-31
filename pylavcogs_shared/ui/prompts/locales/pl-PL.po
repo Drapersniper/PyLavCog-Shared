@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-08-30 19:02+0000\n"
-"PO-Revision-Date: 2022-08-30 19:29\n"
+"POT-Creation-Date: 2022-08-31 13:15+0000\n"
+"PO-Revision-Date: 2022-08-31 13:19\n"
 "Last-Translator: \n"
 "Language-Team: Polish\n"
 "MIME-Version: 1.0\n"
@@ -18,16 +18,16 @@ msgstr ""
 "Language: pl_PL\n"
 
 #: pylavcogs_shared/ui/prompts/nodes.py:28
-msgid "Multiple nodes matched, pick the one which you meant."
-msgstr "Wiele węzłów, które pasują, wybierz to, które oznaczysz."
+msgid "Multiple nodes matched, pick the one which you meant"
+msgstr ""
 
 #: pylavcogs_shared/ui/prompts/nodes.py:34
 msgid "Pick a node"
 msgstr "Wybierz węzeł"
 
 #: pylavcogs_shared/ui/prompts/playlists.py:30
-msgid "Multiple playlist matched, pick the one which you meant."
-msgstr "Wielokrotna playlista pasuje, wybierz taką, którą oznaczysz."
+msgid "Multiple playlist matched, pick the one which you meant"
+msgstr ""
 
 #: pylavcogs_shared/ui/prompts/playlists.py:36
 msgid "Pick a playlist"

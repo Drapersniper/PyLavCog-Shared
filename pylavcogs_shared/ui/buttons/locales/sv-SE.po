@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-08-30 19:02+0000\n"
-"PO-Revision-Date: 2022-08-30 19:29\n"
+"POT-Creation-Date: 2022-08-31 13:15+0000\n"
+"PO-Revision-Date: 2022-08-31 13:19\n"
 "Last-Translator: \n"
 "Language-Team: Swedish\n"
 "MIME-Version: 1.0\n"
@@ -35,8 +35,8 @@ msgstr ""
 #: pylavcogs_shared/ui/buttons/playlist.py:254
 #: pylavcogs_shared/ui/buttons/playlist.py:300
 #: pylavcogs_shared/ui/buttons/playlist.py:346
-msgid "You are not authorized to interact with this option."
-msgstr "Du har inte behörighet att interagera med det här alternativet."
+msgid "You are not authorized to interact with this option"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/generic.py:80
 msgid "Yes"
@@ -59,32 +59,32 @@ msgid "player"
 msgstr "spelare"
 
 #: pylavcogs_shared/ui/buttons/nodes.py:56
-msgid "Connecting to the node with SSL enabled..."
-msgstr "Ansluter till noden med SSL aktiverat..."
+msgid "Connecting to the node with SSL enabled"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/nodes.py:63
-msgid "Connecting to the node with SSL disabled..."
-msgstr "Ansluter till noden med SSL inaktiverad..."
+msgid "Connecting to the node with SSL disabled"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/nodes.py:101
-msgid "This node will only be used for searches..."
-msgstr "Den här noden kommer endast att användas för sökningar..."
+msgid "This node will only be used for searches"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/nodes.py:108
-msgid "This node will be used for search and playback..."
-msgstr "Denna nod kommer att användas för sökning och uppspelning..."
+msgid "This node will be used for search and playback"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/nodes.py:139
-msgid "Please fill out all the fields before continuing."
-msgstr "Vänligen fyll i alla fält innan du fortsätter."
+msgid "Please fill out all the fields before continuing"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/nodes.py:219
-msgid "When you press done this node will be permanently delete..."
-msgstr "När du trycker på klar, kommer noden att tas bort permanent..."
+msgid "When you press done this node will be permanently delete"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/nodes.py:221
-msgid "This node will no longer be deleted once you press done..."
-msgstr "Den här noden kommer inte längre att tas bort när du trycker på..."
+msgid "This node will no longer be deleted once you press done"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/nodes.py:254
 msgid "__Enabled sources__:\n"
@@ -95,13 +95,13 @@ msgstr "__Aktiverade källor__:\n"
 #: pylavcogs_shared/ui/buttons/player.py:38
 #: pylavcogs_shared/ui/buttons/player.py:87
 #: pylavcogs_shared/ui/buttons/player.py:140
-msgid "You are not authorized to perform this action."
-msgstr "Du har inte behörighet att utföra denna åtgärd."
+msgid "You are not authorized to perform this action"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/player.py:47
 #: pylavcogs_shared/ui/buttons/player.py:96
-msgid "No Player Available For Action - Try Refreshing."
-msgstr "Ingen spelare tillgänglig för åtgärd - Försök att uppdatera."
+msgid "No Player Available For Action - Try Refreshing"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/player.py:56
 #: pylavcogs_shared/ui/buttons/player.py:107
@@ -115,28 +115,28 @@ msgid "Player disconnected"
 msgstr "Spelare frånkopplad"
 
 #: pylavcogs_shared/ui/buttons/player.py:107
-msgid "Player stopped."
-msgstr "Spelaren har stoppats."
+msgid "Player stopped"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/player.py:154
-msgid "No Players Available For Action - Try Refreshing."
-msgstr "Inga spelare tillgängliga för åtgärd - Försök att uppdatera."
+msgid "No Players Available For Action - Try Refreshing"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/playlist.py:51
-msgid "When you press done this playlist will be permanently delete..."
-msgstr "När du trycker på klar kommer denna spellista att raderas permanent..."
+msgid "When you press done this playlist will be permanently delete"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/playlist.py:53
-msgid "This playlist will no longer be deleted once you press done..."
-msgstr "Denna spellista kommer inte längre att raderas när du trycker på..."
+msgid "This playlist will no longer be deleted once you press done"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/playlist.py:86
-msgid "Clearing all tracks from the playlist playlist..."
-msgstr "Rensar alla spår från spellistan spellista..."
+msgid "Clearing all tracks from the playlist playlist"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/playlist.py:88
-msgid "No longer clearing tracks from the playlist..."
-msgstr "Rensar inte längre spår från spellistan..."
+msgid "No longer clearing tracks from the playlist"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/playlist.py:129
 msgid "Here is your playlist: {name}{extras}"
@@ -149,28 +149,28 @@ msgstr "\n"
 " (komprimerat med gzip för att göra det möjligt att skicka via Discord - du kan använda <https://gzip.swimburger.net/> för att decompress den)"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:171
-msgid "Updating playlist with the latest tracks..."
-msgstr "Uppdaterar spellistan med de senaste låtarna..."
+msgid "Updating playlist with the latest tracks"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/playlist.py:174
-msgid "Not updating playlist..."
-msgstr "Uppdaterar inte spellista..."
+msgid "Not updating playlist"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/playlist.py:262
-msgid "Adding the current queue to playlist..."
-msgstr "Lägger till den aktuella kön i spellistan..."
+msgid "Adding the current queue to playlist"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/playlist.py:269
-msgid "No longer adding the current queue to playlist..."
-msgstr "Lägger inte längre till den aktuella kön i spellistan..."
+msgid "No longer adding the current queue to playlist"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/playlist.py:308
-msgid "Removing all duplicate tracks from the queue..."
-msgstr "Tar bort alla dubblettspår från kön..."
+msgid "Removing all duplicate tracks from the queue"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/playlist.py:315
-msgid "No longer all duplicate tracks from the queue..."
-msgstr "Inte längre alla dubblettspår från kön..."
+msgid "No longer all duplicate tracks from the queue"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/playlist.py:403
 msgid "Playlists you can currently play"
@@ -187,16 +187,16 @@ msgstr "Vad ska namnet på spellistan vara?"
 #: pylavcogs_shared/ui/buttons/queue.py:164
 #: pylavcogs_shared/ui/buttons/queue.py:204
 #: pylavcogs_shared/ui/buttons/queue.py:227
-msgid "Not connected to a voice channel."
-msgstr "Inte ansluten till en röstkanal."
+msgid "Not connected to a voice channel"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/queue.py:293
-msgid "There's nothing in the Queue."
-msgstr "Det finns inget i kön."
+msgid "There's nothing in the Queue"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/queue.py:300
-msgid "Removed tracks from the queue."
-msgstr "Tog bort spår från kön."
+msgid "Removed tracks from the queue"
+msgstr ""
 
 #: pylavcogs_shared/ui/buttons/queue.py:326
 msgid "What do you want to enqueue?"
