@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-30 19:02+0000\n"
-"PO-Revision-Date: 2022-08-30 20:48\n"
+"PO-Revision-Date: 2022-08-31 11:31\n"
 "Last-Translator: \n"
 "Language-Team: Croatian\n"
 "MIME-Version: 1.0\n"
@@ -23,11 +23,11 @@ msgstr ""
 
 #: pylavcogs_shared/ui/sources/equalizer.py:35
 msgid "Author"
-msgstr ""
+msgstr "Autor"
 
 #: pylavcogs_shared/ui/sources/generic.py:83
 msgid "Page {page_num}/{total_pages} | {num} {entries}."
-msgstr ""
+msgstr "Stranica {page_num}/{total_pages} | {num} {entries}."
 
 #: pylavcogs_shared/ui/sources/generic.py:87
 msgid "entries"
@@ -48,7 +48,7 @@ msgstr ""
 #: pylavcogs_shared/ui/sources/nodes.py:228
 #: pylavcogs_shared/ui/sources/nodes.py:229
 msgid "Yes"
-msgstr ""
+msgstr "Da"
 
 #: pylavcogs_shared/ui/sources/nodes.py:92
 #: pylavcogs_shared/ui/sources/nodes.py:93
@@ -57,19 +57,20 @@ msgstr ""
 #: pylavcogs_shared/ui/sources/nodes.py:228
 #: pylavcogs_shared/ui/sources/nodes.py:229
 msgid "No"
-msgstr ""
+msgstr "Ne"
 
 #: pylavcogs_shared/ui/sources/nodes.py:135
 #: pylavcogs_shared/ui/sources/nodes.py:271
 msgid "Name: {name}\n"
 "Version: {version}\n\n"
-msgstr ""
+msgstr "Ime: {name}\n"
+"Verzija: {version}\n\n"
 
 #: pylavcogs_shared/ui/sources/nodes.py:136
 #: pylavcogs_shared/ui/sources/nodes.py:272
 #: pylavcogs_shared/ui/sources/playlist.py:166
 msgid "Unknown"
-msgstr ""
+msgstr "Nepoznato"
 
 #: pylavcogs_shared/ui/sources/nodes.py:136
 #: pylavcogs_shared/ui/sources/nodes.py:272
@@ -78,7 +79,7 @@ msgstr "verzija"
 
 #: pylavcogs_shared/ui/sources/nodes.py:138
 msgid "None / Unknown"
-msgstr ""
+msgstr "Ništa / Nepoznato"
 
 #: pylavcogs_shared/ui/sources/nodes.py:140
 #: pylavcogs_shared/ui/sources/nodes.py:266
@@ -93,23 +94,24 @@ msgstr ""
 #: pylavcogs_shared/ui/sources/nodes.py:143
 #: pylavcogs_shared/ui/sources/nodes.py:277
 msgid "Region"
-msgstr ""
+msgstr "Regija"
 
 #: pylavcogs_shared/ui/sources/nodes.py:143
 #: pylavcogs_shared/ui/sources/nodes.py:277
 msgid "N/A"
-msgstr ""
+msgstr "Nema"
 
 #: pylavcogs_shared/ui/sources/nodes.py:144
 #: pylavcogs_shared/ui/sources/nodes.py:278
 msgid "Coordinates"
-msgstr ""
+msgstr "Koordinate"
 
 #: pylavcogs_shared/ui/sources/nodes.py:144
 #: pylavcogs_shared/ui/sources/nodes.py:278
 msgid "Latitude: {lat}\n"
 "Longitude: {lon}"
-msgstr ""
+msgstr "Geografska širina: {lat}\n"
+"Geografska dužina: {lon}"
 
 #: pylavcogs_shared/ui/sources/nodes.py:147
 #: pylavcogs_shared/ui/sources/nodes.py:281
@@ -129,24 +131,26 @@ msgstr ""
 #: pylavcogs_shared/ui/sources/nodes.py:150
 #: pylavcogs_shared/ui/sources/nodes.py:284
 msgid "SSL"
-msgstr ""
+msgstr "SSL"
 
 #: pylavcogs_shared/ui/sources/nodes.py:151
 #: pylavcogs_shared/ui/sources/nodes.py:285
 msgid "Available"
-msgstr ""
+msgstr "Dostupno"
 
 #: pylavcogs_shared/ui/sources/nodes.py:152
 #: pylavcogs_shared/ui/sources/nodes.py:286
 msgid "Search Only"
-msgstr ""
+msgstr "Samo pretraga"
 
 #: pylavcogs_shared/ui/sources/nodes.py:153
 #: pylavcogs_shared/ui/sources/nodes.py:287
 msgid "Players\n"
 "Connected\n"
 "Active"
-msgstr ""
+msgstr "Playeri\n"
+"Povezani\n"
+"Aktivni"
 
 #: pylavcogs_shared/ui/sources/nodes.py:155
 #: pylavcogs_shared/ui/sources/nodes.py:289
@@ -156,7 +160,7 @@ msgstr ""
 #: pylavcogs_shared/ui/sources/nodes.py:158
 #: pylavcogs_shared/ui/sources/nodes.py:292
 msgid "Uptime"
-msgstr ""
+msgstr "Ukupno vrijeme rada"
 
 #: pylavcogs_shared/ui/sources/nodes.py:159
 #: pylavcogs_shared/ui/sources/nodes.py:293
@@ -168,7 +172,7 @@ msgstr ""
 #: pylavcogs_shared/ui/sources/nodes.py:160
 #: pylavcogs_shared/ui/sources/nodes.py:294
 msgid "Penalty"
-msgstr ""
+msgstr "Penal"
 
 #: pylavcogs_shared/ui/sources/nodes.py:161
 #: pylavcogs_shared/ui/sources/nodes.py:295
@@ -187,7 +191,7 @@ msgstr ""
 #: pylavcogs_shared/ui/sources/nodes.py:173
 #: pylavcogs_shared/ui/sources/nodes.py:307
 msgid "Page {page_num}/{total_pages} | {num} {plural}."
-msgstr ""
+msgstr "Stranica {page_num}/{total_pages} | {num} {plural}."
 
 #: pylavcogs_shared/ui/sources/nodes.py:177
 #: pylavcogs_shared/ui/sources/nodes.py:311
@@ -201,7 +205,7 @@ msgstr ""
 
 #: pylavcogs_shared/ui/sources/nodes.py:274
 msgid "None"
-msgstr ""
+msgstr "Ništa"
 
 #: pylavcogs_shared/ui/sources/player.py:73
 msgid "Nothing playing."
@@ -209,23 +213,23 @@ msgstr "Ništa ne svira."
 
 #: pylavcogs_shared/ui/sources/player.py:83
 msgid "Server Owner"
-msgstr ""
+msgstr "Vlasnik servera"
 
 #: pylavcogs_shared/ui/sources/player.py:84
 msgid "Connected For"
-msgstr ""
+msgstr "Povezan"
 
 #: pylavcogs_shared/ui/sources/player.py:85
 msgid "Users in VC"
-msgstr ""
+msgstr "Korisnici u glasovnom kanalu"
 
 #: pylavcogs_shared/ui/sources/player.py:86
 msgid "Queue Length"
-msgstr ""
+msgstr "Duljina reda čekanaj"
 
 #: pylavcogs_shared/ui/sources/player.py:86
 msgid "{} {}"
-msgstr ""
+msgstr "{} {}"
 
 #: pylavcogs_shared/ui/sources/player.py:88
 msgid "Queue History Length"
@@ -233,64 +237,64 @@ msgstr ""
 
 #: pylavcogs_shared/ui/sources/player.py:89
 msgid "{count} {track_translation}"
-msgstr ""
+msgstr "{count} {track_translation}"
 
 #: pylavcogs_shared/ui/sources/player.py:90
 msgid "track"
-msgstr ""
+msgstr "pjesma"
 
 #: pylavcogs_shared/ui/sources/player.py:90
 msgid "tracks"
-msgstr ""
+msgstr "pjesme"
 
 #: pylavcogs_shared/ui/sources/player.py:102
 msgid "Page {page_num}/{total_pages}  | Playing in {playing} {server_translation}."
-msgstr ""
+msgstr "Stranica {page_num}/{total_pages}  | Svira u {playing} {server_translation}."
 
 #: pylavcogs_shared/ui/sources/player.py:106
 msgid "server"
-msgstr ""
+msgstr "server"
 
 #: pylavcogs_shared/ui/sources/player.py:106
 msgid "servers"
-msgstr ""
+msgstr "servera"
 
 #: pylavcogs_shared/ui/sources/playlist.py:61
 #: pylavcogs_shared/ui/sources/playlist.py:186
 msgid "Page {page_num}/{total_pages} | {num} playlists."
-msgstr ""
+msgstr "Stranica {page_num}/{total_pages} | {num} popisa za reprodukciju."
 
 #: pylavcogs_shared/ui/sources/playlist.py:124
 msgid "Tracks in __{name}__"
-msgstr ""
+msgstr "Pjesme u __{name}__"
 
 #: pylavcogs_shared/ui/sources/playlist.py:171
 msgid "ID: {id}"
-msgstr ""
+msgstr "ID: {id}"
 
 #: pylavcogs_shared/ui/sources/playlist.py:172
 msgid "Tracks: {num}"
-msgstr ""
+msgstr "Broj pjesama: {num}"
 
 #: pylavcogs_shared/ui/sources/playlist.py:173
 msgid "Author: {name}"
-msgstr ""
+msgstr "Autor: {name}"
 
 #: pylavcogs_shared/ui/sources/playlist.py:174
 msgid "Scope: {scope}\n"
-msgstr ""
+msgstr "Opseg: {scope}\n"
 
 #: pylavcogs_shared/ui/sources/playlist.py:182
 msgid "Playlists you can access in this server:"
-msgstr ""
+msgstr "Popisi za reprodukciju kojima možete pristupiti na ovom serveru:"
 
 #: pylavcogs_shared/ui/sources/queue.py:97
 msgid "Reset the effects to default."
-msgstr ""
+msgstr "Resetiraj efekte na zadane"
 
 #: pylavcogs_shared/ui/sources/queue.py:106
 msgid "Apply the Nightcore effect."
-msgstr ""
+msgstr "Primjeni Nightcore efekt."
 
 #: pylavcogs_shared/ui/sources/queue.py:115
 msgid "Apply the Vaporwave effect."

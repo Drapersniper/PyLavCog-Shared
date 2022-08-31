@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-30 19:02+0000\n"
-"PO-Revision-Date: 2022-08-30 20:48\n"
+"PO-Revision-Date: 2022-08-31 11:31\n"
 "Last-Translator: \n"
 "Language-Team: Croatian\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr ""
 #: pylavcogs_shared/ui/menus/playlist.py:255
 #: pylavcogs_shared/ui/menus/playlist.py:470
 msgid "You are not authorized to interact with this."
-msgstr ""
+msgstr "Niste ovlašteni za interakciju s ovim."
 
 #: pylavcogs_shared/ui/menus/nodes.py:58
 msgid "Enter the domain or IP address of the host"
@@ -131,69 +131,69 @@ msgstr ""
 
 #: pylavcogs_shared/ui/menus/player.py:93
 msgid "selected"
-msgstr ""
+msgstr "odabrano"
 
 #: pylavcogs_shared/ui/menus/player.py:100
 msgid "inactive"
-msgstr ""
+msgstr "neaktivno"
 
 #: pylavcogs_shared/ui/menus/player.py:110
 msgid "all"
-msgstr ""
+msgstr "sve"
 
 #: pylavcogs_shared/ui/menus/player.py:204
 msgid "Not connected anywhere."
-msgstr ""
+msgstr "Nisam igdje povezan."
 
 #: pylavcogs_shared/ui/menus/playlist.py:186
 #: pylavcogs_shared/ui/menus/playlist.py:317
 msgid "Please enter the playlist URL"
-msgstr ""
+msgstr "Unesite URL popisa za reprodukciju"
 
 #: pylavcogs_shared/ui/menus/playlist.py:187
 #: pylavcogs_shared/ui/menus/playlist.py:318
 msgid "Playlist URL"
-msgstr ""
+msgstr "URL popisa za reprodukciju"
 
 #: pylavcogs_shared/ui/menus/playlist.py:192
 msgid "Please enter the playlist name"
-msgstr ""
+msgstr "Unesite naziv popisa za reprodukciju"
 
 #: pylavcogs_shared/ui/menus/playlist.py:192
 #: pylavcogs_shared/ui/menus/playlist.py:323
 msgid "Playlist Name"
-msgstr ""
+msgstr "Naziv popisa za reprodukciju"
 
 #: pylavcogs_shared/ui/menus/playlist.py:323
 msgid "Please enter the new playlist name"
-msgstr ""
+msgstr "Unesite novi naziv popisa za reprodukciju"
 
 #: pylavcogs_shared/ui/menus/playlist.py:328
 msgid "What query to add to the playlist"
-msgstr ""
+msgstr "Koji upit dodati u popis za reprodukciju"
 
 #: pylavcogs_shared/ui/menus/playlist.py:329
 #: pylavcogs_shared/ui/menus/playlist.py:337
 msgid "Query"
-msgstr ""
+msgstr "Upit"
 
 #: pylavcogs_shared/ui/menus/playlist.py:336
 msgid "What query to remove from the playlist"
-msgstr ""
+msgstr "Koji upit ukloniti s popisa za reprodukciju"
 
 #: pylavcogs_shared/ui/menus/queue.py:463
 msgid "Select Track To Remove"
-msgstr ""
+msgstr "Odaberi pjesmu koja će biti uklonjena"
 
 #: pylavcogs_shared/ui/menus/queue.py:465
 msgid "Select Track To Play Now"
-msgstr ""
+msgstr "Odaberi pjesmu za reprodukciju"
 
 #: pylavcogs_shared/ui/menus/queue.py:567
 msgid "Pick An Effect Preset To Apply"
-msgstr ""
+msgstr "Odaberi unaprijed postavljeni efekt za primjenu"
 
 #: pylavcogs_shared/ui/menus/queue.py:716
 msgid "Select Track To Enqueue"
-msgstr ""
+msgstr "Odaberi pjesmu koja će bit dodana u red čekanja"
 
