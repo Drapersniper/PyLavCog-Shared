@@ -34,9 +34,7 @@ _ = Translator("PyLavShared", Path(__file__))
 _LOCK = threading.Lock()
 LOGGER = getLogger("red.3pt.PyLav-Shared.utils.overrides")
 
-INCOMPATIBLE_COGS = {
-    "ReactToCommand",
-}
+INCOMPATIBLE_COGS = {}
 
 
 @commands.command(
