@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-08-30 20:55+0000\n"
-"PO-Revision-Date: 2022-08-30 20:57\n"
+"POT-Creation-Date: 2022-08-31 13:15+0000\n"
+"PO-Revision-Date: 2022-08-31 13:19\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
@@ -19,8 +19,8 @@ msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:49
 #, docstring
-msgid "Shows the credits and translation details for the PyLav cogs and shared code."
-msgstr "显示 PyLav 代码和共享代码的信用和翻译细节。"
+msgid "Shows the credits and translation details for the PyLav cogs and shared code"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:53
 msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
@@ -52,8 +52,8 @@ msgstr "PyLav 由 [Draper#6666](https://github.com/Draversniper)创建。\n\n"
 
 #: pylavcogs_shared/utils/required_methods.py:83
 #, docstring
-msgid "Show the version of PyLav and PyLavCogs-Shared libraries."
-msgstr "显示 PyLav 和 PyLavCogs-Shared 库的版本。"
+msgid "Show the version of PyLav and PyLavCogs-Shared libraries"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:95
 msgid "Library"
@@ -65,42 +65,42 @@ msgstr "版本"
 
 #: pylavcogs_shared/utils/required_methods.py:109
 #, docstring
-msgid "Sync the Bots slash commands."
-msgstr "同步 Bots 斜杠命令。"
+msgid "Sync the Bots slash commands"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:118
-msgid "Synced the bots slash commands."
-msgstr "同步了机器人斜杠命令。"
+msgid "Synced the bots slash commands"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:139
-msgid "This command requires an existing player to be run."
-msgstr "此命令需要运行一个现有的播放器。"
+msgid "This command requires an existing player to be run"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:148
-msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later."
-msgstr "由于后端服务中断，MediaPlayer cog目前暂时不可用，请稍后再试。"
+msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:152
-msgid "No Lavalink node currently available."
-msgstr "无可用的 Lavalink 节点。"
+msgid "No Lavalink node currently available"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:161
-msgid "MediaPlayer is currently unable to process tracks belonging to {feature}."
-msgstr "MediaPlayer 目前无法处理属于 {feature} 的曲目。"
+msgid "MediaPlayer is currently unable to process tracks belonging to {feature}"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:164
-msgid "No Lavalink node currently available with feature {feature}."
-msgstr "目前没有带有功能 {feature} 的Lavallink 节点。"
+msgid "No Lavalink node currently available with feature {feature}"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:175
 msgid "This command is not available in this channel. Please use {channel}"
 msgstr "此命令在此频道不可用。请使用 {channel}"
 
 #: pylavcogs_shared/utils/required_methods.py:187
-msgid "This command requires you to be a DJ."
-msgstr "此命令要求您是DJ。"
+msgid "This command requires you to be a DJ"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:225
-msgid "PyLav is not ready - Please try again shortly."
-msgstr "PyLav 尚未准备好，请稍后再试。"
+msgid "PyLav is not ready - Please try again shortly"
+msgstr ""
 

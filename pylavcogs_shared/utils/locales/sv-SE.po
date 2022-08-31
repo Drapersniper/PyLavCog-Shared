@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-08-30 20:55+0000\n"
-"PO-Revision-Date: 2022-08-30 20:57\n"
+"POT-Creation-Date: 2022-08-31 13:15+0000\n"
+"PO-Revision-Date: 2022-08-31 13:19\n"
 "Last-Translator: \n"
 "Language-Team: Swedish\n"
 "MIME-Version: 1.0\n"
@@ -19,8 +19,8 @@ msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:49
 #, docstring
-msgid "Shows the credits and translation details for the PyLav cogs and shared code."
-msgstr "Visar krediter och översättningsdetaljer för PyLav kuggar och delad kod."
+msgid "Shows the credits and translation details for the PyLav cogs and shared code"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:53
 msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
@@ -52,8 +52,8 @@ msgstr "PyLav skapades av [Draper#6666](https://github.com/Drapersniper).\n\n"
 
 #: pylavcogs_shared/utils/required_methods.py:83
 #, docstring
-msgid "Show the version of PyLav and PyLavCogs-Shared libraries."
-msgstr "Visa versionen av PyLav och PyLavCogs-delade bibliotek."
+msgid "Show the version of PyLav and PyLavCogs-Shared libraries"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:95
 msgid "Library"
@@ -65,42 +65,42 @@ msgstr "Version"
 
 #: pylavcogs_shared/utils/required_methods.py:109
 #, docstring
-msgid "Sync the Bots slash commands."
-msgstr "Synkronisera bots snedstreck kommandon."
+msgid "Sync the Bots slash commands"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:118
-msgid "Synced the bots slash commands."
-msgstr "Synkroniserade bots snedstreck kommandon."
+msgid "Synced the bots slash commands"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:139
-msgid "This command requires an existing player to be run."
-msgstr "Detta kommando kräver att en befintlig spelare körs."
+msgid "This command requires an existing player to be run"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:148
-msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later."
-msgstr "MediaPlayer-cog är för närvarande inte tillgänglig på grund av ett driftavbrott i backend-tjänsterna, försök igen senare."
+msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:152
-msgid "No Lavalink node currently available."
-msgstr "Ingen Lavalink-nod tillgänglig för tillfället."
+msgid "No Lavalink node currently available"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:161
-msgid "MediaPlayer is currently unable to process tracks belonging to {feature}."
-msgstr "MediaPlayer kan för närvarande inte bearbeta spår som tillhör {feature}."
+msgid "MediaPlayer is currently unable to process tracks belonging to {feature}"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:164
-msgid "No Lavalink node currently available with feature {feature}."
-msgstr "Ingen Lavalink-nod finns för närvarande med funktionen {feature}."
+msgid "No Lavalink node currently available with feature {feature}"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:175
 msgid "This command is not available in this channel. Please use {channel}"
 msgstr "Detta kommando är inte tillgängligt i denna kanal. Använd {channel}"
 
 #: pylavcogs_shared/utils/required_methods.py:187
-msgid "This command requires you to be a DJ."
-msgstr "Detta kommando kräver att du är DJ."
+msgid "This command requires you to be a DJ"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:225
-msgid "PyLav is not ready - Please try again shortly."
-msgstr "PyLav är inte redo - Försök igen inom kort."
+msgid "PyLav is not ready - Please try again shortly"
+msgstr ""
 

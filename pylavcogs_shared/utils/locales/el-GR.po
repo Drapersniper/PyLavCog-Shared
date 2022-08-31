@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-08-30 20:55+0000\n"
-"PO-Revision-Date: 2022-08-30 20:57\n"
+"POT-Creation-Date: 2022-08-31 13:15+0000\n"
+"PO-Revision-Date: 2022-08-31 13:19\n"
 "Last-Translator: \n"
 "Language-Team: Greek\n"
 "MIME-Version: 1.0\n"
@@ -19,8 +19,8 @@ msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:49
 #, docstring
-msgid "Shows the credits and translation details for the PyLav cogs and shared code."
-msgstr "Εμφανίζει τις πιστώσεις και τα στοιχεία μετάφρασης για τα PyLav cogs και κοινόχρηστο κώδικα."
+msgid "Shows the credits and translation details for the PyLav cogs and shared code"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:53
 msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
@@ -52,8 +52,8 @@ msgstr "Το PyLav δημιουργήθηκε από το [Draper#6666](https://
 
 #: pylavcogs_shared/utils/required_methods.py:83
 #, docstring
-msgid "Show the version of PyLav and PyLavCogs-Shared libraries."
-msgstr "Εμφάνιση της έκδοσης των PyLav και PyLavCogs-Shared βιβλιοθήκες."
+msgid "Show the version of PyLav and PyLavCogs-Shared libraries"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:95
 msgid "Library"
@@ -65,42 +65,42 @@ msgstr "Έκδοση"
 
 #: pylavcogs_shared/utils/required_methods.py:109
 #, docstring
-msgid "Sync the Bots slash commands."
-msgstr "Συγχρονισμός των εντολών slash των Bots."
+msgid "Sync the Bots slash commands"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:118
-msgid "Synced the bots slash commands."
-msgstr "Συγχρονισμός των εντολών κάθετου bots."
+msgid "Synced the bots slash commands"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:139
-msgid "This command requires an existing player to be run."
-msgstr "Αυτή η εντολή απαιτεί την εκτέλεση ενός υπάρχοντος παίκτη."
+msgid "This command requires an existing player to be run"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:148
-msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later."
-msgstr "Ο κωδικός του MediaPlayer δεν είναι προσωρινά διαθέσιμος λόγω διακοπής λειτουργίας με τις υπηρεσίες του συστήματος υποστήριξης, παρακαλώ προσπαθήστε ξανά αργότερα."
+msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:152
-msgid "No Lavalink node currently available."
-msgstr "Δεν υπάρχει διαθέσιμος κόμβος Lavalink."
+msgid "No Lavalink node currently available"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:161
-msgid "MediaPlayer is currently unable to process tracks belonging to {feature}."
-msgstr "Το MediaPlayer δεν είναι σε θέση να επεξεργαστεί κομμάτια που ανήκουν στο {feature}."
+msgid "MediaPlayer is currently unable to process tracks belonging to {feature}"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:164
-msgid "No Lavalink node currently available with feature {feature}."
-msgstr "Δεν υπάρχει διαθέσιμος κόμβος Lavalink με το χαρακτηριστικό {feature}."
+msgid "No Lavalink node currently available with feature {feature}"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:175
 msgid "This command is not available in this channel. Please use {channel}"
 msgstr "Αυτή η εντολή δεν είναι διαθέσιμη σε αυτό το κανάλι. Παρακαλούμε χρησιμοποιήστε {channel}"
 
 #: pylavcogs_shared/utils/required_methods.py:187
-msgid "This command requires you to be a DJ."
-msgstr "Αυτή η εντολή απαιτεί να γίνετε DJ."
+msgid "This command requires you to be a DJ"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:225
-msgid "PyLav is not ready - Please try again shortly."
-msgstr "Το PyLav δεν είναι έτοιμο - Παρακαλώ δοκιμάστε ξανά σύντομα."
+msgid "PyLav is not ready - Please try again shortly"
+msgstr ""
 

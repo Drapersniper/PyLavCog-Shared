@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-08-30 20:55+0000\n"
-"PO-Revision-Date: 2022-08-30 20:57\n"
+"POT-Creation-Date: 2022-08-31 13:15+0000\n"
+"PO-Revision-Date: 2022-08-31 13:19\n"
 "Last-Translator: \n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
@@ -19,8 +19,8 @@ msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:49
 #, docstring
-msgid "Shows the credits and translation details for the PyLav cogs and shared code."
-msgstr "Показує інформацію про кредити та переклад, для розділених кодів і коду."
+msgid "Shows the credits and translation details for the PyLav cogs and shared code"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:53
 msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
@@ -52,8 +52,8 @@ msgstr "PyLav був створений [Draper#66](https://github.com/Drapersni
 
 #: pylavcogs_shared/utils/required_methods.py:83
 #, docstring
-msgid "Show the version of PyLav and PyLavCogs-Shared libraries."
-msgstr "Показати версію PyLav і PyLavCogs-Shared бібліотек."
+msgid "Show the version of PyLav and PyLavCogs-Shared libraries"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:95
 msgid "Library"
@@ -65,42 +65,42 @@ msgstr "Версія"
 
 #: pylavcogs_shared/utils/required_methods.py:109
 #, docstring
-msgid "Sync the Bots slash commands."
-msgstr "Синхронізація команд у Ботах з косою рискою."
+msgid "Sync the Bots slash commands"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:118
-msgid "Synced the bots slash commands."
-msgstr "Синхронізовані леш-команди ботів."
+msgid "Synced the bots slash commands"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:139
-msgid "This command requires an existing player to be run."
-msgstr "Ця команда вимагає для запуску існуючого гравця."
+msgid "This command requires an existing player to be run"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:148
-msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later."
-msgstr "Програма MediaPlayer в даний час тимчасово недоступна через відключення з адміністративними послугами, будь ласка, спробуйте пізніше."
+msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:152
-msgid "No Lavalink node currently available."
-msgstr "На даний момент відсутній Лавалінковий вузол."
+msgid "No Lavalink node currently available"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:161
-msgid "MediaPlayer is currently unable to process tracks belonging to {feature}."
-msgstr "Наразі MediaPlayer не може обробити треки, що належать до {feature}."
+msgid "MediaPlayer is currently unable to process tracks belonging to {feature}"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:164
-msgid "No Lavalink node currently available with feature {feature}."
-msgstr "На даний момент лаволінійний вузол не доступний за допомогою функції {feature}."
+msgid "No Lavalink node currently available with feature {feature}"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:175
 msgid "This command is not available in this channel. Please use {channel}"
 msgstr "Ця команда недоступна у цьому каналі. Будь ласка, використовуйте {channel}"
 
 #: pylavcogs_shared/utils/required_methods.py:187
-msgid "This command requires you to be a DJ."
-msgstr "Ця команда потребує, щоб ви були DJ."
+msgid "This command requires you to be a DJ"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:225
-msgid "PyLav is not ready - Please try again shortly."
-msgstr "PyLav не готовий - Скоро спробуйте ще раз."
+msgid "PyLav is not ready - Please try again shortly"
+msgstr ""
 

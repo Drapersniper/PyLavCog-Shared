@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-08-30 20:55+0000\n"
-"PO-Revision-Date: 2022-08-30 20:57\n"
+"POT-Creation-Date: 2022-08-31 13:15+0000\n"
+"PO-Revision-Date: 2022-08-31 13:19\n"
 "Last-Translator: \n"
 "Language-Team: Romanian\n"
 "MIME-Version: 1.0\n"
@@ -19,8 +19,8 @@ msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:49
 #, docstring
-msgid "Shows the credits and translation details for the PyLav cogs and shared code."
-msgstr "Afișează detalii despre credite și traduceri pentru cogurile PyLav și codul partajat."
+msgid "Shows the credits and translation details for the PyLav cogs and shared code"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:53
 msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
@@ -52,8 +52,8 @@ msgstr "PyLav a fost creat de [Draper#6666](https://github.com/Drapersniper).\n\
 
 #: pylavcogs_shared/utils/required_methods.py:83
 #, docstring
-msgid "Show the version of PyLav and PyLavCogs-Shared libraries."
-msgstr "Arată versiunea de librării PyLav şi PyLavCogs-Shared"
+msgid "Show the version of PyLav and PyLavCogs-Shared libraries"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:95
 msgid "Library"
@@ -65,42 +65,42 @@ msgstr "Versiune"
 
 #: pylavcogs_shared/utils/required_methods.py:109
 #, docstring
-msgid "Sync the Bots slash commands."
-msgstr "Sincronizează comenzile Bots slash comenzi."
+msgid "Sync the Bots slash commands"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:118
-msgid "Synced the bots slash commands."
-msgstr "Sincronizați comenzile de tăietură a boților."
+msgid "Synced the bots slash commands"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:139
-msgid "This command requires an existing player to be run."
-msgstr "Această comandă necesită un jucător existent pentru a rula."
+msgid "This command requires an existing player to be run"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:148
-msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later."
-msgstr "Cogul MediaPlayer este momentan indisponibil din cauza unei întreruperi cu serviciile backend, te rugăm să încerci din nou mai târziu."
+msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:152
-msgid "No Lavalink node currently available."
-msgstr "Nici un nod Lavalink disponibil în prezent."
+msgid "No Lavalink node currently available"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:161
-msgid "MediaPlayer is currently unable to process tracks belonging to {feature}."
-msgstr "MediaPlayer nu poate procesa piesele care aparțin lui {feature}."
+msgid "MediaPlayer is currently unable to process tracks belonging to {feature}"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:164
-msgid "No Lavalink node currently available with feature {feature}."
-msgstr "Niciun nod Lavalink disponibil în prezent cu caracteristica {feature}."
+msgid "No Lavalink node currently available with feature {feature}"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:175
 msgid "This command is not available in this channel. Please use {channel}"
 msgstr "Această comandă nu este disponibilă în acest canal. Te rugăm să folosești {channel}"
 
 #: pylavcogs_shared/utils/required_methods.py:187
-msgid "This command requires you to be a DJ."
-msgstr "Această comandă necesită să fii un DJ."
+msgid "This command requires you to be a DJ"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:225
-msgid "PyLav is not ready - Please try again shortly."
-msgstr "PyLav nu este gata - încercaţi din nou în scurt timp."
+msgid "PyLav is not ready - Please try again shortly"
+msgstr ""
 

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-08-30 20:55+0000\n"
-"PO-Revision-Date: 2022-08-30 20:57\n"
+"POT-Creation-Date: 2022-08-31 13:15+0000\n"
+"PO-Revision-Date: 2022-08-31 13:19\n"
 "Last-Translator: \n"
 "Language-Team: Hindi\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:49
 #, docstring
-msgid "Shows the credits and translation details for the PyLav cogs and shared code."
+msgid "Shows the credits and translation details for the PyLav cogs and shared code"
 msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:53
@@ -40,7 +40,7 @@ msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:83
 #, docstring
-msgid "Show the version of PyLav and PyLavCogs-Shared libraries."
+msgid "Show the version of PyLav and PyLavCogs-Shared libraries"
 msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:95
@@ -53,31 +53,31 @@ msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:109
 #, docstring
-msgid "Sync the Bots slash commands."
+msgid "Sync the Bots slash commands"
 msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:118
-msgid "Synced the bots slash commands."
+msgid "Synced the bots slash commands"
 msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:139
-msgid "This command requires an existing player to be run."
-msgstr "ये कमांड को चलाने के लिए एक्सिस्टिंग प्लेयर की जरूरत होती है |"
+msgid "This command requires an existing player to be run"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:148
-msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later."
-msgstr "मीडियाप्लेयर कोग वर्तमान में अस्थायी रूप से बैकएन्ड सर्विस से हुयी  कमी के कारण मौजूद नहीं है, कृपया कुछ देर बाद दोबारा प्रयास करें"
+msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:152
-msgid "No Lavalink node currently available."
-msgstr "लावालिंक नोड वर्तमान में उपलब्ध नहीं है"
+msgid "No Lavalink node currently available"
+msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:161
-msgid "MediaPlayer is currently unable to process tracks belonging to {feature}."
+msgid "MediaPlayer is currently unable to process tracks belonging to {feature}"
 msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:164
-msgid "No Lavalink node currently available with feature {feature}."
+msgid "No Lavalink node currently available with feature {feature}"
 msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:175
@@ -85,10 +85,10 @@ msgid "This command is not available in this channel. Please use {channel}"
 msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:187
-msgid "This command requires you to be a DJ."
+msgid "This command requires you to be a DJ"
 msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:225
-msgid "PyLav is not ready - Please try again shortly."
+msgid "PyLav is not ready - Please try again shortly"
 msgstr ""
 
