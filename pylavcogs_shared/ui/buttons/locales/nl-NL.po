@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-31 13:15+0000\n"
-"PO-Revision-Date: 2022-08-31 13:19\n"
+"PO-Revision-Date: 2022-08-31 13:42\n"
 "Last-Translator: \n"
 "Language-Team: Dutch\n"
 "MIME-Version: 1.0\n"
@@ -36,7 +36,7 @@ msgstr ""
 #: pylavcogs_shared/ui/buttons/playlist.py:300
 #: pylavcogs_shared/ui/buttons/playlist.py:346
 msgid "You are not authorized to interact with this option"
-msgstr ""
+msgstr "Je bent niet bevoegd om met deze optie te communiceren"
 
 #: pylavcogs_shared/ui/buttons/generic.py:80
 msgid "Yes"
@@ -60,31 +60,31 @@ msgstr "speler"
 
 #: pylavcogs_shared/ui/buttons/nodes.py:56
 msgid "Connecting to the node with SSL enabled"
-msgstr ""
+msgstr "Verbinden met node met SSL ingeschakeld"
 
 #: pylavcogs_shared/ui/buttons/nodes.py:63
 msgid "Connecting to the node with SSL disabled"
-msgstr ""
+msgstr "Verbinden met node met SSL uitgeschakeld"
 
 #: pylavcogs_shared/ui/buttons/nodes.py:101
 msgid "This node will only be used for searches"
-msgstr ""
+msgstr "This node will only be used for search"
 
 #: pylavcogs_shared/ui/buttons/nodes.py:108
 msgid "This node will be used for search and playback"
-msgstr ""
+msgstr "This node will be used for search and play"
 
 #: pylavcogs_shared/ui/buttons/nodes.py:139
 msgid "Please fill out all the fields before continuing"
-msgstr ""
+msgstr "Gelieve alle velden in te vullen voordat u verder gaat"
 
 #: pylavcogs_shared/ui/buttons/nodes.py:219
 msgid "When you press done this node will be permanently delete"
-msgstr ""
+msgstr "Wanneer u op dit knooppunt drukt wordt het permanent verwijderd"
 
 #: pylavcogs_shared/ui/buttons/nodes.py:221
 msgid "This node will no longer be deleted once you press done"
-msgstr ""
+msgstr "Dit knooppunt zal niet langer worden verwijderd zodra u tikt"
 
 #: pylavcogs_shared/ui/buttons/nodes.py:254
 msgid "__Enabled sources__:\n"
@@ -96,12 +96,12 @@ msgstr "__Ingeschakelde bronnen__:\n"
 #: pylavcogs_shared/ui/buttons/player.py:87
 #: pylavcogs_shared/ui/buttons/player.py:140
 msgid "You are not authorized to perform this action"
-msgstr ""
+msgstr "U bent niet bevoegd om deze actie uit te voeren"
 
 #: pylavcogs_shared/ui/buttons/player.py:47
 #: pylavcogs_shared/ui/buttons/player.py:96
 msgid "No Player Available For Action - Try Refreshing"
-msgstr ""
+msgstr "Geen speler beschikbaar voor actie - Probeer te verversen"
 
 #: pylavcogs_shared/ui/buttons/player.py:56
 #: pylavcogs_shared/ui/buttons/player.py:107
@@ -116,27 +116,27 @@ msgstr "Speler verbroken"
 
 #: pylavcogs_shared/ui/buttons/player.py:107
 msgid "Player stopped"
-msgstr ""
+msgstr "Speler gestopt"
 
 #: pylavcogs_shared/ui/buttons/player.py:154
 msgid "No Players Available For Action - Try Refreshing"
-msgstr ""
+msgstr "Geen spelers beschikbaar voor actie - Probeer te verversen"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:51
 msgid "When you press done this playlist will be permanently delete"
-msgstr ""
+msgstr "Wanneer je op klaar drukt, zal deze afspeellijst permanent worden verwijderd"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:53
 msgid "This playlist will no longer be deleted once you press done"
-msgstr ""
+msgstr "Deze afspeellijst zal niet meer worden verwijderd zodra je tikt"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:86
 msgid "Clearing all tracks from the playlist playlist"
-msgstr ""
+msgstr "Alle nummers wissen van de afspeellijst"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:88
 msgid "No longer clearing tracks from the playlist"
-msgstr ""
+msgstr "Nummers niet langer wissen uit de afspeellijst"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:129
 msgid "Here is your playlist: {name}{extras}"
@@ -150,27 +150,27 @@ msgstr "\n"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:171
 msgid "Updating playlist with the latest tracks"
-msgstr ""
+msgstr "Bijwerken van afspeellijst met de nieuwste nummers"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:174
 msgid "Not updating playlist"
-msgstr ""
+msgstr "Afspeellijst wordt niet bijgewerkt"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:262
 msgid "Adding the current queue to playlist"
-msgstr ""
+msgstr "De huidige wachtrij aan afspeellijst toevoegen"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:269
 msgid "No longer adding the current queue to playlist"
-msgstr ""
+msgstr "Niet langer de huidige wachtrij aan afspeellijst toevoegen"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:308
 msgid "Removing all duplicate tracks from the queue"
-msgstr ""
+msgstr "Alle dubbele nummers uit de wachtrij verwijderen"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:315
 msgid "No longer all duplicate tracks from the queue"
-msgstr ""
+msgstr "Niet meer alle dubbele nummers uit de wachtrij"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:403
 msgid "Playlists you can currently play"
@@ -188,15 +188,15 @@ msgstr "Wat moet de naam van de afspeellijst zijn?"
 #: pylavcogs_shared/ui/buttons/queue.py:204
 #: pylavcogs_shared/ui/buttons/queue.py:227
 msgid "Not connected to a voice channel"
-msgstr ""
+msgstr "Niet verbonden met een spraakkanaal"
 
 #: pylavcogs_shared/ui/buttons/queue.py:293
 msgid "There's nothing in the Queue"
-msgstr ""
+msgstr "Er is niets in de wachtrij"
 
 #: pylavcogs_shared/ui/buttons/queue.py:300
 msgid "Removed tracks from the queue"
-msgstr ""
+msgstr "Tracks verwijderd uit de wachtrij"
 
 #: pylavcogs_shared/ui/buttons/queue.py:326
 msgid "What do you want to enqueue?"

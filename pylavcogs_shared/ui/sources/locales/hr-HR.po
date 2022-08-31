@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-31 13:15+0000\n"
-"PO-Revision-Date: 2022-08-31 13:19\n"
+"PO-Revision-Date: 2022-08-31 13:42\n"
 "Last-Translator: \n"
 "Language-Team: Croatian\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,7 @@ msgstr "Autor"
 
 #: pylavcogs_shared/ui/sources/generic.py:83
 msgid "Page {page_num}/{total_pages} | {num} {entries}"
-msgstr ""
+msgstr "Stranica {page_num}/{total_pages} | {num} {entries}"
 
 #: pylavcogs_shared/ui/sources/generic.py:87
 msgid "entries"
@@ -191,7 +191,7 @@ msgstr ""
 #: pylavcogs_shared/ui/sources/nodes.py:173
 #: pylavcogs_shared/ui/sources/nodes.py:307
 msgid "Page {page_num}/{total_pages} | {num} {plural}"
-msgstr ""
+msgstr "Stranica {page_num}/{total_pages} | {num} {plural}"
 
 #: pylavcogs_shared/ui/sources/nodes.py:177
 #: pylavcogs_shared/ui/sources/nodes.py:311
@@ -209,7 +209,7 @@ msgstr "Ništa"
 
 #: pylavcogs_shared/ui/sources/player.py:73
 msgid "Nothing playing"
-msgstr ""
+msgstr "Ništa ne svira"
 
 #: pylavcogs_shared/ui/sources/player.py:83
 msgid "Server Owner"
@@ -241,7 +241,7 @@ msgstr "pjesme"
 
 #: pylavcogs_shared/ui/sources/player.py:102
 msgid "Page {page_num}/{total_pages}  | Playing in {playing} {server_translation}"
-msgstr ""
+msgstr "Stranica {page_num}/{total_pages}  | Svira u {playing} {server_translation}"
 
 #: pylavcogs_shared/ui/sources/player.py:106
 msgid "server"
@@ -254,7 +254,7 @@ msgstr "servera"
 #: pylavcogs_shared/ui/sources/playlist.py:61
 #: pylavcogs_shared/ui/sources/playlist.py:188
 msgid "Page {page_num}/{total_pages} | {num} playlists"
-msgstr ""
+msgstr "Stranica {page_num}/{total_pages} | {num} popisa za reprodukciju"
 
 #: pylavcogs_shared/ui/sources/playlist.py:125
 msgid "Tracks in"
@@ -290,7 +290,7 @@ msgstr ""
 
 #: pylavcogs_shared/ui/sources/queue.py:106
 msgid "Apply the Nightcore effect"
-msgstr ""
+msgstr "Primjeni Nightcore efekt"
 
 #: pylavcogs_shared/ui/sources/queue.py:115
 msgid "Apply the Vaporwave effect"
