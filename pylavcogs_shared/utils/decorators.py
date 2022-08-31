@@ -3,6 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 
 import discord
+from discord import app_commands
 from redbot.core import commands
 from redbot.core.i18n import Translator
 
@@ -15,14 +16,14 @@ from pylavcogs_shared.errors import NotDJError, UnauthorizedChannelError
 _ = Translator("PyLavShared", Path(__file__))
 
 
-def always_hidden():
-    async def pred(__: PyLavContext):
+def always_hidden(slash: bool = False):
+    async def pred(__: InteractionT | PyLavContext) -> bool:
         return False
 
-    return commands.check(pred)
+    return app_commands.check(pred) if slash else commands.check(pred)
 
 
-def requires_player():
+def requires_player(slash: bool = False):
     async def pred(context: PyLavContext | InteractionT):
         if isinstance(context, discord.Interaction):
             if not context.response.is_done():
@@ -40,10 +41,10 @@ def requires_player():
             raise errors.MediaPlayerNotFoundError(context)
         return True
 
-    return commands.check(pred)
+    return app_commands.check(pred) if slash else commands.check(pred)
 
 
-def can_run_command_in_channel():
+def can_run_command_in_channel(slash: bool = False):
     async def pred(context: PyLavContext | InteractionT):
         if isinstance(context, discord.Interaction):
             if not context.response.is_done():
@@ -68,7 +69,7 @@ def can_run_command_in_channel():
             raise UnauthorizedChannelError(channel=config.text_channel_id)
         return True
 
-    return commands.check(pred)
+    return app_commands.check(pred) if slash else commands.check(pred)
 
 
 async def is_dj_logic(context: PyLavContext | InteractionT) -> bool | None:
@@ -90,7 +91,7 @@ async def is_dj_logic(context: PyLavContext | InteractionT) -> bool | None:
     return is_dj
 
 
-def invoker_is_dj():
+def invoker_is_dj(slash: bool = False):
     async def pred(context: PyLavContext | InteractionT):
         is_dj = await is_dj_logic(context)
         if is_dj is False:
@@ -99,4 +100,4 @@ def invoker_is_dj():
             )
         return True
 
-    return commands.check(pred)
+    return app_commands.check(pred) if slash else commands.check(pred)
