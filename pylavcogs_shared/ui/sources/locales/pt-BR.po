@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-31 13:15+0000\n"
-"PO-Revision-Date: 2022-08-31 13:42\n"
+"PO-Revision-Date: 2022-08-31 18:04\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese, Brazilian\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,7 @@ msgstr "Autor"
 
 #: pylavcogs_shared/ui/sources/generic.py:83
 msgid "Page {page_num}/{total_pages} | {num} {entries}"
-msgstr "Página {page_num}/{total_pages} £ {num} {entries}"
+msgstr "Página {page_num}/{total_pages} | {num} {entries}"
 
 #: pylavcogs_shared/ui/sources/generic.py:87
 msgid "entries"
@@ -48,7 +48,7 @@ msgstr "Page {page_num}/{total_pages} | {num} nodes"
 #: pylavcogs_shared/ui/sources/nodes.py:228
 #: pylavcogs_shared/ui/sources/nodes.py:229
 msgid "Yes"
-msgstr "sim"
+msgstr "Sim"
 
 #: pylavcogs_shared/ui/sources/nodes.py:92
 #: pylavcogs_shared/ui/sources/nodes.py:93
@@ -63,7 +63,8 @@ msgstr "Não"
 #: pylavcogs_shared/ui/sources/nodes.py:271
 msgid "Name: {name}\n"
 "Version: {version}\n\n"
-msgstr ""
+msgstr "Nome:  {name}\n"
+"Versão: {version}"
 
 #: pylavcogs_shared/ui/sources/nodes.py:136
 #: pylavcogs_shared/ui/sources/nodes.py:272
