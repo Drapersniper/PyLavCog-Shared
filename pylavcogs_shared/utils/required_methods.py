@@ -113,7 +113,7 @@ async def pylav_sync_slash(context: PyLavContext) -> None:
     await context.bot.tree.sync()
     await context.send(
         embed=await context.lavalink.construct_embed(
-            description=box(_("Synced the bots slash commands")),
+            description=_("Synced the bots slash commands"),
             messageable=context,
         ),
         ephemeral=True,
