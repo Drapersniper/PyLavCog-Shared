@@ -168,10 +168,10 @@ class QueueSource(menus.ListPageSource):
 
     @property
     def entries(self) -> Iterable[Track]:
-        player = self.cog.lavalink.get_player(self.guild_id)
-        if not player:
+        if player := self.cog.lavalink.get_player(self.guild_id):
+            return player.history.raw_queue if self.history else player.queue.raw_queue
+        else:
             return []
-        return player.history.raw_queue if self.history else player.queue.raw_queue
 
     def is_paginating(self) -> bool:
         return True
@@ -196,28 +196,28 @@ class QueueSource(menus.ListPageSource):
         return start, page_num
 
     async def format_page(self, menu: QueueMenu, tracks: list[Track]) -> discord.Embed:
-        player = self.cog.lavalink.get_player(menu.ctx.guild.id)
-        if not player:
+        if player := self.cog.lavalink.get_player(menu.ctx.guild.id):
+            return (
+                await player.get_queue_page(
+                    page_index=menu.current_page,
+                    per_page=self.per_page,
+                    total_pages=self.get_max_pages(),
+                    embed=True,
+                    messageable=menu.ctx,
+                    history=self.history,
+                )
+                if player.current and (player.history.size() if self.history else True)
+                else await self.cog.lavalink.construct_embed(
+                    description="There's nothing in recently played."
+                    if self.history
+                    else "There's nothing currently being played.",
+                    messageable=menu.ctx,
+                )
+            )
+        else:
             return await self.cog.lavalink.construct_embed(
                 description="No active player found in server.", messageable=menu.ctx
             )
-        return (
-            await player.get_queue_page(
-                page_index=menu.current_page,
-                per_page=self.per_page,
-                total_pages=self.get_max_pages(),
-                embed=True,
-                messageable=menu.ctx,
-                history=self.history,
-            )
-            if player.current and (player.history.size() if self.history else True)
-            else await self.cog.lavalink.construct_embed(
-                description="There's nothing in recently played."
-                if self.history
-                else "There's nothing currently being played.",
-                messageable=menu.ctx,
-            )
-        )
 
 
 class QueuePickerSource(QueueSource):
@@ -242,22 +242,22 @@ class QueuePickerSource(QueueSource):
         return []
 
     async def format_page(self, menu: QueuePickerMenu, tracks: list[Track]) -> discord.Embed:
-        player = self.cog.lavalink.get_player(menu.ctx.guild.id)
-        if not player:
+        if player := self.cog.lavalink.get_player(menu.ctx.guild.id):
+            return (
+                await player.get_queue_page(
+                    page_index=menu.current_page,
+                    per_page=self.per_page,
+                    total_pages=self.get_max_pages(),
+                    embed=True,
+                    messageable=menu.ctx,
+                )
+                if player.current
+                else await self.cog.lavalink.construct_embed(
+                    description="There's nothing currently being played.",
+                    messageable=menu.ctx,
+                )
+            )
+        else:
             return await self.cog.lavalink.construct_embed(
                 description="No active player found in server.", messageable=menu.ctx
             )
-        return (
-            await player.get_queue_page(
-                page_index=menu.current_page,
-                per_page=self.per_page,
-                total_pages=self.get_max_pages(),
-                embed=True,
-                messageable=menu.ctx,
-            )
-            if player.current
-            else await self.cog.lavalink.construct_embed(
-                description="There's nothing currently being played.",
-                messageable=menu.ctx,
-            )
-        )
