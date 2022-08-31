@@ -49,7 +49,7 @@ class SearchPickerSource(menus.ListPageSource):
         return ""
 
     def get_max_pages(self):
-        """:class:`int`: The maximum number of pages required to paginate this sequence."""
+        """:class:`int`: The maximum number of pages required to paginate this sequence"""
         return self._max_pages or 1
 
 
@@ -94,7 +94,7 @@ class EffectsPickerSource(menus.ListPageSource):
                     EffectsOption(
                         label=effect.title(),
                         value=effect,
-                        description=_("Reset the effects to default."),
+                        description=_("Reset the effects to default"),
                         index=i,
                     )
                 )
@@ -103,7 +103,7 @@ class EffectsPickerSource(menus.ListPageSource):
                     EffectsOption(
                         label=effect.title(),
                         value=effect,
-                        description=_("Apply the Nightcore effect."),
+                        description=_("Apply the Nightcore effect"),
                         index=i,
                     )
                 )
@@ -112,7 +112,7 @@ class EffectsPickerSource(menus.ListPageSource):
                     EffectsOption(
                         label=effect.title(),
                         value=effect,
-                        description=_("Apply the Vaporwave effect."),
+                        description=_("Apply the Vaporwave effect"),
                         index=i,
                     )
                 )
@@ -121,7 +121,7 @@ class EffectsPickerSource(menus.ListPageSource):
                     EffectsOption(
                         label=effect.title(),
                         value=effect,
-                        description=_("Apply the Synth effect."),
+                        description=_("Apply the Synth effect"),
                         index=i,
                     )
                 )
@@ -130,7 +130,7 @@ class EffectsPickerSource(menus.ListPageSource):
                     EffectsOption(
                         label=effect.title(),
                         value=effect,
-                        description=_("Apply the Bassboost equalizer preset."),
+                        description=_("Apply the Bassboost equalizer preset"),
                         index=i,
                     )
                 )
@@ -139,7 +139,7 @@ class EffectsPickerSource(menus.ListPageSource):
                     EffectsOption(
                         label=effect.title(),
                         value=effect,
-                        description=_("Apply the Metal equalizer preset."),
+                        description=_("Apply the Metal equalizer preset"),
                         index=i,
                     )
                 )
@@ -148,14 +148,14 @@ class EffectsPickerSource(menus.ListPageSource):
                     EffectsOption(
                         label=effect.title(),
                         value=effect,
-                        description=_("Apply the Piano equalizer preset."),
+                        description=_("Apply the Piano equalizer preset"),
                         index=i,
                     )
                 )
         return self.entries[base : base + self.per_page]  # noqa: E203
 
     def get_max_pages(self):
-        """:class:`int`: The maximum number of pages required to paginate this sequence."""
+        """:class:`int`: The maximum number of pages required to paginate this sequence"""
         return self._max_pages or 1
 
 
@@ -208,15 +208,15 @@ class QueueSource(menus.ListPageSource):
                 )
                 if player.current and (player.history.size() if self.history else True)
                 else await self.cog.lavalink.construct_embed(
-                    description="There's nothing in recently played."
+                    description=_("There's nothing in recently played")
                     if self.history
-                    else "There's nothing currently being played.",
+                    else _("There's nothing currently being played"),
                     messageable=menu.ctx,
                 )
             )
         else:
             return await self.cog.lavalink.construct_embed(
-                description="No active player found in server.", messageable=menu.ctx
+                description=_("No active player found in server"), messageable=menu.ctx
             )
 
 
@@ -253,11 +253,11 @@ class QueuePickerSource(QueueSource):
                 )
                 if player.current
                 else await self.cog.lavalink.construct_embed(
-                    description="There's nothing currently being played.",
+                    description=_("There's nothing currently being played"),
                     messageable=menu.ctx,
                 )
             )
         else:
             return await self.cog.lavalink.construct_embed(
-                description="No active player found in server.", messageable=menu.ctx
+                description=_("No active player found in server"), messageable=menu.ctx
             )

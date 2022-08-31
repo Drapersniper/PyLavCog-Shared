@@ -70,7 +70,7 @@ class PlayersSource(menus.ListPageSource):
         current_track = (
             await player.current.get_track_display_name(max_length=50, with_url=True)
             if player.current
-            else _("Nothing playing.")
+            else _("Nothing playing")
         )
 
         listener_count = await asyncstdlib.sum(True for m in rgetattr(player, "channel.members", []) if not m.bot)
@@ -83,10 +83,10 @@ class PlayersSource(menus.ListPageSource):
                 (_("Server Owner"), server_owner),
                 (_("Connected For"), connect_dur),
                 (_("Users in VC"), listeners),
-                (_("Queue Length"), _("{} {}").format(queue_len, _("track" if queue_len == 1 else "tracks"))),
+                (_("Queue Length"), "{} {}".format(queue_len, _("track" if queue_len == 1 else "tracks"))),
                 (
                     _("Queue History Length"),
-                    _("{count} {track_translation}").format(
+                    "{count} {track_translation}".format(
                         count=history_queue_len, track_translation=_("track") if history_queue_len == 1 else _("tracks")
                     ),
                 ),
@@ -99,7 +99,7 @@ class PlayersSource(menus.ListPageSource):
         )
 
         embed.set_footer(
-            text=_("Page {page_num}/{total_pages}  | Playing in {playing} {server_translation}.").format(
+            text=_("Page {page_num}/{total_pages}  | Playing in {playing} {server_translation}").format(
                 page_num=humanize_number(page_num + 1),
                 total_pages=humanize_number(self.get_max_pages()),
                 playing=humanize_number(len(self.cog.lavalink.player_manager.playing_players)),

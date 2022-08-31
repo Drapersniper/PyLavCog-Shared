@@ -41,16 +41,16 @@ class PlaylistDeleteButton(discord.ui.Button):
         if self.view.author.id != interaction.user.id:
             return await context.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    messageable=interaction, description=_("You are not authorized to interact with this option.")
+                    messageable=interaction, description=_("You are not authorized to interact with this option")
                 ),
                 ephemeral=True,
             )
         self.view.cancelled = False
         self.view.delete = not self.view.delete
         if self.view.delete:
-            response = _("When you press done this playlist will be permanently delete...")
+            response = _("When you press done this playlist will be permanently delete")
         else:
-            response = _("This playlist will no longer be deleted once you press done...")
+            response = _("This playlist will no longer be deleted once you press done")
 
         await context.send(
             embed=await self.cog.lavalink.construct_embed(messageable=interaction, description=response),
@@ -76,16 +76,16 @@ class PlaylistClearButton(discord.ui.Button):
         if self.view.author.id != interaction.user.id:
             return await context.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    messageable=interaction, description=_("You are not authorized to interact with this option.")
+                    messageable=interaction, description=_("You are not authorized to interact with this option")
                 ),
                 ephemeral=True,
             )
         self.view.cancelled = False
         self.view.clear = not self.view.clear
         if self.view.clear:
-            response = _("Clearing all tracks from the playlist playlist...")
+            response = _("Clearing all tracks from the playlist playlist")
         else:
-            response = _("No longer clearing tracks from the playlist...")
+            response = _("No longer clearing tracks from the playlist")
 
         await context.send(
             embed=await self.cog.lavalink.construct_embed(messageable=interaction, description=response),
@@ -117,7 +117,7 @@ class PlaylistDownloadButton(discord.ui.Button):
         if self.view.author.id != interaction.user.id:
             return await context.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    messageable=interaction, description=_("You are not authorized to interact with this option.")
+                    messageable=interaction, description=_("You are not authorized to interact with this option")
                 ),
                 ephemeral=True,
             )
@@ -161,17 +161,17 @@ class PlaylistUpdateButton(discord.ui.Button):
         if self.view.author.id != interaction.user.id:
             return await context.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    messageable=interaction, description=_("You are not authorized to interact with this option.")
+                    messageable=interaction, description=_("You are not authorized to interact with this option")
                 ),
                 ephemeral=True,
             )
         self.view.cancelled = False
         self.view.update = not self.view.update
         if (self.view.playlist.url or self.view.url) and self.view.update:
-            response = _("Updating playlist with the latest tracks...")
+            response = _("Updating playlist with the latest tracks")
         else:
             self.view.update = False
-            response = _("Not updating playlist...")
+            response = _("Not updating playlist")
         await context.send(
             embed=await self.cog.lavalink.construct_embed(messageable=interaction, description=response),
             ephemeral=True,
@@ -204,7 +204,7 @@ class PlaylistInfoButton(discord.ui.Button):
         if self.view.author.id != interaction.user.id:
             return await context.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    messageable=interaction, description=_("You are not authorized to interact with this option.")
+                    messageable=interaction, description=_("You are not authorized to interact with this option")
                 ),
                 ephemeral=True,
             )
@@ -251,7 +251,7 @@ class PlaylistQueueButton(discord.ui.Button):
         if self.view.author.id != interaction.user.id:
             return await context.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    messageable=interaction, description=_("You are not authorized to interact with this option.")
+                    messageable=interaction, description=_("You are not authorized to interact with this option")
                 ),
                 ephemeral=True,
             )
@@ -259,14 +259,14 @@ class PlaylistQueueButton(discord.ui.Button):
         if self.view.queue:
             await context.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    messageable=interaction, description=_("Adding the current queue to playlist...")
+                    messageable=interaction, description=_("Adding the current queue to playlist")
                 ),
                 ephemeral=True,
             )
         else:
             await context.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    messageable=interaction, description=_("No longer adding the current queue to playlist...")
+                    messageable=interaction, description=_("No longer adding the current queue to playlist")
                 ),
                 ephemeral=True,
             )
@@ -297,7 +297,7 @@ class PlaylistDedupeButton(discord.ui.Button):
         if self.view.author.id != interaction.user.id:
             return await context.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    messageable=interaction, description=_("You are not authorized to interact with this option.")
+                    messageable=interaction, description=_("You are not authorized to interact with this option")
                 ),
                 ephemeral=True,
             )
@@ -305,14 +305,14 @@ class PlaylistDedupeButton(discord.ui.Button):
         if self.view.dedupe:
             await context.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    messageable=interaction, description=_("Removing all duplicate tracks from the queue...")
+                    messageable=interaction, description=_("Removing all duplicate tracks from the queue")
                 ),
                 ephemeral=True,
             )
         else:
             await context.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    messageable=interaction, description=_("No longer all duplicate tracks from the queue...")
+                    messageable=interaction, description=_("No longer all duplicate tracks from the queue")
                 ),
                 ephemeral=True,
             )
@@ -343,7 +343,7 @@ class PlaylistUpsertButton(discord.ui.Button):
         if self.view.author.id != interaction.user.id:
             return await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
-                    messageable=interaction, description=_("You are not authorized to interact with this option.")
+                    messageable=interaction, description=_("You are not authorized to interact with this option")
                 ),
                 ephemeral=True,
             )

@@ -46,7 +46,7 @@ INCOMPATIBLE_COGS = {
     i18n=_,
 )
 async def pylav_credits(context: PyLavContext) -> None:
-    """Shows the credits and translation details for the PyLav cogs and shared code."""
+    """Shows the credits and translation details for the PyLav cogs and shared code"""
     await context.send(
         embed=await context.lavalink.construct_embed(
             messageable=context,
@@ -80,7 +80,7 @@ async def pylav_credits(context: PyLavContext) -> None:
     i18n=_,
 )
 async def pylav_version(context: PyLavContext) -> None:
-    """Show the version of PyLav and PyLavCogs-Shared libraries."""
+    """Show the version of PyLav and PyLavCogs-Shared libraries"""
     if isinstance(context, discord.Interaction):
         context = await context.client.get_context(context)
     if context.interaction and not context.interaction.response.is_done():
@@ -106,7 +106,7 @@ async def pylav_version(context: PyLavContext) -> None:
     i18n=_,
 )
 async def pylav_sync_slash(context: PyLavContext) -> None:
-    """Sync the Bots slash commands."""
+    """Sync the Bots slash commands"""
     if isinstance(context, discord.Interaction):
         context = await context.client.get_context(context)
     if context.interaction and not context.interaction.response.is_done():
@@ -115,7 +115,7 @@ async def pylav_sync_slash(context: PyLavContext) -> None:
     await context.bot.tree.sync()
     await context.send(
         embed=await context.lavalink.construct_embed(
-            description=box(_("Synced the bots slash commands.")),
+            description=box(_("Synced the bots slash commands")),
             messageable=context,
         ),
         ephemeral=True,
@@ -136,7 +136,7 @@ async def cog_command_error(self: CogT, context: PyLavContext, error: Exception)
         unhandled = False
         await context.send(
             embed=await self.lavalink.construct_embed(
-                messageable=context, description=_("This command requires an existing player to be run.")
+                messageable=context, description=_("This command requires an existing player to be run")
             ),
             ephemeral=True,
         )
@@ -147,9 +147,9 @@ async def cog_command_error(self: CogT, context: PyLavContext, error: Exception)
                 messageable=context,
                 description=_(
                     "MediaPlayer cog is currently temporarily unavailable due to an outage with "
-                    "the backend services, please try again later."
+                    "the backend services, please try again later"
                 ),
-                footer=_("No Lavalink node currently available.") if await self.bot.is_owner(context.author) else None,
+                footer=_("No Lavalink node currently available") if await self.bot.is_owner(context.author) else None,
             ),
             ephemeral=True,
         )
@@ -158,10 +158,10 @@ async def cog_command_error(self: CogT, context: PyLavContext, error: Exception)
         await context.send(
             embed=await self.lavalink.construct_embed(
                 messageable=context,
-                description=_("MediaPlayer is currently unable to process tracks belonging to {feature}.").format(
+                description=_("MediaPlayer is currently unable to process tracks belonging to {feature}").format(
                     feature=error.feature
                 ),
-                footer=_("No Lavalink node currently available with feature {feature}.").format(feature=error.feature)
+                footer=_("No Lavalink node currently available with feature {feature}").format(feature=error.feature)
                 if await self.bot.is_owner(context.author)
                 else None,
             ),
@@ -184,7 +184,7 @@ async def cog_command_error(self: CogT, context: PyLavContext, error: Exception)
         await context.send(
             embed=await self.lavalink.construct_embed(
                 messageable=context,
-                description=_("This command requires you to be a DJ."),
+                description=_("This command requires you to be a DJ"),
             ),
             ephemeral=True,
             delete_after=10,
@@ -222,7 +222,7 @@ async def cog_before_invoke(self: CogT, context: PyLavContext):
             context.command.qualified_name,
         )
 
-        raise CheckFailure(_("PyLav is not ready - Please try again shortly.")) from e
+        raise CheckFailure(_("PyLav is not ready - Please try again shortly")) from e
     if meth := getattr(self, "__pylav_original_cog_before_invoke", None):
         return await discord.utils.maybe_coroutine(meth)
 
@@ -366,7 +366,7 @@ async def pylav_auto_setup(
     """
     if await asyncstdlib.any(bot.get_cog(name) is not None for name in INCOMPATIBLE_COGS if (_name := name)):
         raise IncompatibleException(
-            f"{_name} is loaded, this cog is incompatible with PyLav - PyLav will not work as long as this cog is loaded."
+            f"{_name} is loaded, this cog is incompatible with PyLav - PyLav will not work as long as this cog is loaded"
         )
     if cogargs is None:
         cogargs = ()

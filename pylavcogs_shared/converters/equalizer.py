@@ -19,7 +19,7 @@ else:
     class BassBoostConverter(Transformer):
         @classmethod
         async def convert(cls, ctx: PyLavContext, arg: str) -> str:
-            """Converts user input to a valid argument for the bassboost command."""
+            """Converts user input to a valid argument for the bassboost command"""
             from pylav import EntryNotFoundError
 
             try:
@@ -44,7 +44,7 @@ else:
                 else:
                     raise EntryNotFoundError
             except EntryNotFoundError as e:
-                raise commands.BadArgument(_("Bass boost with name `{arg}` not found.").format(arg=arg)) from e
+                raise commands.BadArgument(_("Bass boost with name `{arg}` not found").format(arg=arg)) from e
 
         @classmethod
         async def transform(cls, interaction: InteractionT, argument: str) -> str:

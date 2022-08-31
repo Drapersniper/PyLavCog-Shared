@@ -25,7 +25,7 @@ async def maybe_prompt_for_node(cog: CogT, context: PyLavContext, nodes: list[No
                 guild_id=context.guild.id,
                 cog=cog,
                 pages=nodes,
-                message_str=_("Multiple nodes matched, pick the one which you meant."),
+                message_str=_("Multiple nodes matched, pick the one which you meant"),
             ),
             selector_cls=NodeSelectSelector,
             delete_after_timeout=True,

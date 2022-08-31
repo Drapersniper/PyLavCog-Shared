@@ -79,7 +79,7 @@ class AddNodeFlow(discord.ui.View):
         )
         self.name_prompt = PromptForInput(
             cog=self.cog,
-            title=_("Enter an easy to know name for the node."),
+            title=_("Enter an easy to know name for the node"),
             label=_("Name"),
             style=discord.TextStyle.short,
             min_length=8,
@@ -87,7 +87,7 @@ class AddNodeFlow(discord.ui.View):
         )
         self.resume_timeout_prompt = PromptForInput(
             cog=self.cog,
-            title=_("Enter a timeout in seconds."),
+            title=_("Enter a timeout in seconds"),
             label=_("Timeout"),
             style=discord.TextStyle.short,
             min_length=2,
@@ -103,7 +103,7 @@ class AddNodeFlow(discord.ui.View):
             style=discord.ButtonStyle.blurple,
             emoji=emojis.SSL,
         )
-        self.disabled_sources_selector = SourceSelector(cog=self.cog, placeholder=_("Source to disable."), row=2)
+        self.disabled_sources_selector = SourceSelector(cog=self.cog, placeholder=_("Source to disable"), row=2)
         self.name_button = NodeButton(
             cog=self.cog,
             style=discord.ButtonStyle.blurple,
@@ -192,7 +192,7 @@ class AddNodeFlow(discord.ui.View):
             self.author and (interaction.user.id != self.author.id)
         ):
             await interaction.response.send_message(
-                content=_("You are not authorized to interact with this."), ephemeral=True
+                content=_("You are not authorized to interact with this"), ephemeral=True
             )
             return False
         return True
@@ -261,7 +261,7 @@ class AddNodeFlow(discord.ui.View):
         if self.port is None:
             await interaction.followup.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    description=_("Invalid port."),
+                    description=_("Invalid port"),
                     messageable=interaction,
                 ),
                 ephemeral=True,
@@ -286,7 +286,7 @@ class AddNodeFlow(discord.ui.View):
         if self.resume_timeout is None:
             await interaction.followup.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    description=_("Invalid timeout, it must be a number in seconds."),
+                    description=_("Invalid timeout, it must be a number in seconds"),
                     messageable=interaction,
                 ),
                 ephemeral=True,
@@ -294,7 +294,7 @@ class AddNodeFlow(discord.ui.View):
         else:
             await interaction.followup.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    description=_("Timeout set to {timeout} seconds.").format(timeout=inline(f"{self.resume_timeout}")),
+                    description=_("Timeout set to {timeout} seconds").format(timeout=inline(f"{self.resume_timeout}")),
                     messageable=interaction,
                 ),
                 ephemeral=True,
@@ -512,7 +512,7 @@ class NodeManagerMenu(BaseMenu):
         )
         self.name_prompt = PromptForInput(
             cog=self.cog,
-            title=_("Change the name of this node."),
+            title=_("Change the name of this node"),
             label=_("Name"),
             style=discord.TextStyle.short,
             min_length=8,
@@ -520,7 +520,7 @@ class NodeManagerMenu(BaseMenu):
         )
         self.resume_timeout_prompt = PromptForInput(
             cog=self.cog,
-            title=_("Enter the new timeout for this node."),
+            title=_("Enter the new timeout for this node"),
             label=_("Timeout"),
             style=discord.TextStyle.short,
             min_length=2,
@@ -549,7 +549,7 @@ class NodeManagerMenu(BaseMenu):
             cog=self.cog, style=discord.ButtonStyle.blurple, emoji=emojis.TIMEOUT, op="timeout", row=2
         )
         self.delete_button = NodeDeleteButton(cog=self.cog, style=discord.ButtonStyle.red, row=2)
-        self.disabled_sources_selector = SourceSelector(cog=self.cog, placeholder=_("Source to disable."), row=3)
+        self.disabled_sources_selector = SourceSelector(cog=self.cog, placeholder=_("Source to disable"), row=3)
 
         self.cancelled = True
 
@@ -635,7 +635,7 @@ class NodeManagerMenu(BaseMenu):
             self.author and (interaction.user.id != self.author.id)
         ):
             await interaction.response.send_message(
-                content="You are not authorized to interact with this.", ephemeral=True
+                content="You are not authorized to interact with this", ephemeral=True
             )
             return False
         return True
@@ -705,7 +705,7 @@ class NodeManagerMenu(BaseMenu):
         if self.port is None:
             await interaction.followup.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    description=_("Invalid port."),
+                    description=_("Invalid port"),
                     messageable=interaction,
                 ),
                 ephemeral=True,
@@ -730,7 +730,7 @@ class NodeManagerMenu(BaseMenu):
         if self.resume_timeout is None:
             await interaction.followup.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    description=_("Invalid timeout, it must be a number in seconds."),
+                    description=_("Invalid timeout, it must be a number in seconds"),
                     messageable=interaction,
                 ),
                 ephemeral=True,
@@ -738,7 +738,7 @@ class NodeManagerMenu(BaseMenu):
         else:
             await interaction.followup.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    description=_("Timeout set to {timeout} seconds.").format(timeout=inline(f"{self.resume_timeout}")),
+                    description=_("Timeout set to {timeout} seconds").format(timeout=inline(f"{self.resume_timeout}")),
                     messageable=interaction,
                 ),
                 ephemeral=True,

@@ -42,7 +42,7 @@ class SourceSelector(discord.ui.Select):
         if self.view.author.id != interaction.user.id:
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
-                    messageable=interaction, description=_("You are not authorized to interact with this option.")
+                    messageable=interaction, description=_("You are not authorized to interact with this option")
                 ),
                 ephemeral=True,
             )
@@ -74,7 +74,7 @@ class NodeSelectSelector(discord.ui.Select):
         self.node: NodeModel = self.mapping.get(playlist_id)
         if self.node is None:
             await interaction.response.send_message(
-                embed=await self.cog.lavalink.construct_embed(messageable=interaction, title=_("Node not found.")),
+                embed=await self.cog.lavalink.construct_embed(messageable=interaction, title=_("Node not found")),
                 ephemeral=True,
             )
             self.view.stop()

@@ -27,7 +27,7 @@ async def maybe_prompt_for_playlist(
                 guild_id=context.guild.id,
                 cog=cog,
                 pages=playlists,
-                message_str=_("Multiple playlist matched, pick the one which you meant."),
+                message_str=_("Multiple playlist matched, pick the one which you meant"),
             ),
             selector_cls=PlaylistSelectSelector,
             delete_after_timeout=True,

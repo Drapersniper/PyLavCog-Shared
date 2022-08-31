@@ -161,7 +161,7 @@ class ToggleRepeatButton(discord.ui.Button):
         if not player:
             return await context.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    description=_("Not connected to a voice channel."), messageable=interaction
+                    description=_("Not connected to a voice channel"), messageable=interaction
                 ),
                 ephemeral=True,
             )
@@ -201,7 +201,7 @@ class QueueHistoryButton(discord.ui.Button):
         else:
             return await context.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    description=_("Not connected to a voice channel."), messageable=interaction
+                    description=_("Not connected to a voice channel"), messageable=interaction
                 ),
                 ephemeral=True,
             )
@@ -224,7 +224,7 @@ class ToggleRepeatQueueButton(discord.ui.Button):
         if not player:
             return await context.send_message(
                 embed=await self.cog.lavalink.construct_embed(
-                    description=_("Not connected to a voice channel."), messageable=interaction
+                    description=_("Not connected to a voice channel"), messageable=interaction
                 ),
                 ephemeral=True,
             )
@@ -290,14 +290,14 @@ class EmptyQueueButton(discord.ui.Button):
         if not player.queue.size():
             return await context.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    description=_("There's nothing in the Queue."), messageable=interaction
+                    description=_("There's nothing in the Queue"), messageable=interaction
                 ),
                 ephemeral=True,
             )
         player.queue.clear()
         await context.send(
             embed=await self.cog.lavalink.construct_embed(
-                description=_("Removed tracks from the queue."), messageable=interaction
+                description=_("Removed tracks from the queue"), messageable=interaction
             ),
             ephemeral=True,
         )

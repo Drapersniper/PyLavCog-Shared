@@ -33,7 +33,7 @@ class QueueSelectTrack(discord.ui.Select):
         track: Track = self.mapping.get(track_id)
         if track is None:
             await interaction.response.send_message(
-                embed=await self.cog.lavalink.construct_embed(description="Track not found.", messageable=interaction),
+                embed=await self.cog.lavalink.construct_embed(description="Track not found", messageable=interaction),
                 ephemeral=True,
             )
             self.view.stop()
@@ -43,7 +43,7 @@ class QueueSelectTrack(discord.ui.Select):
         if not player:
             await interaction.response.send_message(
                 embed=await self.cog.lavalink.construct_embed(
-                    description="Player has been disconnected.", messageable=interaction
+                    description="Player has been disconnected", messageable=interaction
                 ),
                 ephemeral=True,
             )
@@ -82,7 +82,7 @@ class EffectsSelector(discord.ui.Select):
         label: str = self.mapping.get(effect_value)
         if label is None:
             await interaction.response.send_message(
-                embed=await self.cog.lavalink.construct_embed(messageable=interaction, title=_("No Preset Selected.")),
+                embed=await self.cog.lavalink.construct_embed(messageable=interaction, title=_("No Preset Selected")),
                 ephemeral=True,
             )
             self.view.stop()
@@ -116,7 +116,7 @@ class SearchSelectTrack(discord.ui.Select):
 
         if track is None:
             await interaction.response.send_message(
-                embed=await self.cog.lavalink.construct_embed(messageable=interaction, title=_("Track not found.")),
+                embed=await self.cog.lavalink.construct_embed(messageable=interaction, title=_("Track not found")),
                 ephemeral=True,
             )
             self.view.stop()

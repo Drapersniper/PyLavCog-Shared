@@ -201,7 +201,7 @@ class StatsMenu(BaseMenu):
             return {
                 "content": None,
                 "embed": await self.cog.lavalink.construct_embed(
-                    messageable=self.ctx, title=_("Not connected anywhere.")
+                    messageable=self.ctx, title=_("Not connected anywhere")
                 ),
             }
         try:

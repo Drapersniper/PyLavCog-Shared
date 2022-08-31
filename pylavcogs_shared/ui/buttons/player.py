@@ -35,7 +35,7 @@ class DisconnectButton(discord.ui.Button):
         if not await self.view.bot.is_owner(context.author):
             await context.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    messageable=context, title=_("You are not authorized to perform this action.")
+                    messageable=context, title=_("You are not authorized to perform this action")
                 ),
                 ephemeral=True,
             )
@@ -44,7 +44,7 @@ class DisconnectButton(discord.ui.Button):
         if not player:
             await context.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    messageable=context, title=_("No Player Available For Action - Try Refreshing.")
+                    messageable=context, title=_("No Player Available For Action - Try Refreshing")
                 ),
                 ephemeral=True,
             )
@@ -84,7 +84,7 @@ class StopTrackButton(discord.ui.Button):
         if not await self.view.bot.is_owner(context.author):
             await context.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    messageable=context, description=_("You are not authorized to perform this action.")
+                    messageable=context, description=_("You are not authorized to perform this action")
                 ),
                 ephemeral=True,
             )
@@ -93,7 +93,7 @@ class StopTrackButton(discord.ui.Button):
         if not player:
             await context.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    messageable=context, description=_("No Player Available For Action - Try Refreshing.")
+                    messageable=context, description=_("No Player Available For Action - Try Refreshing")
                 ),
                 ephemeral=True,
             )
@@ -104,7 +104,7 @@ class StopTrackButton(discord.ui.Button):
             with contextlib.suppress(discord.HTTPException):
                 await notify_channel.send(
                     embed=await self.cog.lavalink.construct_embed(
-                        title=_("Bot Owner Action"), description=_("Player stopped.")
+                        title=_("Bot Owner Action"), description=_("Player stopped")
                     )
                 )
 
@@ -137,7 +137,7 @@ class DisconnectAllButton(discord.ui.Button):
         if not await self.view.bot.is_owner(context.author):
             await context.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    messageable=context, description=_("You are not authorized to perform this action.")
+                    messageable=context, description=_("You are not authorized to perform this action")
                 ),
                 ephemeral=True,
             )
@@ -151,7 +151,7 @@ class DisconnectAllButton(discord.ui.Button):
         if not players:
             await context.send(
                 embed=await self.cog.lavalink.construct_embed(
-                    messageable=context, description=_("No Players Available For Action - Try Refreshing.")
+                    messageable=context, description=_("No Players Available For Action - Try Refreshing")
                 ),
                 ephemeral=True,
             )

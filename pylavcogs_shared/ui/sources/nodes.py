@@ -47,7 +47,7 @@ class NodePickerSource(menus.ListPageSource):
         idx_start, page_num = self.get_starting_index_and_page_number(menu)
         page = await self.cog.lavalink.construct_embed(messageable=menu.ctx, title=self.message_str)
         page.set_footer(
-            text=_("Page {page_num}/{total_pages} | {num} nodes.").format(
+            text=_("Page {page_num}/{total_pages} | {num} nodes").format(
                 page_num=humanize_number(page_num + 1),
                 total_pages=humanize_number(self.get_max_pages()),
                 num=len(self.entries),
@@ -67,7 +67,7 @@ class NodePickerSource(menus.ListPageSource):
         return self.entries[base : base + self.per_page]  # noqa: E203
 
     def get_max_pages(self):
-        """:class:`int`: The maximum number of pages required to paginate this sequence."""
+        """:class:`int`: The maximum number of pages required to paginate this sequence"""
         return self._max_pages or 1
 
 
@@ -170,7 +170,7 @@ class NodeListSource(menus.ListPageSource):
             description=description,
         )
         embed.set_footer(
-            text=_("Page {page_num}/{total_pages} | {num} {plural}.").format(
+            text=_("Page {page_num}/{total_pages} | {num} {plural}").format(
                 page_num=humanize_number(page_num + 1),
                 total_pages=humanize_number(self.get_max_pages()),
                 num=len(self.entries),
@@ -304,7 +304,7 @@ class NodeManageSource(menus.ListPageSource):
             description=description,
         )
         embed.set_footer(
-            text=_("Page {page_num}/{total_pages} | {num} {plural}.").format(
+            text=_("Page {page_num}/{total_pages} | {num} {plural}").format(
                 page_num=humanize_number(page_num + 1),
                 total_pages=humanize_number(self.get_max_pages()),
                 num=len(self.entries),

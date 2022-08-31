@@ -6,7 +6,7 @@ from pylav.utils import PyLavContext
 
 
 class IncompatibleException(EnvironmentError):
-    """Command raised when an incompatible cog is already loaded."""
+    """Command raised when an incompatible cog is already loaded"""
 
 
 class MediaPlayerError(commands.CommandError):
