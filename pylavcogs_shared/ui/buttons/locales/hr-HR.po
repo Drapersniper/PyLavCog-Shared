@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-30 19:02+0000\n"
-"PO-Revision-Date: 2022-08-30 20:48\n"
+"PO-Revision-Date: 2022-08-31 11:31\n"
 "Last-Translator: \n"
 "Language-Team: Croatian\n"
 "MIME-Version: 1.0\n"
@@ -36,27 +36,27 @@ msgstr ""
 #: pylavcogs_shared/ui/buttons/playlist.py:300
 #: pylavcogs_shared/ui/buttons/playlist.py:346
 msgid "You are not authorized to interact with this option."
-msgstr ""
+msgstr "Niste ovlašteni za interakciju s ovom opcijom."
 
 #: pylavcogs_shared/ui/buttons/generic.py:80
 msgid "Yes"
-msgstr ""
+msgstr "Da"
 
 #: pylavcogs_shared/ui/buttons/generic.py:103
 msgid "No"
-msgstr ""
+msgstr "Ne"
 
 #: pylavcogs_shared/ui/buttons/generic.py:156
 msgid "Disconnect {} {}"
-msgstr ""
+msgstr "Odspoji {} {}"
 
 #: pylavcogs_shared/ui/buttons/generic.py:157
 msgid "players"
-msgstr ""
+msgstr "playeri"
 
 #: pylavcogs_shared/ui/buttons/generic.py:157
 msgid "player"
-msgstr ""
+msgstr "player"
 
 #: pylavcogs_shared/ui/buttons/nodes.py:56
 msgid "Connecting to the node with SSL enabled..."
@@ -95,7 +95,7 @@ msgstr ""
 #: pylavcogs_shared/ui/buttons/player.py:87
 #: pylavcogs_shared/ui/buttons/player.py:140
 msgid "You are not authorized to perform this action."
-msgstr ""
+msgstr "Niste autorizirani za tu radnju."
 
 #: pylavcogs_shared/ui/buttons/player.py:47
 #: pylavcogs_shared/ui/buttons/player.py:96
@@ -106,12 +106,12 @@ msgstr ""
 #: pylavcogs_shared/ui/buttons/player.py:107
 #: pylavcogs_shared/ui/buttons/player.py:164
 msgid "Bot Owner Action"
-msgstr ""
+msgstr "Radnja vlasnika bota"
 
 #: pylavcogs_shared/ui/buttons/player.py:56
 #: pylavcogs_shared/ui/buttons/player.py:164
 msgid "Player disconnected"
-msgstr ""
+msgstr "Player odspojen"
 
 #: pylavcogs_shared/ui/buttons/player.py:107
 msgid "Player stopped."
@@ -186,17 +186,17 @@ msgstr ""
 #: pylavcogs_shared/ui/buttons/queue.py:204
 #: pylavcogs_shared/ui/buttons/queue.py:227
 msgid "Not connected to a voice channel."
-msgstr ""
+msgstr "Nisam spojen na glasovni kanal."
 
 #: pylavcogs_shared/ui/buttons/queue.py:293
 msgid "There's nothing in the Queue."
-msgstr ""
+msgstr "Nema ičega u redu čekanja."
 
 #: pylavcogs_shared/ui/buttons/queue.py:300
 msgid "Removed tracks from the queue."
-msgstr ""
+msgstr "Pjesme maknute iz reda čekanja."
 
 #: pylavcogs_shared/ui/buttons/queue.py:326
 msgid "What do you want to enqueue?"
-msgstr ""
+msgstr "Što želite staviti u red čekanja?"
 

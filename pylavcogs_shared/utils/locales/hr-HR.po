@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-08-30 20:55+0000\n"
-"PO-Revision-Date: 2022-08-30 20:57\n"
+"PO-Revision-Date: 2022-08-31 11:31\n"
 "Last-Translator: \n"
 "Language-Team: Croatian\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 #: pylavcogs_shared/utils/required_methods.py:49
 #, docstring
 msgid "Shows the credits and translation details for the PyLav cogs and shared code."
-msgstr ""
+msgstr "Prikazuje zasluge i detalje prijevoda za PyLav Cog-ove i zajednički kod."
 
 #: pylavcogs_shared/utils/required_methods.py:53
 msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
@@ -36,16 +36,28 @@ msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
 "- https://github.com/Drapersniper/PyLav-Cogs/graphs/contributors\n"
 "If you wish to buy me a coffee for my work, you can do so at:\n"
 "https://www.buymeacoffee.com/draper or https://github.com/sponsors/Drapersniper"
-msgstr ""
+msgstr "PyLav je izradio [Draper#6666](https://github.com/Drapersniper).\n\n"
+"PyLav se može pronaći na https://github.com/Drapersniper/PyLav\n"
+"PyLavCog-Shared se može pronaći na https://github.com/Drapersniper/PyLavCog-Shared\n"
+"PyLav-Cogs se može pronaći na https://github.com/Drapersniper/PyLav-Cogs\n\n"
+"PyLav-ov server za podršku može se pronaći na https://discord.com/invite/Sjh2TSCYQB\n\n\n"
+"Možete pomoći u prevođenju PyLav-a doprinoseći našim Crowdin projektima na:\n"
+"https://crowdin.com/project/pylav and https://crowdin.com/project/pylavcogs-shared and https://crowdin.com/project/pylavcogs\n\n\n"
+"Suradnici:\n"
+"- https://github.com/Drapersniper/PyLav/graphs/contributors\n"
+"- https://github.com/Drapersniper/PyLavCog-Shared/graphs/contributors\n"
+"- https://github.com/Drapersniper/PyLav-Cogs/graphs/contributors\n"
+"Ako me želite počastiti kavom, možete to učiniti na:\n"
+"https://www.buymeacoffee.com/draper ili https://github.com/sponsors/Drapersniper"
 
 #: pylavcogs_shared/utils/required_methods.py:83
 #, docstring
 msgid "Show the version of PyLav and PyLavCogs-Shared libraries."
-msgstr ""
+msgstr "Prikaži verziju PyLav-a i PyLavCogs-Shared baza."
 
 #: pylavcogs_shared/utils/required_methods.py:95
 msgid "Library"
-msgstr ""
+msgstr "Baza"
 
 #: pylavcogs_shared/utils/required_methods.py:95
 msgid "Version"
@@ -54,11 +66,11 @@ msgstr "Verzija"
 #: pylavcogs_shared/utils/required_methods.py:109
 #, docstring
 msgid "Sync the Bots slash commands."
-msgstr ""
+msgstr "Sinkronizirajte botove Slash naredbe."
 
 #: pylavcogs_shared/utils/required_methods.py:118
 msgid "Synced the bots slash commands."
-msgstr ""
+msgstr "Botove Slash naredbe su sinkronizirane."
 
 #: pylavcogs_shared/utils/required_methods.py:139
 msgid "This command requires an existing player to be run."
@@ -90,5 +102,5 @@ msgstr ""
 
 #: pylavcogs_shared/utils/required_methods.py:225
 msgid "PyLav is not ready - Please try again shortly."
-msgstr ""
+msgstr "PyLav nije spreman - Pokušajte ponovno."
 
