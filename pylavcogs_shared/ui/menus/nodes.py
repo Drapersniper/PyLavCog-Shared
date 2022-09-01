@@ -3,6 +3,7 @@ from __future__ import annotations
 import asyncio
 import contextlib
 import re
+import time
 from pathlib import Path
 from typing import Any
 
@@ -460,6 +461,7 @@ class NodeManagerMenu(BaseMenu):
             starting_page=starting_page,
             **kwargs,
         )
+        self.unique_identifier = int(time.time())
         self.current_page = -1
         self.forward_button = NavigateButton(
             style=discord.ButtonStyle.grey,

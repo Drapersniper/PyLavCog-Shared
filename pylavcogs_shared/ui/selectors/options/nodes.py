@@ -26,8 +26,9 @@ SOURCE_OPTIONS = [SourceOption(name=source, description=None, value=source) for 
 class NodeOption(discord.SelectOption):
     @classmethod
     async def from_node(cls, node: NodeModel, index: int):
+        data = await node.fetch_all()
         return cls(
-            label=f"{index + 1}. {node.name}",
-            description=_("ID: {} || SSL: {} || Search-only: {}").format(node.id, node.ssl, node.search_only),
+            label=f"{index + 1}. {data['name']}",
+            description=_("ID: {} || SSL: {} || Search-only: {}").format(node.id, data["ssl"], data["search_only"]),
             value=f"{node.id}",
         )

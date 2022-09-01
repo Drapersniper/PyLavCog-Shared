@@ -98,7 +98,7 @@ class BaseMenu(discord.ui.View):
     async def show_checked_page(self, page_number: int, interaction: InteractionT) -> None:
         max_pages = self._source.get_max_pages()
         with contextlib.suppress(IndexError):
-            if max_pages is None or page_number < max_pages and page_number >= 0:
+            if max_pages is None or max_pages > page_number >= 0:
                 # If it doesn't give maximum pages, it cannot be checked
                 await self.show_page(page_number, interaction)
             elif page_number >= max_pages:

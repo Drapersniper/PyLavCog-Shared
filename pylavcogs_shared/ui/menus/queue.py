@@ -1,11 +1,13 @@
 from __future__ import annotations
 
+import typing
 from pathlib import Path
 from typing import Any, Literal
 
 import discord
 from redbot.core.i18n import Translator
 
+from pylav import Player
 from pylav.types import BotT, CogT, InteractionT
 from pylav.utils import PyLavContext
 
@@ -31,8 +33,8 @@ from pylavcogs_shared.ui.buttons.queue import (
 )
 from pylavcogs_shared.ui.menus.generic import BaseMenu
 from pylavcogs_shared.ui.selectors.playlist import PlaylistSelectSelector
-from pylavcogs_shared.ui.selectors.queue import EffectsSelector, QueueSelectTrack, SearchSelectTrack
-from pylavcogs_shared.ui.sources.queue import EffectsPickerSource, QueuePickerSource, QueueSource, SearchPickerSource
+from pylavcogs_shared.ui.selectors.queue import EffectsSelector, QueueSelectTrack
+from pylavcogs_shared.ui.sources.queue import EffectsPickerSource, QueuePickerSource, QueueSource
 from pylavcogs_shared.utils.decorators import is_dj_logic
 
 _ = Translator("PyLavShared", Path(__file__))
@@ -253,8 +255,7 @@ class QueueMenu(BaseMenu):
         self.add_item(self.previous_track_button)
         self.add_item(self.stop_button)
 
-        if (player := self.cog.lavalink.get_player(self.source.guild_id)) and is_dj is not False:
-            await player.config.update()
+        if (player := typing.cast(Player, self.cog.lavalink.get_player(self.source.guild_id))) and is_dj is not False:
             if player.paused:
                 self.add_item(self.resume_button)
             else:
@@ -276,9 +277,9 @@ class QueueMenu(BaseMenu):
                 self.show_history_button.disabled = True
             else:
                 self.add_item(self.show_history_button)
-            if player.config.repeat_current:
+            if await player.config.fetch_repeat_current():
                 self.add_item(self.repeat_button_on)
-            elif player.config.repeat_queue:
+            elif await player.config.fetch_repeat_queue():
                 self.add_item(self.repeat_queue_button_on)
             else:
                 self.add_item(self.repeat_button_off)
@@ -583,142 +584,3 @@ class EffectPickerMenu(BaseMenu):
             await interaction.response.edit_message(view=self)
         elif self.message is not None:
             await self.message.edit(view=self)
-
-
-class SearchPickerMenu(BaseMenu):
-    source: SearchPickerSource
-
-    def __init__(
-        self,
-        cog: CogT,
-        source: SearchPickerSource,
-        original_author: discord.abc.User,
-        *,
-        clear_buttons_after: bool = True,
-        delete_after_timeout: bool = False,
-        timeout: int = 120,
-        message: discord.Message = None,
-        starting_page: int = 0,
-        **kwargs: Any,
-    ) -> None:
-        super().__init__(
-            cog=cog,
-            bot=cog.bot,
-            source=source,
-            clear_buttons_after=clear_buttons_after,
-            delete_after_timeout=delete_after_timeout,
-            timeout=timeout,
-            message=message,
-            starting_page=starting_page,
-            **kwargs,
-        )
-        self.cog = cog
-        self.bot = cog.bot
-        self.author = original_author
-        self.forward_button = NavigateButton(
-            style=discord.ButtonStyle.grey,
-            emoji="\N{BLACK RIGHT-POINTING TRIANGLE}\N{VARIATION SELECTOR-16}",
-            direction=1,
-            row=4,
-            cog=cog,
-        )
-        self.backward_button = NavigateButton(
-            style=discord.ButtonStyle.grey,
-            emoji="\N{BLACK LEFT-POINTING TRIANGLE}\N{VARIATION SELECTOR-16}",
-            direction=-1,
-            row=4,
-            cog=cog,
-        )
-        self.first_button = NavigateButton(
-            style=discord.ButtonStyle.grey,
-            emoji="\N{BLACK LEFT-POINTING DOUBLE TRIANGLE}",
-            direction=0,
-            row=4,
-            cog=cog,
-        )
-        self.last_button = NavigateButton(
-            style=discord.ButtonStyle.grey,
-            emoji="\N{BLACK RIGHT-POINTING DOUBLE TRIANGLE}",
-            direction=self.source.get_max_pages,
-            row=4,
-            cog=cog,
-        )
-        self.close_button = CloseButton(
-            style=discord.ButtonStyle.red,
-            row=4,
-            cog=cog,
-        )
-        self.select_view: SearchSelectTrack | None = None
-        self.name = None
-        self.url = None
-        self.scope = None
-        self.add_tracks = set()
-        self.remove_tracks = set()
-
-        self.clear = None
-        self.delete = None
-        self.cancelled = True
-        self.done = False
-        self.update = False
-        self.queue = None
-        self.dedupe = None
-
-        self.add_item(self.done_button)
-        self.add_item(self.close_button)
-        self.add_item(self.delete_button)
-        self.add_item(self.clear_button)
-        self.add_item(self.update_button)
-        self.add_item(self.name_button)
-        self.add_item(self.url_button)
-        self.add_item(self.add_button)
-        self.add_item(self.remove_button)
-        self.add_item(self.download_button)
-
-        self.add_item(self.playlist_enqueue_button)
-        self.add_item(self.playlist_info_button)
-        self.add_item(self.queue_button)
-        self.add_item(self.dedupe_button)
-
-    async def start(self, ctx: PyLavContext | InteractionT):
-        if isinstance(ctx, discord.Interaction):
-            ctx = await self.cog.bot.get_context(ctx)
-        if ctx.interaction and not ctx.interaction.response.is_done():
-            await ctx.defer(ephemeral=True)
-        self.ctx = ctx
-        await self.send_initial_message(ctx)
-
-    async def show_page(self, page_number: int, interaction: InteractionT):
-        self.current_page = page_number
-        kwargs = await self.get_page(self.current_page)
-        await self.prepare()
-        if not interaction.response.is_done():
-            await interaction.response.edit_message(**kwargs, view=self)
-        else:
-            await interaction.followup.edit(**kwargs, view=self)
-
-    async def prepare(self):
-        self.clear_items()
-        max_pages = self.source.get_max_pages()
-        self.forward_button.disabled = False
-        self.backward_button.disabled = False
-        self.first_button.disabled = False
-        self.last_button.disabled = False
-        if max_pages == 2:
-            self.first_button.disabled = True
-            self.last_button.disabled = True
-        elif max_pages == 1:
-            self.forward_button.disabled = True
-            self.backward_button.disabled = True
-            self.first_button.disabled = True
-            self.last_button.disabled = True
-        if self.source.select_options:
-            options = self.source.select_options
-            title = _("Select Track To Enqueue")
-            self.remove_item(self.select_view)
-            self.select_view = SearchSelectTrack(options, self.cog, title, self.source.select_mapping)
-            self.add_item(self.select_view)
-        if self.select_view and not self.source.select_options:
-            self.remove_item(self.select_view)
-            self.select_view = None
-
-        self.add_item(self.close_button)

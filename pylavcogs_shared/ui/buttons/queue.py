@@ -1,12 +1,13 @@
 from __future__ import annotations
 
 import contextlib
+import typing
 from pathlib import Path
 
 import discord
 from redbot.core.i18n import Translator
 
-from pylav import emojis
+from pylav import Player, emojis
 from pylav.types import CogT, InteractionT
 
 _ = Translator("PyLavShared", Path(__file__))
@@ -165,7 +166,7 @@ class ToggleRepeatButton(discord.ui.Button):
         if not interaction.response.is_done():
             await interaction.response.defer(ephemeral=True, thinking=True)
         context = await self.cog.bot.get_context(interaction)
-        player = context.player
+        player = typing.cast(Player, context.player)
         if not player:
             return await context.send(
                 embed=await self.cog.lavalink.construct_embed(
@@ -173,8 +174,7 @@ class ToggleRepeatButton(discord.ui.Button):
                 ),
                 ephemeral=True,
             )
-        await player.config.update()
-        repeat_queue = bool(player.config.repeat_current)
+        repeat_queue = bool(await player.config.fetch_repeat_queue())
         await self.cog.command_repeat.callback(self.cog, context, queue=repeat_queue)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
@@ -230,6 +230,7 @@ class ToggleRepeatQueueButton(discord.ui.Button):
             await interaction.response.defer(ephemeral=True, thinking=True)
         context = await self.cog.bot.get_context(interaction)
         player = context.player
+        player = typing.cast(Player, context.player)
         if not player:
             return await context.send_message(
                 embed=await self.cog.lavalink.construct_embed(
@@ -237,8 +238,7 @@ class ToggleRepeatQueueButton(discord.ui.Button):
                 ),
                 ephemeral=True,
             )
-        await player.config.update()
-        repeat_queue = bool(player.config.repeat_current)
+        repeat_queue = bool(await player.config.fetch_repeat_current())
         await self.cog.command_repeat.callback(self.cog, context, queue=repeat_queue)
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
