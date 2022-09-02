@@ -65,7 +65,7 @@ def can_run_command_in_channel(slash: bool = False):
         else:
             config = bot.lavalink.player_config_manager.get_config(context.guild.id)
 
-        if (channel_id := await config.fetch_text_channel_id()) and channel_id != context.channel.id:
+        if (channel_id := await config.fetch_text_channel_id()) != 0 and channel_id != context.channel.id:
             raise UnauthorizedChannelError(channel=channel_id)
         return True
 
