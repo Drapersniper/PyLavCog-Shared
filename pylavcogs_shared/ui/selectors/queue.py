@@ -60,7 +60,7 @@ class QueueSelectTrack(discord.ui.Select):
                 self.cog, interaction, track_url_or_index=f"{index}", remove_duplicates=True
             )
         else:
-            await self.cog.command_playnow.callback(self.cog, interaction, queue_number=index)
+            await self.cog.command_bump.callback(self.cog, interaction, queue_number=index)
         self.view.stop()
         await self.view.on_timeout()
 
