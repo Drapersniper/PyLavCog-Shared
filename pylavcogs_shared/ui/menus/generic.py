@@ -93,7 +93,7 @@ class BaseMenu(discord.ui.View):
         if not interaction.response.is_done():
             await interaction.response.edit_message(**kwargs, view=self)
         else:
-            await interaction.followup.edit(**kwargs, view=self)
+            await interaction.edit_original_response(**kwargs, view=self)
 
     async def show_checked_page(self, page_number: int, interaction: InteractionT) -> None:
         max_pages = self._source.get_max_pages()
