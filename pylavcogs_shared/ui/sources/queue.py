@@ -11,10 +11,9 @@ from redbot.core.i18n import Translator
 from redbot.vendored.discord.ext import menus
 
 from pylav import Track
-from pylav.sql.models import PlaylistModel
 from pylav.types import CogT
 
-from pylavcogs_shared.ui.selectors.options.queue import EffectsOption, QueueTrackOption, SearchTrackOption
+from pylavcogs_shared.ui.selectors.options.queue import QueueTrackOption, SearchTrackOption
 
 if TYPE_CHECKING:
     from pylavcogs_shared.ui.menus.queue import QueueMenu, QueuePickerMenu
@@ -47,112 +46,6 @@ class SearchPickerSource(menus.ListPageSource):
 
     async def format_page(self, menu: QueueMenu, entries: list[Track]) -> str:
         return ""
-
-    def get_max_pages(self):
-        """:class:`int`: The maximum number of pages required to paginate this sequence"""
-        return self._max_pages or 1
-
-
-class EffectsPickerSource(menus.ListPageSource):
-    def __init__(self, guild_id: int, cog: CogT):
-        super().__init__(
-            entries=[
-                "reset",
-                "nightcore",
-                "vaporwave",
-                "synth",
-                "bassboost",
-                "metal",
-                "piano",
-                "default",
-            ],
-            per_page=25,
-        )
-        self.guild_id = guild_id
-        self.select_options: list[EffectsOption] = []
-        self.select_mapping: dict[str, str] = {}
-        self.cog = cog
-
-    def get_starting_index_and_page_number(self, menu: QueueMenu) -> tuple[int, int]:
-        page_num = menu.current_page
-        start = page_num * self.per_page
-        return start, page_num
-
-    async def format_page(self, menu: QueueMenu, playlists: list[PlaylistModel]) -> str:
-        return ""
-
-    async def get_page(self, page_number):
-        if page_number > self.get_max_pages():
-            page_number = 0
-        base = page_number * self.per_page
-        self.select_options.clear()
-        self.select_mapping.clear()
-        for i, effect in enumerate(self.entries[base : base + self.per_page], start=base):  # noqa: E203
-            self.select_mapping[f"{effect}"] = effect
-            if effect in ["reset", "default"]:
-                self.select_options.append(
-                    EffectsOption(
-                        label=effect.title(),
-                        value=effect,
-                        description=_("Reset the effects to default"),
-                        index=i,
-                    )
-                )
-            elif effect == "nightcore":
-                self.select_options.append(
-                    EffectsOption(
-                        label=effect.title(),
-                        value=effect,
-                        description=_("Apply the Nightcore effect"),
-                        index=i,
-                    )
-                )
-            elif effect == "vaporwave":
-                self.select_options.append(
-                    EffectsOption(
-                        label=effect.title(),
-                        value=effect,
-                        description=_("Apply the Vaporwave effect"),
-                        index=i,
-                    )
-                )
-            elif effect == "synth":
-                self.select_options.append(
-                    EffectsOption(
-                        label=effect.title(),
-                        value=effect,
-                        description=_("Apply the Synth effect"),
-                        index=i,
-                    )
-                )
-            elif effect == "bassboost":
-                self.select_options.append(
-                    EffectsOption(
-                        label=effect.title(),
-                        value=effect,
-                        description=_("Apply the Bassboost equalizer preset"),
-                        index=i,
-                    )
-                )
-            elif effect == "metal":
-                self.select_options.append(
-                    EffectsOption(
-                        label=effect.title(),
-                        value=effect,
-                        description=_("Apply the Metal equalizer preset"),
-                        index=i,
-                    )
-                )
-            elif effect == "piano":
-                self.select_options.append(
-                    EffectsOption(
-                        label=effect.title(),
-                        value=effect,
-                        description=_("Apply the Piano equalizer preset"),
-                        index=i,
-                    )
-                )
-        return self.entries[base : base + self.per_page]  # noqa: E203
 
     def get_max_pages(self):
         """:class:`int`: The maximum number of pages required to paginate this sequence"""

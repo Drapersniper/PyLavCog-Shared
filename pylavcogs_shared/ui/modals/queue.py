@@ -24,7 +24,7 @@ class EnqueueModal(discord.ui.Modal):
         self.text = discord.ui.TextInput(
             style=discord.TextStyle.paragraph,
             label=_("Search for a song to add to the queue"),
-            placeholder=_("Hello by Adele, tts:Hello, https://open.spotify.com/playlist/37i9dQZF1DX6XceWZP1znY"),
+            placeholder=_("Hello by Adele, speak:Hello, https://open.spotify.com/playlist/37i9dQZF1DX6XceWZP1znY"),
         )
         self.add_item(self.text)
 
@@ -32,5 +32,5 @@ class EnqueueModal(discord.ui.Modal):
         await self.cog.command_play.callback(
             self.cog,
             interaction,
-            query=[self.text.value.strip()],
+            query=self.text.value.strip(),
         )

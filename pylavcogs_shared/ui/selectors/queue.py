@@ -9,7 +9,7 @@ from redbot.core.i18n import Translator
 from pylav.tracks import Track
 from pylav.types import CogT, InteractionT
 
-from pylavcogs_shared.ui.selectors.options.queue import EffectsOption, QueueTrackOption, SearchTrackOption
+from pylavcogs_shared.ui.selectors.options.queue import QueueTrackOption, SearchTrackOption
 
 _ = Translator("PyLavShared", Path(__file__))
 
@@ -61,39 +61,6 @@ class QueueSelectTrack(discord.ui.Select):
             )
         else:
             await self.cog.command_bump.callback(self.cog, interaction, queue_number=index)
-        self.view.stop()
-        await self.view.on_timeout()
-
-
-class EffectsSelector(discord.ui.Select):
-    def __init__(
-        self,
-        options: list[EffectsOption],
-        cog: CogT,
-        placeholder: str,
-        mapping: dict[str, str],
-    ):
-        super().__init__(min_values=1, max_values=1, options=options, placeholder=placeholder)
-        self.cog = cog
-        self.mapping = mapping
-
-    async def callback(self, interaction: InteractionT):
-        effect_value = self.values[0]
-        label: str = self.mapping.get(effect_value)
-        if label is None:
-            await interaction.response.send_message(
-                embed=await self.cog.lavalink.construct_embed(messageable=interaction, title=_("No Preset Selected")),
-                ephemeral=True,
-            )
-            self.view.stop()
-            await self.view.on_timeout()
-            return
-        self.cog.dispatch_msg(  # TODO Replace with preset command
-            ctx=self.view.ctx,
-            interaction=interaction,
-            command=self.cog.command_effects,
-            args=f" {label}",
-        )
         self.view.stop()
         await self.view.on_timeout()
 
