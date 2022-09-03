@@ -136,10 +136,11 @@ class NodeListSource(menus.ListPageSource):
             plugins = {}
         plugins_str = ""
         for plugin in plugins:
-            plugins_str += EightBitANSI.paint_white(_("Name: {name}\nVersion: {version}\n\n")).format(
+            plugins_str += EightBitANSI.paint_white(_("Name: {name}\nVersion: {version}")).format(
                 name=EightBitANSI.paint_blue(plugin.get("name")) or EightBitANSI.paint_red(_("Unknown")),
                 version=EightBitANSI.paint_blue(plugin.get("version")) or EightBitANSI.paint_red(_("Unknown")),
             )
+            plugins_str += "\n\n"
         plugins_str = plugins_str.strip() or EightBitANSI.paint_red(_("None / Unknown"))
         humanize.i18n.deactivate()
         t_property = EightBitANSI.paint_yellow(_("Property"), bold=True, underline=True)
