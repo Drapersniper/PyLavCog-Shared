@@ -150,7 +150,7 @@ class AddNodeFlow(discord.ui.View):
         self.reconnect_attempts = -1
         self.ssl = False
         self.search_only = False
-        self.unique_identifier = None
+        self.unique_identifier = int(time.time())
         self.done = False
 
         self.add_item(self.done_button)
