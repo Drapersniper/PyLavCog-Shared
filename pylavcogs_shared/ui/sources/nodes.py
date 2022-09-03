@@ -17,6 +17,7 @@ from tabulate import tabulate
 from pylav.node import Node
 from pylav.sql.models import NodeModel
 from pylav.types import CogT
+from pylav.utils.theme import EightBitANSI
 
 from pylavcogs_shared.ui.selectors.options.nodes import NodeOption
 
@@ -89,9 +90,12 @@ class NodeListSource(menus.ListPageSource):
         host = node.host
         port = node.port
         password = node.password
-        secure = _("Yes") if node.ssl else _("No")
-        connected = _("Yes") if node.available else _("No")
-        search_only = _("Yes") if node.search_only else _("No")
+        no = EightBitANSI.paint_red(_("No"))
+        yes = EightBitANSI.paint_green(_("Yes"))
+
+        secure = yes if node.ssl else no
+        connected = yes if node.available else no
+        search_only = yes if node.search_only else no
         locale = f"{i18n.get_babel_locale()}"
         with contextlib.suppress(Exception):
             humanize.i18n.activate(locale)
@@ -132,37 +136,52 @@ class NodeListSource(menus.ListPageSource):
             plugins = {}
         plugins_str = ""
         for plugin in plugins:
-            plugins_str += _("Name: {name}\nVersion: {version}\n\n").format(
-                name=plugin.get("name", _("Unknown")), version=plugin.get("version", _("version"))
+            plugins_str += EightBitANSI.paint_white(_("Name: {name}\nVersion: {version}\n\n")).format(
+                name=EightBitANSI.paint_blue(plugin.get("name")) or EightBitANSI.paint_red(_("Unknown")),
+                version=EightBitANSI.paint_blue(plugin.get("version")) or EightBitANSI.paint_red(_("Unknown")),
             )
-        plugins_str = plugins_str.strip() or _("None / Unknown")
+        plugins_str = plugins_str.strip() or EightBitANSI.paint_red(_("None / Unknown"))
         humanize.i18n.deactivate()
-        t_property = _("Property")
-        t_values = _("Value")
+        t_property = EightBitANSI.paint_yellow(_("Property"), bold=True, underline=True)
+        t_values = EightBitANSI.paint_yellow(_("Value"), bold=True, underline=True)
+        coordinate_str = EightBitANSI.paint_white(_("Latitude: {lat}\nLongitude: {lon}")).format(
+            lat=EightBitANSI.paint_blue(coord[0] if coord else "?"),
+            lon=EightBitANSI.paint_blue(coord[1] if coord else "?"),
+        )
+
         data = {
-            _("Region"): region or _("N/A"),
-            _("Coordinates"): _("Latitude: {lat}\nLongitude: {lon}").format(
-                lat=coord[0] if coord else "?", lon=coord[1] if coord else "?"
+            EightBitANSI.paint_white(_("Region")): EightBitANSI.paint_blue(region or _("N/A")),
+            EightBitANSI.paint_white(_("Coordinates")): coordinate_str,
+            EightBitANSI.paint_white(_("Host")): EightBitANSI.paint_blue(host),
+            EightBitANSI.paint_white(_("Port")): EightBitANSI.paint_blue(port),
+            EightBitANSI.paint_white(_("Password")): EightBitANSI.paint_blue(
+                "*" * await asyncstdlib.min([len(password), 10])
             ),
-            _("Host"): host,
-            _("Port"): f"{port}",
-            _("Password"): "*" * await asyncstdlib.min([len(password), 10]),
-            _("SSL"): secure,
-            _("Available"): connected,
-            _("Search Only"): search_only,
-            _("Players\nConnected\nActive"): f"-\n{pylav_connected_players}/{server_connected_players or '?'}\n"
-            f"{pylav_active_players}/{server_active_players or '?'}",
-            _("Frames Lost"): f"{(abs(frames_deficit) + abs(frames_nulled))/(frames_sent or 1) * 100:.2f}%"
+            EightBitANSI.paint_white(_("SSL")): secure,
+            EightBitANSI.paint_white(_("Available")): connected,
+            EightBitANSI.paint_white(_("Search Only")): search_only,
+            EightBitANSI.paint_white(_("Players\nConnected\nActive")): EightBitANSI.paint_blue(
+                f"-\n{pylav_connected_players}/{server_connected_players or '?'}\n"
+                f"{pylav_active_players}/{server_active_players or '?'}"
+            ),
+            EightBitANSI.paint_white(_("Frames Lost")): EightBitANSI.paint_blue(
+                f"{(abs(frames_deficit) + abs(frames_nulled))/(frames_sent or 1) * 100:.2f}%"
+            )
             if ((abs(frames_deficit) + abs(frames_nulled)) / (frames_sent or 1)) > 0
-            else "0%",
-            _("Uptime"): uptime,
-            _("CPU Load\nLavalink\nSystem"): f"-\n{lavalink_load}%\n{system_load}%",
-            _("Penalty"): penalty,
-            _("Memory\nUsed\nFree\nAllocated\nReservable"): f"-\n{used}\n{free}\n{allocated}\n{reservable}",
-            _("Plugins"): plugins_str,
+            else EightBitANSI.paint_blue("0%"),
+            EightBitANSI.paint_white(_("Uptime")): EightBitANSI.paint_blue(uptime),
+            EightBitANSI.paint_white(_("CPU Load\nLavalink\nSystem")): EightBitANSI.paint_blue(
+                f"-\n{lavalink_load}%\n{system_load}%"
+            ),
+            EightBitANSI.paint_white(_("Penalty")): EightBitANSI.paint_blue(penalty),
+            EightBitANSI.paint_white(_("Memory\nUsed\nFree\nAllocated\nReservable")): EightBitANSI.paint_blue(
+                f"-\n{used}\n{free}\n{allocated}\n{reservable}"
+            ),
+            EightBitANSI.paint_white(_("Plugins")): plugins_str,
         }
         description = box(
-            tabulate([{t_property: k, t_values: v} for k, v in data.items()], headers="keys", tablefmt="fancy_grid")
+            tabulate([{t_property: k, t_values: v} for k, v in data.items()], headers="keys", tablefmt="fancy_grid"),
+            lang="ansi",
         )
         embed = await self.cog.lavalink.construct_embed(
             messageable=menu.ctx,
@@ -224,9 +243,12 @@ class NodeManageSource(menus.ListPageSource):
         host = node.host
         port = node.port
         password = node.password
-        secure = _("Yes") if node.ssl else _("No")
-        connected = _("Yes") if node.available else _("No")
-        search_only = _("Yes") if node.search_only else _("No")
+        no = EightBitANSI.paint_red(_("No"))
+        yes = EightBitANSI.paint_green(_("Yes"))
+
+        secure = yes if node.ssl else no
+        connected = yes if node.available else no
+        search_only = yes if node.search_only else no
         locale = f"{i18n.get_babel_locale()}"
         with contextlib.suppress(Exception):
             humanize.i18n.activate(locale)
@@ -240,7 +262,7 @@ class NodeManageSource(menus.ListPageSource):
             frames_nulled = node.stats.frames_nulled
             frames_deficit = node.stats.frames_deficit
 
-            uptime = humanize.naturaldelta(node.stats.uptime)
+            uptime = humanize.naturaldelta(node.stats.uptime_seconds)
             system_load = humanize_number(round(node.stats.system_load, 2))
             lavalink_load = humanize_number(round(node.stats.lavalink_load, 2))
 
@@ -261,42 +283,58 @@ class NodeManageSource(menus.ListPageSource):
             allocated = "?"
             reservable = "?"
             penalty = "?"
-
-        humanize.i18n.deactivate()
-        t_property = _("Property")
-        t_values = _("Value")
-        plugins = await node.get_plugins()
+        try:
+            plugins = await node.get_plugins()
+        except Exception:
+            plugins = {}
         plugins_str = ""
         for plugin in plugins:
-            plugins_str += _("Name: {name}\nVersion: {version}\n\n").format(
-                name=plugin.get("name", _("Unknown")), version=plugin.get("version", _("version"))
+            plugins_str += EightBitANSI.paint_white(_("Name: {name}\nVersion: {version}\n\n")).format(
+                name=EightBitANSI.paint_blue(plugin.get("name")) or EightBitANSI.paint_red(_("Unknown")),
+                version=EightBitANSI.paint_blue(plugin.get("version")) or EightBitANSI.paint_red(_("Unknown")),
             )
-        plugins_str = plugins_str.strip() or _("None")
+        plugins_str = plugins_str.strip() or EightBitANSI.paint_red(_("None / Unknown"))
         humanize.i18n.deactivate()
+        t_property = EightBitANSI.paint_yellow(_("Property"), bold=True, underline=True)
+        t_values = EightBitANSI.paint_yellow(_("Value"), bold=True, underline=True)
+        coordinate_str = EightBitANSI.paint_white(_("Latitude: {lat}\nLongitude: {lon}")).format(
+            lat=EightBitANSI.paint_blue(coord[0] if coord else "?"),
+            lon=EightBitANSI.paint_blue(coord[1] if coord else "?"),
+        )
+
         data = {
-            _("Region"): region or _("N/A"),
-            _("Coordinates"): _("Latitude: {lat}\nLongitude: {lon}").format(
-                lat=coord[0] if coord else "?", lon=coord[1] if coord else "?"
+            EightBitANSI.paint_white(_("Region")): EightBitANSI.paint_blue(region or _("N/A")),
+            EightBitANSI.paint_white(_("Coordinates")): coordinate_str,
+            EightBitANSI.paint_white(_("Host")): EightBitANSI.paint_blue(host),
+            EightBitANSI.paint_white(_("Port")): EightBitANSI.paint_blue(port),
+            EightBitANSI.paint_white(_("Password")): EightBitANSI.paint_blue(
+                "*" * await asyncstdlib.min([len(password), 10])
             ),
-            _("Host"): host,
-            _("Port"): f"{port}",
-            _("Password"): "*" * await asyncstdlib.min([len(password), 10]),
-            _("SSL"): secure,
-            _("Available"): connected,
-            _("Search Only"): search_only,
-            _("Players\nConnected\nActive"): f"-\n{pylav_connected_players}/{server_connected_players or '?'}\n"
-            f"{pylav_active_players}/{server_active_players or '?'}",
-            _("Frames Lost"): f"{(abs(frames_deficit) + abs(frames_nulled)) / (frames_sent or 1) * 100:.2f}%"
+            EightBitANSI.paint_white(_("SSL")): secure,
+            EightBitANSI.paint_white(_("Available")): connected,
+            EightBitANSI.paint_white(_("Search Only")): search_only,
+            EightBitANSI.paint_white(_("Players\nConnected\nActive")): EightBitANSI.paint_blue(
+                f"-\n{pylav_connected_players}/{server_connected_players or '?'}\n"
+                f"{pylav_active_players}/{server_active_players or '?'}"
+            ),
+            EightBitANSI.paint_white(_("Frames Lost")): EightBitANSI.paint_blue(
+                f"{(abs(frames_deficit) + abs(frames_nulled)) / (frames_sent or 1) * 100:.2f}%"
+            )
             if ((abs(frames_deficit) + abs(frames_nulled)) / (frames_sent or 1)) > 0
-            else "0%",
-            _("Uptime"): uptime,
-            _("CPU Load\nLavalink\nSystem"): f"-\n{lavalink_load}%\n{system_load}%",
-            _("Penalty"): penalty,
-            _("Memory\nUsed\nFree\nAllocated\nReservable"): f"-\n{used}\n{free}\n{allocated}\n{reservable}",
-            _("Plugins"): plugins_str,
+            else EightBitANSI.paint_blue("0%"),
+            EightBitANSI.paint_white(_("Uptime")): EightBitANSI.paint_blue(uptime),
+            EightBitANSI.paint_white(_("CPU Load\nLavalink\nSystem")): EightBitANSI.paint_blue(
+                f"-\n{lavalink_load}%\n{system_load}%"
+            ),
+            EightBitANSI.paint_white(_("Penalty")): EightBitANSI.paint_blue(penalty),
+            EightBitANSI.paint_white(_("Memory\nUsed\nFree\nAllocated\nReservable")): EightBitANSI.paint_blue(
+                f"-\n{used}\n{free}\n{allocated}\n{reservable}"
+            ),
+            EightBitANSI.paint_white(_("Plugins")): plugins_str,
         }
         description = box(
-            tabulate([{t_property: k, t_values: v} for k, v in data.items()], headers="keys", tablefmt="fancy_grid")
+            tabulate([{t_property: k, t_values: v} for k, v in data.items()], headers="keys", tablefmt="fancy_grid"),
+            lang="ansi",
         )
         embed = await self.cog.lavalink.construct_embed(
             messageable=menu.ctx,

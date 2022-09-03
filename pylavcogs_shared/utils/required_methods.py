@@ -21,6 +21,7 @@ from pylav import Client, NoNodeAvailable
 from pylav.exceptions import NoNodeWithRequestFunctionalityAvailable
 from pylav.types import BotT, CogT
 from pylav.utils import PyLavContext
+from pylav.utils.theme import EightBitANSI
 
 from pylavcogs_shared import __VERSION__ as pylavcogs_shared_version
 from pylavcogs_shared.errors import (
@@ -84,13 +85,23 @@ async def pylav_version(context: PyLavContext) -> None:
     if context.interaction and not context.interaction.response.is_done():
         await context.defer(ephemeral=True)
     data = [
-        ("PyLavCogs-Shared", pylavcogs_shared_version),
-        ("PyLav", context.lavalink.lib_version),
+        (EightBitANSI.paint_white("PyLavCogs-Shared"), EightBitANSI.paint_blue(pylavcogs_shared_version)),
+        (EightBitANSI.paint_white("PyLav"), EightBitANSI.paint_blue(context.lavalink.lib_version)),
     ]
 
     await context.send(
         embed=await context.lavalink.construct_embed(
-            description=box(tabulate(data, headers=(_("Library"), _("Version")), tablefmt="fancy_grid")),
+            description=box(
+                tabulate(
+                    data,
+                    headers=(
+                        EightBitANSI.paint_yellow(_("Library"), bold=True, underline=True),
+                        EightBitANSI.paint_yellow(_("Version"), bold=True, underline=True),
+                    ),
+                    tablefmt="fancy_grid",
+                ),
+                lang="ansi",
+            ),
             messageable=context,
         ),
         ephemeral=True,

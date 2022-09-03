@@ -11,6 +11,7 @@ from redbot.vendored.discord.ext import menus
 from tabulate import tabulate
 
 from pylav.types import CogT
+from pylav.utils.theme import EightBitANSI
 
 if TYPE_CHECKING:
     from pylavcogs_shared.ui.menus.generic import BaseMenu
@@ -31,8 +32,8 @@ class EQPresetsSource(menus.ListPageSource):
         return start, page_num
 
     async def format_page(self, menu: BaseMenu, page: list[tuple[str, dict]]) -> discord.Embed:
-        header_name = _("Preset Name")
-        header_author = _("Author")
+        header_name = EightBitANSI.paint_yellow(_("Preset Name"), bold=True, underline=True)
+        header_author = EightBitANSI.paint_yellow(_("Author"), bold=True, underline=True)
         data = []
         for preset_name, preset_data in page:
             try:
@@ -41,12 +42,12 @@ class EQPresetsSource(menus.ListPageSource):
                 author = "Build-in"
             data.append(
                 {
-                    header_name: preset_name,
-                    header_author: f"{author}",
+                    header_name: EightBitANSI.paint_white(preset_name),
+                    header_author: EightBitANSI.paint_blue(author),
                 }
             )
         embed = await self.cog.lavalink.construct_embed(
-            messageable=menu.ctx, description=box(tabulate(data, headers="keys"))
+            messageable=menu.ctx, description=box(tabulate(data, headers="keys"), lang="ansi")
         )
         return embed
 
