@@ -67,9 +67,6 @@ else:
                     ("Fine Tuned", _("Fine Tuned")),
                     ("Cut-off", _("Cut-off")),
                     ("Off", _("Off")),
-                    ("Maximum", _("Maximum")),
-                    ("Maximum", _("Maximum")),
-                    ("Maximum", _("Maximum")),
                 ]
                 if current.lower() in p.lower()
             ]
