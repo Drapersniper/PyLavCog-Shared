@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-08-31 13:43+0000\n"
-"PO-Revision-Date: 2022-08-31 13:44\n"
+"POT-Creation-Date: 2022-09-04 12:33+0000\n"
+"PO-Revision-Date: 2022-09-04 12:36\n"
 "Last-Translator: \n"
 "Language-Team: Finnish\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,12 @@ msgstr ""
 "X-Crowdin-File-ID: 590\n"
 "Language: fi_FI\n"
 
-#: pylavcogs_shared/utils/required_methods.py:47
+#: pylavcogs_shared/utils/required_methods.py:48
 #, docstring
 msgid "Shows the credits and translation details for the PyLav cogs and shared code"
 msgstr "Näyttää krediitit ja käännökset PyLav koodeille ja jaetuille koodille"
 
-#: pylavcogs_shared/utils/required_methods.py:51
+#: pylavcogs_shared/utils/required_methods.py:52
 msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
 "PyLav can be located in https://github.com/Drapersniper/PyLav\n"
 "PyLavCog-Shared can be located in https://github.com/Drapersniper/PyLavCog-Shared\n"
@@ -50,57 +50,57 @@ msgstr "PyLavin on luonut [Draper#66](https://github.com/Drapersniper).\n\n"
 "Jos haluat ostaa minulle kahvin työtäni varten:\n"
 "https://www.buymeacoffee.com/draper tai https://github.com/sponsors/Drapersniper"
 
-#: pylavcogs_shared/utils/required_methods.py:81
+#: pylavcogs_shared/utils/required_methods.py:82
 #, docstring
 msgid "Show the version of PyLav and PyLavCogs-Shared libraries"
 msgstr "Näytä PyLav- ja PyLavCogs-jaettujen kirjastojen versio"
 
-#: pylavcogs_shared/utils/required_methods.py:93
+#: pylavcogs_shared/utils/required_methods.py:98
 msgid "Library"
 msgstr "Kirjasto"
 
-#: pylavcogs_shared/utils/required_methods.py:93
+#: pylavcogs_shared/utils/required_methods.py:99
 msgid "Version"
 msgstr "Versio"
 
-#: pylavcogs_shared/utils/required_methods.py:107
+#: pylavcogs_shared/utils/required_methods.py:118
 #, docstring
 msgid "Sync the Bots slash commands"
 msgstr "Synkronoi bottien kauttaviivakomennot"
 
-#: pylavcogs_shared/utils/required_methods.py:116
+#: pylavcogs_shared/utils/required_methods.py:127
 msgid "Synced the bots slash commands"
 msgstr "Synkronoi botit kauttaviivakomennot"
 
-#: pylavcogs_shared/utils/required_methods.py:137
+#: pylavcogs_shared/utils/required_methods.py:148
 msgid "This command requires an existing player to be run"
 msgstr "Tämä komento vaatii olemassa olevan pelaajan suorittamisen"
 
-#: pylavcogs_shared/utils/required_methods.py:146
+#: pylavcogs_shared/utils/required_methods.py:157
 msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later"
 msgstr "MediaPlayerin koodaus on tällä hetkellä tilapäisesti poissa käytöstä, koska taustaosan palvelu on katkaistu, yritä myöhemmin uudelleen"
 
-#: pylavcogs_shared/utils/required_methods.py:150
+#: pylavcogs_shared/utils/required_methods.py:161
 msgid "No Lavalink node currently available"
 msgstr "Ei Lavalink solmua tällä hetkellä saatavilla"
 
-#: pylavcogs_shared/utils/required_methods.py:159
+#: pylavcogs_shared/utils/required_methods.py:170
 msgid "MediaPlayer is currently unable to process tracks belonging to {feature}"
 msgstr "MediaPlayer ei pysty tällä hetkellä käsittelemään {feature} kuuluvia kappaleita"
 
-#: pylavcogs_shared/utils/required_methods.py:162
+#: pylavcogs_shared/utils/required_methods.py:173
 msgid "No Lavalink node currently available with feature {feature}"
 msgstr "Ei Lavalink solmua tällä hetkellä saatavilla ominaisuudella {feature}"
 
-#: pylavcogs_shared/utils/required_methods.py:173
+#: pylavcogs_shared/utils/required_methods.py:184
 msgid "This command is not available in this channel. Please use {channel}"
 msgstr "Tämä komento ei ole käytettävissä tällä kanavalla. Käytä {channel}"
 
-#: pylavcogs_shared/utils/required_methods.py:185
+#: pylavcogs_shared/utils/required_methods.py:196
 msgid "This command requires you to be a DJ"
 msgstr "Tämä komento edellyttää, että olet DJ"
 
-#: pylavcogs_shared/utils/required_methods.py:223
+#: pylavcogs_shared/utils/required_methods.py:234
 msgid "PyLav is not ready - Please try again shortly"
 msgstr "PyLav ei ole valmis - Yritä uudelleen hetken kuluttua"
 

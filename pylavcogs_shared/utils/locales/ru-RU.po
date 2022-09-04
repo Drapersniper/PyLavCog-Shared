@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-08-31 13:43+0000\n"
-"PO-Revision-Date: 2022-08-31 13:44\n"
+"POT-Creation-Date: 2022-09-04 12:33+0000\n"
+"PO-Revision-Date: 2022-09-04 12:36\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,12 @@ msgstr ""
 "X-Crowdin-File-ID: 590\n"
 "Language: ru_RU\n"
 
-#: pylavcogs_shared/utils/required_methods.py:47
+#: pylavcogs_shared/utils/required_methods.py:48
 #, docstring
 msgid "Shows the credits and translation details for the PyLav cogs and shared code"
 msgstr "Показывает кредиты и детали перевода для кодов PyLav и общего кода"
 
-#: pylavcogs_shared/utils/required_methods.py:51
+#: pylavcogs_shared/utils/required_methods.py:52
 msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
 "PyLav can be located in https://github.com/Drapersniper/PyLav\n"
 "PyLavCog-Shared can be located in https://github.com/Drapersniper/PyLavCog-Shared\n"
@@ -50,57 +50,57 @@ msgstr "PyLav был создан [Draper#6666](https://github.com/Drapersniper)
 "Если вы хотите купить мне кофе для моей работы, вы можете сделать это по адресу:\n"
 "https://www.buymeacoffee.com/draper или https://github.com/sponsors/Drapersniper"
 
-#: pylavcogs_shared/utils/required_methods.py:81
+#: pylavcogs_shared/utils/required_methods.py:82
 #, docstring
 msgid "Show the version of PyLav and PyLavCogs-Shared libraries"
 msgstr "Показать версию библиотек PyLav и PyLavCogs-Shared"
 
-#: pylavcogs_shared/utils/required_methods.py:93
+#: pylavcogs_shared/utils/required_methods.py:98
 msgid "Library"
 msgstr "Библиотека"
 
-#: pylavcogs_shared/utils/required_methods.py:93
+#: pylavcogs_shared/utils/required_methods.py:99
 msgid "Version"
 msgstr "Версии"
 
-#: pylavcogs_shared/utils/required_methods.py:107
+#: pylavcogs_shared/utils/required_methods.py:118
 #, docstring
 msgid "Sync the Bots slash commands"
 msgstr "Синхронизация слэш команд ботов"
 
-#: pylavcogs_shared/utils/required_methods.py:116
+#: pylavcogs_shared/utils/required_methods.py:127
 msgid "Synced the bots slash commands"
 msgstr "Синхронизированы команды слэш ботов"
 
-#: pylavcogs_shared/utils/required_methods.py:137
+#: pylavcogs_shared/utils/required_methods.py:148
 msgid "This command requires an existing player to be run"
 msgstr "Эта команда требует запуска существующего игрока"
 
-#: pylavcogs_shared/utils/required_methods.py:146
+#: pylavcogs_shared/utils/required_methods.py:157
 msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later"
 msgstr "В настоящее время ког MediaPlayer временно недоступен из-за невозможности работы с бэкэндом, пожалуйста, повторите попытку позже"
 
-#: pylavcogs_shared/utils/required_methods.py:150
+#: pylavcogs_shared/utils/required_methods.py:161
 msgid "No Lavalink node currently available"
 msgstr "В настоящее время нет доступных узлов Lavalink"
 
-#: pylavcogs_shared/utils/required_methods.py:159
+#: pylavcogs_shared/utils/required_methods.py:170
 msgid "MediaPlayer is currently unable to process tracks belonging to {feature}"
 msgstr "MediaPlayer в настоящее время не может обрабатывать треки, принадлежащие к {feature}"
 
-#: pylavcogs_shared/utils/required_methods.py:162
+#: pylavcogs_shared/utils/required_methods.py:173
 msgid "No Lavalink node currently available with feature {feature}"
 msgstr "В настоящее время нет доступных узлов Lavalink с функцией {feature}"
 
-#: pylavcogs_shared/utils/required_methods.py:173
+#: pylavcogs_shared/utils/required_methods.py:184
 msgid "This command is not available in this channel. Please use {channel}"
 msgstr "Эта команда не доступна на этом канале. Пожалуйста, используйте {channel}"
 
-#: pylavcogs_shared/utils/required_methods.py:185
+#: pylavcogs_shared/utils/required_methods.py:196
 msgid "This command requires you to be a DJ"
 msgstr "Эта команда требует, чтобы вы были DJ"
 
-#: pylavcogs_shared/utils/required_methods.py:223
+#: pylavcogs_shared/utils/required_methods.py:234
 msgid "PyLav is not ready - Please try again shortly"
 msgstr "PyLav не готов - Пожалуйста, попробуйте позже"
 

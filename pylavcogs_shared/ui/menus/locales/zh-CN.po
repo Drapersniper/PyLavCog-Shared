@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-08-31 13:15+0000\n"
-"PO-Revision-Date: 2022-08-31 13:42\n"
+"POT-Creation-Date: 2022-09-04 12:33+0000\n"
+"PO-Revision-Date: 2022-09-04 12:36\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
@@ -18,114 +18,114 @@ msgstr ""
 "Language: zh_CN\n"
 
 #: pylavcogs_shared/ui/menus/generic.py:115
-#: pylavcogs_shared/ui/menus/nodes.py:195
+#: pylavcogs_shared/ui/menus/nodes.py:197
 #: pylavcogs_shared/ui/menus/playlist.py:255
 #: pylavcogs_shared/ui/menus/playlist.py:470
 msgid "You are not authorized to interact with this"
 msgstr "您无权与这个交互功能"
 
-#: pylavcogs_shared/ui/menus/nodes.py:58
+#: pylavcogs_shared/ui/menus/nodes.py:60
 msgid "Enter the domain or IP address of the host"
 msgstr "输入主机的域名或IP地址"
 
-#: pylavcogs_shared/ui/menus/nodes.py:59
-#: pylavcogs_shared/ui/menus/nodes.py:492
+#: pylavcogs_shared/ui/menus/nodes.py:61
+#: pylavcogs_shared/ui/menus/nodes.py:495
 msgid "Host"
 msgstr "主机"
 
-#: pylavcogs_shared/ui/menus/nodes.py:66
+#: pylavcogs_shared/ui/menus/nodes.py:68
 msgid "Enter the host port to connect to"
 msgstr "输入要连接的主机端口"
 
-#: pylavcogs_shared/ui/menus/nodes.py:67
-#: pylavcogs_shared/ui/menus/nodes.py:500
+#: pylavcogs_shared/ui/menus/nodes.py:69
+#: pylavcogs_shared/ui/menus/nodes.py:503
 msgid "Port"
 msgstr "端口"
 
-#: pylavcogs_shared/ui/menus/nodes.py:74
+#: pylavcogs_shared/ui/menus/nodes.py:76
 msgid "Enter the node's password"
 msgstr "输入节点密码"
 
-#: pylavcogs_shared/ui/menus/nodes.py:75
-#: pylavcogs_shared/ui/menus/nodes.py:508
+#: pylavcogs_shared/ui/menus/nodes.py:77
+#: pylavcogs_shared/ui/menus/nodes.py:511
 msgid "Password"
 msgstr "密码"
 
-#: pylavcogs_shared/ui/menus/nodes.py:82
+#: pylavcogs_shared/ui/menus/nodes.py:84
 msgid "Enter an easy to know name for the node"
 msgstr "为节点输入一个容易知道的名称"
 
-#: pylavcogs_shared/ui/menus/nodes.py:83
-#: pylavcogs_shared/ui/menus/nodes.py:516
+#: pylavcogs_shared/ui/menus/nodes.py:85
+#: pylavcogs_shared/ui/menus/nodes.py:519
 msgid "Name"
 msgstr "名称"
 
-#: pylavcogs_shared/ui/menus/nodes.py:90
+#: pylavcogs_shared/ui/menus/nodes.py:92
 msgid "Enter a timeout in seconds"
 msgstr "输入超时秒数"
 
-#: pylavcogs_shared/ui/menus/nodes.py:91
-#: pylavcogs_shared/ui/menus/nodes.py:524
+#: pylavcogs_shared/ui/menus/nodes.py:93
+#: pylavcogs_shared/ui/menus/nodes.py:527
 msgid "Timeout"
 msgstr "超时"
 
-#: pylavcogs_shared/ui/menus/nodes.py:106
-#: pylavcogs_shared/ui/menus/nodes.py:552
+#: pylavcogs_shared/ui/menus/nodes.py:108
+#: pylavcogs_shared/ui/menus/nodes.py:555
 msgid "Source to disable"
 msgstr "要禁用的源"
 
-#: pylavcogs_shared/ui/menus/nodes.py:216
-#: pylavcogs_shared/ui/menus/nodes.py:660
+#: pylavcogs_shared/ui/menus/nodes.py:218
+#: pylavcogs_shared/ui/menus/nodes.py:663
 msgid "Name set to {name}"
 msgstr "名称设置为 {name}"
 
-#: pylavcogs_shared/ui/menus/nodes.py:229
-#: pylavcogs_shared/ui/menus/nodes.py:673
+#: pylavcogs_shared/ui/menus/nodes.py:231
+#: pylavcogs_shared/ui/menus/nodes.py:676
 msgid "Password set to {password}"
 msgstr "密码已设置为 {password}"
 
-#: pylavcogs_shared/ui/menus/nodes.py:247
-#: pylavcogs_shared/ui/menus/nodes.py:691
+#: pylavcogs_shared/ui/menus/nodes.py:249
+#: pylavcogs_shared/ui/menus/nodes.py:694
 msgid "Host set to {host}"
 msgstr "主机设置为 {host}"
 
-#: pylavcogs_shared/ui/menus/nodes.py:264
-#: pylavcogs_shared/ui/menus/nodes.py:708
+#: pylavcogs_shared/ui/menus/nodes.py:266
+#: pylavcogs_shared/ui/menus/nodes.py:711
 msgid "Invalid port"
 msgstr "无效的端口"
 
-#: pylavcogs_shared/ui/menus/nodes.py:272
-#: pylavcogs_shared/ui/menus/nodes.py:716
+#: pylavcogs_shared/ui/menus/nodes.py:274
+#: pylavcogs_shared/ui/menus/nodes.py:719
 msgid "Port set to {port}"
 msgstr "端口设置为 {port}"
 
-#: pylavcogs_shared/ui/menus/nodes.py:289
-#: pylavcogs_shared/ui/menus/nodes.py:733
+#: pylavcogs_shared/ui/menus/nodes.py:291
+#: pylavcogs_shared/ui/menus/nodes.py:736
 msgid "Invalid timeout, it must be a number in seconds"
 msgstr "无效的超时，它必须是一个以秒为单位的数字"
 
-#: pylavcogs_shared/ui/menus/nodes.py:297
-#: pylavcogs_shared/ui/menus/nodes.py:741
+#: pylavcogs_shared/ui/menus/nodes.py:299
+#: pylavcogs_shared/ui/menus/nodes.py:744
 msgid "Timeout set to {timeout} seconds"
 msgstr "超时设置为 {timeout} 秒"
 
-#: pylavcogs_shared/ui/menus/nodes.py:491
+#: pylavcogs_shared/ui/menus/nodes.py:494
 msgid "Change the domain or IP address of the host"
 msgstr "更改主机的域或IP地址"
 
-#: pylavcogs_shared/ui/menus/nodes.py:499
+#: pylavcogs_shared/ui/menus/nodes.py:502
 msgid "Change the host port to connect to"
 msgstr "更改要连接的主机端口"
 
-#: pylavcogs_shared/ui/menus/nodes.py:507
+#: pylavcogs_shared/ui/menus/nodes.py:510
 msgid "Change the node's password"
 msgstr "更改节点密码"
 
-#: pylavcogs_shared/ui/menus/nodes.py:515
+#: pylavcogs_shared/ui/menus/nodes.py:518
 msgid "Change the name of this node"
 msgstr "更改此节点的名称"
 
-#: pylavcogs_shared/ui/menus/nodes.py:523
+#: pylavcogs_shared/ui/menus/nodes.py:526
 msgid "Enter the new timeout for this node"
 msgstr "输入此节点的新超时"
 
@@ -181,19 +181,11 @@ msgstr "查询"
 msgid "What query to remove from the playlist"
 msgstr "要从播放列表中删除的查询"
 
-#: pylavcogs_shared/ui/menus/queue.py:463
+#: pylavcogs_shared/ui/menus/queue.py:451
 msgid "Select Track To Remove"
 msgstr "选择要删除的轨道"
 
-#: pylavcogs_shared/ui/menus/queue.py:465
+#: pylavcogs_shared/ui/menus/queue.py:453
 msgid "Select Track To Play Now"
 msgstr "选择要立即播放的曲目"
-
-#: pylavcogs_shared/ui/menus/queue.py:567
-msgid "Pick An Effect Preset To Apply"
-msgstr "选择要应用的效果预设"
-
-#: pylavcogs_shared/ui/menus/queue.py:716
-msgid "Select Track To Enqueue"
-msgstr "选择要加入队列的轨道"
 

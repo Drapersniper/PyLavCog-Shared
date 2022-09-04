@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-08-31 13:43+0000\n"
-"PO-Revision-Date: 2022-08-31 13:44\n"
+"POT-Creation-Date: 2022-09-04 12:33+0000\n"
+"PO-Revision-Date: 2022-09-04 12:36\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,12 @@ msgstr ""
 "X-Crowdin-File-ID: 590\n"
 "Language: ja_JP\n"
 
-#: pylavcogs_shared/utils/required_methods.py:47
+#: pylavcogs_shared/utils/required_methods.py:48
 #, docstring
 msgid "Shows the credits and translation details for the PyLav cogs and shared code"
 msgstr "PyLav コグと共有コードのクレジットと翻訳の詳細を表示します。"
 
-#: pylavcogs_shared/utils/required_methods.py:51
+#: pylavcogs_shared/utils/required_methods.py:52
 msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
 "PyLav can be located in https://github.com/Drapersniper/PyLav\n"
 "PyLavCog-Shared can be located in https://github.com/Drapersniper/PyLavCog-Shared\n"
@@ -38,57 +38,57 @@ msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
 "https://www.buymeacoffee.com/draper or https://github.com/sponsors/Drapersniper"
 msgstr ""
 
-#: pylavcogs_shared/utils/required_methods.py:81
+#: pylavcogs_shared/utils/required_methods.py:82
 #, docstring
 msgid "Show the version of PyLav and PyLavCogs-Shared libraries"
 msgstr "PyLav と PyLavCogs-Shared ライブラリのバージョンを表示"
 
-#: pylavcogs_shared/utils/required_methods.py:93
+#: pylavcogs_shared/utils/required_methods.py:98
 msgid "Library"
 msgstr "ライブラリ"
 
-#: pylavcogs_shared/utils/required_methods.py:93
+#: pylavcogs_shared/utils/required_methods.py:99
 msgid "Version"
 msgstr "バージョン"
 
-#: pylavcogs_shared/utils/required_methods.py:107
+#: pylavcogs_shared/utils/required_methods.py:118
 #, docstring
 msgid "Sync the Bots slash commands"
 msgstr "ボットスラッシュコマンドを同期"
 
-#: pylavcogs_shared/utils/required_methods.py:116
+#: pylavcogs_shared/utils/required_methods.py:127
 msgid "Synced the bots slash commands"
 msgstr "ボットスラッシュコマンドを同期しました"
 
-#: pylavcogs_shared/utils/required_methods.py:137
+#: pylavcogs_shared/utils/required_methods.py:148
 msgid "This command requires an existing player to be run"
 msgstr "このコマンドを実行するには既存のプレイヤーが必要です"
 
-#: pylavcogs_shared/utils/required_methods.py:146
+#: pylavcogs_shared/utils/required_methods.py:157
 msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later"
 msgstr "バックエンドサービスが停止しているため、現在 MediaPlayer コグが一時的に利用できません。後でもう一度お試しください"
 
-#: pylavcogs_shared/utils/required_methods.py:150
+#: pylavcogs_shared/utils/required_methods.py:161
 msgid "No Lavalink node currently available"
 msgstr "現在利用可能なLavalinkノードはありません"
 
-#: pylavcogs_shared/utils/required_methods.py:159
+#: pylavcogs_shared/utils/required_methods.py:170
 msgid "MediaPlayer is currently unable to process tracks belonging to {feature}"
 msgstr "MediaPlayerは現在 {feature}に属するトラックを処理できません"
 
-#: pylavcogs_shared/utils/required_methods.py:162
+#: pylavcogs_shared/utils/required_methods.py:173
 msgid "No Lavalink node currently available with feature {feature}"
 msgstr "機能 {feature} で現在利用可能な Lavalink ノードはありません"
 
-#: pylavcogs_shared/utils/required_methods.py:173
+#: pylavcogs_shared/utils/required_methods.py:184
 msgid "This command is not available in this channel. Please use {channel}"
 msgstr "このコマンドはこのチャンネルでは使用できません。 {channel} を使用してください。"
 
-#: pylavcogs_shared/utils/required_methods.py:185
+#: pylavcogs_shared/utils/required_methods.py:196
 msgid "This command requires you to be a DJ"
 msgstr "このコマンドはDJになる必要があります"
 
-#: pylavcogs_shared/utils/required_methods.py:223
+#: pylavcogs_shared/utils/required_methods.py:234
 msgid "PyLav is not ready - Please try again shortly"
 msgstr "PyLav の準備ができていません - しばらくしてからもう一度お試しください"
 

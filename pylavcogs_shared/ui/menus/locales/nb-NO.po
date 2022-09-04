@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-08-31 13:15+0000\n"
-"PO-Revision-Date: 2022-08-31 18:04\n"
+"POT-Creation-Date: 2022-09-04 12:33+0000\n"
+"PO-Revision-Date: 2022-09-04 12:36\n"
 "Last-Translator: \n"
 "Language-Team: Norwegian\n"
 "MIME-Version: 1.0\n"
@@ -18,114 +18,114 @@ msgstr ""
 "Language: no_NO\n"
 
 #: pylavcogs_shared/ui/menus/generic.py:115
-#: pylavcogs_shared/ui/menus/nodes.py:195
+#: pylavcogs_shared/ui/menus/nodes.py:197
 #: pylavcogs_shared/ui/menus/playlist.py:255
 #: pylavcogs_shared/ui/menus/playlist.py:470
 msgid "You are not authorized to interact with this"
 msgstr "Du er ikke autorisert til å samhandle med dette"
 
-#: pylavcogs_shared/ui/menus/nodes.py:58
+#: pylavcogs_shared/ui/menus/nodes.py:60
 msgid "Enter the domain or IP address of the host"
 msgstr "Angi domenet eller IP-adressen til verten"
 
-#: pylavcogs_shared/ui/menus/nodes.py:59
-#: pylavcogs_shared/ui/menus/nodes.py:492
+#: pylavcogs_shared/ui/menus/nodes.py:61
+#: pylavcogs_shared/ui/menus/nodes.py:495
 msgid "Host"
 msgstr "Vert"
 
-#: pylavcogs_shared/ui/menus/nodes.py:66
+#: pylavcogs_shared/ui/menus/nodes.py:68
 msgid "Enter the host port to connect to"
 msgstr "Skriv inn vertsporten for å koble til"
 
-#: pylavcogs_shared/ui/menus/nodes.py:67
-#: pylavcogs_shared/ui/menus/nodes.py:500
+#: pylavcogs_shared/ui/menus/nodes.py:69
+#: pylavcogs_shared/ui/menus/nodes.py:503
 msgid "Port"
 msgstr "Port"
 
-#: pylavcogs_shared/ui/menus/nodes.py:74
+#: pylavcogs_shared/ui/menus/nodes.py:76
 msgid "Enter the node's password"
 msgstr "Skriv inn nodens passord"
 
-#: pylavcogs_shared/ui/menus/nodes.py:75
-#: pylavcogs_shared/ui/menus/nodes.py:508
+#: pylavcogs_shared/ui/menus/nodes.py:77
+#: pylavcogs_shared/ui/menus/nodes.py:511
 msgid "Password"
 msgstr "Passord"
 
-#: pylavcogs_shared/ui/menus/nodes.py:82
+#: pylavcogs_shared/ui/menus/nodes.py:84
 msgid "Enter an easy to know name for the node"
 msgstr "Skriv inn et enkelt navn for EK-gruppen"
 
-#: pylavcogs_shared/ui/menus/nodes.py:83
-#: pylavcogs_shared/ui/menus/nodes.py:516
+#: pylavcogs_shared/ui/menus/nodes.py:85
+#: pylavcogs_shared/ui/menus/nodes.py:519
 msgid "Name"
 msgstr "Navn"
 
-#: pylavcogs_shared/ui/menus/nodes.py:90
+#: pylavcogs_shared/ui/menus/nodes.py:92
 msgid "Enter a timeout in seconds"
 msgstr "Skriv et tidsavbrudd i sekunder"
 
-#: pylavcogs_shared/ui/menus/nodes.py:91
-#: pylavcogs_shared/ui/menus/nodes.py:524
+#: pylavcogs_shared/ui/menus/nodes.py:93
+#: pylavcogs_shared/ui/menus/nodes.py:527
 msgid "Timeout"
 msgstr "Tidsavbrudd"
 
-#: pylavcogs_shared/ui/menus/nodes.py:106
-#: pylavcogs_shared/ui/menus/nodes.py:552
+#: pylavcogs_shared/ui/menus/nodes.py:108
+#: pylavcogs_shared/ui/menus/nodes.py:555
 msgid "Source to disable"
 msgstr "Kilde som skal deaktiveres"
 
-#: pylavcogs_shared/ui/menus/nodes.py:216
-#: pylavcogs_shared/ui/menus/nodes.py:660
+#: pylavcogs_shared/ui/menus/nodes.py:218
+#: pylavcogs_shared/ui/menus/nodes.py:663
 msgid "Name set to {name}"
 msgstr "Navn satt til {name}"
 
-#: pylavcogs_shared/ui/menus/nodes.py:229
-#: pylavcogs_shared/ui/menus/nodes.py:673
+#: pylavcogs_shared/ui/menus/nodes.py:231
+#: pylavcogs_shared/ui/menus/nodes.py:676
 msgid "Password set to {password}"
 msgstr "Passord satt til {password}"
 
-#: pylavcogs_shared/ui/menus/nodes.py:247
-#: pylavcogs_shared/ui/menus/nodes.py:691
+#: pylavcogs_shared/ui/menus/nodes.py:249
+#: pylavcogs_shared/ui/menus/nodes.py:694
 msgid "Host set to {host}"
 msgstr "Vert satt til {host}"
 
-#: pylavcogs_shared/ui/menus/nodes.py:264
-#: pylavcogs_shared/ui/menus/nodes.py:708
+#: pylavcogs_shared/ui/menus/nodes.py:266
+#: pylavcogs_shared/ui/menus/nodes.py:711
 msgid "Invalid port"
 msgstr "Ugyldig port"
 
-#: pylavcogs_shared/ui/menus/nodes.py:272
-#: pylavcogs_shared/ui/menus/nodes.py:716
+#: pylavcogs_shared/ui/menus/nodes.py:274
+#: pylavcogs_shared/ui/menus/nodes.py:719
 msgid "Port set to {port}"
 msgstr "Port satt til {port}"
 
-#: pylavcogs_shared/ui/menus/nodes.py:289
-#: pylavcogs_shared/ui/menus/nodes.py:733
+#: pylavcogs_shared/ui/menus/nodes.py:291
+#: pylavcogs_shared/ui/menus/nodes.py:736
 msgid "Invalid timeout, it must be a number in seconds"
 msgstr "Ugyldig tidsavbrudd, det må være et tall i sekunder"
 
-#: pylavcogs_shared/ui/menus/nodes.py:297
-#: pylavcogs_shared/ui/menus/nodes.py:741
+#: pylavcogs_shared/ui/menus/nodes.py:299
+#: pylavcogs_shared/ui/menus/nodes.py:744
 msgid "Timeout set to {timeout} seconds"
 msgstr "Tidsavbrudd er satt til {timeout} sekunder"
 
-#: pylavcogs_shared/ui/menus/nodes.py:491
+#: pylavcogs_shared/ui/menus/nodes.py:494
 msgid "Change the domain or IP address of the host"
 msgstr "Endre domenet eller IP-adressen til verten"
 
-#: pylavcogs_shared/ui/menus/nodes.py:499
+#: pylavcogs_shared/ui/menus/nodes.py:502
 msgid "Change the host port to connect to"
 msgstr "Endre vertsporten for å koble til"
 
-#: pylavcogs_shared/ui/menus/nodes.py:507
+#: pylavcogs_shared/ui/menus/nodes.py:510
 msgid "Change the node's password"
 msgstr "Endre passordet til denne noden"
 
-#: pylavcogs_shared/ui/menus/nodes.py:515
+#: pylavcogs_shared/ui/menus/nodes.py:518
 msgid "Change the name of this node"
 msgstr "Endre navnet på denne noden"
 
-#: pylavcogs_shared/ui/menus/nodes.py:523
+#: pylavcogs_shared/ui/menus/nodes.py:526
 msgid "Enter the new timeout for this node"
 msgstr "Skriv inn den nye tidsavbruddet for denne noden"
 
@@ -181,19 +181,11 @@ msgstr "Spørring"
 msgid "What query to remove from the playlist"
 msgstr "Hvilken spørring du skal fjerne fra spillelisten"
 
-#: pylavcogs_shared/ui/menus/queue.py:463
+#: pylavcogs_shared/ui/menus/queue.py:451
 msgid "Select Track To Remove"
 msgstr "Velg Spor for å fjerne"
 
-#: pylavcogs_shared/ui/menus/queue.py:465
+#: pylavcogs_shared/ui/menus/queue.py:453
 msgid "Select Track To Play Now"
 msgstr "Velg spor for å spille nå"
-
-#: pylavcogs_shared/ui/menus/queue.py:567
-msgid "Pick An Effect Preset To Apply"
-msgstr "Velg en effektforhåndsinnstilling å bruke"
-
-#: pylavcogs_shared/ui/menus/queue.py:716
-msgid "Select Track To Enqueue"
-msgstr "Velg spor i køen"
 

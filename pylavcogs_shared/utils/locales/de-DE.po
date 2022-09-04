@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-08-31 13:43+0000\n"
-"PO-Revision-Date: 2022-08-31 13:44\n"
+"POT-Creation-Date: 2022-09-04 12:33+0000\n"
+"PO-Revision-Date: 2022-09-04 12:36\n"
 "Last-Translator: \n"
 "Language-Team: German\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,12 @@ msgstr ""
 "X-Crowdin-File-ID: 590\n"
 "Language: de_DE\n"
 
-#: pylavcogs_shared/utils/required_methods.py:47
+#: pylavcogs_shared/utils/required_methods.py:48
 #, docstring
 msgid "Shows the credits and translation details for the PyLav cogs and shared code"
 msgstr "Zeigt die Credits und Übersetzungsdetails für PyLav Cogs und freigegebenen Code"
 
-#: pylavcogs_shared/utils/required_methods.py:51
+#: pylavcogs_shared/utils/required_methods.py:52
 msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
 "PyLav can be located in https://github.com/Drapersniper/PyLav\n"
 "PyLavCog-Shared can be located in https://github.com/Drapersniper/PyLavCog-Shared\n"
@@ -50,57 +50,57 @@ msgstr "PyLav wurde erstellt von [Draper#6666](https://github.com/Drapersniper).
 "Wenn du mir einen Kaffee für meine Arbeit kaufen möchtest, kannst du dies unter folgender Adresse tun:\n"
 "https://www.buymeacoffee.com/draper oder https://github.com/sponsors/Drapersniper"
 
-#: pylavcogs_shared/utils/required_methods.py:81
+#: pylavcogs_shared/utils/required_methods.py:82
 #, docstring
 msgid "Show the version of PyLav and PyLavCogs-Shared libraries"
 msgstr "Zeige die Version der PyLav und PyLavCogs-Shared Bibliotheken"
 
-#: pylavcogs_shared/utils/required_methods.py:93
+#: pylavcogs_shared/utils/required_methods.py:98
 msgid "Library"
 msgstr "Bibliothek"
 
-#: pylavcogs_shared/utils/required_methods.py:93
+#: pylavcogs_shared/utils/required_methods.py:99
 msgid "Version"
 msgstr "Version"
 
-#: pylavcogs_shared/utils/required_methods.py:107
+#: pylavcogs_shared/utils/required_methods.py:118
 #, docstring
 msgid "Sync the Bots slash commands"
 msgstr "Die Bots Schrägstrich Befehle synchronisieren"
 
-#: pylavcogs_shared/utils/required_methods.py:116
+#: pylavcogs_shared/utils/required_methods.py:127
 msgid "Synced the bots slash commands"
 msgstr "Die Bots Schrägstrich Befehle synchronisiert"
 
-#: pylavcogs_shared/utils/required_methods.py:137
+#: pylavcogs_shared/utils/required_methods.py:148
 msgid "This command requires an existing player to be run"
 msgstr "Dieser Befehl benötigt einen existierenden Spieler"
 
-#: pylavcogs_shared/utils/required_methods.py:146
+#: pylavcogs_shared/utils/required_methods.py:157
 msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later"
 msgstr "MediaPlayer-Cog ist aufgrund eines Ausfalls der Backend-Dienste vorübergehend nicht verfügbar. Bitte versuchen Sie es später erneut"
 
-#: pylavcogs_shared/utils/required_methods.py:150
+#: pylavcogs_shared/utils/required_methods.py:161
 msgid "No Lavalink node currently available"
 msgstr "Derzeit ist kein Lavalink-Knoten verfügbar"
 
-#: pylavcogs_shared/utils/required_methods.py:159
+#: pylavcogs_shared/utils/required_methods.py:170
 msgid "MediaPlayer is currently unable to process tracks belonging to {feature}"
 msgstr "MediaPlayer ist derzeit nicht in der Lage, Tracks zu {feature} zu verarbeiten"
 
-#: pylavcogs_shared/utils/required_methods.py:162
+#: pylavcogs_shared/utils/required_methods.py:173
 msgid "No Lavalink node currently available with feature {feature}"
 msgstr "Derzeit ist kein Lavalink-Knoten mit Funktion {feature} verfügbar"
 
-#: pylavcogs_shared/utils/required_methods.py:173
+#: pylavcogs_shared/utils/required_methods.py:184
 msgid "This command is not available in this channel. Please use {channel}"
 msgstr "Dieser Befehl ist in diesem Kanal nicht verfügbar. Bitte verwende {channel}"
 
-#: pylavcogs_shared/utils/required_methods.py:185
+#: pylavcogs_shared/utils/required_methods.py:196
 msgid "This command requires you to be a DJ"
 msgstr "Dieser Befehl erfordert, dass du DJ bist"
 
-#: pylavcogs_shared/utils/required_methods.py:223
+#: pylavcogs_shared/utils/required_methods.py:234
 msgid "PyLav is not ready - Please try again shortly"
 msgstr "PyLav ist nicht bereit - Bitte versuche es in Kürze erneut"
 

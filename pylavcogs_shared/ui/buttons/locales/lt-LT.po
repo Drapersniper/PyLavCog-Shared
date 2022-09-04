@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-08-31 18:41+0000\n"
-"PO-Revision-Date: 2022-08-31 18:43\n"
+"POT-Creation-Date: 2022-09-04 12:33+0000\n"
+"PO-Revision-Date: 2022-09-04 12:36\n"
 "Last-Translator: \n"
 "Language-Team: Lithuanian\n"
 "MIME-Version: 1.0\n"
@@ -182,9 +182,9 @@ msgstr ""
 msgid "What should the playlist name be?"
 msgstr ""
 
-#: pylavcogs_shared/ui/buttons/queue.py:172
+#: pylavcogs_shared/ui/buttons/queue.py:173
 #: pylavcogs_shared/ui/buttons/queue.py:213
-#: pylavcogs_shared/ui/buttons/queue.py:236
+#: pylavcogs_shared/ui/buttons/queue.py:237
 msgid "Not connected to a voice channel"
 msgstr ""
 

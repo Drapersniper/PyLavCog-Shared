@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-08-31 13:43+0000\n"
-"PO-Revision-Date: 2022-08-31 13:44\n"
+"POT-Creation-Date: 2022-09-04 12:33+0000\n"
+"PO-Revision-Date: 2022-09-04 12:36\n"
 "Last-Translator: \n"
 "Language-Team: Greek\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,12 @@ msgstr ""
 "X-Crowdin-File-ID: 590\n"
 "Language: el_GR\n"
 
-#: pylavcogs_shared/utils/required_methods.py:47
+#: pylavcogs_shared/utils/required_methods.py:48
 #, docstring
 msgid "Shows the credits and translation details for the PyLav cogs and shared code"
 msgstr "Εμφανίζει τις πιστώσεις και τα στοιχεία μετάφρασης για τα PyLav cogs και κοινόχρηστο κώδικα"
 
-#: pylavcogs_shared/utils/required_methods.py:51
+#: pylavcogs_shared/utils/required_methods.py:52
 msgid "PyLav was created by [Draper#6666](https://github.com/Drapersniper).\n\n"
 "PyLav can be located in https://github.com/Drapersniper/PyLav\n"
 "PyLavCog-Shared can be located in https://github.com/Drapersniper/PyLavCog-Shared\n"
@@ -50,57 +50,57 @@ msgstr "Το PyLav δημιουργήθηκε από το [Draper#6666](https://
 "Εάν επιθυμείτε να μου αγοράσετε καφέ για το έργο μου, μπορείτε να το κάνετε στο:\n"
 "https://www.buymeacoffee.com/draper ή https://github.com/sponsors/Drapersniper"
 
-#: pylavcogs_shared/utils/required_methods.py:81
+#: pylavcogs_shared/utils/required_methods.py:82
 #, docstring
 msgid "Show the version of PyLav and PyLavCogs-Shared libraries"
 msgstr "Εμφάνιση της έκδοσης των PyLav και PyLavCogs-Shared βιβλιοθήκες"
 
-#: pylavcogs_shared/utils/required_methods.py:93
+#: pylavcogs_shared/utils/required_methods.py:98
 msgid "Library"
 msgstr "Βιβλιοθήκη"
 
-#: pylavcogs_shared/utils/required_methods.py:93
+#: pylavcogs_shared/utils/required_methods.py:99
 msgid "Version"
 msgstr "Έκδοση"
 
-#: pylavcogs_shared/utils/required_methods.py:107
+#: pylavcogs_shared/utils/required_methods.py:118
 #, docstring
 msgid "Sync the Bots slash commands"
 msgstr "Συγχρονισμός των εντολών κάθετος Bots"
 
-#: pylavcogs_shared/utils/required_methods.py:116
+#: pylavcogs_shared/utils/required_methods.py:127
 msgid "Synced the bots slash commands"
 msgstr "Συγχρονισμός των εντολών κάθετου bots"
 
-#: pylavcogs_shared/utils/required_methods.py:137
+#: pylavcogs_shared/utils/required_methods.py:148
 msgid "This command requires an existing player to be run"
 msgstr "Αυτή η εντολή απαιτεί την εκτέλεση ενός υπάρχοντος παίκτη"
 
-#: pylavcogs_shared/utils/required_methods.py:146
+#: pylavcogs_shared/utils/required_methods.py:157
 msgid "MediaPlayer cog is currently temporarily unavailable due to an outage with the backend services, please try again later"
 msgstr "Ο κωδικός του MediaPlayer δεν είναι προσωρινά διαθέσιμος λόγω διακοπής λειτουργίας με τις υπηρεσίες του συστήματος υποστήριξης, παρακαλώ προσπαθήστε ξανά αργότερα"
 
-#: pylavcogs_shared/utils/required_methods.py:150
+#: pylavcogs_shared/utils/required_methods.py:161
 msgid "No Lavalink node currently available"
 msgstr "Δεν υπάρχει διαθέσιμος κόμβος Lavalink"
 
-#: pylavcogs_shared/utils/required_methods.py:159
+#: pylavcogs_shared/utils/required_methods.py:170
 msgid "MediaPlayer is currently unable to process tracks belonging to {feature}"
 msgstr "Το MediaPlayer δεν είναι σε θέση να επεξεργαστεί κομμάτια που ανήκουν στο {feature}"
 
-#: pylavcogs_shared/utils/required_methods.py:162
+#: pylavcogs_shared/utils/required_methods.py:173
 msgid "No Lavalink node currently available with feature {feature}"
 msgstr "Κανένας κόμβος Lavalink δεν είναι διαθέσιμος με το χαρακτηριστικό {feature}"
 
-#: pylavcogs_shared/utils/required_methods.py:173
+#: pylavcogs_shared/utils/required_methods.py:184
 msgid "This command is not available in this channel. Please use {channel}"
 msgstr "Αυτή η εντολή δεν είναι διαθέσιμη σε αυτό το κανάλι. Παρακαλούμε χρησιμοποιήστε {channel}"
 
-#: pylavcogs_shared/utils/required_methods.py:185
+#: pylavcogs_shared/utils/required_methods.py:196
 msgid "This command requires you to be a DJ"
 msgstr "Αυτή η εντολή απαιτεί να είστε DJ"
 
-#: pylavcogs_shared/utils/required_methods.py:223
+#: pylavcogs_shared/utils/required_methods.py:234
 msgid "PyLav is not ready - Please try again shortly"
 msgstr "Το PyLav δεν είναι έτοιμο - Παρακαλώ δοκιμάστε ξανά σύντομα"
 
