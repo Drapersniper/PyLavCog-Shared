@@ -99,7 +99,7 @@ class PlayersSource(menus.ListPageSource):
         )
 
         embed.set_footer(
-            text=_("Page {page_num}/{total_pages}  | Playing in {playing} {server_translation}").format(
+            text=_("Page {page_num}/{total_pages} | Playing in {playing} {server_translation}").format(
                 page_num=humanize_number(page_num + 1),
                 total_pages=humanize_number(self.get_max_pages()),
                 playing=humanize_number(len(self.cog.lavalink.player_manager.playing_players)),
