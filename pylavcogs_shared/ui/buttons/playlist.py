@@ -139,7 +139,7 @@ class PlaylistDownloadButton(discord.ui.Button):
                         else "",
                     ),
                 ),
-                file=discord.File(filename=f"{self.view.playlist.name}.yaml", fp=yaml_file),
+                file=discord.File(filename=f"{self.view.playlist.name}.pylav", fp=yaml_file),
                 ephemeral=True,
             )
 
