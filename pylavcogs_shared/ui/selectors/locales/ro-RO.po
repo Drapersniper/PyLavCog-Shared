@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-08-31 13:15+0000\n"
-"PO-Revision-Date: 2022-08-31 13:42\n"
+"POT-Creation-Date: 2022-09-04 12:33+0000\n"
+"PO-Revision-Date: 2022-09-04 12:36\n"
 "Last-Translator: \n"
 "Language-Team: Romanian\n"
 "MIME-Version: 1.0\n"
@@ -35,11 +35,7 @@ msgstr "Modulul nu a fost găsit"
 msgid "Playlist not found"
 msgstr "Playlist negăsit"
 
-#: pylavcogs_shared/ui/selectors/queue.py:85
-msgid "No Preset Selected"
-msgstr "Nicio presetare selectată"
-
-#: pylavcogs_shared/ui/selectors/queue.py:119
+#: pylavcogs_shared/ui/selectors/queue.py:86
 msgid "Track not found"
 msgstr "Piesa nu a fost găsită"
 
