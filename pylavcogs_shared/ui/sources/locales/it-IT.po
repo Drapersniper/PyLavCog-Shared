@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-09-04 17:21+0000\n"
-"PO-Revision-Date: 2022-09-04 17:24\n"
+"PO-Revision-Date: 2022-09-04 20:34\n"
 "Last-Translator: \n"
 "Language-Team: Italian\n"
 "MIME-Version: 1.0\n"
@@ -54,7 +54,8 @@ msgstr "Sì"
 #: pylavcogs_shared/ui/sources/nodes.py:139
 msgid "Name: {name}\n"
 "Version: {version}"
-msgstr ""
+msgstr "Nome: {name}\n"
+"Versione: {version}"
 
 #: pylavcogs_shared/ui/sources/nodes.py:140
 #: pylavcogs_shared/ui/sources/nodes.py:141
@@ -237,7 +238,7 @@ msgstr "tracce"
 
 #: pylavcogs_shared/ui/sources/player.py:102
 msgid "Page {page_num}/{total_pages} | Playing in {playing} {server_translation}"
-msgstr ""
+msgstr "Pagina {page_num}/{total_pages} <unk> Riproduzione in {playing} {server_translation}"
 
 #: pylavcogs_shared/ui/sources/player.py:106
 msgid "server"
