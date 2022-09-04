@@ -11,6 +11,7 @@ from redbot.core.utils.chat_formatting import box, humanize_number
 from redbot.vendored.discord.ext import menus
 
 from pylav.types import CogT
+from pylav.utils.theme import EightBitANSI
 
 from pylavcogs_shared.types import GenericT
 from pylavcogs_shared.ui.selectors.options.generic import EntryOption
@@ -50,9 +51,12 @@ class ListSource(menus.ListPageSource):
 
     async def format_page(self, menu: BaseMenu, page: list[str]) -> discord.Embed:
         idx_start, page_num = self.get_starting_index_and_page_number(menu)
-        text = "".join(f"{i}. [{entry}]" for i, entry in enumerate(page, idx_start + 1))
+        text = "".join(
+            f"{EightBitANSI.paint_white(i)}. {EightBitANSI.paint_blue(entry)}"
+            for i, entry in enumerate(page, idx_start + 1)
+        )
 
-        output = box(text, lang="ini")
+        output = box(text, lang="ansi")
         embed = await self.cog.lavalink.construct_embed(messageable=menu.ctx, title=self.title, description=output)
         return embed
 
