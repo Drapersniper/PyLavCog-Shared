@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-09-04 12:33+0000\n"
-"PO-Revision-Date: 2022-09-04 12:36\n"
+"POT-Creation-Date: 2022-09-04 17:21+0000\n"
+"PO-Revision-Date: 2022-09-04 17:24\n"
 "Last-Translator: \n"
 "Language-Team: Croatian\n"
 "MIME-Version: 1.0\n"
@@ -230,8 +230,8 @@ msgid "tracks"
 msgstr "pjesme"
 
 #: pylavcogs_shared/ui/sources/player.py:102
-msgid "Page {page_num}/{total_pages}  | Playing in {playing} {server_translation}"
-msgstr "Stranica {page_num}/{total_pages}  | Svira u {playing} {server_translation}"
+msgid "Page {page_num}/{total_pages} | Playing in {playing} {server_translation}"
+msgstr ""
 
 #: pylavcogs_shared/ui/sources/player.py:106
 msgid "server"
