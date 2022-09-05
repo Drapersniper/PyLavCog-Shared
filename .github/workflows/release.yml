@@ -152,7 +152,7 @@ jobs:
     crowdin-download:
         runs-on: ubuntu-latest
         name: Download the latest translations from Crowdin
-        needs: [publish, crowdin-upload]
+        needs: [release, crowdin-upload]
         if: ${{ startsWith(github.event.head_commit.message, '[PERSONAL_ACCESS_TOKENch]') || startsWith(github.event.head_commit.message, '[minor]') || startsWith(github.event.head_commit.message, '[major]') }}
         steps:
         -   uses: actions/checkout@v2
