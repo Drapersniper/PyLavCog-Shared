@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-09-04 17:21+0000\n"
-"PO-Revision-Date: 2022-09-04 20:59\n"
+"POT-Creation-Date: 2022-09-05 20:40+0000\n"
+"PO-Revision-Date: 2022-09-05 20:42\n"
 "Last-Translator: \n"
 "Language-Team: Croatian\n"
 "MIME-Version: 1.0\n"
@@ -60,7 +60,7 @@ msgstr ""
 #: pylavcogs_shared/ui/sources/nodes.py:141
 #: pylavcogs_shared/ui/sources/nodes.py:294
 #: pylavcogs_shared/ui/sources/nodes.py:295
-#: pylavcogs_shared/ui/sources/playlist.py:168
+#: pylavcogs_shared/ui/sources/playlist.py:169
 msgid "Unknown"
 msgstr "Nepoznato"
 
@@ -241,36 +241,36 @@ msgstr "server"
 msgid "servers"
 msgstr "servera"
 
-#: pylavcogs_shared/ui/sources/playlist.py:61
-#: pylavcogs_shared/ui/sources/playlist.py:188
+#: pylavcogs_shared/ui/sources/playlist.py:62
+#: pylavcogs_shared/ui/sources/playlist.py:189
 msgid "Page {page_num}/{total_pages} | {num} playlists"
 msgstr "Stranica {page_num}/{total_pages} | {num} popisa za reprodukciju"
 
-#: pylavcogs_shared/ui/sources/playlist.py:125
+#: pylavcogs_shared/ui/sources/playlist.py:126
 msgid "Tracks in"
 msgstr ""
 
-#: pylavcogs_shared/ui/sources/playlist.py:130
+#: pylavcogs_shared/ui/sources/playlist.py:131
 msgid "Page {page_num}/{total_pages} | {num_tracks} tracks\n"
 msgstr ""
 
-#: pylavcogs_shared/ui/sources/playlist.py:173
+#: pylavcogs_shared/ui/sources/playlist.py:174
 msgid "ID: {id}"
 msgstr "ID: {id}"
 
-#: pylavcogs_shared/ui/sources/playlist.py:174
+#: pylavcogs_shared/ui/sources/playlist.py:175
 msgid "Tracks: {num}"
 msgstr "Broj pjesama: {num}"
 
-#: pylavcogs_shared/ui/sources/playlist.py:175
+#: pylavcogs_shared/ui/sources/playlist.py:176
 msgid "Author: {name}"
 msgstr "Autor: {name}"
 
-#: pylavcogs_shared/ui/sources/playlist.py:176
+#: pylavcogs_shared/ui/sources/playlist.py:177
 msgid "Scope: {scope}\n"
 msgstr "Opseg: {scope}\n"
 
-#: pylavcogs_shared/ui/sources/playlist.py:184
+#: pylavcogs_shared/ui/sources/playlist.py:185
 msgid "Playlists you can access in this server:"
 msgstr "Popisi za reprodukciju kojima možete pristupiti na ovom serveru:"
 
