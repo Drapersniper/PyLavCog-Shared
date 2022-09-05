@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-09-04 12:33+0000\n"
-"PO-Revision-Date: 2022-09-04 20:34\n"
+"POT-Creation-Date: 2022-09-05 20:40+0000\n"
+"PO-Revision-Date: 2022-09-05 20:42\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -184,21 +184,21 @@ msgstr "プレイリストを選択"
 msgid "What should the playlist name be?"
 msgstr "プレイリスト名は何ですか?"
 
-#: pylavcogs_shared/ui/buttons/queue.py:173
-#: pylavcogs_shared/ui/buttons/queue.py:213
-#: pylavcogs_shared/ui/buttons/queue.py:237
+#: pylavcogs_shared/ui/buttons/queue.py:174
+#: pylavcogs_shared/ui/buttons/queue.py:214
+#: pylavcogs_shared/ui/buttons/queue.py:238
 msgid "Not connected to a voice channel"
 msgstr "音声チャンネルに接続されていません"
 
-#: pylavcogs_shared/ui/buttons/queue.py:304
+#: pylavcogs_shared/ui/buttons/queue.py:305
 msgid "There's nothing in the Queue"
 msgstr "隊列には何もありません"
 
-#: pylavcogs_shared/ui/buttons/queue.py:311
+#: pylavcogs_shared/ui/buttons/queue.py:312
 msgid "Removed tracks from the queue"
 msgstr "キューからトラックを削除しました"
 
-#: pylavcogs_shared/ui/buttons/queue.py:338
+#: pylavcogs_shared/ui/buttons/queue.py:339
 msgid "What do you want to enqueue?"
 msgstr "何をキューに追加しますか？"
 
