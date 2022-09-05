@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-09-05 20:40+0000\n"
-"PO-Revision-Date: 2022-09-05 20:42\n"
+"PO-Revision-Date: 2022-09-05 22:34\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese, Brazilian\n"
 "MIME-Version: 1.0\n"
@@ -174,7 +174,7 @@ msgstr "Não mais todas as faixas duplicadas da fila"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:404
 msgid "Playlists you can currently play"
-msgstr "Playlists que você pode jogar atualmente"
+msgstr "Playlists que você pode tocar atualmente"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:410
 msgid "Pick a playlist"
@@ -188,7 +188,7 @@ msgstr "Qual deve ser o nome da playlist?"
 #: pylavcogs_shared/ui/buttons/queue.py:214
 #: pylavcogs_shared/ui/buttons/queue.py:238
 msgid "Not connected to a voice channel"
-msgstr "Não conectado a um canal de voz"
+msgstr "Não esta conectado a um canal de voz"
 
 #: pylavcogs_shared/ui/buttons/queue.py:305
 msgid "There's nothing in the Queue"
