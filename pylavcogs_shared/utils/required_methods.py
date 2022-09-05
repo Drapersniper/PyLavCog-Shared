@@ -17,8 +17,8 @@ from redbot.core.i18n import Translator
 from redbot.core.utils.chat_formatting import box
 from tabulate import tabulate
 
-from pylav import Client, NoNodeAvailable
-from pylav.exceptions import NoNodeWithRequestFunctionalityAvailable
+from pylav.client import Client
+from pylav.exceptions import NoNodeAvailable, NoNodeWithRequestFunctionalityAvailable
 from pylav.types import BotT, CogT
 from pylav.utils import PyLavContext
 from pylav.utils.theme import EightBitANSI

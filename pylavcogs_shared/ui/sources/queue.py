@@ -10,7 +10,7 @@ from red_commons.logging import getLogger
 from redbot.core.i18n import Translator
 from redbot.vendored.discord.ext import menus
 
-from pylav import Track
+from pylav.tracks import Track
 from pylav.types import CogT
 
 from pylavcogs_shared.ui.selectors.options.queue import QueueTrackOption, SearchTrackOption

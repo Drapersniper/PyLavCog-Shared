@@ -11,7 +11,7 @@ from redbot.core.i18n import Translator
 from redbot.core.utils.chat_formatting import humanize_number
 from redbot.vendored.discord.ext import menus
 
-from pylav import Player
+from pylav.player import Player
 from pylav.types import CogT
 from pylav.utils import get_time_string
 

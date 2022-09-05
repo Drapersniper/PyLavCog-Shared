@@ -7,7 +7,7 @@ from typing import Any, Literal
 import discord
 from redbot.core.i18n import Translator
 
-from pylav import Player
+from pylav.player import Player
 from pylav.types import BotT, CogT, InteractionT
 from pylav.utils import PyLavContext
 

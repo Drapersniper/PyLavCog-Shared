@@ -7,7 +7,8 @@ from pathlib import Path
 import discord
 from redbot.core.i18n import Translator
 
-from pylav import Player, emojis
+from pylav import emojis
+from pylav.player import Player
 from pylav.types import CogT, InteractionT
 
 _ = Translator("PyLavShared", Path(__file__))

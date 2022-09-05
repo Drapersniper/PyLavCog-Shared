@@ -7,6 +7,7 @@ from discord.app_commands import Choice, Transformer
 from discord.ext import commands
 from redbot.core.i18n import Translator
 
+from pylav.exceptions import EntryNotFoundError
 from pylav.types import InteractionT
 from pylav.utils import PyLavContext
 
@@ -20,7 +21,6 @@ else:
         @classmethod
         async def convert(cls, ctx: PyLavContext, arg: str) -> str:
             """Converts user input to a valid argument for the bassboost command"""
-            from pylav import EntryNotFoundError
 
             try:
                 if match := next(
