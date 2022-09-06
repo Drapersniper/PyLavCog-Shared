@@ -4,6 +4,7 @@ import random
 from pathlib import Path
 from typing import TYPE_CHECKING
 
+import asyncstdlib
 import discord
 from red_commons.logging import getLogger
 from redbot.core.i18n import Translator
@@ -73,7 +74,9 @@ class PlaylistPickerSource(menus.ListPageSource):
         base = page_number * self.per_page
         self.select_options.clear()
         self.select_mapping.clear()
-        for i, playlist in enumerate(self.entries[base : base + self.per_page], start=base):  # noqa: E203
+        async for i, playlist in asyncstdlib.enumerate(
+            asyncstdlib.iter(self.entries[base : base + self.per_page]), start=base
+        ):  # noqa: E203
             self.select_options.append(await PlaylistOption.from_playlist(playlist=playlist, index=i, bot=self.cog.bot))
             self.select_mapping[f"{playlist.id}"] = playlist
         return self.entries[base : base + self.per_page]  # noqa: E203

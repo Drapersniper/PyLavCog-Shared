@@ -3,6 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
+import asyncstdlib
 import discord
 from redbot.core.i18n import Translator
 
@@ -180,7 +181,9 @@ class StatsMenu(BaseMenu):
             self.queue_disconnect_inactive.disabled = True
             self.queue_disconnect_all.disabled = True
 
-        if not [p for p in self.cog.lavalink.player_manager.connected_players if not p.is_playing]:
+        if not [
+            p async for p in asyncstdlib.iter(self.cog.lavalink.player_manager.connected_players) if not p.is_playing
+        ]:
             self.queue_disconnect_inactive.disabled = True
 
     @property

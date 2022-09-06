@@ -73,7 +73,9 @@ class PlayersSource(menus.ListPageSource):
             else _("Nothing playing")
         )
 
-        listener_count = await asyncstdlib.sum(True for m in rgetattr(player, "channel.members", []) if not m.bot)
+        listener_count = await asyncstdlib.sum(
+            True async for m in asyncstdlib.iter(rgetattr(player, "channel.members", [])) if not m.bot
+        )
         listeners = humanize_number(listener_count)
         current_track += "\n"
 

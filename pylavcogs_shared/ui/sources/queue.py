@@ -39,7 +39,9 @@ class SearchPickerSource(menus.ListPageSource):
         base = page_number * self.per_page
         self.select_options.clear()
         self.select_mapping.clear()
-        for i, track in enumerate(self.entries[base : base + self.per_page], start=base):  # noqa: E203
+        async for i, track in asyncstdlib.enumerate(
+            asyncstdlib.iter(self.entries[base : base + self.per_page]), start=base
+        ):  # noqa: E203
             self.select_options.append(await SearchTrackOption.from_track(track=track, index=i))
             self.select_mapping[track.id] = track
         return []
@@ -127,8 +129,8 @@ class QueuePickerSource(QueueSource):
         base = page_number * self.per_page
         self.select_options.clear()
         self.select_mapping.clear()
-        for i, track in enumerate(
-            await asyncstdlib.list(asyncstdlib.islice(self.entries, base, base + self.per_page)), start=base
+        async for i, track in asyncstdlib.enumerate(
+            asyncstdlib.islice(self.entries, base, base + self.per_page), start=base
         ):
             self.select_options.append(await QueueTrackOption.from_track(track=track, index=i))
             self.select_mapping[track.id] = track
