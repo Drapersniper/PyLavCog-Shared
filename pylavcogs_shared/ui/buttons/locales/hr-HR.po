@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-09-06 09:39+0000\n"
-"PO-Revision-Date: 2022-09-06 09:41\n"
+"POT-Creation-Date: 2022-09-06 10:01+0000\n"
+"PO-Revision-Date: 2022-09-06 10:04\n"
 "Last-Translator: \n"
 "Language-Team: Croatian\n"
 "MIME-Version: 1.0\n"
@@ -30,11 +30,11 @@ msgstr ""
 #: pylavcogs_shared/ui/buttons/playlist.py:45
 #: pylavcogs_shared/ui/buttons/playlist.py:80
 #: pylavcogs_shared/ui/buttons/playlist.py:121
-#: pylavcogs_shared/ui/buttons/playlist.py:165
-#: pylavcogs_shared/ui/buttons/playlist.py:208
-#: pylavcogs_shared/ui/buttons/playlist.py:255
-#: pylavcogs_shared/ui/buttons/playlist.py:301
-#: pylavcogs_shared/ui/buttons/playlist.py:347
+#: pylavcogs_shared/ui/buttons/playlist.py:168
+#: pylavcogs_shared/ui/buttons/playlist.py:211
+#: pylavcogs_shared/ui/buttons/playlist.py:258
+#: pylavcogs_shared/ui/buttons/playlist.py:304
+#: pylavcogs_shared/ui/buttons/playlist.py:350
 msgid "You are not authorized to interact with this option"
 msgstr "Niste ovlašteni za interakciju s ovom opcijom"
 
@@ -151,39 +151,39 @@ msgid "\n"
 " (File compressed using Brotli compression."
 msgstr ""
 
-#: pylavcogs_shared/ui/buttons/playlist.py:172
+#: pylavcogs_shared/ui/buttons/playlist.py:175
 msgid "Updating playlist with the latest tracks"
 msgstr ""
 
-#: pylavcogs_shared/ui/buttons/playlist.py:175
+#: pylavcogs_shared/ui/buttons/playlist.py:178
 msgid "Not updating playlist"
 msgstr ""
 
-#: pylavcogs_shared/ui/buttons/playlist.py:263
+#: pylavcogs_shared/ui/buttons/playlist.py:266
 msgid "Adding the current queue to playlist"
 msgstr ""
 
-#: pylavcogs_shared/ui/buttons/playlist.py:270
+#: pylavcogs_shared/ui/buttons/playlist.py:273
 msgid "No longer adding the current queue to playlist"
 msgstr ""
 
-#: pylavcogs_shared/ui/buttons/playlist.py:309
+#: pylavcogs_shared/ui/buttons/playlist.py:312
 msgid "Removing all duplicate tracks from the queue"
 msgstr ""
 
-#: pylavcogs_shared/ui/buttons/playlist.py:316
+#: pylavcogs_shared/ui/buttons/playlist.py:319
 msgid "No longer all duplicate tracks from the queue"
 msgstr ""
 
-#: pylavcogs_shared/ui/buttons/playlist.py:404
+#: pylavcogs_shared/ui/buttons/playlist.py:407
 msgid "Playlists you can currently play"
 msgstr ""
 
-#: pylavcogs_shared/ui/buttons/playlist.py:410
+#: pylavcogs_shared/ui/buttons/playlist.py:413
 msgid "Pick a playlist"
 msgstr ""
 
-#: pylavcogs_shared/ui/buttons/playlist.py:431
+#: pylavcogs_shared/ui/buttons/playlist.py:434
 msgid "What should the playlist name be?"
 msgstr ""
 
