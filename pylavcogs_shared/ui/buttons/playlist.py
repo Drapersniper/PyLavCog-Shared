@@ -139,7 +139,10 @@ class PlaylistDownloadButton(discord.ui.Button):
                         else "",
                     ),
                 ),
-                file=discord.File(filename=f"{self.view.playlist.name}{'.gz' if compressed=='gzip' else '.br' if compressed=='brotli' else ''}.pylav", fp=yaml_file),
+                file=discord.File(
+                    filename=f"{self.view.playlist.name}{'.gz' if compressed=='gzip' else '.br' if compressed=='brotli' else ''}.pylav",
+                    fp=yaml_file,
+                ),
                 ephemeral=True,
             )
 
