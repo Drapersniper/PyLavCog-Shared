@@ -134,12 +134,12 @@ class PlaylistDownloadButton(discord.ui.Button):
                             "- you can use <https://gzip.swimburger.net/> to decompress it)"
                         )
                         if compressed == "gzip"
-                        else ""
+                        else _("\n (File compressed using Brotli compression.")
                         if compressed == "brotli"
                         else "",
                     ),
                 ),
-                file=discord.File(filename=f"{self.view.playlist.name}.pylav", fp=yaml_file),
+                file=discord.File(filename=f"{self.view.playlist.name}{'.gz' if compressed=='gzip' else '.br' if compressed=='brotli' else ''}.pylav", fp=yaml_file),
                 ephemeral=True,
             )
 
