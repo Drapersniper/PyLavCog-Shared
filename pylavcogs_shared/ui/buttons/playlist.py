@@ -140,7 +140,7 @@ class PlaylistDownloadButton(discord.ui.Button):
                     ),
                 ),
                 file=discord.File(
-                    filename=f"{self.view.playlist.name}{'.gz' if compressed=='gzip' else '.br' if compressed=='brotli' else ''}.pylav",
+                    filename=f"{await self.view.playlist.fetch_name()}{'.gz' if compressed=='gzip' else '.br' if compressed=='brotli' else ''}.pylav",
                     fp=yaml_file,
                 ),
                 ephemeral=True,
@@ -171,7 +171,7 @@ class PlaylistUpdateButton(discord.ui.Button):
             )
         self.view.cancelled = False
         self.view.update = not self.view.update
-        if (self.view.playlist.url or self.view.url) and self.view.update:
+        if (await self.view.playlist.fetch_url() or self.view.url) and self.view.update:
             response = _("Updating playlist with the latest tracks")
         else:
             self.view.update = False
@@ -222,7 +222,7 @@ class PlaylistInfoButton(discord.ui.Button):
                 guild_id=interaction.guild.id,
                 cog=self.cog,
                 author=interaction.user,
-                entries=self.view.playlist.tracks,
+                entries=await self.view.playlist.fetch_tracks(),
                 playlist=self.playlist,
             ),
             delete_after_timeout=True,

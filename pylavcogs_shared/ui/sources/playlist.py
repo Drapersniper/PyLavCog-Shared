@@ -32,16 +32,7 @@ ASCII_ORDER_SORT = "~" * 100
 
 class PlaylistPickerSource(menus.ListPageSource):
     def __init__(self, guild_id: int, cog: CogT, pages: list[PlaylistModel], message_str: str):
-        pages.sort(
-            key=lambda p: (
-                (INF, ASCII_ORDER_SORT)
-                if len(p.tracks) == 0
-                else (
-                    -len(p.tracks),
-                    p.name.lower(),
-                ),
-            )
-        )
+        pages.sort(key=lambda p: p.id)
         super().__init__(entries=pages, per_page=5)
         self.message_str = message_str
         self.per_page = 5
@@ -126,7 +117,7 @@ class Base64Source(menus.ListPageSource):
             queue_list += f"`{track_idx}.{' ' * diff}` {track_description}\n"
         page = await self.cog.lavalink.construct_embed(
             title="{translation} __{name}__".format(
-                name=self.playlist.name, translation=discord.utils.escape_markdown(_("Tracks in"))
+                name=await self.playlist.fetch_name(), translation=discord.utils.escape_markdown(_("Tracks in"))
             ),
             description=queue_list,
             messageable=menu.ctx,
@@ -144,16 +135,7 @@ class Base64Source(menus.ListPageSource):
 
 class PlaylistListSource(menus.ListPageSource):
     def __init__(self, cog: CogT, pages: list[PlaylistModel]):
-        pages.sort(
-            key=lambda p: (
-                (INF, ASCII_ORDER_SORT)
-                if len(p.tracks) == 0
-                else (
-                    -len(p.tracks),
-                    p.name.lower(),
-                ),
-            )
-        )
+        pages.sort(key=lambda p: p.id)
         super().__init__(entries=pages, per_page=5)
         self.cog = cog
 
@@ -169,13 +151,13 @@ class PlaylistListSource(menus.ListPageSource):
         space = "\N{EN SPACE}"
         async for i, playlist in AsyncIter(playlists).enumerate(start=idx_start + 1):
             scope_name = await playlist.get_scope_name(self.cog.bot)
-            author_name = await playlist.get_author_name(self.cog.bot) or playlist.author or _("Unknown")
+            author_name = await playlist.get_author_name(self.cog.bot) or _("Unknown")
             is_same = scope_name == author_name
             playlist_info = ("\n" + space * 4).join(
                 (
                     await playlist.get_name_formatted(with_url=True),
                     _("ID: {id}").format(id=playlist.id),
-                    _("Tracks: {num}").format(num=len(playlist.tracks)),
+                    _("Tracks: {num}").format(num=await playlist.size()),
                     _("Author: {name}").format(name=author_name),
                     "\n" if is_same else _("Scope: {scope}\n").format(scope=scope_name),
                 )
