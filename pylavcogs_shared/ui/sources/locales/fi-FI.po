@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-09-10 19:22+0000\n"
-"PO-Revision-Date: 2022-09-10 19:25\n"
+"POT-Creation-Date: 2022-09-10 19:46+0000\n"
+"PO-Revision-Date: 2022-09-10 19:49\n"
 "Last-Translator: \n"
 "Language-Team: Finnish\n"
 "MIME-Version: 1.0\n"
@@ -200,47 +200,47 @@ msgid "Name: {name}\n"
 msgstr "Nimi: {name}\n"
 "Versio: {version}\n\n"
 
-#: pylavcogs_shared/ui/sources/player.py:73
+#: pylavcogs_shared/ui/sources/player.py:72
 msgid "Nothing playing"
 msgstr "Ei mitään toistettavaa"
 
-#: pylavcogs_shared/ui/sources/player.py:85
+#: pylavcogs_shared/ui/sources/player.py:84
 msgid "Server Owner"
 msgstr "Palvelimen Omistaja"
 
-#: pylavcogs_shared/ui/sources/player.py:86
+#: pylavcogs_shared/ui/sources/player.py:85
 msgid "Connected For"
 msgstr "Yhdistetty Kohteeseen"
 
-#: pylavcogs_shared/ui/sources/player.py:87
+#: pylavcogs_shared/ui/sources/player.py:86
 msgid "Users in VC"
 msgstr "Käyttäjät VC:ssä"
 
-#: pylavcogs_shared/ui/sources/player.py:88
+#: pylavcogs_shared/ui/sources/player.py:87
 msgid "Queue Length"
 msgstr "Jonon Pituus"
 
-#: pylavcogs_shared/ui/sources/player.py:90
+#: pylavcogs_shared/ui/sources/player.py:89
 msgid "Queue History Length"
 msgstr "Jonon Historian Pituus"
 
-#: pylavcogs_shared/ui/sources/player.py:92
+#: pylavcogs_shared/ui/sources/player.py:91
 msgid "track"
 msgstr "kappale"
 
-#: pylavcogs_shared/ui/sources/player.py:92
+#: pylavcogs_shared/ui/sources/player.py:91
 msgid "tracks"
 msgstr "kappaleet"
 
-#: pylavcogs_shared/ui/sources/player.py:104
+#: pylavcogs_shared/ui/sources/player.py:103
 msgid "Page {page_num}/{total_pages} | Playing in {playing} {server_translation}"
 msgstr "Sivu {page_num}/{total_pages} ¶ Pelaaminen {playing} {server_translation}"
 
-#: pylavcogs_shared/ui/sources/player.py:108
+#: pylavcogs_shared/ui/sources/player.py:107
 msgid "server"
 msgstr "palvelin"
 
-#: pylavcogs_shared/ui/sources/player.py:108
+#: pylavcogs_shared/ui/sources/player.py:107
 msgid "servers"
 msgstr "palvelimet"
 
