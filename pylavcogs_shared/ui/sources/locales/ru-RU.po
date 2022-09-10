@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-09-10 19:22+0000\n"
-"PO-Revision-Date: 2022-09-10 19:25\n"
+"POT-Creation-Date: 2022-09-10 19:46+0000\n"
+"PO-Revision-Date: 2022-09-10 19:49\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
@@ -204,47 +204,47 @@ msgid "Name: {name}\n"
 msgstr "Имя: {name}\n"
 "Версия: {version}\n\n"
 
-#: pylavcogs_shared/ui/sources/player.py:73
+#: pylavcogs_shared/ui/sources/player.py:72
 msgid "Nothing playing"
 msgstr "Ничего не играет"
 
-#: pylavcogs_shared/ui/sources/player.py:85
+#: pylavcogs_shared/ui/sources/player.py:84
 msgid "Server Owner"
 msgstr "Владелец сервера"
 
-#: pylavcogs_shared/ui/sources/player.py:86
+#: pylavcogs_shared/ui/sources/player.py:85
 msgid "Connected For"
 msgstr "Подключено для"
 
-#: pylavcogs_shared/ui/sources/player.py:87
+#: pylavcogs_shared/ui/sources/player.py:86
 msgid "Users in VC"
 msgstr "Пользователи в VC"
 
-#: pylavcogs_shared/ui/sources/player.py:88
+#: pylavcogs_shared/ui/sources/player.py:87
 msgid "Queue Length"
 msgstr "Длина очереди"
 
-#: pylavcogs_shared/ui/sources/player.py:90
+#: pylavcogs_shared/ui/sources/player.py:89
 msgid "Queue History Length"
 msgstr "Длина истории очереди"
 
-#: pylavcogs_shared/ui/sources/player.py:92
+#: pylavcogs_shared/ui/sources/player.py:91
 msgid "track"
 msgstr "трек"
 
-#: pylavcogs_shared/ui/sources/player.py:92
+#: pylavcogs_shared/ui/sources/player.py:91
 msgid "tracks"
 msgstr "треки"
 
-#: pylavcogs_shared/ui/sources/player.py:104
+#: pylavcogs_shared/ui/sources/player.py:103
 msgid "Page {page_num}/{total_pages} | Playing in {playing} {server_translation}"
 msgstr "Страница {page_num}/{total_pages} | Играет в {playing} {server_translation}"
 
-#: pylavcogs_shared/ui/sources/player.py:108
+#: pylavcogs_shared/ui/sources/player.py:107
 msgid "server"
 msgstr "сервер"
 
-#: pylavcogs_shared/ui/sources/player.py:108
+#: pylavcogs_shared/ui/sources/player.py:107
 msgid "servers"
 msgstr "серверы"
 
