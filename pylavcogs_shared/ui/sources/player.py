@@ -58,9 +58,8 @@ class PlayersSource(menus.ListPageSource):
 
     async def format_page(self, menu: BaseMenu, player: Player) -> discord.Embed:
         idx_start, page_num = self.get_starting_index_and_page_number(menu)
-        connect_dur = (
-            get_time_string(int((datetime.datetime.now(datetime.timezone.utc) - player.connected_at).total_seconds()))
-            or "0s"
+        connect_dur = get_time_string(
+            int((datetime.datetime.now(datetime.timezone.utc) - player.connected_at).total_seconds())
         )
         self.current_player = player
         guild_name = player.guild.name
