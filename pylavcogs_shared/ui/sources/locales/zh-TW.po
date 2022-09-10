@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-09-06 19:38+0000\n"
-"PO-Revision-Date: 2022-09-06 19:41\n"
+"POT-Creation-Date: 2022-09-10 19:22+0000\n"
+"PO-Revision-Date: 2022-09-10 19:25\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Traditional\n"
 "MIME-Version: 1.0\n"
@@ -60,7 +60,7 @@ msgstr ""
 #: pylavcogs_shared/ui/sources/nodes.py:141
 #: pylavcogs_shared/ui/sources/nodes.py:294
 #: pylavcogs_shared/ui/sources/nodes.py:295
-#: pylavcogs_shared/ui/sources/playlist.py:172
+#: pylavcogs_shared/ui/sources/playlist.py:154
 msgid "Unknown"
 msgstr ""
 
@@ -237,36 +237,36 @@ msgstr ""
 msgid "servers"
 msgstr ""
 
-#: pylavcogs_shared/ui/sources/playlist.py:63
-#: pylavcogs_shared/ui/sources/playlist.py:192
+#: pylavcogs_shared/ui/sources/playlist.py:54
+#: pylavcogs_shared/ui/sources/playlist.py:174
 msgid "Page {page_num}/{total_pages} | {num} playlists"
 msgstr ""
 
-#: pylavcogs_shared/ui/sources/playlist.py:129
+#: pylavcogs_shared/ui/sources/playlist.py:120
 msgid "Tracks in"
 msgstr ""
 
-#: pylavcogs_shared/ui/sources/playlist.py:134
+#: pylavcogs_shared/ui/sources/playlist.py:125
 msgid "Page {page_num}/{total_pages} | {num_tracks} tracks\n"
 msgstr ""
 
-#: pylavcogs_shared/ui/sources/playlist.py:177
+#: pylavcogs_shared/ui/sources/playlist.py:159
 msgid "ID: {id}"
 msgstr ""
 
-#: pylavcogs_shared/ui/sources/playlist.py:178
+#: pylavcogs_shared/ui/sources/playlist.py:160
 msgid "Tracks: {num}"
 msgstr ""
 
-#: pylavcogs_shared/ui/sources/playlist.py:179
+#: pylavcogs_shared/ui/sources/playlist.py:161
 msgid "Author: {name}"
 msgstr ""
 
-#: pylavcogs_shared/ui/sources/playlist.py:180
+#: pylavcogs_shared/ui/sources/playlist.py:162
 msgid "Scope: {scope}\n"
 msgstr ""
 
-#: pylavcogs_shared/ui/sources/playlist.py:188
+#: pylavcogs_shared/ui/sources/playlist.py:170
 msgid "Playlists you can access in this server:"
 msgstr ""
 
