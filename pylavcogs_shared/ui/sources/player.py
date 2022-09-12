@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import datetime
 from pathlib import Path
 from typing import TYPE_CHECKING
 
@@ -13,7 +12,6 @@ from redbot.vendored.discord.ext import menus
 
 from pylav.player import Player
 from pylav.types import CogT
-from pylav.utils import get_time_string
 
 from pylavcogs_shared.utils import rgetattr
 
@@ -58,9 +56,7 @@ class PlayersSource(menus.ListPageSource):
 
     async def format_page(self, menu: BaseMenu, player: Player) -> discord.Embed:
         idx_start, page_num = self.get_starting_index_and_page_number(menu)
-        connect_dur = get_time_string(
-            int((datetime.datetime.now(datetime.timezone.utc) - player.connected_at).total_seconds())
-        )
+        connect_dur = f"<t:{int(player.connected_at.timestamp())}:R>"
         self.current_player = player
         guild_name = player.guild.name
         queue_len = player.queue.size()
@@ -82,7 +78,7 @@ class PlayersSource(menus.ListPageSource):
             f"**{i[0]}**: {i[1]}"
             for i in [
                 (_("Server Owner"), server_owner),
-                (_("Connected For"), connect_dur),
+                (_("Connected"), connect_dur),
                 (_("Users in VC"), listeners),
                 (_("Queue Length"), "{} {}".format(queue_len, _("track" if queue_len == 1 else "tracks"))),
                 (
