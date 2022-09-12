@@ -56,7 +56,7 @@ class PlayersSource(menus.ListPageSource):
 
     async def format_page(self, menu: BaseMenu, player: Player) -> discord.Embed:
         idx_start, page_num = self.get_starting_index_and_page_number(menu)
-        connect_dur = f"<t:{int(player.connected_at.timestamp())}:R>"
+        connect_dur = discord.utils.format_dt(player.connected_at, style="R")
         self.current_player = player
         guild_name = player.guild.name
         queue_len = player.queue.size()
