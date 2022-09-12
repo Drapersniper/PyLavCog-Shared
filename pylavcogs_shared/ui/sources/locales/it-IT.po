@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-09-10 19:46+0000\n"
-"PO-Revision-Date: 2022-09-10 19:49\n"
+"POT-Creation-Date: 2022-09-12 21:35+0000\n"
+"PO-Revision-Date: 2022-09-12 21:38\n"
 "Last-Translator: \n"
 "Language-Team: Italian\n"
 "MIME-Version: 1.0\n"
@@ -204,47 +204,47 @@ msgid "Name: {name}\n"
 msgstr "Nome: {name}\n"
 "Versione: {version}\n\n"
 
-#: pylavcogs_shared/ui/sources/player.py:72
+#: pylavcogs_shared/ui/sources/player.py:68
 msgid "Nothing playing"
 msgstr "Niente di giocare"
 
-#: pylavcogs_shared/ui/sources/player.py:84
+#: pylavcogs_shared/ui/sources/player.py:80
 msgid "Server Owner"
 msgstr "Proprietario Del Server"
 
-#: pylavcogs_shared/ui/sources/player.py:85
-msgid "Connected For"
-msgstr "Connesso Per"
+#: pylavcogs_shared/ui/sources/player.py:81
+msgid "Connected"
+msgstr ""
 
-#: pylavcogs_shared/ui/sources/player.py:86
+#: pylavcogs_shared/ui/sources/player.py:82
 msgid "Users in VC"
 msgstr "Utenti in VC"
 
-#: pylavcogs_shared/ui/sources/player.py:87
+#: pylavcogs_shared/ui/sources/player.py:83
 msgid "Queue Length"
 msgstr "Lunghezza Coda"
 
-#: pylavcogs_shared/ui/sources/player.py:89
+#: pylavcogs_shared/ui/sources/player.py:85
 msgid "Queue History Length"
 msgstr "Lunghezza Cronologia Coda"
 
-#: pylavcogs_shared/ui/sources/player.py:91
+#: pylavcogs_shared/ui/sources/player.py:87
 msgid "track"
 msgstr "traccia"
 
-#: pylavcogs_shared/ui/sources/player.py:91
+#: pylavcogs_shared/ui/sources/player.py:87
 msgid "tracks"
 msgstr "tracce"
 
-#: pylavcogs_shared/ui/sources/player.py:103
+#: pylavcogs_shared/ui/sources/player.py:99
 msgid "Page {page_num}/{total_pages} | Playing in {playing} {server_translation}"
 msgstr "Pagina {page_num}/{total_pages} <unk> Riproduzione in {playing} {server_translation}"
 
-#: pylavcogs_shared/ui/sources/player.py:107
+#: pylavcogs_shared/ui/sources/player.py:103
 msgid "server"
 msgstr "server"
 
-#: pylavcogs_shared/ui/sources/player.py:107
+#: pylavcogs_shared/ui/sources/player.py:103
 msgid "servers"
 msgstr "server"
 
