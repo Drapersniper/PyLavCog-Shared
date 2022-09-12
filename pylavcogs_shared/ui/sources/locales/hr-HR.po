@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-09-12 21:35+0000\n"
-"PO-Revision-Date: 2022-09-12 21:38\n"
+"PO-Revision-Date: 2022-09-12 23:04\n"
 "Last-Translator: \n"
 "Language-Team: Croatian\n"
 "MIME-Version: 1.0\n"
@@ -31,11 +31,11 @@ msgstr "Stranica {page_num}/{total_pages} | {num} {entries}"
 
 #: pylavcogs_shared/ui/sources/generic.py:92
 msgid "entries"
-msgstr ""
+msgstr "unosa"
 
 #: pylavcogs_shared/ui/sources/generic.py:92
 msgid "entry"
-msgstr ""
+msgstr "unos"
 
 #: pylavcogs_shared/ui/sources/nodes.py:51
 msgid "Page {page_num}/{total_pages} | {num} nodes"
@@ -54,7 +54,8 @@ msgstr "Da"
 #: pylavcogs_shared/ui/sources/nodes.py:139
 msgid "Name: {name}\n"
 "Version: {version}"
-msgstr ""
+msgstr "Ime: {name}\n"
+"Verzija: {version}"
 
 #: pylavcogs_shared/ui/sources/nodes.py:140
 #: pylavcogs_shared/ui/sources/nodes.py:141

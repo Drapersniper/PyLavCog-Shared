@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-09-12 21:35+0000\n"
-"PO-Revision-Date: 2022-09-12 21:38\n"
+"PO-Revision-Date: 2022-09-12 23:04\n"
 "Last-Translator: \n"
 "Language-Team: Finnish\n"
 "MIME-Version: 1.0\n"
@@ -210,7 +210,7 @@ msgstr "Palvelimen Omistaja"
 
 #: pylavcogs_shared/ui/sources/player.py:81
 msgid "Connected"
-msgstr ""
+msgstr "Yhdistetty"
 
 #: pylavcogs_shared/ui/sources/player.py:82
 msgid "Users in VC"

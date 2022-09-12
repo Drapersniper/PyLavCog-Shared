@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-09-06 10:01+0000\n"
-"PO-Revision-Date: 2022-09-06 10:04\n"
+"PO-Revision-Date: 2022-09-12 23:04\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese, Brazilian\n"
 "MIME-Version: 1.0\n"
@@ -151,7 +151,8 @@ msgstr "\n"
 #: pylavcogs_shared/ui/buttons/playlist.py:137
 msgid "\n"
 " (File compressed using Brotli compression."
-msgstr ""
+msgstr "\n"
+" (File compactado usando Brotli compressão."
 
 #: pylavcogs_shared/ui/buttons/playlist.py:175
 msgid "Updating playlist with the latest tracks"
