@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-09-10 19:46+0000\n"
-"PO-Revision-Date: 2022-09-10 19:49\n"
+"POT-Creation-Date: 2022-09-12 21:35+0000\n"
+"PO-Revision-Date: 2022-09-12 21:38\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -204,47 +204,47 @@ msgid "Name: {name}\n"
 msgstr "Nom : {name}\n"
 "Version : {version}\n\n"
 
-#: pylavcogs_shared/ui/sources/player.py:72
+#: pylavcogs_shared/ui/sources/player.py:68
 msgid "Nothing playing"
 msgstr "Rien ne joue"
 
-#: pylavcogs_shared/ui/sources/player.py:84
+#: pylavcogs_shared/ui/sources/player.py:80
 msgid "Server Owner"
 msgstr "Propriétaire du serveur"
 
-#: pylavcogs_shared/ui/sources/player.py:85
-msgid "Connected For"
-msgstr "Connecté pour"
+#: pylavcogs_shared/ui/sources/player.py:81
+msgid "Connected"
+msgstr ""
 
-#: pylavcogs_shared/ui/sources/player.py:86
+#: pylavcogs_shared/ui/sources/player.py:82
 msgid "Users in VC"
 msgstr "Utilisateurs en VC"
 
-#: pylavcogs_shared/ui/sources/player.py:87
+#: pylavcogs_shared/ui/sources/player.py:83
 msgid "Queue Length"
 msgstr "Longueur de la file d'attente"
 
-#: pylavcogs_shared/ui/sources/player.py:89
+#: pylavcogs_shared/ui/sources/player.py:85
 msgid "Queue History Length"
 msgstr "Longueur de l'historique de la file d'attente"
 
-#: pylavcogs_shared/ui/sources/player.py:91
+#: pylavcogs_shared/ui/sources/player.py:87
 msgid "track"
 msgstr "Piste"
 
-#: pylavcogs_shared/ui/sources/player.py:91
+#: pylavcogs_shared/ui/sources/player.py:87
 msgid "tracks"
 msgstr "Pistes"
 
-#: pylavcogs_shared/ui/sources/player.py:103
+#: pylavcogs_shared/ui/sources/player.py:99
 msgid "Page {page_num}/{total_pages} | Playing in {playing} {server_translation}"
 msgstr "Page {page_num}/{total_pages} | Joue dans {playing} {server_translation}"
 
-#: pylavcogs_shared/ui/sources/player.py:107
+#: pylavcogs_shared/ui/sources/player.py:103
 msgid "server"
 msgstr "serveur"
 
-#: pylavcogs_shared/ui/sources/player.py:107
+#: pylavcogs_shared/ui/sources/player.py:103
 msgid "servers"
 msgstr "Serveurs"
 
