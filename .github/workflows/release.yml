@@ -124,7 +124,7 @@ jobs:
         runs-on: ubuntu-latest
         name: Upload the latest strings to Crowdin
         steps:
-        -   uses: actions/checkout@v2
+        -   uses: actions/checkout@v3
             with:
                 ref: master
                 token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
@@ -155,7 +155,7 @@ jobs:
         needs: [release, crowdin-upload]
         if: ${{ startsWith(github.event.head_commit.message, '[patch]') || startsWith(github.event.head_commit.message, '[minor]') || startsWith(github.event.head_commit.message, '[major]') }}
         steps:
-        -   uses: actions/checkout@v2
+        -   uses: actions/checkout@v3
             with:
                 ref: master
                 token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}

@@ -8,7 +8,7 @@ jobs:
         if: github.repository == 'Drapersniper/PyLavCog-Shared'
         runs-on: ubuntu-latest
         steps:
-        -   uses: actions/checkout@v2
+        -   uses: actions/checkout@v3
         -   name: Set up Python
             uses: actions/setup-python@v4
             with:
@@ -35,7 +35,7 @@ jobs:
         name: Download the latest translations from Crowdin
         needs: [crowdin-upload]
         steps:
-        -   uses: actions/checkout@v2
+        -   uses: actions/checkout@v3
             with:
                 ref: master
                 token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
