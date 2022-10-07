@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-09-04 12:33+0000\n"
-"PO-Revision-Date: 2022-09-12 23:04\n"
+"PO-Revision-Date: 2022-10-07 14:17\n"
 "Last-Translator: \n"
 "Language-Team: Croatian\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,7 @@ msgstr "Moj fora popis za reprodukciju"
 
 #: pylavcogs_shared/ui/modals/queue.py:26
 msgid "Search for a song to add to the queue"
-msgstr "Pretraži pojesmu koja će se dodati u red čekanja"
+msgstr "Pretraži pjesmu koju želiš dodati u red"
 
 #: pylavcogs_shared/ui/modals/queue.py:27
 msgid "Hello by Adele, speak:Hello, https://open.spotify.com/playlist/37i9dQZF1DX6XceWZP1znY"
