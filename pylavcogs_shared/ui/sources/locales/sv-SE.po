@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-09-12 21:35+0000\n"
-"PO-Revision-Date: 2022-09-12 23:04\n"
+"POT-Creation-Date: 2022-10-16 15:01+0000\n"
+"PO-Revision-Date: 2022-10-16 15:03\n"
 "Last-Translator: \n"
 "Language-Team: Swedish\n"
 "MIME-Version: 1.0\n"
@@ -228,23 +228,23 @@ msgstr "Kö längd"
 msgid "Queue History Length"
 msgstr "Kö historik längd"
 
-#: pylavcogs_shared/ui/sources/player.py:87
+#: pylavcogs_shared/ui/sources/player.py:88
 msgid "track"
 msgstr "spår"
 
-#: pylavcogs_shared/ui/sources/player.py:87
+#: pylavcogs_shared/ui/sources/player.py:88
 msgid "tracks"
 msgstr "spår"
 
-#: pylavcogs_shared/ui/sources/player.py:99
+#: pylavcogs_shared/ui/sources/player.py:101
 msgid "Page {page_num}/{total_pages} | Playing in {playing} {server_translation}"
 msgstr "Sida {page_num}/{total_pages} <unk> Spelar i {playing} {server_translation}"
 
-#: pylavcogs_shared/ui/sources/player.py:103
+#: pylavcogs_shared/ui/sources/player.py:105
 msgid "server"
 msgstr "server"
 
-#: pylavcogs_shared/ui/sources/player.py:103
+#: pylavcogs_shared/ui/sources/player.py:105
 msgid "servers"
 msgstr "servrar"
 

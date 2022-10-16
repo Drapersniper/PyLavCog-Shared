@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-09-12 21:35+0000\n"
-"PO-Revision-Date: 2022-09-12 23:04\n"
+"POT-Creation-Date: 2022-10-16 15:01+0000\n"
+"PO-Revision-Date: 2022-10-16 15:03\n"
 "Last-Translator: \n"
 "Language-Team: Italian\n"
 "MIME-Version: 1.0\n"
@@ -228,23 +228,23 @@ msgstr "Lunghezza Coda"
 msgid "Queue History Length"
 msgstr "Lunghezza Cronologia Coda"
 
-#: pylavcogs_shared/ui/sources/player.py:87
+#: pylavcogs_shared/ui/sources/player.py:88
 msgid "track"
 msgstr "traccia"
 
-#: pylavcogs_shared/ui/sources/player.py:87
+#: pylavcogs_shared/ui/sources/player.py:88
 msgid "tracks"
 msgstr "tracce"
 
-#: pylavcogs_shared/ui/sources/player.py:99
+#: pylavcogs_shared/ui/sources/player.py:101
 msgid "Page {page_num}/{total_pages} | Playing in {playing} {server_translation}"
 msgstr "Pagina {page_num}/{total_pages} <unk> Riproduzione in {playing} {server_translation}"
 
-#: pylavcogs_shared/ui/sources/player.py:103
+#: pylavcogs_shared/ui/sources/player.py:105
 msgid "server"
 msgstr "server"
 
-#: pylavcogs_shared/ui/sources/player.py:103
+#: pylavcogs_shared/ui/sources/player.py:105
 msgid "servers"
 msgstr "server"
 

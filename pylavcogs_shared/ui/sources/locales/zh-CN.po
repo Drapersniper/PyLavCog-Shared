@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-09-12 21:35+0000\n"
-"PO-Revision-Date: 2022-09-12 23:04\n"
+"POT-Creation-Date: 2022-10-16 15:01+0000\n"
+"PO-Revision-Date: 2022-10-16 15:03\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
@@ -224,23 +224,23 @@ msgstr "队列长度"
 msgid "Queue History Length"
 msgstr "队列历史长度"
 
-#: pylavcogs_shared/ui/sources/player.py:87
+#: pylavcogs_shared/ui/sources/player.py:88
 msgid "track"
 msgstr "曲目"
 
-#: pylavcogs_shared/ui/sources/player.py:87
+#: pylavcogs_shared/ui/sources/player.py:88
 msgid "tracks"
 msgstr "曲目"
 
-#: pylavcogs_shared/ui/sources/player.py:99
+#: pylavcogs_shared/ui/sources/player.py:101
 msgid "Page {page_num}/{total_pages} | Playing in {playing} {server_translation}"
 msgstr "页面 {page_num}/{total_pages} | 正在播放 {playing} {server_translation}"
 
-#: pylavcogs_shared/ui/sources/player.py:103
+#: pylavcogs_shared/ui/sources/player.py:105
 msgid "server"
 msgstr "服务器"
 
-#: pylavcogs_shared/ui/sources/player.py:103
+#: pylavcogs_shared/ui/sources/player.py:105
 msgid "servers"
 msgstr "服务器"
 

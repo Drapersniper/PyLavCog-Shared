@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
-"POT-Creation-Date: 2022-09-12 21:35+0000\n"
-"PO-Revision-Date: 2022-09-12 23:04\n"
+"POT-Creation-Date: 2022-10-16 15:01+0000\n"
+"PO-Revision-Date: 2022-10-16 15:03\n"
 "Last-Translator: \n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
@@ -226,23 +226,23 @@ msgstr "Довжина черги"
 msgid "Queue History Length"
 msgstr "Довжина історії черги"
 
-#: pylavcogs_shared/ui/sources/player.py:87
+#: pylavcogs_shared/ui/sources/player.py:88
 msgid "track"
 msgstr "трек"
 
-#: pylavcogs_shared/ui/sources/player.py:87
+#: pylavcogs_shared/ui/sources/player.py:88
 msgid "tracks"
 msgstr "композиції"
 
-#: pylavcogs_shared/ui/sources/player.py:99
+#: pylavcogs_shared/ui/sources/player.py:101
 msgid "Page {page_num}/{total_pages} | Playing in {playing} {server_translation}"
 msgstr "Сторінка {page_num}/{total_pages} | Грає в {playing} {server_translation}"
 
-#: pylavcogs_shared/ui/sources/player.py:103
+#: pylavcogs_shared/ui/sources/player.py:105
 msgid "server"
 msgstr "сервер"
 
-#: pylavcogs_shared/ui/sources/player.py:103
+#: pylavcogs_shared/ui/sources/player.py:105
 msgid "servers"
 msgstr "сервери"
 
