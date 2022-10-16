@@ -84,11 +84,13 @@ class PlayersSource(menus.ListPageSource):
                 (
                     _("Queue History Length"),
                     "{count} {track_translation}".format(
-                        count=history_queue_len, track_translation=_("track") if history_queue_len == 1 else _("tracks")
+                        count=history_queue_len,
+                        track_translation=_("track") if history_queue_len == 1 else _("tracks"),
                     ),
                 ),
             ]
         )
+
         current_track += field_values
 
         embed = await self.cog.lavalink.construct_embed(
