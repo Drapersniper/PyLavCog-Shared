@@ -23,7 +23,7 @@ else:
             from pylav import EntryNotFoundError
 
             try:
-                match = next(
+                if match := next(
                     filter(
                         lambda x: x.lower().startswith(arg.lower()),
                         [
@@ -39,10 +39,10 @@ else:
                         ],
                     ),
                     None,
-                )
-                if not match:
+                ):
+                    return match
+                else:
                     raise EntryNotFoundError
-                return match
             except EntryNotFoundError as e:
                 raise commands.BadArgument(_("Bass boost with name `{arg}` not found.").format(arg=arg)) from e
 

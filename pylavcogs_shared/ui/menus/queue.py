@@ -442,12 +442,12 @@ class QueuePickerMenu(BaseMenu):
         self.backward_button.disabled = False
         self.first_button.disabled = False
         self.last_button.disabled = False
-        if max_pages == 2:
-            self.first_button.disabled = True
-            self.last_button.disabled = True
-        elif max_pages == 1:
+        if max_pages == 1:
             self.forward_button.disabled = True
             self.backward_button.disabled = True
+            self.first_button.disabled = True
+            self.last_button.disabled = True
+        elif max_pages == 2:
             self.first_button.disabled = True
             self.last_button.disabled = True
         self.add_item(self.close_button)
@@ -553,12 +553,12 @@ class EffectPickerMenu(BaseMenu):
         self.backward_button.disabled = False
         self.first_button.disabled = False
         self.last_button.disabled = False
-        if max_pages == 2:
-            self.first_button.disabled = True
-            self.last_button.disabled = True
-        elif max_pages == 1:
+        if max_pages == 1:
             self.forward_button.disabled = True
             self.backward_button.disabled = True
+            self.first_button.disabled = True
+            self.last_button.disabled = True
+        elif max_pages == 2:
             self.first_button.disabled = True
             self.last_button.disabled = True
         options = self.source.select_options
