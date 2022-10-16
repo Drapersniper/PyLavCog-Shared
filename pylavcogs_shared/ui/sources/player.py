@@ -82,7 +82,7 @@ class PlayersSource(menus.ListPageSource):
                 (_("Users in VC"), listeners),
                 (
                     _("Queue Length"),
-                    f'{queue_len} {_("track" if queue_len == 1 else "tracks")}',
+                   "{} {}".format(queue_len, _("track" if queue_len == 1 else "tracks"))
                 ),
                 (
                     _("Queue History Length"),
