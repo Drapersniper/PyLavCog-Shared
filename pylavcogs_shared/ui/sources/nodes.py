@@ -131,14 +131,14 @@ class NodeListSource(menus.ListPageSource):
             reservable = "?"
             penalty = "?"
         try:
-            plugins = await node.get_plugins()
+            plugins = await node.get_info()
         except Exception:
             plugins = {}
         plugins_str = ""
-        for plugin in plugins:
+        for plugin in plugins.plugins:
             plugins_str += EightBitANSI.paint_white(_("Name: {name}\nVersion: {version}")).format(
-                name=EightBitANSI.paint_blue(plugin.get("name")) or EightBitANSI.paint_red(_("Unknown")),
-                version=EightBitANSI.paint_blue(plugin.get("version")) or EightBitANSI.paint_red(_("Unknown")),
+                name=EightBitANSI.paint_blue(plugin.name) or EightBitANSI.paint_red(_("Unknown")),
+                version=EightBitANSI.paint_blue(plugin.version) or EightBitANSI.paint_red(_("Unknown")),
             )
             plugins_str += "\n\n"
         plugins_str = plugins_str.strip() or EightBitANSI.paint_red(_("None / Unknown"))
@@ -285,14 +285,14 @@ class NodeManageSource(menus.ListPageSource):
             reservable = "?"
             penalty = "?"
         try:
-            plugins = await node.get_plugins()
+            plugins = await node.get_info()
         except Exception:
             plugins = {}
         plugins_str = ""
-        for plugin in plugins:
+        for plugin in plugins.plugins:
             plugins_str += EightBitANSI.paint_white(_("Name: {name}\nVersion: {version}\n\n")).format(
-                name=EightBitANSI.paint_blue(plugin.get("name")) or EightBitANSI.paint_red(_("Unknown")),
-                version=EightBitANSI.paint_blue(plugin.get("version")) or EightBitANSI.paint_red(_("Unknown")),
+                name=EightBitANSI.paint_blue(plugin.name) or EightBitANSI.paint_red(_("Unknown")),
+                version=EightBitANSI.paint_blue(plugin.version) or EightBitANSI.paint_red(_("Unknown")),
             )
         plugins_str = plugins_str.strip() or EightBitANSI.paint_red(_("None / Unknown"))
         humanize.i18n.deactivate()

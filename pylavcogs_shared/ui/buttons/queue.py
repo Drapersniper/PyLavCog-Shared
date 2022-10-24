@@ -230,7 +230,6 @@ class ToggleRepeatQueueButton(discord.ui.Button):
         if not interaction.response.is_done():
             await interaction.response.defer(ephemeral=True, thinking=True)
         context = await self.cog.bot.get_context(interaction)
-        player = context.player
         player = typing.cast(Player, context.player)
         if not player:
             return await context.send_message(

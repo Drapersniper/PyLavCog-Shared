@@ -82,12 +82,7 @@ async def is_dj_logic(context: PyLavContext | InteractionT) -> bool | None:
     else:
         bot = context.bot
         author = context.author
-
-    if not (getattr(bot, "lavalink", None) and guild):
-        return False
-    return await bot.lavalink.is_dj(
-        user=author, guild=guild, additional_role_ids=None, additional_user_ids={*bot.owner_ids, guild.owner_id}, bot=bot  # type: ignore
-    )
+    return await bot.lavalink.is_dj(user=author, guild=guild, additional_role_ids=None, additional_user_ids={*bot.owner_ids, guild.owner_id}, bot=bot) if (getattr(bot, "lavalink", None) and guild) else False  # type: ignore
 
 
 def invoker_is_dj(slash: bool = False):
