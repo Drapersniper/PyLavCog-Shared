@@ -5,7 +5,7 @@ from pathlib import Path
 import discord
 from redbot.core.i18n import Translator
 
-from pylav.constants import SUPPORTED_SOURCES
+from pylav.constants import SUPPORTED_FEATURES, SUPPORTED_SOURCES
 from pylav.sql.models import NodeModel
 
 _ = Translator("PyLavShared", Path(__file__))
@@ -20,7 +20,9 @@ class SourceOption(discord.SelectOption):
         )
 
 
-SOURCE_OPTIONS = [SourceOption(name=source, description=None, value=source) for source in SUPPORTED_SOURCES]
+SOURCE_OPTIONS = [
+    SourceOption(name=source, description=None, value=source) for source in SUPPORTED_SOURCES.union(SUPPORTED_FEATURES)
+]
 
 
 class NodeOption(discord.SelectOption):

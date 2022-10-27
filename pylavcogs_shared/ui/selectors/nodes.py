@@ -8,7 +8,7 @@ import discord
 from redbot.core.i18n import Translator
 from redbot.core.utils.chat_formatting import humanize_list
 
-from pylav.constants import SUPPORTED_SOURCES
+from pylav.constants import SUPPORTED_FEATURES, SUPPORTED_SOURCES
 from pylav.sql.models import NodeModel
 from pylav.types import CogT, InteractionT
 
@@ -31,7 +31,7 @@ class SourceSelector(discord.ui.Select):
     ):
         super().__init__(
             min_values=1,
-            max_values=len(SUPPORTED_SOURCES),
+            max_values=len(SUPPORTED_SOURCES.union(SUPPORTED_FEATURES)),
             options=SOURCE_OPTIONS,
             placeholder=placeholder,
             row=row,
