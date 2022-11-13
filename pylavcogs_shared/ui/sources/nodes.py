@@ -100,25 +100,32 @@ class NodeListSource(menus.ListPageSource):
         with contextlib.suppress(Exception):
             humanize.i18n.activate(locale)
 
-        server_connected_players = node.server_connected_players
-        server_active_players = node.server_playing_players
+        node_stats = await node.get_stats()
         pylav_connected_players = len(node.connected_players)
         pylav_active_players = len(node.playing_players)
-        if node.stats:
-            frames_sent = node.stats.frames_sent
-            frames_nulled = node.stats.frames_nulled
-            frames_deficit = node.stats.frames_deficit
 
-            uptime = humanize.naturaldelta(node.stats.uptime_seconds)
-            system_load = humanize_number(round(node.stats.system_load, 2))
-            lavalink_load = humanize_number(round(node.stats.lavalink_load, 2))
-
-            free = humanize.naturalsize(node.stats.memory_free, binary=True)
-            used = humanize.naturalsize(node.stats.memory_used, binary=True)
-            allocated = humanize.naturalsize(node.stats.memory_allocated, binary=True)
-            reservable = humanize.naturalsize(node.stats.memory_reservable, binary=True)
+        if node_stats:
+            server_connected_players = node_stats.players
+            server_active_players = node_stats.playingPlayers
+            if node.stats:
+                frames_sent = node.stats.frames_sent
+                frames_nulled = node.stats.frames_nulled
+                frames_deficit = node.stats.frames_deficit
+            else:
+                frames_sent = 0
+                frames_nulled = 0
+                frames_deficit = 0
+            uptime = humanize.naturaldelta(node_stats.uptime)
+            system_load = humanize_number(round(node_stats.cpu.systemLoad, 2))
+            lavalink_load = humanize_number(round(node_stats.cpu.lavalinkLoad, 2))
+            free = humanize.naturalsize(node_stats.memory.free, binary=True)
+            used = humanize.naturalsize(node_stats.memory.used, binary=True)
+            allocated = humanize.naturalsize(node_stats.memory.allocated, binary=True)
+            reservable = humanize.naturalsize(node_stats.memory.reservable, binary=True)
             penalty = humanize_number(round(node.penalty - 1, 2))
         else:
+            server_connected_players = 0
+            server_active_players = 0
             frames_sent = 0
             frames_nulled = 0
             frames_deficit = 0
@@ -254,25 +261,32 @@ class NodeManageSource(menus.ListPageSource):
         with contextlib.suppress(Exception):
             humanize.i18n.activate(locale)
 
-        server_connected_players = node.server_connected_players
-        server_active_players = node.server_playing_players
+        node_stats = await node.get_stats()
         pylav_connected_players = len(node.connected_players)
         pylav_active_players = len(node.playing_players)
-        if node.stats:
-            frames_sent = node.stats.frames_sent
-            frames_nulled = node.stats.frames_nulled
-            frames_deficit = node.stats.frames_deficit
 
-            uptime = humanize.naturaldelta(node.stats.uptime_seconds)
-            system_load = humanize_number(round(node.stats.system_load, 2))
-            lavalink_load = humanize_number(round(node.stats.lavalink_load, 2))
-
-            free = humanize.naturalsize(node.stats.memory_free, binary=True)
-            used = humanize.naturalsize(node.stats.memory_used, binary=True)
-            allocated = humanize.naturalsize(node.stats.memory_allocated, binary=True)
-            reservable = humanize.naturalsize(node.stats.memory_reservable, binary=True)
+        if node_stats:
+            server_connected_players = node_stats.players
+            server_active_players = node_stats.playingPlayers
+            if node.stats:
+                frames_sent = node.stats.frames_sent
+                frames_nulled = node.stats.frames_nulled
+                frames_deficit = node.stats.frames_deficit
+            else:
+                frames_sent = 0
+                frames_nulled = 0
+                frames_deficit = 0
+            uptime = humanize.naturaldelta(node_stats.uptime)
+            system_load = humanize_number(round(node_stats.cpu.systemLoad, 2))
+            lavalink_load = humanize_number(round(node_stats.cpu.lavalinkLoad, 2))
+            free = humanize.naturalsize(node_stats.memory.free, binary=True)
+            used = humanize.naturalsize(node_stats.memory.used, binary=True)
+            allocated = humanize.naturalsize(node_stats.memory.allocated, binary=True)
+            reservable = humanize.naturalsize(node_stats.memory.reservable, binary=True)
             penalty = humanize_number(round(node.penalty - 1, 2))
         else:
+            server_connected_players = 0
+            server_active_players = 0
             frames_sent = 0
             frames_nulled = 0
             frames_deficit = 0
