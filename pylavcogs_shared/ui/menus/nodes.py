@@ -12,7 +12,7 @@ from redbot.core.i18n import Translator
 from redbot.core.utils.chat_formatting import inline
 
 from pylav import emojis
-from pylav.constants import BUNDLED_NODES_IDS
+from pylav.constants import BUNDLED_NODES_IDS_HOST_MAPPING
 from pylav.sql.models import NodeModel
 from pylav.types import BotT, CogT, ContextT, InteractionT
 from pylav.utils import PyLavContext
@@ -599,7 +599,7 @@ class NodeManagerMenu(BaseMenu):
             self.last_button.disabled = True
         if self.source.target:
             self.add_item(self.show_sources_button)
-            if self.source.target.identifier not in BUNDLED_NODES_IDS:
+            if self.source.target.identifier not in BUNDLED_NODES_IDS_HOST_MAPPING:
                 self.add_item(self.done_button)
                 self.add_item(self.search_only_button)
                 self.add_item(self.ssl_button)
