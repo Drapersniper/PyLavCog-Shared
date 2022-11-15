@@ -33,7 +33,7 @@ from pylavcogs_shared.errors import (
 
 _ = Translator("PyLavShared", Path(__file__))
 _LOCK = threading.Lock()
-LOGGER = getLogger("red.3pt.PyLav-Shared.utils.overrides")
+LOGGER = getLogger("PyLav.ext.Shared.utils.overrides")
 
 INCOMPATIBLE_COGS = {}
 

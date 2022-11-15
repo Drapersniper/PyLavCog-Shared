@@ -18,7 +18,7 @@ from pylavcogs_shared.ui.buttons.generic import CloseButton, NavigateButton, NoB
 from pylavcogs_shared.ui.selectors.generic import EntrySelectSelector
 from pylavcogs_shared.ui.sources.generic import EntryPickerSource
 
-LOGGER = getLogger("red.3pt.PyLav-Shared.ui.menu.generic")
+LOGGER = getLogger("PyLav.ext.Shared.ui.menu.generic")
 _ = Translator("PyLavShared", Path(__file__))
 
 

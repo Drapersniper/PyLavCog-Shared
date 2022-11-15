@@ -15,7 +15,7 @@ from pylav.types import CogT, InteractionT
 if TYPE_CHECKING:
     from pylavcogs_shared.ui.menus.nodes import AddNodeFlow, NodeManagerMenu
 
-LOGGER = getLogger("red.3pt.PyLav-Shared.ui.button.nodes")
+LOGGER = getLogger("PyLav.ext.Shared.ui.button.nodes")
 
 
 _ = Translator("PyLavShared", Path(__file__))

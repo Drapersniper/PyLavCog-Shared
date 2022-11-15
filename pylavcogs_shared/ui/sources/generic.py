@@ -21,7 +21,7 @@ from pylavcogs_shared.utils import Mutator
 if TYPE_CHECKING:
     from pylavcogs_shared.ui.menus.generic import BaseMenu, EntryPickerMenu
 
-LOGGER = getLogger("red.3pt.PyLav-Shared.ui.sources.generic")
+LOGGER = getLogger("PyLav.ext.Shared.ui.sources.generic")
 
 _ = Translator("PyLavShared", Path(__file__))
 

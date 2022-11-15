@@ -6,7 +6,7 @@ from red_commons.logging import getLogger
 
 from pylav.localfiles import _ALL_EXTENSIONS
 
-LOGGER = getLogger("red.3pt.PyLav-Shared.utils.validators")
+LOGGER = getLogger("PyLav.ext.Shared.utils.validators")
 
 VALID_ATTACHMENT_EXTENSION = re.compile(rf"^.*\.({'|'.join(i.strip('.') for i in _ALL_EXTENSIONS)})$", re.IGNORECASE)
 

@@ -23,7 +23,7 @@ if TYPE_CHECKING:
     from pylavcogs_shared.ui.menus.generic import PaginatingMenu
     from pylavcogs_shared.ui.menus.playlist import PlaylistPickerMenu
 
-LOGGER = getLogger("red.3pt.PyLav-Shared.ui.sources.playlist")
+LOGGER = getLogger("PyLav.ext.Shared.ui.sources.playlist")
 
 _ = Translator("PyLavShared", Path(__file__))
 INF = float("inf")

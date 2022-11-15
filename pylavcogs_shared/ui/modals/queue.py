@@ -8,7 +8,7 @@ from redbot.core.i18n import Translator
 
 from pylav.types import CogT, InteractionT
 
-LOGGER = getLogger("red.3pt.PyLav-Shared.ui.modals.queue")
+LOGGER = getLogger("PyLav.ext.Shared.ui.modals.queue")
 _ = Translator("PyLavShared", Path(__file__))
 
 

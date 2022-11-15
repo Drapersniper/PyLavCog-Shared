@@ -18,7 +18,7 @@ from pylavcogs_shared.ui.selectors.options.queue import QueueTrackOption, Search
 if TYPE_CHECKING:
     from pylavcogs_shared.ui.menus.queue import QueueMenu, QueuePickerMenu
 
-LOGGER = getLogger("red.3pt.PyLav-Shared.ui.sources.queue")
+LOGGER = getLogger("PyLav.ext.Shared.ui.sources.queue")
 
 _ = Translator("PyLavShared", Path(__file__))
 

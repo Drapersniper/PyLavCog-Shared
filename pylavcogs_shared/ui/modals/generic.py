@@ -7,7 +7,7 @@ from red_commons.logging import getLogger
 
 from pylav.types import CogT, InteractionT
 
-LOGGER = getLogger("red.3pt.PyLav-Shared.ui.modals.generic")
+LOGGER = getLogger("PyLav.ext.Shared.ui.modals.generic")
 
 
 class PromptForInput(discord.ui.Modal):

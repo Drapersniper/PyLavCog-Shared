@@ -18,7 +18,7 @@ from pylavcogs_shared.utils import rgetattr
 if TYPE_CHECKING:
     from pylavcogs_shared.ui.menus.generic import BaseMenu
 
-LOGGER = getLogger("red.3pt.PyLav-Shared.ui.sources.player")
+LOGGER = getLogger("PyLav.ext.Shared.ui.sources.player")
 _ = Translator("PyLavShared", Path(__file__))
 
 

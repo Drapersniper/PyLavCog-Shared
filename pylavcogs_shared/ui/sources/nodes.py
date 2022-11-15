@@ -24,7 +24,7 @@ from pylavcogs_shared.ui.selectors.options.nodes import NodeOption
 if TYPE_CHECKING:
     from pylavcogs_shared.ui.menus.nodes import NodeManagerMenu, NodePickerMenu
 
-LOGGER = getLogger("red.3pt.PyLav-Shared.ui.sources.node")
+LOGGER = getLogger("PyLav.ext.Shared.ui.sources.node")
 _ = Translator("PyLavShared", Path(__file__))
 
 

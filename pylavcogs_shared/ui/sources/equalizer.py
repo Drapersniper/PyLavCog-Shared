@@ -16,7 +16,7 @@ from pylav.utils.theme import EightBitANSI
 if TYPE_CHECKING:
     from pylavcogs_shared.ui.menus.generic import BaseMenu
 
-LOGGER = getLogger("red.3pt.PyLav-Shared.ui.sources.equalizer")
+LOGGER = getLogger("PyLav.ext.Shared.ui.sources.equalizer")
 _ = Translator("PyLavShared", Path(__file__))
 
 
