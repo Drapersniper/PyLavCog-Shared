@@ -58,8 +58,9 @@ class ListSource(menus.ListPageSource):
         )
 
         output = box(text, lang="ansi")
-        embed = await self.cog.lavalink.construct_embed(messageable=menu.ctx, title=self.title, description=output)
-        return embed
+        return await self.cog.lavalink.construct_embed(
+            messageable=menu.ctx, title=self.title, description=output
+        )
 
     def get_max_pages(self):
         """:class:`int`: The maximum number of pages required to paginate this sequence"""
