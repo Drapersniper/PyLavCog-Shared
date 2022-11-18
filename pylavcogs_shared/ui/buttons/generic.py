@@ -48,7 +48,10 @@ class NavigateButton(discord.ui.Button):
 
         kwargs = await self.view.get_page(self.view.current_page)
         await self.view.prepare()
-        await interaction.response.edit_message(view=self.view, **kwargs)
+        if not interaction.response.is_done():
+            await interaction.response.edit_message(view=self.view, **kwargs)
+        else:
+            await interaction.edit_original_response(view=self.view, **kwargs)
 
 
 class CloseButton(discord.ui.Button):
@@ -170,4 +173,7 @@ class RefreshButton(discord.ui.Button):
     async def callback(self, interaction: InteractionT):
         await self.view.prepare()
         kwargs = await self.view.get_page(self.view.current_page)
-        await interaction.response.edit_message(view=self.view, **kwargs)
+        if not interaction.response.is_done():
+            await interaction.response.edit_message(view=self.view, **kwargs)
+        else:
+            await interaction.edit_original_response(view=self.view, **kwargs)

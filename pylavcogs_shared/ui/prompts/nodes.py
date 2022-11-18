@@ -5,7 +5,7 @@ from pathlib import Path
 
 from redbot.core.i18n import Translator
 
-from pylav.sql.models import NodeModel
+from pylav.node import Node
 from pylav.types import CogT
 from pylav.utils import PyLavContext
 
@@ -16,7 +16,7 @@ from pylavcogs_shared.ui.sources.nodes import NodePickerSource
 _ = Translator("PyLavShared", Path(__file__))
 
 
-async def maybe_prompt_for_node(cog: CogT, context: PyLavContext, nodes: list[NodeModel]) -> NodeModel | None:
+async def maybe_prompt_for_node(cog: CogT, context: PyLavContext, nodes: list[Node]) -> Node | None:
     if len(nodes) > 1:
         node_picker = NodePickerMenu(
             cog=cog,
