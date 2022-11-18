@@ -27,4 +27,3 @@ class EqualizerButton(discord.ui.Button):
             await interaction.response.edit_message(view=self.view, **kwargs)
         else:
             await interaction.edit_original_response(view=self.view, **kwargs)
-
