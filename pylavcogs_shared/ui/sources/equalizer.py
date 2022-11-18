@@ -46,10 +46,9 @@ class EQPresetsSource(menus.ListPageSource):
                     header_author: EightBitANSI.paint_blue(author),
                 }
             )
-        embed = await self.cog.lavalink.construct_embed(
+        return await self.cog.lavalink.construct_embed(
             messageable=menu.ctx, description=box(tabulate(data, headers="keys"), lang="ansi")
         )
-        return embed
 
     def get_max_pages(self):
         """:class:`int`: The maximum number of pages required to paginate this sequence"""
