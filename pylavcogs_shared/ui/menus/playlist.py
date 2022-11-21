@@ -9,6 +9,7 @@ import discord
 from redbot.core.i18n import Translator
 
 from pylav import emojis
+from pylav.constants import BUNDLED_PLAYLIST_IDS
 from pylav.sql.models import PlaylistModel
 from pylav.types import BotT, CogT, ContextT, InteractionT
 from pylav.utils import PyLavContext
@@ -427,7 +428,7 @@ class PlaylistManageFlow(discord.ui.View):
         self.update = False
         self.queue = None
         self.dedupe = None
-        if manageable:
+        if manageable or self.playlist.id in BUNDLED_PLAYLIST_IDS:
             self.add_item(self.done_button)
         self.add_item(self.close_button)
         if manageable:

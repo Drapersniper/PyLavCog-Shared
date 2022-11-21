@@ -172,7 +172,7 @@ class PlaylistUpdateButton(discord.ui.Button):
         self.view.cancelled = False
         self.view.update = not self.view.update
         if (await self.view.playlist.fetch_url() or self.view.url) and self.view.update:
-            response = _("Updating playlist with the latest tracks")
+            response = _("Updating playlist with the latest tracks, press done to continue")
         else:
             self.view.update = False
             response = _("Not updating playlist")
