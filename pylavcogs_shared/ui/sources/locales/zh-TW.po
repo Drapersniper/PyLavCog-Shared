@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-10-16 15:01+0000\n"
-"PO-Revision-Date: 2022-11-24 03:12\n"
+"PO-Revision-Date: 2022-11-24 04:03\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Traditional\n"
 "MIME-Version: 1.0\n"
@@ -293,5 +293,5 @@ msgstr "現在沒有正在播放的內容"
 #: pylavcogs_shared/ui/sources/queue.py:114
 #: pylavcogs_shared/ui/sources/queue.py:157
 msgid "No active player found in server"
-msgstr ""
+msgstr "在伺務器中找不到活動的播放器"
 
