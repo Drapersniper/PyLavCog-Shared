@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-09-06 10:01+0000\n"
-"PO-Revision-Date: 2022-09-06 10:04\n"
+"PO-Revision-Date: 2022-11-24 02:31\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Traditional\n"
 "MIME-Version: 1.0\n"
@@ -36,43 +36,43 @@ msgstr ""
 #: pylavcogs_shared/ui/buttons/playlist.py:304
 #: pylavcogs_shared/ui/buttons/playlist.py:350
 msgid "You are not authorized to interact with this option"
-msgstr ""
+msgstr "您無權限與此選項互動"
 
 #: pylavcogs_shared/ui/buttons/generic.py:80
 msgid "Yes"
-msgstr ""
+msgstr "是"
 
 #: pylavcogs_shared/ui/buttons/generic.py:103
 msgid "No"
-msgstr ""
+msgstr "否"
 
 #: pylavcogs_shared/ui/buttons/generic.py:156
 msgid "Disconnect {} {}"
-msgstr ""
+msgstr "斷開連接 {} {}"
 
 #: pylavcogs_shared/ui/buttons/generic.py:157
 msgid "players"
-msgstr ""
+msgstr "播放器"
 
 #: pylavcogs_shared/ui/buttons/generic.py:157
 msgid "player"
-msgstr ""
+msgstr "播放器"
 
 #: pylavcogs_shared/ui/buttons/nodes.py:56
 msgid "Connecting to the node with SSL enabled"
-msgstr ""
+msgstr "正在連接到已啟用 SSL 的節點"
 
 #: pylavcogs_shared/ui/buttons/nodes.py:63
 msgid "Connecting to the node with SSL disabled"
-msgstr ""
+msgstr "正在連接到未啟用 SSL 的節點"
 
 #: pylavcogs_shared/ui/buttons/nodes.py:101
 msgid "This node will only be used for searches"
-msgstr ""
+msgstr "該節點將僅用於搜尋"
 
 #: pylavcogs_shared/ui/buttons/nodes.py:108
 msgid "This node will be used for search and playback"
-msgstr ""
+msgstr "該節點將用於搜尋和播放"
 
 #: pylavcogs_shared/ui/buttons/nodes.py:139
 msgid "Please fill out all the fields before continuing"

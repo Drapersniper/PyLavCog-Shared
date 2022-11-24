@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-10-16 15:01+0000\n"
-"PO-Revision-Date: 2022-10-16 15:03\n"
+"PO-Revision-Date: 2022-11-24 02:31\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Traditional\n"
 "MIME-Version: 1.0\n"
@@ -44,12 +44,12 @@ msgstr ""
 #: pylavcogs_shared/ui/sources/nodes.py:93
 #: pylavcogs_shared/ui/sources/nodes.py:247
 msgid "No"
-msgstr ""
+msgstr "否"
 
 #: pylavcogs_shared/ui/sources/nodes.py:94
 #: pylavcogs_shared/ui/sources/nodes.py:248
 msgid "Yes"
-msgstr ""
+msgstr "是"
 
 #: pylavcogs_shared/ui/sources/nodes.py:139
 msgid "Name: {name}\n"
