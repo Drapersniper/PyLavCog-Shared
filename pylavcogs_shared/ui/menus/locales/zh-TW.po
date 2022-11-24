@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-09-06 19:38+0000\n"
-"PO-Revision-Date: 2022-11-24 02:31\n"
+"PO-Revision-Date: 2022-11-24 03:11\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Traditional\n"
 "MIME-Version: 1.0\n"
@@ -22,170 +22,170 @@ msgstr ""
 #: pylavcogs_shared/ui/menus/playlist.py:255
 #: pylavcogs_shared/ui/menus/playlist.py:470
 msgid "You are not authorized to interact with this"
-msgstr ""
+msgstr "您無權限與此互動"
 
 #: pylavcogs_shared/ui/menus/nodes.py:60
 msgid "Enter the domain or IP address of the host"
-msgstr ""
+msgstr "輸入主機的域名或IP地址"
 
 #: pylavcogs_shared/ui/menus/nodes.py:61
 #: pylavcogs_shared/ui/menus/nodes.py:495
 msgid "Host"
-msgstr ""
+msgstr "主機"
 
 #: pylavcogs_shared/ui/menus/nodes.py:68
 msgid "Enter the host port to connect to"
-msgstr ""
+msgstr "輸入要連接的主機端口"
 
 #: pylavcogs_shared/ui/menus/nodes.py:69
 #: pylavcogs_shared/ui/menus/nodes.py:503
 msgid "Port"
-msgstr ""
+msgstr "端口"
 
 #: pylavcogs_shared/ui/menus/nodes.py:76
 msgid "Enter the node's password"
-msgstr ""
+msgstr "輸入節點密碼"
 
 #: pylavcogs_shared/ui/menus/nodes.py:77
 #: pylavcogs_shared/ui/menus/nodes.py:511
 msgid "Password"
-msgstr ""
+msgstr "密碼"
 
 #: pylavcogs_shared/ui/menus/nodes.py:84
 msgid "Enter an easy to know name for the node"
-msgstr ""
+msgstr "為節點輸入一個簡單的名稱"
 
 #: pylavcogs_shared/ui/menus/nodes.py:85
 #: pylavcogs_shared/ui/menus/nodes.py:519
 msgid "Name"
-msgstr ""
+msgstr "名稱"
 
 #: pylavcogs_shared/ui/menus/nodes.py:92
 msgid "Enter a timeout in seconds"
-msgstr ""
+msgstr "輸入以秒為單位的逾時秒數"
 
 #: pylavcogs_shared/ui/menus/nodes.py:93
 #: pylavcogs_shared/ui/menus/nodes.py:527
 msgid "Timeout"
-msgstr ""
+msgstr "逾時"
 
 #: pylavcogs_shared/ui/menus/nodes.py:108
 #: pylavcogs_shared/ui/menus/nodes.py:555
 msgid "Source to disable"
-msgstr ""
+msgstr "要禁用的來源"
 
 #: pylavcogs_shared/ui/menus/nodes.py:218
 #: pylavcogs_shared/ui/menus/nodes.py:663
 msgid "Name set to {name}"
-msgstr ""
+msgstr "名稱設置為{name}"
 
 #: pylavcogs_shared/ui/menus/nodes.py:231
 #: pylavcogs_shared/ui/menus/nodes.py:676
 msgid "Password set to {password}"
-msgstr ""
+msgstr "密碼設置為 {password}"
 
 #: pylavcogs_shared/ui/menus/nodes.py:249
 #: pylavcogs_shared/ui/menus/nodes.py:694
 msgid "Host set to {host}"
-msgstr ""
+msgstr "主機設置為 {host}"
 
 #: pylavcogs_shared/ui/menus/nodes.py:266
 #: pylavcogs_shared/ui/menus/nodes.py:711
 msgid "Invalid port"
-msgstr ""
+msgstr "端口無效"
 
 #: pylavcogs_shared/ui/menus/nodes.py:274
 #: pylavcogs_shared/ui/menus/nodes.py:719
 msgid "Port set to {port}"
-msgstr ""
+msgstr "端口設置為 {port}"
 
 #: pylavcogs_shared/ui/menus/nodes.py:291
 #: pylavcogs_shared/ui/menus/nodes.py:736
 msgid "Invalid timeout, it must be a number in seconds"
-msgstr ""
+msgstr "逾時設定無效，單位必須是秒數"
 
 #: pylavcogs_shared/ui/menus/nodes.py:299
 #: pylavcogs_shared/ui/menus/nodes.py:744
 msgid "Timeout set to {timeout} seconds"
-msgstr ""
+msgstr "逾時秒數設置為 {timeout} 秒"
 
 #: pylavcogs_shared/ui/menus/nodes.py:494
 msgid "Change the domain or IP address of the host"
-msgstr ""
+msgstr "更改主機的域名或 IP 地址"
 
 #: pylavcogs_shared/ui/menus/nodes.py:502
 msgid "Change the host port to connect to"
-msgstr ""
+msgstr "更改要連接的主機端口"
 
 #: pylavcogs_shared/ui/menus/nodes.py:510
 msgid "Change the node's password"
-msgstr ""
+msgstr "更改節點密碼"
 
 #: pylavcogs_shared/ui/menus/nodes.py:518
 msgid "Change the name of this node"
-msgstr ""
+msgstr "更改此節點的名稱"
 
 #: pylavcogs_shared/ui/menus/nodes.py:526
 msgid "Enter the new timeout for this node"
-msgstr ""
+msgstr "輸入此節點的新逾時秒數"
 
 #: pylavcogs_shared/ui/menus/player.py:94
 msgid "selected"
-msgstr ""
+msgstr "已選擇"
 
 #: pylavcogs_shared/ui/menus/player.py:101
 msgid "inactive"
-msgstr ""
+msgstr "非使用中"
 
 #: pylavcogs_shared/ui/menus/player.py:111
 msgid "all"
-msgstr ""
+msgstr "全部"
 
 #: pylavcogs_shared/ui/menus/player.py:207
 msgid "Not connected anywhere"
-msgstr ""
+msgstr "沒有在任何伺服器連接"
 
 #: pylavcogs_shared/ui/menus/playlist.py:186
 #: pylavcogs_shared/ui/menus/playlist.py:317
 msgid "Please enter the playlist URL"
-msgstr ""
+msgstr "請輸入播放列表網址"
 
 #: pylavcogs_shared/ui/menus/playlist.py:187
 #: pylavcogs_shared/ui/menus/playlist.py:318
 msgid "Playlist URL"
-msgstr ""
+msgstr "播放清單網址"
 
 #: pylavcogs_shared/ui/menus/playlist.py:192
 msgid "Please enter the playlist name"
-msgstr ""
+msgstr "請輸入播放清單名稱"
 
 #: pylavcogs_shared/ui/menus/playlist.py:192
 #: pylavcogs_shared/ui/menus/playlist.py:323
 msgid "Playlist Name"
-msgstr ""
+msgstr "播放清單名稱"
 
 #: pylavcogs_shared/ui/menus/playlist.py:323
 msgid "Please enter the new playlist name"
-msgstr ""
+msgstr "請輸入新的播放清單名稱"
 
 #: pylavcogs_shared/ui/menus/playlist.py:328
 msgid "What query to add to the playlist"
-msgstr ""
+msgstr "查詢的歌曲將添加到播放列表"
 
 #: pylavcogs_shared/ui/menus/playlist.py:329
 #: pylavcogs_shared/ui/menus/playlist.py:337
 msgid "Query"
-msgstr ""
+msgstr "查詢"
 
 #: pylavcogs_shared/ui/menus/playlist.py:336
 msgid "What query to remove from the playlist"
-msgstr ""
+msgstr "查詢的歌曲將從播放列表中刪除"
 
 #: pylavcogs_shared/ui/menus/queue.py:451
 msgid "Select Track To Remove"
-msgstr ""
+msgstr "選擇要刪除的歌曲"
 
 #: pylavcogs_shared/ui/menus/queue.py:453
 msgid "Select Track To Play Now"
-msgstr ""
+msgstr "選擇想要播放的歌曲"
 
