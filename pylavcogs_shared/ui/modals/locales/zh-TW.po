@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-09-04 12:33+0000\n"
-"PO-Revision-Date: 2022-11-24 02:31\n"
+"PO-Revision-Date: 2022-11-24 03:11\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Traditional\n"
 "MIME-Version: 1.0\n"
@@ -19,17 +19,17 @@ msgstr ""
 
 #: pylavcogs_shared/ui/modals/playlist.py:26
 msgid "Enter the name for the new playlist"
-msgstr ""
+msgstr "為新的播放列表輸入名稱"
 
 #: pylavcogs_shared/ui/modals/playlist.py:27
 msgid "My awesome new playlist"
-msgstr ""
+msgstr "我很棒的新播放列表"
 
 #: pylavcogs_shared/ui/modals/queue.py:26
 msgid "Search for a song to add to the queue"
-msgstr ""
+msgstr "搜尋要新增到清單中的歌曲"
 
 #: pylavcogs_shared/ui/modals/queue.py:27
 msgid "Hello by Adele, speak:Hello, https://open.spotify.com/playlist/37i9dQZF1DX6XceWZP1znY"
-msgstr ""
+msgstr "Hello by Adele, speak:Hello, https://open.spotify.com/playlist/37i9dQZF1DX6XceWZP1znY"
 

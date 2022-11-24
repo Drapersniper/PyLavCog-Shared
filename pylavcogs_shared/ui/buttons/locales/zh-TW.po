@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pylavcogs-shared\n"
 "POT-Creation-Date: 2022-09-06 10:01+0000\n"
-"PO-Revision-Date: 2022-11-24 02:31\n"
+"PO-Revision-Date: 2022-11-24 03:11\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Traditional\n"
 "MIME-Version: 1.0\n"
@@ -76,132 +76,133 @@ msgstr "該節點將用於搜尋和播放"
 
 #: pylavcogs_shared/ui/buttons/nodes.py:139
 msgid "Please fill out all the fields before continuing"
-msgstr ""
+msgstr "請在繼續之前填寫所有字段"
 
 #: pylavcogs_shared/ui/buttons/nodes.py:219
 msgid "When you press done this node will be permanently delete"
-msgstr ""
+msgstr "當您按下完成時，此節點將被永久刪除"
 
 #: pylavcogs_shared/ui/buttons/nodes.py:221
 msgid "This node will no longer be deleted once you press done"
-msgstr ""
+msgstr "一旦你按下完成，這個節點將不再被刪除"
 
 #: pylavcogs_shared/ui/buttons/nodes.py:254
 msgid "__Enabled sources__:\n"
 "{sources}"
-msgstr ""
+msgstr "__啟用來源__：\n"
+"{sources}"
 
 #: pylavcogs_shared/ui/buttons/player.py:38
 #: pylavcogs_shared/ui/buttons/player.py:88
 #: pylavcogs_shared/ui/buttons/player.py:142
 msgid "You are not authorized to perform this action"
-msgstr ""
+msgstr "您無權限執行此操作"
 
 #: pylavcogs_shared/ui/buttons/player.py:47
 #: pylavcogs_shared/ui/buttons/player.py:97
 msgid "No Player Available For Action - Try Refreshing"
-msgstr ""
+msgstr "沒有播放器可以進行動作 - 正在嘗試刷新"
 
 #: pylavcogs_shared/ui/buttons/player.py:56
 #: pylavcogs_shared/ui/buttons/player.py:108
 #: pylavcogs_shared/ui/buttons/player.py:166
 msgid "Bot Owner Action"
-msgstr ""
+msgstr "機器人所有者動作"
 
 #: pylavcogs_shared/ui/buttons/player.py:56
 #: pylavcogs_shared/ui/buttons/player.py:166
 msgid "Player disconnected"
-msgstr ""
+msgstr "播放器已斷開連接"
 
 #: pylavcogs_shared/ui/buttons/player.py:108
 msgid "Player stopped"
-msgstr ""
+msgstr "播放器已停止"
 
 #: pylavcogs_shared/ui/buttons/player.py:156
 msgid "No Players Available For Action - Try Refreshing"
-msgstr ""
+msgstr "沒有播放器可以進行動作 - 正在嘗試刷新"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:52
 msgid "When you press done this playlist will be permanently delete"
-msgstr ""
+msgstr "當您按完成時，此播放列表將被永久刪除"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:54
 msgid "This playlist will no longer be deleted once you press done"
-msgstr ""
+msgstr "按下完成後將不再刪除此播放列表"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:87
 msgid "Clearing all tracks from the playlist playlist"
-msgstr ""
+msgstr "正在清除播放列表中的所有曲目"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:89
 msgid "No longer clearing tracks from the playlist"
-msgstr ""
+msgstr "不再從播放列表中清除曲目"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:130
 msgid "Here is your playlist: {name}{extras}"
-msgstr ""
+msgstr "這是您的播放列表：{name}{extras}"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:132
 msgid "\n"
 " (compressed using gzip to make it possible to send via Discord - you can use <https://gzip.swimburger.net/> to decompress it)"
-msgstr ""
+msgstr "（使用 gzip 壓縮以便通過 Discord 發送 - 您可以使用 <https://gzip.swimburger.net/> 來解壓縮它）"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:137
 msgid "\n"
 " (File compressed using Brotli compression."
-msgstr ""
+msgstr "（使用 Brotli 壓縮文件。"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:175
 msgid "Updating playlist with the latest tracks"
-msgstr ""
+msgstr "正在使用最新曲目更新播放列表"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:178
 msgid "Not updating playlist"
-msgstr ""
+msgstr "不再更新播放列表"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:266
 msgid "Adding the current queue to playlist"
-msgstr ""
+msgstr "將當前清單添加到播放列表"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:273
 msgid "No longer adding the current queue to playlist"
-msgstr ""
+msgstr "不再將當前清單添加到播放列表"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:312
 msgid "Removing all duplicate tracks from the queue"
-msgstr ""
+msgstr "從隊列中刪除所有重複的曲目"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:319
 msgid "No longer all duplicate tracks from the queue"
-msgstr ""
+msgstr "隊列中不再有重複的曲目"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:407
 msgid "Playlists you can currently play"
-msgstr ""
+msgstr "您現在可以播放的播放列表"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:413
 msgid "Pick a playlist"
-msgstr ""
+msgstr "選擇一個播放清單"
 
 #: pylavcogs_shared/ui/buttons/playlist.py:434
 msgid "What should the playlist name be?"
-msgstr ""
+msgstr "播放列表名稱要叫什麼？"
 
 #: pylavcogs_shared/ui/buttons/queue.py:174
 #: pylavcogs_shared/ui/buttons/queue.py:214
 #: pylavcogs_shared/ui/buttons/queue.py:238
 msgid "Not connected to a voice channel"
-msgstr ""
+msgstr "未連接至語音頻道"
 
 #: pylavcogs_shared/ui/buttons/queue.py:305
 msgid "There's nothing in the Queue"
-msgstr ""
+msgstr "播放清單中沒有內容"
 
 #: pylavcogs_shared/ui/buttons/queue.py:312
 msgid "Removed tracks from the queue"
-msgstr ""
+msgstr "已從隊列中刪除曲目"
 
 #: pylavcogs_shared/ui/buttons/queue.py:339
 msgid "What do you want to enqueue?"
-msgstr ""
+msgstr "你想為清單新增什麼？"
 
