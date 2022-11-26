@@ -100,7 +100,7 @@ class NodeListSource(menus.ListPageSource):
         with contextlib.suppress(Exception):
             humanize.i18n.activate(locale)
 
-        node_stats = await node.get_stats()
+        node_stats = await node.fetch_stats()
         pylav_connected_players = len(node.connected_players)
         pylav_active_players = len(node.playing_players)
 
@@ -138,7 +138,7 @@ class NodeListSource(menus.ListPageSource):
             reservable = "?"
             penalty = "?"
         try:
-            plugins = await node.get_info()
+            plugins = await node.fetch_info()
         except Exception:
             plugins = {}
         plugins_str = ""
@@ -261,7 +261,7 @@ class NodeManageSource(menus.ListPageSource):
         with contextlib.suppress(Exception):
             humanize.i18n.activate(locale)
 
-        node_stats = await node.get_stats()
+        node_stats = await node.fetch_stats()
         pylav_connected_players = len(node.connected_players)
         pylav_active_players = len(node.playing_players)
 
@@ -299,7 +299,7 @@ class NodeManageSource(menus.ListPageSource):
             reservable = "?"
             penalty = "?"
         try:
-            plugins = await node.get_info()
+            plugins = await node.fetch_info()
         except Exception:
             plugins = {}
         plugins_str = ""
