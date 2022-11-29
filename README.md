@@ -3,3 +3,6 @@
 [![Support Server](https://img.shields.io/discord/970987707834720266)](https://discord.com/invite/Sjh2TSCYQB)
 [![PyPi](https://img.shields.io/pypi/v/pylavcogs-shared?style=plastic)](https://pypi.org/project/pylavcogs-shared/)
 [![Documentation Status](https://readthedocs.org/projects/pylavcog-shared/badge/?version=latest)](https://pylavcog-shared.readthedocs.io/en/latest/?badge=latest)
+
+
+Project has now been merged into [PyLav](https://github.com/Drapersniper/PyLav)
